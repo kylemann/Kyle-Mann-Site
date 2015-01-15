@@ -1,0 +1,32 @@
+
+
+html {
+    height: 100%
+
+
+}
+
+body {
+    
+        background-image: -webkit-linear-gradient(hsl(228, 100%, 84%), rgba(255,255,255,0) 75%), url('../background.jpg'); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    max-width:100%;
+    height:auto;
+    font-family: 'Ruluko', sans-serif;
+    color: white;
+
+}
+
+.welcome {
+    width: 90%;
+    margin: 0 auto;
+    
+    
+}
+

@@ -6,15 +6,17 @@
 
 body {
  margin: 0;   
-    
+   background: #FCFCFC;  
 }
+
+
 #image-f {
- width: 100%;
-    max-width: 500px;
-    height: 200px;
-    border-radius: 4px;
-    margin: 3em auto 0 auto;
-  background: url(../images/kyle.jpg) no-repeat center center;
+width: 100%;
+max-width: 500px;
+height: 200px;
+border-radius: 4px;
+margin: 2em auto 0 auto;
+background: url(../images/kyle.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -24,13 +26,10 @@ background-size: cover;
 
 
 h1 {
- text-align: center;
+text-align: center;
 }
 
-#intro {
- font-size: 1.5em;   
-    
-}
+
 .icon {
  width: 20px;
     height: 20px;
@@ -41,9 +40,10 @@ h1 {
 
 #about {
  padding: 2em 0;   
- width: 95%;
+ width: 90%;
 
     margin: 0 auto;
+    
 }
 
 #about h1 {
@@ -55,20 +55,28 @@ h1 {
 #tagline-mobile {
  text-align: center;
 margin-bottom: 2em;
-    line-height: 0;
-    font-weight: bold;
+   font-size:2em;
+    line-height: 1.5;
+    font-weight: normal;
 }
+
+#desktop-t {
+font-weight: 400;  
+}
+  
 
 #tagline {
  display: none;   
 }
 
 #description {
- font-size: 1em;
-    line-height: 1.7;
-       margin: 0 auto;
-    max-width: 500px;
-    padding: 2.5em 0;
+font-size: 1em;
+line-height: 1.7;
+margin: 0 auto;
+max-width: 500px;
+padding: 3em 0;
+    font-weight: 300;
+    color: #262626;
 }
 
 .cover {
@@ -121,6 +129,71 @@ background-size: cover;
    
 }
 
+.cover-h {
+height: 100%;
+width: 100%;
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center;
+transition: 0.5s ease; 
+background: hsla(0, 0%, 28%, 0.15);
+}
+
+  h3 {
+text-align: center;  
+color: white;
+font-size: 1.5em;
+line-height: 0;
+font-weight: normal;
+margin: 1.75em 0;
+}
+
+ .task {
+    line-height: 0;
+align-self: center;
+      -webkit-align-self: center; 
+     color: white;
+     font-weight: 300;
+     margin: 1.75em 0;
+     font-size: 1em;
+ 
+ }
+
+    .case-study {
+     color: white;
+        text-align: center;
+        line-height: 0;
+        border: 1px solid white;
+        margin: 1.75em auto;
+     width: 7.5em;
+font-weight: 300;
+
+        padding: 1em 0;
+        transition: 0.5s ease;
+       
+        font-weight: 1em;
+       
+    } 
+
+a {
+text-decoration: none;  
+}
+    
+a:focus {
+    outline: none;
+    
+}
+
+a:active {
+    outline: none;
+}
+
+
+
+
 
 
 /*//////////////////////// //////////////////////
@@ -137,109 +210,103 @@ Desktop VERSION - MEDIA QUERIES
     
     
     #body {
-        
-/*
-      display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-*/
-  display: -webkit-flex;
-  display: flex;   
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;   
     }
     
   #image-f {
-
-   width: 50vw;
-      max-width: 100%;
-    height: 50vh;
-    border-radius: 0;
-    margin: 0;
-  background: url(../images/kyle.jpg) no-repeat center center;
+width: 50vw;
+max-width: 100%;
+height: 50vh;
+border-radius: 0;
+margin: 0;
+background: url(../images/kyle.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
-background-size: cover;  
+background-size: cover;
+
   }
  
 #about {
- width: 50%;   
- margin: 0;
-    padding: 0;
+width: 50%;   
+margin: 0;
+padding: 0;
 position: fixed;
- 
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+
 }
     
     #description {
 width: 100%;
-height: 50%;
-  max-width: 600px;     
-padding: 1em 0;
-             display: -webkit-flex;
-  display: flex;  
-        
-   flex-direction: column;
+height: 50vh;
+max-width: 600px;     
+display: flex;
+display: -webkit-flex;
 flex-direction: column;
-  justify-content: space-around;  
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center;
+padding: 0;
+align-items: center;
+-webkit-align-items: center;
+
 }
     
-    #work {
-     width: 50%;
-        height: 100%;
-    position: fixed;
-        left: 50%;
-        
-         display: -webkit-flex;
-  display: flex;  
-        
-         flex-wrap: wrap;
-    }
-    
-    
-    #about {
-display: -webkit-flex;
+#container {
+width: 100%;
 display: flex;
+display: -webkit-flex;
 flex-direction: column;
-        
-  flex-direction: column;
-  justify-content: center;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center;
+}
+    
+#description  p {
+margin: .5em 0;              
+       }
+    
+    
+#work {
+width: 50%;
+height: 100%;
+position: absolute;
+left: 50%;
+display: flex; 
+display: -webkit-flex;
+flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     }
     
-    .cover {
+
+.cover {
      width: 50%;   
       height: 50%;  
     }
     
-.cover-h {
- height: 100%;
-    width: 100%;
-    background: hsla(0, 0%, 28%, 0.50);
-    display: -webkit-flex;
-display: flex;
-flex-direction: column;
-        
-  flex-direction: column;
-  justify-content: center;
-    transition: 0.5s ease;  
-}
-    
-    h3 {
-     text-align: center;  
-        color: white;
-        font-size: 1.5em;
-        line-height: 0;
-        font-weight: normal;
-    }
-
- .task {
-    line-height: 0;
-align-self: center;
-     color: white;
-     font-weight: 300;
+ h3, .task, .case-study {
+     margin: 1em auto; 
  }
     
-.cover-h:hover {
-  background: none;  
+  
+
+
+    
+
+    
+    
+.case-study:hover  {
+/*background: hsla(0, 0%, 28%, 1);*/
+background: hsla(0, 0%, 0%, 0.5);
 }
+   
     
     #tagline-mobile {
      display: none;   
@@ -248,17 +315,19 @@ align-self: center;
 #tagline {
     display: inherit;
  text-align: center;
-margin-bottom: 2em;
-    line-height: 0;
-    font-weight: bold;
+   margin: .25em;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 400;
 }
     
+  
     .icon {
  width: 23px;
     height: 23px;
       margin: 0 10px;   
     }
-    
-   
+
+
     
 }

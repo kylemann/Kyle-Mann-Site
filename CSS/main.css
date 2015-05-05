@@ -1,6 +1,8 @@
 * {
  box-sizing: border-box;   
-  font-family: 'Lato', sans-serif;  
+/*  font-family: 'Lato', sans-serif;  */
+    font-family: 'Whitney SSm A', 'Whitney SSm B';
+/*    font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';*/
 }
 
 
@@ -74,14 +76,16 @@ margin: 0 auto;
  font-size: 2em;   
    line-height: 0;
     margin: 0 auto;
+  font-weight: normal;
 }
 
 #tagline-mobile {
- text-align: center;
+text-align: center;
 margin-bottom: 2em;
-   font-size:2em;
-    line-height: 1.5;
-    font-weight: normal;
+font-size:2em;
+line-height: 1.5;
+font-weight: normal;
+font-family: 'Whitney SSm A', 'Whitney SSm B';
 }
 
 #desktop-t {
@@ -90,17 +94,20 @@ font-weight: 400;
   
 
 #tagline {
- display: none;   
+display: none; 
+font-family: 'Whitney SSm A', 'Whitney SSm B';
 }
 
 #description {
 font-size: 1em;
 line-height: 1.7;
 margin: 0 auto;
+    width: 95%;
 max-width: 500px;
 padding: 3em 0;
-    font-weight: 300;
-    color: #262626;
+font-weight: 300;
+color: #262626;
+/*font-family: 'Mercury SSm A', 'Mercury SSm B';*/
 }
 
 .cover {
@@ -163,8 +170,8 @@ flex-direction: column;
 justify-content: center;
 -webkit-justify-content: center;
 transition: 0.5s ease; 
-background: hsla(0, 0%, 28%, 0.15);
-   
+/*background: hsla(0, 0%, 28%, 0.15);*/
+  background: none; 
 }
 
   h3 {
@@ -187,21 +194,24 @@ align-self: center;
  
  }
 
-    .case-study {
-     color: white;
-        text-align: center;
-        line-height: 0;
-        border: 1px solid white;
+.case-study {
+color: white;
+text-align: center;
+    line-height: 0;
+/*        border: 1px solid white;*/
         margin: 1.5em auto;
-     width: 7.5em;
+     width: 8.5em;
 font-weight: 300;
-
+border-radius: 2px;
         padding: 1em 0;
         transition: 0.3s ease;
-       
+       border: 1px solid white;
         font-weight: 1em;
     -webkit-align-self: flex-end; 
         align-self: flex-end;
+      
+/*        background: hsla(360, 100%, 100%, 0.5);*/
+/*       background: hsla(0, 0%, 91%, .5);*/
     } 
 
 .link {
@@ -245,7 +255,7 @@ justify-content: center;
 }
 
 #bookshelf h2 {
-    font-size: 1.5em;
+    font-size: 1.15em;
  font-weight: 300; 
     max-width: 200px;
 }
@@ -323,9 +333,9 @@ flex-direction: row;
 }
     
     #description {
-width: 100%;
+width: 50vw;
 height: 50vh;
-max-width: 550px;     
+max-width: 50vw;     
 display: flex;
 display: -webkit-flex;
 flex-direction: column;
@@ -335,13 +345,14 @@ justify-content: center;
 padding: 0;
 align-items: center;
 -webkit-align-items: center;
-  font-size: 1.05em;
+  font-size: 1em;
 line-height: 1.7;  
 
 }
     
 #container {
-width: 100%;
+width: 95%;
+max-width: 600px;
 display: flex;
 display: -webkit-flex;
 flex-direction: column;
@@ -366,6 +377,7 @@ display: -webkit-flex;
 flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-direction: row;
+  font-family: 'Whitney SSm A', 'Whitney SSm B';
     }
     
 
@@ -396,8 +408,8 @@ flex-wrap: wrap;
     
 .case-study:hover  {
 /*background: hsla(0, 0%, 28%, 1);*/
-/*background: hsla(0, 0%, 0%, 0.5);*/
-background: hsla(210, 35%, 50%, .65);
+background: hsla(0, 0%, 0%, 0.5);
+/*background: hsla(210, 35%, 50%, .65);*/
 }
     
         
@@ -419,8 +431,8 @@ background: hsla(210, 35%, 50%, .65);
     
   
     .icon {
- width: 23px;
-    height: 23px;
+ width: 25px;
+    height: 25px;
       margin: 0 10px;   
     }
     
@@ -460,7 +472,7 @@ display: -webkit-flex;
 } 
     
     #bookshelf h2 {
-   
+   font-size: 1.5em;
     max-width: 100%;
 }
 

@@ -4,19 +4,30 @@ General Styling
 
 * {
 box-sizing: border-box;   
-font-family: 'Whitney SSm A', 'Whitney SSm B';
-/*    font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';*/
+
 }
 
-body {
-margin: 0;   
-background: #FCFCFC;  
+#body, body {
+ margin: 0;   
+background: #FCFCFC;   
+}
+
+#body, .case-header h1, .case-header p, .top-nav p, .case-website-button, h2, h3, h4 {
+font-family: 'Whitney SSm A', 'Whitney SSm B';
+}
+
+.case-description p, li {
+font-family: 'Mercury SSm A', 'Mercury SSm B';    
 }
 
 
 .img {
 width: 100%;
 margin: 0;
+}
+
+img {
+ width: 100%;   
 }
 
 
@@ -118,7 +129,7 @@ margin-bottom: 2em;
 font-size:2em;
 line-height: 1.5;
 font-weight: normal;
-font-family: 'Whitney SSm A', 'Whitney SSm B';
+/*font-family: 'Whitney SSm A', 'Whitney SSm B';*/
 }
 
 #desktop-t {
@@ -127,7 +138,7 @@ font-weight: 400;
   
 #tagline {
 display: none; 
-font-family: 'Whitney SSm A', 'Whitney SSm B';
+/*font-family: 'Whitney SSm A', 'Whitney SSm B';*/
 }
 
 #description {
@@ -296,11 +307,11 @@ justify-content: center;
 -webkit-justify-content: center; 
 color: white;  
 text-align: center;
-font-family: 'Whitney SSm A', 'Whitney SSm B';
+/*font-family: 'Whitney SSm A', 'Whitney SSm B';*/
 }
 
 .case-header h1 {
- font-weight: 400;   
+ font-weight: 500;   
 }
 
 .case-header p {
@@ -320,23 +331,24 @@ background-size: cover;
 Case Study Page Stylling
 ///////////////////////////////////////////////*/
 
-.case-desciption {
+.case-description {
 width: 95%;
-max-width: 600px; 
+max-width: 650px; 
 
     margin: 0 auto;
     padding: 3em 0;
 }
 
-.case-desciption p {
+.case-description p {
 font-size: 1em;
 line-height: 1.5;
     font-weight: 300;
-    font-family: 'Mercury SSm A', 'Mercury SSm B'; 
+/*    font-family: 'Mercury SSm A', 'Mercury SSm B'; */
+    color: #262626;
 }
 
 .first:first-letter { 
-    font-size: 3em; 
+    font-size: 2em; 
 /*    font-family: 'Whitney SSm A', 'Whitney SSm B';*/
     font-weight: 400;
 }
@@ -348,8 +360,87 @@ line-height: 1.5;
 .small-caps {
 font-variant: small-caps;
 /*font-family: 'Whitney SSm A', 'Whitney SSm B';*/
-    font-family: 'Mercury SSm A', 'Mercury SSm B'; 
-/*font-weight: 400;*/
+/*    font-family: 'Mercury SSm A', 'Mercury SSm B'; */
+font-weight: 400;
+}
+
+
+.case-website-button {
+ border: 1px solid #262626;
+    color: #262626;
+    font-size: 1em;
+    padding: .75em 0;
+    width: 14em;
+    margin: 3em auto;
+text-align: center;
+/*    font-family: 'Whitney SSm A', 'Whitney SSm B';*/
+    transition: 0.2s ease;
+    border-radius: 3px;
+}
+
+.case-website-button:hover {
+ background: hsla(0, 0%, 0%, .9);
+    color: white;
+ 
+}
+
+.case-description h2, .case-description h3 {
+/*  font-family: 'Whitney SSm A', 'Whitney SSm B';*/
+}
+
+.annotation {
+ margin: 2em auto;
+    width: 80%;
+    line-height: 1.7;
+      max-width: 400px;
+}
+
+.annotation2 {
+ margin: 0 auto; 
+width: 80%;
+      line-height: 1.7;
+      max-width: 350px;
+}
+
+
+
+.case-description h2 {
+  font-weight: 500;  
+}
+
+.annotation h3, .annotation2 h3, .study-image2 h3, .study-image h3 {
+    font-variant: small-caps;
+}
+.annotation ul li {
+font-weight: 300; 
+/*font-family: 'Mercury SSm A', 'Mercury SSm B';*/
+}
+
+.study-image {
+    
+  margin: 2em auto;
+    width: 80%;
+    max-width: 350px;
+}
+
+.study-image2 {
+    
+  margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+
+.annotation-flex {
+    margin: 2em auto;
+ display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+/*
+justify-content: center;
+-webkit-justify-content: center;   
+*/
 }
 
 
@@ -545,7 +636,7 @@ line-height: .5;
 }
     
 .case-header p {
-font-size: 1.25em; 
+font-size: 1.14em; 
 margin: .65em 0;
 line-height: .5;
 }
@@ -555,27 +646,53 @@ line-height: .5;
 Case Study Page Stylling
 ///////////////////////////////////////////////*/
 
-.case-desciption {
+.case-description {
 width: 80%;
 max-width: 700px; 
  font-family: 'Mercury SSm A', 'Mercury SSm B'; 
     margin: 0 auto;
-    padding: 3em 0;
+    padding: 4em 0;
     
 }
     
-    .case-desciption p {
-font-size: 1.15em;
-line-height: 1.8
+    .case-description p {
+font-size: 1.14em;
+line-height: 1.8;
 }
     
     .first:first-letter { 
     font-size: 3em; 
+          line-height: 1;
+      
 }
 
 .first:first-line {
-  line-height: 1;  
+  line-height: 1.2;
 }
+    
+    .small-caps {
+     font-size: 1.2em;   
+    }
+    
+    .case-website-button {
+    font-size: 1.15em;
+        margin: 4em auto;
+    }
+    
+    .annotation, .study-image {
+     max-width: 450px;   
+    }
+    
+    
+    .annotation-flex {
+    margin: 2em auto;
+ display: flex;
+display: -webkit-flex;
+flex-direction: row;
+-webkit-flex-direction: row;
+        justify-content: center;
+-webkit-justify-content: center; 
+    }
 
     
     

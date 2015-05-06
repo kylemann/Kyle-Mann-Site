@@ -1,44 +1,98 @@
+/*//////////////////////// //////////////////////
+General Styling
+///////////////////////////////////////////////*/
+
 * {
- box-sizing: border-box;   
-/*  font-family: 'Lato', sans-serif;  */
-    font-family: 'Whitney SSm A', 'Whitney SSm B';
+box-sizing: border-box;   
+font-family: 'Whitney SSm A', 'Whitney SSm B';
 /*    font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';*/
 }
 
-
 body {
- margin: 0;   
-   background: #FCFCFC;  
+margin: 0;   
+background: #FCFCFC;  
 }
 
-
-.top-nav {
- display: flex;
-display: -webkit-flex;
-   justify-content: center;
-    -webkit-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
- background: hsla(0, 0%, 99%, 0.76);
-      width: 6.5em;
- border-bottom-right-radius: 10px;
-    position: fixed;
-    color: #262626;
-}
-
-.top-nav p {
- font-size: 1.25em;   
-}
 
 .img {
 width: 100%;
 margin: 0;
-
 }
 
 
-#image-f {
+h1 {
+text-align: center;
+}
+
+.link {
+text-decoration: none; 
+color: #527eab;
+}
+
+a {
+ text-decoration: none;  
+}
+
+
+.link:hover {
+ border-bottom: 1px solid #527eab;   
+}
+    
+a:focus, a:visited, a:active {
+    outline: none;
+     text-decoration: none;
+     color: none;
+}
+
+
+/*//////////////////////// //////////////////////
+Navigation Back Button Styling
+///////////////////////////////////////////////*/
+
+.top-nav {
+display: flex;
+display: -webkit-flex;
+justify-content: center;
+-webkit-justify-content: center;
+align-items: center;
+-webkit-align-items: center;
+background: hsla(0, 0%, 99%, 0.76);
+width: 6.5em;
+border-bottom-right-radius: 10px;
+position: fixed;
+color: #262626;
+}
+
+.top-nav p {
+font-size: 1em;   
+}
+
+.back-arrow {
+width: 25px;
+margin-right: .2em;
+}
+
+
+/*//////////////////////// //////////////////////
+Description and Landing page Pic
+///////////////////////////////////////////////*/
+
+
+#about {
+padding: 2em 0;   
 width: 100%;
+margin: 0 auto;
+}
+
+#about h1 {
+font-size: 2em;   
+line-height: 0;
+margin: 0 auto;
+font-weight: normal;
+}
+
+#image-f {
+width: 90%;
 max-width: 500px;
 height: 200px;
 border-radius: 4px;
@@ -50,33 +104,12 @@ background: url(../images/kyle.jpg) no-repeat center center;
 background-size: cover;  
 }
 
-
-
-h1 {
-text-align: center;
-}
-
-
 .icon {
- width: 20px;
-    height: 20px;
-    border-radius: 100%;
-   vertical-align: middle;
-    margin:  5px;
-}
-
-#about {
- padding: 2em 0;   
- width: 90%;
-margin: 0 auto;
-
-}
-
-#about h1 {
- font-size: 2em;   
-   line-height: 0;
-    margin: 0 auto;
-  font-weight: normal;
+width: 20px;
+height: 20px;
+border-radius: 100%;
+vertical-align: middle;
+margin:  5px;
 }
 
 #tagline-mobile {
@@ -92,7 +125,6 @@ font-family: 'Whitney SSm A', 'Whitney SSm B';
 font-weight: 400;  
 }
   
-
 #tagline {
 display: none; 
 font-family: 'Whitney SSm A', 'Whitney SSm B';
@@ -102,31 +134,33 @@ font-family: 'Whitney SSm A', 'Whitney SSm B';
 font-size: 1em;
 line-height: 1.7;
 margin: 0 auto;
-    width: 95%;
+width: 95%;
 max-width: 500px;
 padding: 3em 0;
 font-weight: 300;
 color: #262626;
-/*font-family: 'Mercury SSm A', 'Mercury SSm B';*/
 }
+
+
+
+/*//////////////////////// //////////////////////
+Work and Case Study layout
+///////////////////////////////////////////////*/
 
 .cover {
 width: 100%;
- height: 300px; 
-    margin: 0;
+height: 300px; 
+margin: 0;
 }
 
-
 #cover1 {
-
-   background: url(../images/cover1.jpg) no-repeat center center;
+background: url(../images/cover1.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;     
- 
-   
 }
+
 #cover2 {
 
    background: url(../images/cover2.jpg) no-repeat center center;
@@ -170,11 +204,10 @@ flex-direction: column;
 justify-content: center;
 -webkit-justify-content: center;
 transition: 0.5s ease; 
-/*background: hsla(0, 0%, 28%, 0.15);*/
-  background: none; 
+background: none; 
 }
 
-  h3 {
+.cover-h h3 {
 text-align: center;  
 color: white;
 font-size: 1.5em;
@@ -183,64 +216,37 @@ font-weight: normal;
 margin: 1.5em 0;
 }
 
- .task {
-    line-height: 0;
+.task {
+line-height: 0;
 align-self: center;
-      -webkit-align-self: center; 
-     color: white;
-     font-weight: 300;
-     margin: 1.5em 0;
-     font-size: 1em;
- 
- }
+-webkit-align-self: center; 
+color: white;
+font-weight: 300;
+margin: 1.5em 0;
+font-size: 1em;
+}
 
 .case-study {
 color: white;
 text-align: center;
-    line-height: 0;
-/*        border: 1px solid white;*/
-        margin: 1.5em auto;
-     width: 8.5em;
+line-height: 0;
+margin: 1.5em auto;
+width: 8.5em;
 font-weight: 300;
 border-radius: 2px;
-        padding: 1em 0;
-        transition: 0.3s ease;
-       border: 1px solid white;
-        font-weight: 1em;
-    -webkit-align-self: flex-end; 
-        align-self: flex-end;
-      
-/*        background: hsla(360, 100%, 100%, 0.5);*/
-/*       background: hsla(0, 0%, 91%, .5);*/
-    } 
-
-.link {
-text-decoration: none; 
-color: #527eab;
-}
-
-a {
- text-decoration: none;  
-}
+padding: 1em 0;
+transition: 0.2s ease;
+border: 1px solid white;
+font-weight: 1em;
+} 
 
 
-.link:hover {
- border-bottom: 1px solid #527eab;   
-}
+
+/*//////////////////////// //////////////////////
+Bookshelp Stylling Page
+///////////////////////////////////////////////*/
+
     
-a:focus, a:visited, a:active {
-    outline: none;
-     text-decoration: none;
-     color: none;
-}
-
-
-.back-arrow {
-/* height: 25px;*/
-    width: 25;
-    margin-right: .2em;
-    
-}
 
 #bookshelf {
  display: flex;
@@ -266,21 +272,85 @@ justify-content: center;
 }
 
 .book-row {
- border-bottom: 10px solid black;
-    margin: 3em 0;
-/*
--webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-    
-    
-*/
- -webkit-box-shadow: 0 32px 24px -24px black;
-	   -moz-box-shadow: 0 32px 24px -24px black;
-	        box-shadow: 0 32px 24px -24px black;   
-   
+border-bottom: 10px solid black;
+margin: 3em 0;
+-webkit-box-shadow: 0 32px 24px -24px black;
+-moz-box-shadow: 0 32px 24px -24px black;
+box-shadow: 0 32px 24px -24px black;   
 }
 
+    
+/*//////////////////////// //////////////////////
+Case Study Page Stylling
+///////////////////////////////////////////////*/
+
+.case-header {
+margin: 0;
+height: 50vh;
+width: 100vw;
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center; 
+color: white;  
+text-align: center;
+font-family: 'Whitney SSm A', 'Whitney SSm B';
+}
+
+.case-header h1 {
+ font-weight: 400;   
+}
+
+.case-header p {
+ font-weight: 300; 
+    font-size: .85em;
+}
+
+#studio-header-pic {
+background: url(../images/studiov-header.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;        
+}
+
+/*//////////////////////// //////////////////////
+Case Study Page Stylling
+///////////////////////////////////////////////*/
+
+.case-desciption {
+width: 95%;
+max-width: 600px; 
+
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.case-desciption p {
+font-size: 1em;
+line-height: 1.5;
+    font-weight: 300;
+    font-family: 'Mercury SSm A', 'Mercury SSm B'; 
+}
+
+.first:first-letter { 
+    font-size: 3em; 
+/*    font-family: 'Whitney SSm A', 'Whitney SSm B';*/
+    font-weight: 400;
+}
+
+.first:first-line {
+  line-height: 1;  
+}
+
+.small-caps {
+font-variant: small-caps;
+/*font-family: 'Whitney SSm A', 'Whitney SSm B';*/
+    font-family: 'Mercury SSm A', 'Mercury SSm B'; 
+/*font-weight: 400;*/
+}
 
 
 
@@ -297,16 +367,33 @@ Desktop VERSION - MEDIA QUERIES
 @media only screen and (min-width: 800px) {
     
     
+    
+/*//////////////////////// //////////////////////
+Navigation Back Button Styling
+///////////////////////////////////////////////*/
+
+    .top-nav {
+     font-weight: 300;
+        font-size: 1.5em;
+        line-height: .35;
+    }
+    
+    
+    
+/*//////////////////////// //////////////////////
+About Section Header and Image
+///////////////////////////////////////////////*/
+    
+    
     #body {
 display: -webkit-box;
 display: -moz-box;
 display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
+}
     
-    }
-    
-  #image-f {
+#image-f {
 width: 50vw;
 max-width: 100%;
 height: 50vh;
@@ -317,22 +404,20 @@ background: url(../images/kyle.jpg) no-repeat center center;
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;
-
-  }
+}
  
 #about {
 width: 100%;   
 margin: 0;
 padding: 0;
-position: absolute;
+position: fixed;
 display: flex;
 display: -webkit-flex;
 flex-direction: row;
 -webkit-flex-direction: row;
-
 }
     
-    #description {
+#description {
 width: 50vw;
 height: 50vh;
 max-width: 50vw;     
@@ -345,9 +430,8 @@ justify-content: center;
 padding: 0;
 align-items: center;
 -webkit-align-items: center;
-  font-size: 1em;
+font-size: 1em;
 line-height: 1.7;  
-
 }
     
 #container {
@@ -363,7 +447,19 @@ justify-content: center;
     
 #description  p {
 margin: .5em 0;              
-       }
+}
+    
+.icon {
+width: 25px;
+height: 25px;
+margin: 0 10px;   
+}
+    
+    
+    
+/*//////////////////////// //////////////////////
+CASE STUDY/WORK Row Styling
+///////////////////////////////////////////////*/
     
     
 #work {
@@ -371,109 +467,114 @@ width: 100%;
 height: 100%;
 position: fixed;
 left: 0;
-    top: 50%;
+top: 50%;
 display: flex; 
 display: -webkit-flex;
 flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-direction: row;
-  font-family: 'Whitney SSm A', 'Whitney SSm B';
-    }
+-webkit-flex-wrap: wrap;
+flex-direction: row;
+font-family: 'Whitney SSm A', 'Whitney SSm B';
+}
     
-
 .cover {
-     width: 25%;   
-      height: 50%;  
-    }
-    
-
-/*
- h3, .task {
-     margin: 1em auto;
-     position: relative;
-   
- }
-*/
-    
-  
-
-/*
-
- .case-study {
-     visibility: hidden;
- }
-*/
-
-    
+width: 25%;   
+height: 50%;  
+}
     
 .case-study:hover  {
-/*background: hsla(0, 0%, 28%, 1);*/
 background: hsla(0, 0%, 0%, 0.5);
-/*background: hsla(210, 35%, 50%, .65);*/
 }
     
-        
-
-   
-    
-    #tagline-mobile {
-     display: none;   
-    }
+#tagline-mobile {
+display: none;   
+}
     
 #tagline {
-    display: inherit;
- text-align: center;
-   margin: .25em;
-    font-size: 1.5rem;
-    line-height: 1;
-    font-weight: 400;
+display: inherit;
+text-align: center;
+margin: .25em;
+font-size: 1.5rem;
+line-height: 1;
+font-weight: 400;
 }
     
-  
-    .icon {
- width: 25px;
-    height: 25px;
-      margin: 0 10px;   
-    }
-    
+/*//////////////////////// //////////////////////
+Photo Gallery Page
+///////////////////////////////////////////////*/
     
 #photo-page {
-        
 display: flex;
 display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-flex-wrap: wrap;
+}
 
-    }
-    
-    
 .photo-cover {
-     width: 50vw;
-        height: 75vh;
-        
-    }
+width: 50vw;
+height: 75vh;
+}
+
+#mobile-photo-page {
+display: none;   
+}
     
-    .top-nav {
-     font-weight: 300;
-        font-size: 1.5em;
-    }
-    
-     .top-nav p {
-      margin: .5em 0;   
-     }
-    
-    #mobile-photo-page {
-     display: none;   
-    }
-    
-  .book {
- width: 8em;
-  margin: 0 1.5em -.15em 1.5em;
+.book {
+width: 8em;
+margin: 0 1.5em -.15em 1.5em;
 } 
     
-    #bookshelf h2 {
-   font-size: 1.5em;
-    max-width: 100%;
+#bookshelf h2 {
+font-size: 1.5em;
+max-width: 100%;
+}
+    
+    
+    
+/*//////////////////////// //////////////////////
+Case Study Header Stylling
+///////////////////////////////////////////////*/
+.case-header {
+margin: 0;
+height: 37.5vh;   
+}
+    
+.case-header h1 {
+font-size: 3em; 
+margin: .65em 0;
+line-height: .5;
+}
+    
+.case-header p {
+font-size: 1.25em; 
+margin: .65em 0;
+line-height: .5;
+}
+    
+    
+/*//////////////////////// //////////////////////
+Case Study Page Stylling
+///////////////////////////////////////////////*/
+
+.case-desciption {
+width: 80%;
+max-width: 700px; 
+ font-family: 'Mercury SSm A', 'Mercury SSm B'; 
+    margin: 0 auto;
+    padding: 3em 0;
+    
+}
+    
+    .case-desciption p {
+font-size: 1.15em;
+line-height: 1.8
+}
+    
+    .first:first-letter { 
+    font-size: 3em; 
+}
+
+.first:first-line {
+  line-height: 1;  
 }
 
     

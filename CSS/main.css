@@ -16,7 +16,7 @@ background: #FCFCFC;
 font-family: 'Whitney SSm A', 'Whitney SSm B';
 }
 
-.case-description p, li {
+.case-description p, li, sup {
 font-family: 'Mercury SSm A', 'Mercury SSm B';    
 }
 
@@ -311,6 +311,7 @@ text-align: center;
 }
 
 .case-header h1 {
+    font-size: 1.25em;
  font-weight: 500;   
 }
 
@@ -334,7 +335,7 @@ Case Study Page Stylling
 .case-description {
 width: 95%;
 max-width: 650px; 
-
+color: #262626;
     margin: 0 auto;
     padding: 3em 0;
 }
@@ -363,6 +364,17 @@ font-variant: small-caps;
 /*    font-family: 'Mercury SSm A', 'Mercury SSm B'; */
 font-weight: 400;
 }
+
+/*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+  .small-caps {
+  font-variant: none;
+      font-size: 1em;
+         font-weight: 300;
+  }
+}
+ 
 
 
 .case-website-button {
@@ -399,7 +411,7 @@ text-align: center;
  margin: 0 auto; 
 width: 80%;
       line-height: 1.7;
-      max-width: 350px;
+      max-width: 300px;
 }
 
 
@@ -408,9 +420,24 @@ width: 80%;
   font-weight: 500;  
 }
 
-.annotation h3, .annotation2 h3, .study-image2 h3, .study-image h3 {
-    font-variant: small-caps;
+
+.case-description h3 {
+   font-variant: small-caps;  
 }
+
+
+/*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+.case-description h3 {
+   font-variant: normal;
+    font-size: .85em;
+  }
+}
+ 
+
+
+
 .annotation ul li {
 font-weight: 300; 
 /*font-family: 'Mercury SSm A', 'Mercury SSm B';*/
@@ -423,11 +450,26 @@ font-weight: 300;
     max-width: 350px;
 }
 
+.study-image-large {
+    
+  margin: 2em auto;
+    width: 100%;
+/*    max-width: 350px;*/
+}
+
 .study-image2 {
     
   margin: 0 auto;
     width: 80%;
-    max-width: 400px;
+    max-width: 350px;
+}
+
+
+.study-image3 {
+    
+  margin: .5em auto;
+    width: 60%;
+    max-width: 250px;
 }
 
 
@@ -437,11 +479,41 @@ font-weight: 300;
 display: -webkit-flex;
 flex-direction: column;
 -webkit-flex-direction: column;
-/*
 justify-content: center;
--webkit-justify-content: center;   
-*/
+-webkit-justify-content: center; 
+
 }
+
+sup {
+ font-weight: 300;   
+}
+
+.text-indent {
+ text-indent: 1em;   
+    
+}
+
+.top {
+ margin-top: 3em;   
+}
+
+.bottom-navigation {
+ display: flex;
+display: -webkit-flex;
+flex-direction: row;
+-webkit-flex-direction: row;
+justify-content: space-between;
+-webkit-justify-content: space-between; 
+    align-items: center;
+-webkit-align-items: center;
+}
+
+.bottom-icon {
+width: 15px;
+height: 15px;
+margin: 0 5px;   
+}
+
 
 
 
@@ -636,7 +708,7 @@ line-height: .5;
 }
     
 .case-header p {
-font-size: 1.14em; 
+font-size: 1em; 
 margin: .65em 0;
 line-height: .5;
 }
@@ -674,14 +746,28 @@ line-height: 1.8;
      font-size: 1.2em;   
     }
     
+    
+    /*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+  .small-caps {
+      font-size: 1.14em;
+         font-weight: 300;
+  }
+}
+ 
+    
     .case-website-button {
     font-size: 1.15em;
         margin: 4em auto;
+        border-width: 2px;
     }
     
     .annotation, .study-image {
      max-width: 450px;   
     }
+    
+
     
     
     .annotation-flex {

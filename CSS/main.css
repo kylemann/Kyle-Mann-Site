@@ -12,7 +12,7 @@ box-sizing: border-box;
 background: #FCFCFC;   
 }
 
-#body, .case-header h1, .case-header p, .top-nav p, .case-website-button, h2, h3, h4 {
+#body, .case-header h1, .case-header p, .top-nav p, .case-website-button, h2, h3, h4, section.bottom-navigation p {
 font-family: 'Whitney SSm A', 'Whitney SSm B';
 }
 
@@ -497,22 +497,76 @@ sup {
  margin-top: 3em;   
 }
 
-.bottom-navigation {
+.bottom-navigation, .bottom-review {
  display: flex;
 display: -webkit-flex;
-flex-direction: row;
--webkit-flex-direction: row;
-justify-content: space-between;
--webkit-justify-content: space-between; 
+ /*
+    justify-content: center;
+-webkit-justify-content: center;
+*/
     align-items: center;
 -webkit-align-items: center;
+}
+
+
+.bottom-review {
+flex-direction: column;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center;
+}
+
+
+
+.bottom-navigation {
+flex-direction: row;
+-webkit-flex-direction: row;
+    -webkit-justify-content: space-between; 
+    align-items: space-between;
 }
 
 .bottom-icon {
 width: 15px;
 height: 15px;
-margin: 0 5px;   
+margin: 0 5px;
+    vertical-align: middle;
 }
+
+.bottom-navigation p
+
+{
+ font-size: .85em;   
+}
+
+
+.review-pic {
+ width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  
+  
+}
+
+.review-quote {
+ width: 80%;
+    line-height: 1.7;
+      max-width: 425px;  
+}
+
+#matthew-review-pic
+{
+ background: url(../images/studiov-case/matthew-review.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+    
+}
+
+.bottom-review blockquote {
+      font-style: italic; 
+    font-weight: 300;
+     }
 
 
 
@@ -779,7 +833,34 @@ flex-direction: row;
         justify-content: center;
 -webkit-justify-content: center; 
     }
+    
+    
+.bottom-navigation p
 
+{
+ font-size: 1em;   
+}
+    
+    
+    .bottom-review {
+        margin: 2em 0;
+flex-direction: row;
+-webkit-flex-direction: row;
+ justify-content: center;
+-webkit-justify-content: center;
+align-items: flex-start;
+-webkit-align-items:flex-start;     
+}
+    
+     
+.center {
+ text-align: center;   
+}
+    
+    .review-pic {
+ width: 125px;
+    height: 125px;
+    }
     
     
 }

@@ -12,11 +12,11 @@ box-sizing: border-box;
 background: #FCFCFC;   
 }
 
-#body, .case-header h1, .case-header p, .top-nav p, .case-website-button, h2, h3, h4, section.bottom-navigation p {
+#body, .case-header h1, .case-header p, .top-nav p, .case-website-button, h2, h3, h4, section.bottom-navigation p, .bold-review {
 font-family: 'Whitney SSm A', 'Whitney SSm B';
 }
 
-.case-description p, li, sup {
+.case-description p, li, sup, .review-quote {
 font-family: 'Mercury SSm A', 'Mercury SSm B';    
 }
 
@@ -40,6 +40,11 @@ text-decoration: none;
 color: #527eab;
 }
 
+.link2 {
+text-decoration: none; 
+color: #262626;
+}
+
 a {
  text-decoration: none;  
 }
@@ -48,12 +53,18 @@ a {
 .link:hover {
  border-bottom: 1px solid #527eab;   
 }
+
+.link2:hover {
+ border-bottom: 1px solid #262626;   
+}
     
 a:focus, a:visited, a:active {
     outline: none;
      text-decoration: none;
      color: none;
 }
+
+
 
 
 /*//////////////////////// //////////////////////
@@ -410,7 +421,7 @@ font-weight: 400;
  
 
 
-.case-website-button {
+.case-website-button, .homepage-website-button {
  border: 1px solid #262626;
     color: #262626;
     font-size: 1em;
@@ -418,12 +429,16 @@ font-weight: 400;
     width: 14em;
     margin: 3em auto;
 text-align: center;
-/*    font-family: 'Whitney SSm A', 'Whitney SSm B';*/
+    font-family: 'Whitney SSm A', 'Whitney SSm B';
     transition: 0.2s ease;
     border-radius: 3px;
 }
 
-.case-website-button:hover {
+.homepage-website-button {
+width: 9em;
+}
+
+.case-website-button:hover, .homepage-website-button:hover {
  background: hsla(0, 0%, 0%, .9);
     color: white;
  
@@ -533,11 +548,8 @@ sup {
 .bottom-navigation, .bottom-review {
  display: flex;
 display: -webkit-flex;
-/*
  
-    justify-content: center;
--webkit-justify-content: center;
-*/
+
 
 align-items: center;
 -webkit-align-items: center;
@@ -547,7 +559,7 @@ align-items: center;
 .bottom-review {
 flex-direction: column;
 -webkit-flex-direction: column;
-justify-content: center;
+    justify-content: center;
 -webkit-justify-content: center;
 }
 
@@ -556,21 +568,24 @@ justify-content: center;
 .bottom-navigation {
 flex-direction: row;
 -webkit-flex-direction: row;
-    -webkit-justify-content: space-between; 
-    align-items: space-between;
+        justify-content: space-between;
+-webkit-justify-content: space-between;
+  
 }
 
 .bottom-icon {
 width: 15px;
 height: 15px;
 margin: 0 5px;
-    vertical-align: middle;
+vertical-align: middle;
+
 }
 
 .bottom-navigation p
 
 {
- font-size: .85em;   
+ font-size: .5em;
+/*    display: none;*/
 }
 
 
@@ -580,6 +595,13 @@ margin: 0 5px;
     border-radius: 4px;
   
   
+}
+
+.bold-review {
+ font-weight: bold;   
+ font-variant: small-caps;
+    font-style: normal;
+    font-size: 1.15em;
 }
 
 .review-quote {
@@ -832,7 +854,7 @@ Case Study Page Stylling
 
 .case-description {
 width: 80%;
-max-width: 700px; 
+max-width: 46em; 
  font-family: 'Mercury SSm A', 'Mercury SSm B'; 
     margin: 0 auto;
     padding: 4em 0;
@@ -869,11 +891,16 @@ line-height: 1.8;
 }
  
     
-    .case-website-button {
+    .case-website-button, .homepage-website-button {
     font-size: 1.15em;
         margin: 4em auto;
         border-width: 2px;
         width: 15.5em;
+    }
+    
+    .homepage-website-button {
+      width: 10.5em;   
+        
     }
     
     .annotation, .study-image {
@@ -897,22 +924,27 @@ flex-direction: row;
 .bottom-navigation p
 
 {
- font-size: 1em;   
+    font-size: 1em;
+   
 }
     
-    
+
     .bottom-review {
         margin: 2em 0;
 flex-direction: row;
 -webkit-flex-direction: row;
  justify-content: center;
 -webkit-justify-content: center;
-
-        align-items: center;
+align-items: center;
 -webkit-align-items:center; 
 }
-
     
+    .bottom-navigation {
+
+    -webkit-justify-content: space-between; 
+    align-items: space-between;
+
+    }
      
 .center {
  text-align: center;   

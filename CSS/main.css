@@ -50,13 +50,7 @@ a {
 }
 
 
-.link:hover {
- border-bottom: 1px solid #527eab;   
-}
 
-.link2:hover {
- border-bottom: 1px solid #262626;   
-}
     
 a:focus, a:visited, a:active {
     outline: none;
@@ -444,6 +438,10 @@ width: 9em;
  
 }
 
+.top-nav:hover {
+ background: white;   
+}
+
 .case-description h2, .case-description h3 {
 /*  font-family: 'Whitney SSm A', 'Whitney SSm B';*/
 }
@@ -673,6 +671,7 @@ Navigation Back Button Styling
      font-weight: 300;
         font-size: 1.5em;
         line-height: .35;
+        transition: 0.3s ease;
     }
     
     
@@ -955,6 +954,103 @@ align-items: center;
     height: 125px;
     }
     
+    
+/* Underline Reveal */
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #527eab;
+  height: 1px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+  
+    
+/* Underline From Left */
+.hvr-underline-from-left, .hvr-underline-from-right  {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+    
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #262626;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before {
+  right: 0;
+}
+    
+/* Underline From Right */
+
+.hvr-underline-from-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: #262626;
+  height: 1px;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-right:hover:before {
+  left: 0;
+}
+    
+   
+
+
 
     
     

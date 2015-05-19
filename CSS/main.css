@@ -39,6 +39,7 @@ text-align: center;
 text-decoration: none; 
 color: #527eab;
     padding-bottom: 2px;
+text-indent: 0;
 }
 
 .link2 {
@@ -535,6 +536,15 @@ font-weight: 300;
   margin: .5em auto;
     width: 50%;
     max-width: 250px;
+}
+
+.study-image3 img, .study-image2 img, .study-image-large img, .study-image img
+
+{
+	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 5px rgba(0, 0, 0, 0.5); 
+    
 }
 
 

@@ -610,6 +610,7 @@ vertical-align: middle;
  width: 100px;
     height: 100px;
     border-radius: 4px;
+    margin-top: 1.75em;
   
   
 }
@@ -780,9 +781,11 @@ margin: .5em 0;
 }
     
 .icon {
-width: 25px;
-height: 25px;
-margin: 0 10px;   
+width: 1.5em;
+height: 1.5em;
+margin: 0 10px; 
+       transition: .3s ease;
+
 }
     
     
@@ -914,11 +917,26 @@ line-height: 1.8;
     }
     
     
+    .small-caps-t {
+     font-size: .9em;   
+    }
+    
+    
     /*  Firefox TOP_NAV Margin FIX   */
     
 @-moz-document url-prefix() { 
   .small-caps {
       font-size: 1.14em;
+         font-weight: 300;
+  }
+}
+    
+       
+    /*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+ .small-caps-t {
+      font-size: 1.15em;
          font-weight: 300;
   }
 }
@@ -968,8 +986,8 @@ flex-direction: row;
 -webkit-flex-direction: row;
  justify-content: center;
 -webkit-justify-content: center;
-align-items: center;
--webkit-align-items:center; 
+align-items: flex-start;
+-webkit-align-items: flex-start; 
 }
     
     .bottom-navigation {
@@ -1010,9 +1028,9 @@ align-items: center;
   right: 0;
   bottom: 0;
   background: #527eab;
-  height: 3px;
-  -webkit-transform: translateY(3px);
-  transform: translateY(3px);
+  height: 2px;
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-duration: 0.3s;
@@ -1082,8 +1100,18 @@ align-items: center;
   left: 0;
 }
     
+.icon:hover {
+ opacity: .65;   
+}
+    
    
-
+#clickMe {
+ cursor: url(../images/rittenhouse/right-arrow-white.png), auto;   
+}
+    
+#magnify, .fancybox {
+  cursor: url(../images/rittenhouse/zoom.png), auto;     
+}
 
 
     

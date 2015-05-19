@@ -38,6 +38,7 @@ text-align: center;
 .link {
 text-decoration: none; 
 color: #527eab;
+    padding-bottom: 2px;
 }
 
 .link2 {
@@ -66,26 +67,32 @@ Navigation Back Button Styling
 ///////////////////////////////////////////////*/
 
 .top-nav {
+/*
 display: flex;
 display: -webkit-flex;
 justify-content: center;
 -webkit-justify-content: center;
 align-items: center;
 -webkit-align-items: center;
+*/
 background: hsla(0, 0%, 99%, 0.76);
 width: 6.5em;
 border-bottom-right-radius: 10px;
 position: fixed;
 color: #262626;
+    text-align: center;
 }
 
 .top-nav p {
-font-size: 1em;   
+font-size: 1em; 
+
 }
 
 .back-arrow {
-width: 25px;
+width: 15px;
 margin-right: .2em;
+    vertical-align: middle;
+       padding-bottom: 2px;
 }
 
 
@@ -333,6 +340,16 @@ background: url(../images/studiov-header.jpg) no-repeat center center;
 background-size: cover;        
 }
 
+#rittenhouse-header-pic {
+
+background: url(../images/rittenhouse/header.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;        
+  
+}
+
 #experience-header-pic {
 background: url(../images/experience/final-image.jpg) no-repeat center center;
 -webkit-background-size: cover; 
@@ -438,9 +455,11 @@ width: 9em;
  
 }
 
+/*
 .top-nav:hover {
- background: white;   
+ background: hsla(360, 100%, 100%, 0.75); 
 }
+*/
 
 .case-description h2, .case-description h3 {
 /*  font-family: 'Whitney SSm A', 'Whitney SSm B';*/
@@ -605,7 +624,7 @@ vertical-align: middle;
 .review-quote {
  width: 80%;
     line-height: 1.7;
-      max-width: 425px;  
+      max-width: 500px;  
 }
 
 .case-description .persona-review {
@@ -620,6 +639,17 @@ line-height: 1.7;
 #matthew-review-pic
 {
  background: url(../images/studiov-case/matthew-review.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+    
+}
+
+#suzanne-review-pic
+
+{
+ background: url(../images/rittenhouse/suzanne.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -670,11 +700,15 @@ Navigation Back Button Styling
     .top-nav {
      font-weight: 300;
         font-size: 1.5em;
-        line-height: .35;
+        line-height: 0;
         transition: 0.3s ease;
+
     }
     
-    
+    .back-arrow {
+width: 25px;
+    padding-bottom: 3px;
+    }
     
 /*//////////////////////// //////////////////////
 About Section Header and Image
@@ -976,9 +1010,9 @@ align-items: center;
   right: 0;
   bottom: 0;
   background: #527eab;
-  height: 1px;
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);
+  height: 3px;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-duration: 0.3s;

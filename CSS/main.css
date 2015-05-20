@@ -928,7 +928,8 @@ line-height: 1.8;
     
     
     .small-caps-t {
-     font-size: .9em;   
+     font-size: .86em; 
+        font-weight: normal;
     }
     
     

@@ -540,7 +540,7 @@ font-weight: 300;
 
 .study-image2 {
     
-  margin: 0 auto;
+  margin: .5em auto;
     width: 80%;
     max-width: 350px;
 }
@@ -1061,9 +1061,8 @@ line-height: 1.8;
     }
 
     
-    
     .annotation-flex {
-    margin: 2em auto;
+    margin: 1em auto 2em auto;
  display: flex;
 display: -webkit-flex;
 flex-direction: row;
@@ -1078,6 +1077,13 @@ flex-direction: row;
  margin-bottom: -3em; 
         
 }
+    
+        .margin-fix-top {
+ margin-top: -1.25em; 
+        
+}
+    
+    
     
     
 .bottom-navigation p

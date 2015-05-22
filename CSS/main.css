@@ -2,6 +2,8 @@
 General Styling
 ///////////////////////////////////////////////*/
 
+
+
 * {
 box-sizing: border-box;   
 
@@ -16,7 +18,7 @@ background: #FCFCFC;
 font-family: 'Whitney SSm A', 'Whitney SSm B';
 }
 
-.case-description p, li, sup, .review-quote {
+.case-description p, li, sup, .review-quote, table {
 font-family: 'Mercury SSm A', 'Mercury SSm B';    
 }
 
@@ -27,7 +29,8 @@ margin: 0;
 }
 
 img {
- width: 100%;   
+ width: 100%;  
+
 }
 
 
@@ -547,15 +550,22 @@ font-weight: 300;
     
   margin: .5em auto;
     width: 50%;
-    max-width: 250px;
+    max-width: 225px;
 }
 
-.study-image3 img, .study-image2 img, .study-image-large img, .study-image img
+.study-image5 {
+    
+  margin: .5em auto;
+    width: 50%;
+    max-width: 300px;
+}
+
+.study-image3 img, .study-image2 img, .study-image-large img, .study-image img, .study-image5 img
 
 {
-	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
-	box-shadow:0 0 5px rgba(0, 0, 0, 0.5); 
+box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);
+-moz-box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);
+-webkit-box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);
     
 }
 
@@ -638,10 +648,10 @@ vertical-align: middle;
 }
 
 .bold-review {
- font-weight: bold;   
- font-variant: small-caps;
-    font-style: normal;
-    font-size: 1em;
+font-weight: bold;   
+font-variant: small-caps;
+font-style: normal;
+font-size: 1.16em;
 }
 
 .review-quote {
@@ -921,15 +931,21 @@ Photo Gallery Page
 ///////////////////////////////////////////////*/
     
 #photo-page {
-display: flex;
-display: -webkit-flex;
-flex-wrap: wrap;
--webkit-flex-wrap: wrap;
+  
+display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .photo-cover {
-width: 50vw;
+width: 50%;
 height: 75vh;
+
 }
 
 #mobile-photo-page {
@@ -1205,6 +1221,13 @@ align-items: flex-start;
   cursor: url(../images/rittenhouse/zoom.png), auto;     
 }
     
+    p.built-with  {
+     margin-bottom: 3em; 
+        font-size: 1em; 
+    }
+    
+    
+
     
 /*//////////////////////// //////////////////////
 Table Styling
@@ -1217,6 +1240,12 @@ padding: 1em .5em;
 font-size: .95em;
     line-height: 1.6;
 }
+    
+    .top-nav p {
+     padding: .65em; 
+            margin: .45em 0;
+    }
+
 
 
     

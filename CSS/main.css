@@ -1078,6 +1078,11 @@ flex-direction: row;
         
 }
     
+        .margin-fix-bottom2 {
+ margin-bottom: -2em; 
+        
+}
+    
         .margin-fix-top {
  margin-top: -1.25em; 
         
@@ -1241,7 +1246,7 @@ Table Styling
 
 td {
 width: 50%;  
-padding: 1em .5em;
+padding: 2em .5em;
     
 font-size: .95em;
     line-height: 1.6;

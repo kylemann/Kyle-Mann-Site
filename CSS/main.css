@@ -41,8 +41,16 @@ text-align: center;
 .link {
 text-decoration: none; 
 color: #527eab;
-    padding-bottom: 2px;
+padding-bottom: 2px;
 text-indent: 0;
+}
+
+    /*  Firefox    */
+    
+@-moz-document url-prefix() { 
+ .link {
+     padding-bottom: 4px;
+  }
 }
 
 .link2 {
@@ -62,6 +70,12 @@ a:focus, a:visited, a:active {
      text-decoration: none;
      color: none;
 }
+
+  strong, b {
+     font-weight: 500;   
+    }
+
+
 
 
 
@@ -1048,7 +1062,7 @@ line-height: 1.8;
     
 @-moz-document url-prefix() { 
  .small-caps-t {
-      font-size: 1.15em;
+      font-size: .86em;
          font-weight: 300;
   }
 }
@@ -1267,11 +1281,7 @@ font-size: .95em;
             margin: .45em 0;
     }
     
-    strong {
-     font-weight: 500;   
-    }
-
-
+  
 
     
     

@@ -113,7 +113,7 @@
                         <img src="images/rittenhouse/aspectratios.png"></div>
         
   <!-- NEW P-->        
-        <p class="text-indent">Next, I started sketching ideas, conceptualizing a design with an opening page  that switched images upon opening, and 4 separate pages to feature the various art collections and an about/contact page and an image gallery that had thumbnails to navigate.  Though as my brainstorming progressed I was concerned about 1) all the clicking to get through the galleries, 2) the thumbnail image gallery, because the thumbnails were distracting from the enlarged piece and 3) concerned about bouncing user out of the site too soon with five pages.  Another sketch idea I worked through was a <a href="images/rittenhouse/S%20F%20Layout.pdf" target="_blank" class="link hvr-underline-reveal">one page layout</a> and an <a href="images/rittenhouse/S%20F%20Layout%20-%20Gallery%20Page.pdf" target="_blank" class="link hvr-underline-reveal">image gallery</a>.  I didn’t like this idea as 1) the images on the landing page would be implemented through <span class=”small-caps-t”>CSS</span> and therefore crop them; in addtion, 2) lots of back and forth clicking.  From my earlier research, I had developed a clear understanding of what I wanted and didn’t want, and overall these designs were lining up with the latter - I scrapped all of them. 
+        <p class="text-indent">Next, I started sketching ideas, conceptualizing a design with an opening page  that switched images upon opening, and 4 separate pages to feature the various art collections and an about/contact page and an image gallery that had thumbnails to navigate.  Though as my brainstorming progressed I was concerned about 1) all the clicking to get through the galleries, 2) the thumbnail image gallery, because the thumbnails were distracting from the enlarged piece and 3) concerned about bouncing user out of the site too soon with five pages.  Another sketch idea I worked through was a <a href="images/rittenhouse/S%20F%20Layout.pdf" target="_blank" class="link hvr-underline-reveal">one page layout</a> and an <a href="images/rittenhouse/S%20F%20Layout%20-%20Gallery%20Page.pdf" target="_blank" class="link hvr-underline-reveal">image gallery</a>.  I didn’t like this idea as 1) the images on the landing page would be implemented through <span class="small-caps-t">CSS</span> and therefore crop them; in addtion, 2) lots of back and forth clicking.  From my earlier research, I had developed a clear understanding of what I wanted and didn’t want, and overall these designs were lining up with the latter - I scrapped all of them. 
 </p>
        
        
@@ -128,13 +128,13 @@
               <p class="text-indent">With a refreshed perspective I dove into sketching my new ideas, which evolved into a single page layout that featured all four exhibits, with the handful of unrelated pieces set as section breaks.  Given the challenge of  different aspect ratios of the collateral and now a single page layout I had a few concerns with the design: 1) Finding the ideal responsive layout for each section, and 2) slow loading time for all the images, as featured on a single page.   As a solution, I decided to design and develop the art collection layouts with a fixed maximum width layout for the desktop version: 1) to a fixed width<sup>4</sup> and optimize each individual image to the max-width size for quick loading, and 2) to ensure that each collection was laid out as intended across different desktop sizes 3) synchronized written content and gallery content.    
 </p>
                                 <div class="study-image">
-                                <h3><sup>4</sup>syconized desktop section layouts</h3>
+                                <h3><sup>4</sup>desktop section width layouts</h3>
                                     <img src="images/rittenhouse/fixedwidth.png"></div> 
          
 
   <!-- NEW P-->        
         <p class="text-indent">
-            For the opening page, I had initially used an auto scrolling <a href="rittenhousealternative.html" target="_blank" class="link hvr-underline-reveal">image background</a>; though I ultimately removed it, because: 1) it didn’t line up with the rest of the site’s museum feeling theme and 2) since the images were displayed through CSS as a background on the desktop version, different viewports would crop and compromise the multiple paintings displayed.  The opening image that we settled on, featuring the “Study in Red”<sup>5</sup>, was chosen for three key reasons: 1) it’s aspect ratio is ideal to display on desktop screens without getting compromised different viewports,   2) was most indicative of her work in general, and it’s a 3) intriguing opening - allowing the art to speak for itself. Regarding the navigation,  I had initially used the same navigation, with the drop down menu, for the desktop as I had for the mobile version<sup>6</sup>.  The idea was to not have any text take away from the art, but I later felt that while it was a space saving measure for the mobile version, the desktop version can easily afford the written links and save the user a click.   The original navigation also said “”Rittenhouse | Art”<sup>7</sup> - my thinking was to have that as the landing page tagline - but that compromised her brand of Rittenhouse.  Suzanne signs her art “Rittenhouse”, not Rittenhouse | Art.  Another reminder to myself - <em>Let the art speak to the user, not the web design</em>. 
+            For the opening page, I had initially used an auto scrolling <a href="rittenhousealternative.html" target="_blank" class="link hvr-underline-reveal">image background</a>; though I ultimately removed it, because: 1) it didn’t line up with the rest of the site’s museum feeling theme and 2) since the images were displayed through <span class="small-caps-t">CSS</span> as a background on the desktop version, different viewports would crop and compromise the multiple paintings displayed.  The opening image that we settled on, featuring the “Study in Red”<sup>5</sup>, was chosen for three key reasons: 1) it’s aspect ratio is ideal to display on desktop screens without getting compromised different viewports,   2) was most indicative of her work in general, and it’s a 3) intriguing opening - allowing the art to speak for itself. Regarding the navigation,  I had initially used the same navigation, with the drop down menu, for the desktop as I had for the mobile version<sup>6</sup>.  The idea was to not have any text take away from the art, but I later felt that while it was a space saving measure for the mobile version, the desktop version can easily afford the written links and save the user a click.   The original navigation also said “”Rittenhouse | Art”<sup>7</sup> - my thinking was to have that as the landing page tagline - but that compromised her brand of Rittenhouse.  Suzanne signs her art “Rittenhouse”, not Rittenhouse | Art.  Another reminder to myself - <em>Let the art speak to the user, not the web design</em>. 
 </p>
         
       <div class="study-image-large">
@@ -169,7 +169,7 @@
                                 </div>
                                      
                                 <div class="study-image2" id="clickMe">
-                                <h3><sup>9</sup>removed this gallery and hover effect</h3>
+                                <h3><sup>9</sup>removed gallery and hover effect</h3>
                                 <img id="myimage" src="images/rittenhouse/CaliforniaSunset.jpg"/>
                                 </div>
                               
@@ -281,6 +281,16 @@
         });
     });
     $.noConflict();
+</script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63289759-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 </body>
 </html>

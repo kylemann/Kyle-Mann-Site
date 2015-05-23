@@ -299,7 +299,7 @@ justify-content: center;
 }
 
 .book-row {
-border-bottom: 10px solid black;
+border-bottom: 10px solid #5F5341;
 margin: 3em 0;
 -webkit-box-shadow: 0 32px 24px -24px black;
 -moz-box-shadow: 0 32px 24px -24px black;
@@ -653,6 +653,16 @@ font-variant: small-caps;
 font-style: normal;
 font-size: 1.16em;
 }
+
+    /*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+.bold-review {
+      font-size: 1em;
+         font-variant: none;
+  }
+}
+  
 
 .review-quote {
  width: 80%;
@@ -1255,6 +1265,10 @@ font-size: .95em;
     .top-nav p {
      padding: .65em; 
             margin: .45em 0;
+    }
+    
+    strong {
+     font-weight: 500;   
     }
 
 

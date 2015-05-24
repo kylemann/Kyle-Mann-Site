@@ -251,7 +251,7 @@ background: none;
 .cover-h h3 {
 text-align: center;  
 color: white;
-font-size: 1.5em;
+font-size: 1.5em 0;
 line-height: 0;
 font-weight: normal;
 margin: 1.5em 0;

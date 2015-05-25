@@ -251,14 +251,14 @@ background: none;
 .cover-h h3 {
 text-align: center;  
 color: white;
-font-size: 1.5em 0;
+font-size: 1.5em;
 line-height: 0;
 font-weight: normal;
 margin: 1.5em 0;
 }
 
 .task {
-line-height: 0;
+line-height: 1;
 align-self: center;
 -webkit-align-self: center; 
 color: white;
@@ -274,7 +274,7 @@ line-height: 0;
 margin: 1.5em auto;
 width: 8.5em;
 font-weight: 300;
-border-radius: 2px;
+border-radius: 1px;
 padding: 1em 0;
 transition: 0.2s ease;
 border: 1px solid white;
@@ -937,6 +937,12 @@ height: 50%;
 background: hsla(0, 0%, 0%, 0.5);
 }
     
+    .case-study {
+     margin: 1.65em auto;
+     font-size: 1.1em;
+        font-weight: normal;
+    }
+    
 #tagline-mobile {
 display: none;   
 }
@@ -949,6 +955,13 @@ font-size: 1.5rem;
 line-height: 1;
 font-weight: 400;
 }
+    
+    .cover-h h3 {
+
+font-size: 1.5em;
+
+}
+
     
 /*//////////////////////// //////////////////////
 Photo Gallery Page

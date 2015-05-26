@@ -18,7 +18,7 @@ background: #FCFCFC;
 font-family: 'Whitney SSm A', 'Whitney SSm B';
 }
 
-.case-description p, li, sup, .review-quote, table {
+.case-description p, .resume-description p, li, sup, .review-quote, table {
 font-family: 'Mercury SSm A', 'Mercury SSm B';    
 }
 
@@ -38,17 +38,25 @@ h1 {
 text-align: center;
 }
 
-.link {
+.link, .linkp {
 text-decoration: none; 
-color: #527eab;
+
 padding-bottom: 2px;
 text-indent: 0;
+}
+
+.linkp {
+ color: white;   
+}
+
+.link {
+ color: #527eab;   
 }
 
     /*  Firefox    */
     
 @-moz-document url-prefix() { 
- .link {
+ .link, .linkp {
      padding-bottom: 4px;
   }
 }
@@ -145,12 +153,16 @@ background: url(../images/kyle.jpg) no-repeat center center;
 background-size: cover;  
 }
 
-.icon {
+.icon, .pdficon {
 width: 20px;
 height: 20px;
 border-radius: 100%;
 vertical-align: middle;
 margin:  5px;
+}
+
+.pdficon {
+ padding-bottom: 3px;   
 }
 
 #tagline-mobile {
@@ -244,17 +256,23 @@ flex-direction: column;
 -webkit-flex-direction: column;
 justify-content: center;
 -webkit-justify-content: center;
-transition: 0.5s ease; 
+  
+transition: 0.7s ease; 
 background: none; 
+}
+
+.cover-h:hover {
+    background: hsla(0, 0%, 0%, 0.55);
+    
 }
 
 .cover-h h3 {
 text-align: center;  
 color: white;
 font-size: 1.5em;
-line-height: 0;
+line-height: 1;
 font-weight: normal;
-margin: 1.5em 0;
+margin: 1em 0;
 }
 
 .task {
@@ -263,7 +281,7 @@ align-self: center;
 -webkit-align-self: center; 
 color: white;
 font-weight: 300;
-margin: 1.5em 0;
+margin: 1em 0;
 font-size: 1em;
 }
 
@@ -276,10 +294,11 @@ width: 8.5em;
 font-weight: 300;
 border-radius: 1px;
 padding: 1em 0;
-transition: 0.2s ease;
+transition: .3s ease;
 border: 1px solid white;
 font-weight: 1em;
 } 
+
 
 
 
@@ -377,6 +396,10 @@ background: url(../images/cover4.jpg) no-repeat center center;
 -o-background-size: cover; 
 background-size: cover;        
   
+}
+
+#resume-header-pic {
+ background: #527eab;   
 }
 
 
@@ -485,11 +508,7 @@ width: 9em;
  
 }
 
-/*
-.top-nav:hover {
- background: hsla(360, 100%, 100%, 0.75); 
-}
-*/
+
 
 .case-description h2, .case-description h3 {
 /*  font-family: 'Whitney SSm A', 'Whitney SSm B';*/
@@ -511,12 +530,12 @@ width: 80%;
 
 
 
-.case-description h2 {
+.case-description h2, .resume-description h2 {
   font-weight: 500;  
 }
 
 
-.case-description h3 {
+.case-description h3, .resume-description h3 {
    font-variant: small-caps;  
 }
 
@@ -524,7 +543,7 @@ width: 80%;
 /*  Firefox TOP_NAV Margin FIX   */
     
 @-moz-document url-prefix() { 
-.case-description h3 {
+.case-description h3, .resume-description h3 {
    font-variant: normal;
     font-size: .85em;
   }
@@ -644,6 +663,16 @@ vertical-align: middle;
 
 }
 
+
+.bottom-icon-white {
+width: 15px;
+height: 15px;
+margin: -7px 0 5px 5px;
+vertical-align: middle;
+position: absolute;
+
+}
+
 .bottom-navigation p
 
 {
@@ -676,7 +705,21 @@ font-size: 1.16em;
          font-variant: none;
   }
 }
+
+p.intro-resume  {
+ margin: 0; 
+   
+}
   
+.year {
+ font-size: .75em;
+    font-weight: bold;
+}
+
+.bold-name {
+ font-weight: 500;
+/*  font-size: 1.15em;  */
+}
 
 .review-quote {
  width: 80%;
@@ -684,7 +727,7 @@ font-size: 1.16em;
       max-width: 500px;  
 }
 
-.case-description .persona-review {
+.case-description .persona-review, .resume-description {
 width: 80%;
 font-size: .9em;
 line-height: 1.7;
@@ -800,6 +843,43 @@ table h5 {
 
 
 /*//////////////////////// //////////////////////
+Resume Stylling Page
+///////////////////////////////////////////////*/
+.skill-list {
+ width: 33.3333333%;   
+}
+
+
+
+.skill-list ul {
+list-style: none;
+text-align: center;
+    text-indent: 0;
+padding: 0;
+    margin: 0;
+}
+
+.skill-list h3 {
+
+text-align: center;
+}
+
+.skill-list ul li {
+padding: 0;
+    margin: 0;
+}
+
+
+.mask { 
+height: 1px; 
+/*margin: 4px 0;*/
+margin: 1.5em auto 2.5em auto;
+width: 60%; 
+border-radius: 1px;
+border-bottom: 1px solid grey;
+}
+
+/*//////////////////////// //////////////////////
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 
@@ -828,6 +908,18 @@ Navigation Back Button Styling
     .back-arrow {
 width: 25px;
     padding-bottom: 3px;
+    }
+    
+    
+.case-study:hover  {
+background: hsla(0, 0%, 0%, 0.5);
+}
+    
+    .case-study {
+     margin: .5em auto;
+     font-size: 1.1em;
+        font-weight: normal;
+        display: none;
     }
     
 /*//////////////////////// //////////////////////
@@ -933,15 +1025,8 @@ width: 25%;
 height: 50%;  
 }
     
-.case-study:hover  {
-background: hsla(0, 0%, 0%, 0.5);
-}
-    
-    .case-study {
-     margin: 1.65em auto;
-     font-size: 1.1em;
-        font-weight: normal;
-    }
+
+ 
     
 #tagline-mobile {
 display: none;   
@@ -958,11 +1043,17 @@ font-weight: 400;
     
     .cover-h h3 {
 
-font-size: 1.5em;
-
+font-size: 1.35em;
+        line-height: 1;
+margin: .85em 0;
+font-weight: 500;
+}
+    
+.task {
+   margin: .85em 0; 
 }
 
-    
+
 /*//////////////////////// //////////////////////
 Photo Gallery Page
 ///////////////////////////////////////////////*/
@@ -1026,19 +1117,44 @@ line-height: .5;
 Case Study Page Stylling
 ///////////////////////////////////////////////*/
 
-.case-description {
+.case-description, .resume-description {
 width: 80%;
-max-width: 46em; 
+
  font-family: 'Mercury SSm A', 'Mercury SSm B'; 
     margin: 0 auto;
     padding: 4em 0;
     
 }
     
+.resume-description {
+ max-width: 48em;    
+}
+ .case-description {
+     
+    max-width: 46em; 
+ }
+    
     .case-description p {
 font-size: 1.14em;
 line-height: 1.8;
 }
+    
+.resume-description p {
+font-size: 1.1em;
+line-height: 1.7;
+}
+    
+    .resume-description h2 {
+font-size: 1.75em;
+text-align: center;
+}
+    
+    .bold-name {
+ font-weight: 500;
+/*  font-size: 1.1em;  */
+}
+
+  
     
     .first:first-letter { 
     font-size: 3em; 
@@ -1125,6 +1241,13 @@ flex-direction: row;
         
 }
     
+        
+        .margin-fix-top2 {
+ margin-top: -.75em; 
+        
+}
+  
+    
     
     
     
@@ -1152,6 +1275,7 @@ align-items: flex-start;
     align-items: space-between;
 
     }
+
      
 .center {
  text-align: center;   
@@ -1164,7 +1288,7 @@ align-items: flex-start;
     
     
 /* Underline Reveal */
-.hvr-underline-reveal {
+.hvr-underline-reveal, .hvr-underline-reveal-w {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -1176,15 +1300,14 @@ align-items: flex-start;
   position: relative;
   overflow: hidden;
 }
-.hvr-underline-reveal:before {
+.hvr-underline-reveal:before, .hvr-underline-reveal-w:before  {
   content: "";
   position: absolute;
   z-index: -1;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #527eab;
-  height: 2px;
+height: 2px;
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
   -webkit-transition-property: transform;
@@ -1194,10 +1317,18 @@ align-items: flex-start;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-reveal:hover:before {
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal-w:hover:before {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
+    
+.hvr-underline-reveal:before {
+     background: #527eab;     
+    }
+    
+    .hvr-underline-reveal-w:before {
+     background: white;     
+    }
   
     
 /* Underline From Left */

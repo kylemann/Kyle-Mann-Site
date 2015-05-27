@@ -627,6 +627,10 @@ sup {
  margin-top: 3em;   
 }
 
+.top2 {
+ margin-top: 2em;   
+}
+
 .bottom-navigation, .bottom-review {
  display: flex;
 display: -webkit-flex;
@@ -691,7 +695,7 @@ position: absolute;
 }
 
 .bold-review {
-font-weight: bold;   
+font-weight: 600;   
 font-variant: small-caps;
 font-style: normal;
 font-size: 1.16em;
@@ -701,8 +705,9 @@ font-size: 1.16em;
     
 @-moz-document url-prefix() { 
 .bold-review {
-      font-size: 1em;
+      font-size: .9em;
          font-variant: none;
+    font-weight: 500;
   }
 }
 
@@ -710,10 +715,16 @@ p.intro-resume  {
  margin: 0; 
    
 }
+
+p.intro-resume-des  {
+ margin: 0 0 2em 0; 
+   
+}
   
 .year {
- font-size: .75em;
-    font-weight: bold;
+ font-size: .85em;
+    font-weight: 500;
+ 
 }
 
 .bold-name {
@@ -927,13 +938,20 @@ About Section Header and Image
 ///////////////////////////////////////////////*/
     
     
-    #body {
+    #body, .title-resume {
 display: -webkit-box;
 display: -moz-box;
 display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
 }
+    
+    .title-resume {
+    justify-content: space-between;
+-webkit-justify-content: space-between;
+        align-items: baseline;
+        -webkit-align-items: baseline;
+    }
     
 #image-f {
 width: 50vw;

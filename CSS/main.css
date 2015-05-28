@@ -669,11 +669,11 @@ vertical-align: middle;
 
 
 .bottom-icon-white {
-width: 10px;
-height: 10px;
-margin: 0 3px;
+width: 12px;
+height: 12px;
+margin: 0 3px 0 0;
 vertical-align: middle;
-padding-bottom: 3px;
+padding-bottom: 4px;
 
 }
 

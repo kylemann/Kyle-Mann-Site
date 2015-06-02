@@ -267,6 +267,7 @@ background: none;
 }
 
 .cover-h h3 {
+
 text-align: center;  
 color: white;
 font-size: 1.5em;
@@ -696,7 +697,7 @@ padding-bottom: 4px;
 }
 
 .bold-review {
-font-weight: 600;   
+font-weight: bold;   
 font-variant: small-caps;
 font-style: normal;
 font-size: 1.16em;
@@ -947,6 +948,8 @@ display: -webkit-flex;
 display: flex;
 }
     
+ 
+    
     .title-resume {
     justify-content: space-between;
 -webkit-justify-content: space-between;
@@ -1061,9 +1064,9 @@ font-weight: 400;
 }
     
     .cover-h h3 {
-
+      
 font-size: 1.35em;
-        line-height: 1;
+line-height: 1;
 margin: .85em 0;
 font-weight: 500;
 }

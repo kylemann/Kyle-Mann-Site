@@ -9,6 +9,7 @@ box-sizing: border-box;
 
 }
 
+
 #body, body {
  margin: 0;   
 background: #FCFCFC;   
@@ -636,9 +637,6 @@ sup {
 .bottom-navigation, .bottom-review {
  display: flex;
 display: -webkit-flex;
- 
-
-
 align-items: center;
 -webkit-align-items: center;
 }

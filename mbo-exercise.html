@@ -39,7 +39,7 @@
     
     
     <article id="form-container">
-         <div style="display: flex; justify-content: flex-start;
+         <div style="display: flex; display: -webkit-flex; justify-content: flex-start;
 -webkit-justify-content: flex-start; align-items: center;
 -webkit-align-items: center;">
         <h3>Quick Entry: </h3>
@@ -53,7 +53,7 @@
         </div>
     <form action="form.php" method="post" enctype="multipart/form-data">
 	    
-        <div style="display: flex; justify-content: space-between;
+        <div style="display: flex; display: -webkit-flex; justify-content: space-between;
 -webkit-justify-content: space-between; ">    
         <div class="fifty">
         <label>Project Name</label>
@@ -64,7 +64,7 @@
 		  <input name="date" type="date" required="required" placeholder="Email" style="color: grey;">
             </div>
         </div>
-        <div style="display: flex; justify-content: space-between;
+        <div style="display: flex; display: -webkit-flex; justify-content: space-between;
 -webkit-justify-content: space-between; ">
             <div class="fifty">
         <label>Start</label>
@@ -81,7 +81,7 @@
         
        
                  <label>Rate</label>
-        <div style="display: flex; align-items: center;
+        <div style="display: flex; display: -webkit-flex; align-items: center;
 -webkit-align-items: center;">
    
 		  <input name="number" type="number" required="required" placeholder="Rate" style="width: 50%;">
@@ -105,7 +105,9 @@
         
         
 		      <label>Project Notes</label>
-		          <textarea name="message" cols="20" rows="5" required="required" placeholder="Project Notes"></textarea>     <input id="submit" name="submit" type="submit" value="Submit"> 
+		          <textarea name="message" cols="20" rows="5" required="required" placeholder="Project Notes"></textarea>     
+        
+        <div style="text-align: center;"><input id="submit" name="submit" type="submit" value="Submit"> </div>
 	   </form>
     
     
@@ -118,8 +120,19 @@
       
     
  <article id="summary-container">
-     <h3 style="text-align: center;">Summary</h3>
-     <section id="selection-form" style="display: flex; justify-content: space-between;
+         <div style="display: flex; display: -webkit-flex; justify-content: flex-start;
+-webkit-justify-content: flex-start; align-items: center;
+-webkit-align-items: center;">
+        <h3>Summary: </h3>
+        <select style="margin-left: 8px;">
+  <option value="volvo">NEW Project</option>
+  <option value="saab">Project 20</option>
+  <option value="mercedes">Manhattan</option>
+  <option value="audi">Jackson</option>
+            <option value="audi">Website</option>
+</select>
+        </div>
+     <section id="selection-form" style="display: flex; display: -webkit-flex; justify-content: space-between;
 -webkit-justify-content: space-between;">
      <div class="button-select">Day</div>
          <div class="button-select">Month</div>
@@ -154,45 +167,47 @@
 
 <table>    
 <tr>
-    <td class="table-heading no-border">Project</td>
-    <td class="table-heading no-border">Hour/Rate</td>		
+<td class="table-heading no-border">Project</td>
+        <td class="table-heading no-border">Hour/Rate</td>		
     <td class="table-heading no-border">Status</td>
-  </tr>
-        
-  <tr>
-    <td class="no-border">Project 20</td>
-    <td>200hrs | $59/hr</td>
-    <td><i>Posted</i></td>
-  
-  </tr>
+</tr>
+
+<tr>
+<td class="no-border">Project 20</td>
+<td>200hrs | $59/hr</td>
+<td><i>Posted</i></td>
+<td class="plus"><img src="images/linecross.png" class="plus" alt="drop-down menu w/ further options" title="drop-down menu w/ project options"></td>
+</tr>
+ 
+<tr>
+<td class="no-border">Manhattan</td>
+<td>250hrs | $64/hr</td>
+<td><i>Billed Client</i></td>
+<td class="plus"><img src="images/linecross.png" class="plus" title="drop-down menu w/ project options">
+</td>
+</tr>
     
-      <tr>
-    <td class="no-border">Manhattan</td>
-    <td>250hrs | $64/hr</td>
-    <td><i>Billed Client</i></td>
-  
-  </tr>
+<tr>
+<td class="no-border">Jackson</td>
+<td>100hrs | $42/hr</td>
+<td><i>Paid</i></td>
+<td class="plus"><img src="images/linecross.png" class="plus" title="drop-down menu w/ project options">
+</td>
+</tr>
+
+            
     
-    
-      <tr>
-    <td class="no-border">Jackson</td>
-    <td>100hrs | $42/hr</td>
-    <td><i>Paid</i></td>
-  
-  </tr>
-    
-    
-    
-      <tr>
-    <td class="no-border">Website</td>
-    <td>50hrs | $61/hr</td>
-    <td><i>Paid</i></td>
-  
-  </tr>
-    
-    
-  </table> 
+<tr>
+<td class="no-border">Website</td>
+<td>50hrs | $61/hr</td>
+<td><i>Paid</i></td>
+<td class="plus"><img src="images/linecross.png" class="plus" title="drop-down menu w/ project options">
+</td>
+</tr>
+   
+</table> 
      </article>
+ 
     
     </div>
 

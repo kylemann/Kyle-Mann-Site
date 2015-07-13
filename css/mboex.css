@@ -133,6 +133,7 @@ select {
 /* Styles the submit button */
 #submit {
 width: 100%;
+max-width: 150px;
 height:33px;
 text-align: center;
 border:none;
@@ -156,6 +157,10 @@ transition: all .2s ease-in-out;
 color: White;
 background-color:#FF6559;
 }
+
+
+
+
 
 
 
@@ -197,7 +202,35 @@ font-size: 1.25em;
 
 
 
+section.drop-d {
+ display: none;
+      width 90%; padding 5em 0; background: red;
+}
 
+
+
+
+.plus {
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+     transition-duration: .2s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+     transition-property: transform;
+    cursor: pointer;
+     border-left: none; 
+  padding: 4px;
+    margin: 0 0 0 -20px;
+}
+
+.plus:hover {
+    -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+     transform: rotate(25deg);
+    
+}
 
 
 
@@ -218,27 +251,27 @@ Tablet VERSION - MEDIA QUERIES
 display: flex;
 display: -webkit-flex; 
 flex-wrap: wrap;
+-webkit-flex-wrap: wrap;
 max-width: 700px;
-justify-content: space-between;  
+justify-content: space-between; 
+-webkit-justify-content: space-between; 
 margin: 0 auto;
     }
     
 header {
 width: 100%;
 }
-     #form-container, #summary-container, #dashboard-container {
-   width: 100%; 
- 
-  }
-    
 
-    #flex-summary {
+#form-container, #summary-container, #dashboard-container {
+width: 100%; 
+}
+    
+#flex-summary {
 display: flex;
 display: -webkit-flex;
 justify-content: space-around;
-    }
-    
-    
+-webkit-justify-content: space-around; 
+}
 
 }
 
@@ -258,17 +291,18 @@ Desktop VERSION - MEDIA QUERIES
 
 @media only screen and (min-width: 800px) {
     
-      #flex-layout {
+#flex-layout {
 max-width: 1250px;
-      }
+}
     
-  header {
-    width: 20%;
-      flex-direction: column;
-      padding: 2em 0;
-  justify-content: center;
-/*      height: 300px;*/
-  }
+header {
+width: 20%;
+flex-direction: column;
+-webkit-flex-direction: column;
+padding: 2em 0;
+justify-content: center;
+-webkit-justify-content: center; 
+}
     
 #form-container {
     width: 52%;
@@ -280,11 +314,11 @@ max-width: 1250px;
     
      #flex-summary {
 display: inherit;
-
 justify-content: inherit;
+-webkit-justify-content: inherit; 
     } 
     
-    textarea 
+textarea 
 {
 height:33px;
 }

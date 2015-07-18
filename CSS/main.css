@@ -208,44 +208,26 @@ margin: 0;
 }
 
 #cover1 {
-background: url(../images/cover1.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;     
+background: url(../images/cover1.jpg) no-repeat center center;   
 }
 
 #cover2 {
-
-   background: url(../images/cover2.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;     
- 
-   
+background: url(../images/cover2.jpg) no-repeat center center;   
 }
 
 #cover3 {
-
-   background: url(../images/cover3.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;     
- 
-   
+background: url(../images/cover3.jpg) no-repeat center center;   
 }
 
 #cover4 {
+background: url(../images/cover4.jpg) no-repeat center center;      
+}
 
-   background: url(../images/cover4.jpg) no-repeat center center;
+#cover1, #cover4, #cover3, #cover2 {
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;     
- 
-   
 }
 
 .cover-h {
@@ -257,14 +239,12 @@ flex-direction: column;
 -webkit-flex-direction: column;
 justify-content: center;
 -webkit-justify-content: center;
-  
 transition: 0.7s ease; 
 background: none; 
 }
 
 .cover-h:hover {
-    background: hsla(0, 0%, 0%, 0.55);
-    
+background: hsla(0, 0%, 0%, 0.55);
 }
 
 .cover-h h3 {
@@ -372,32 +352,16 @@ text-align: center;
 }
 
 #studio-header-pic {
-background: url(../images/studiov-header.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;        
+background: url(../images/studiov-header.jpg) no-repeat center center;       
 }
 
 #rittenhouse-header-pic {
-
-background: url(../images/rittenhouse/header.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;        
-  
+background: url(../images/rittenhouse/header.jpg) no-repeat center center; 
 }
 
 
 #dupont-header-pic {
-
 background: url(../images/cover4.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;        
-  
 }
 
 #resume-header-pic {
@@ -406,31 +370,23 @@ background-size: cover;
 
 
 #experience-header-pic {
-background: url(../images/experience/final-image.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;        
+background: url(../images/experience/final-image.jpg) no-repeat center center;        
 }
 
 #experience-persona1-pic {
-background: url(../images/experience/review-pic2.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;        
+background: url(../images/experience/review-pic2.jpg) no-repeat center center;       
 }
 
 #experience-persona2-pic {
-background: url(../images/experience/brian-photo.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;        
+background: url(../images/experience/brian-photo.jpg) no-repeat center center;       
 }
 
 #experience-persona3-pic {
-background: url(../images/experience/review-pic.jpg) no-repeat center center;
+background: url(../images/experience/review-pic.jpg) no-repeat center center;       
+}
+
+
+#experience-persona3-pic, #experience-persona2-pic, #experience-persona1-pic, #experience-header-pic, #dupont-header-pic, #rittenhouse-header-pic, #studio-header-pic {
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -448,22 +404,20 @@ Case Study Page Stylling
 width: 95%;
 max-width: 650px; 
 color: #262626;
-    margin: 0 auto;
-    padding: 3em 0;
+margin: 0 auto;
+padding: 3em 0;
 }
 
 .case-description p {
 font-size: 1em;
 line-height: 1.5;
-    font-weight: 300;
-/*    font-family: 'Mercury SSm A', 'Mercury SSm B'; */
-    color: #262626;
+font-weight: 300;
+color: #262626;
 }
 
 .first:first-letter { 
-    font-size: 2em; 
-/*    font-family: 'Whitney SSm A', 'Whitney SSm B';*/
-    font-weight: 400;
+font-size: 2em; 
+font-weight: 400;
 }
 
 .first:first-line {
@@ -472,8 +426,6 @@ line-height: 1.5;
 
 .small-caps {
 font-variant: small-caps;
-/*font-family: 'Whitney SSm A', 'Whitney SSm B';*/
-/*    font-family: 'Mercury SSm A', 'Mercury SSm B'; */
 font-weight: 400;
 }
 
@@ -486,20 +438,18 @@ font-weight: 400;
          font-weight: 300;
   }
 }
- 
-
 
 .case-website-button, .homepage-website-button {
- border: 1px solid #262626;
-    color: #262626;
-    font-size: 1em;
-    padding: .75em 0;
-    width: 14em;
-    margin: 3em auto;
+border: 1px solid #262626;
+color: #262626;
+font-size: 1em;
+padding: .75em 0;
+width: 14em;
+margin: 3em auto;
 text-align: center;
-    font-family: 'Whitney SSm A', 'Whitney SSm B';
-    transition: 0.2s ease;
-    border-radius: 3px;
+font-family: 'Whitney SSm A', 'Whitney SSm B';
+transition: 0.2s ease;
+border-radius: 3px;
 }
 
 .homepage-website-button {
@@ -507,40 +457,30 @@ width: 9em;
 }
 
 .case-website-button:hover, .homepage-website-button:hover {
- background: hsla(0, 0%, 0%, .9);
-    color: white;
- 
-}
-
-
-
-.case-description h2, .case-description h3 {
-/*  font-family: 'Whitney SSm A', 'Whitney SSm B';*/
+background: hsla(0, 0%, 0%, .9);
+color: white;
 }
 
 .annotation {
- margin: 2em auto;
-    width: 80%;
-    line-height: 1.7;
-      max-width: 400px;
+margin: 2em auto;
+width: 80%;
+line-height: 1.7;
+max-width: 400px;
 }
 
 .annotation2 {
- margin: 0 auto; 
+margin: 0 auto; 
 width: 80%;
-      line-height: 1.7;
-      max-width: 300px;
+line-height: 1.7;
+max-width: 300px;
 }
-
-
 
 .case-description h2, .resume-description h2 {
-  font-weight: 500;  
+font-weight: 500;  
 }
 
-
 .case-description h3, .resume-description h3 {
-   font-variant: small-caps;  
+font-variant: small-caps;  
 }
 
 
@@ -553,69 +493,54 @@ width: 80%;
   }
 }
  
-
-
-
 .annotation ul li {
 font-weight: 300; 
-/*font-family: 'Mercury SSm A', 'Mercury SSm B';*/
 }
 
 .study-image {
-    
-  margin: 2em auto;
-    width: 80%;
-    max-width: 350px;
+margin: 2em auto;
+width: 80%;
+max-width: 350px;
 }
 
 .study-image-large {
-    
-  margin: 2em auto;
-    width: 100%;
-/*    max-width: 350px;*/
+margin: 2em auto;
+width: 100%;
 }
 
 .study-image2 {
-    
-  margin: .5em auto;
-    width: 80%;
-    max-width: 350px;
+margin: .5em auto;
+width: 80%;
+max-width: 350px;
 }
 
-
 .study-image3 {
-    
-  margin: .5em auto;
-    width: 50%;
-    max-width: 225px;
+margin: .5em auto;
+width: 50%;
+max-width: 225px;
 }
 
 .study-image5 {
-    
-  margin: .5em auto;
-    width: 50%;
-    max-width: 300px;
+margin: .5em auto;
+width: 50%;
+max-width: 300px;
 }
 
 .study-image3 img, .study-image2 img, .study-image-large img, .study-image img, .study-image5 img
-
 {
 box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);
 -moz-box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);
--webkit-box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);
-    
+-webkit-box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);   
 }
 
-
 .annotation-flex {
-    margin: 2em auto;
- display: flex;
+margin: 2em auto;
+display: flex;
 display: -webkit-flex;
 flex-direction: column;
 -webkit-flex-direction: column;
 justify-content: center;
 -webkit-justify-content: center; 
-
 }
 
 sup {
@@ -646,7 +571,7 @@ align-items: center;
 .bottom-review {
 flex-direction: column;
 -webkit-flex-direction: column;
-    justify-content: center;
+justify-content: center;
 -webkit-justify-content: center;
 }
 
@@ -655,9 +580,8 @@ flex-direction: column;
 .bottom-navigation {
 flex-direction: row;
 -webkit-flex-direction: row;
-        justify-content: space-between;
--webkit-justify-content: space-between;
-  
+justify-content: space-between;
+-webkit-justify-content: space-between;  
 }
 
 .bottom-icon {
@@ -665,9 +589,7 @@ width: 15px;
 height: 15px;
 margin: 0 5px;
 vertical-align: middle;
-
 }
-
 
 .bottom-icon-white {
 width: 12px;
@@ -675,24 +597,17 @@ height: 12px;
 margin: 0 3px 0 0;
 vertical-align: middle;
 padding-bottom: 4px;
-
 }
 
-.bottom-navigation p
-
-{
- font-size: .5em;
-/*    display: none;*/
+.bottom-navigation p {
+font-size: .5em;
 }
-
 
 .review-pic {
- width: 100px;
-    height: 100px;
-    border-radius: 4px;
-    margin-top: 1.75em;
-  
-  
+width: 100px;
+height: 100px;
+border-radius: 4px;
+margin-top: 1.75em;
 }
 
 .bold-review {
@@ -713,19 +628,16 @@ font-size: 1.16em;
 }
 
 p.intro-resume  {
- margin: 0; 
-   
+margin: 0;   
 }
 
 p.intro-resume-des  {
- margin: 0 0 2em 0; 
-   
+margin: 0 0 2em 0;   
 }
   
 .year {
- font-size: .85em;
-    font-weight: 500;
- 
+font-size: .85em;
+font-weight: 500;
 }
 
 .bold-name {
@@ -748,70 +660,57 @@ line-height: 1.7;
     margin: 1em 40px;
 }
 
-#matthew-review-pic
-{
- background: url(../images/studiov-case/matthew-review.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
-    
+#matthew-review-pic {
+ background: url(../images/studiov-case/matthew-review.jpg) no-repeat center center;     
 }
 
-#suzanne-review-pic
-
-{
+#suzanne-review-pic {
  background: url(../images/rittenhouse/suzanne.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
-    
 }
 
-#cabrina-review-pic
-{
- background: url(../images/experience/cabrina-image.jpg) no-repeat center center;
+#cabrina-review-pic {
+ background: url(../images/experience/cabrina-image.jpg) no-repeat center center;     
+}
+
+#matthew-review-pic, #cabrina-review-pic, #suzanne-review-pic {
+
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
-background-size: cover;   
-    
+background-size: cover;      
 }
 
 .bottom-review blockquote {
-      font-style: italic; 
-    font-weight: 300;
-     }
-
-cite {
-   font-style: normal; 
+font-style: italic; 
+font-weight: 300;
 }
 
+cite {
+font-style: normal; 
+}
 
 .no-bullets {
- list-style: none;   
-    margin-left: 0;
-    margin-right: 0px;
-    padding-left: 5px;
-    padding-right: 0px;
-    font-size: .85em;
+list-style: none;   
+margin-left: 0;
+margin-right: 0px;
+padding-left: 5px;
+padding-right: 0px;
+font-size: .85em;
 }
 
 .list-left {
-    margin-left: 2px;
-    margin-right: 0px;
-    padding-left: 5px;
-    padding-right: 0px; 
+margin-left: 2px;
+margin-right: 0px;
+padding-left: 5px;
+padding-right: 0px; 
 }
 
-    .margin-fix-bottom {
- margin-bottom: -1em; 
-        
+.margin-fix-bottom {
+margin-bottom: -1em;         
 }
 
 ul li, ol li {
- font-weight: 300;   
+font-weight: 300;   
 }
 
 
@@ -821,34 +720,31 @@ ul li, ol li {
 Table Styling
 ///////////////////////////////////////////////*/
 table {
- width: 100%;
-    border: 1px solid black;
-    margin: .5em 0 0 0;
-
+width: 100%;
+border: 1px solid black;
+margin: .5em 0 0 0;
 }
 
-
-
 tr, td {
-   border: 1px solid black;  
+border: 1px solid black;  
 }
 
 td {
 width: 50%;  
 padding: .5em .35em;
- font-weight: 300;   
+font-weight: 300;   
 font-size: .85em;
 }
 
 table h5 {
- text-align: center;
-    font-size: 1.5em;
+text-align: center;
+font-size: 1.5em;
 }
 
 .table-heading {
- text-align: center;
-    padding: 1em 0;
-    font-size: 1.15em;
+text-align: center;
+padding: 1em 0;
+font-size: 1.15em;
 }
 
 
@@ -866,19 +762,18 @@ Resume Stylling Page
 .skill-list ul {
 list-style: none;
 text-align: center;
-    text-indent: 0;
+text-indent: 0;
 padding: 0;
-    margin: 0;
+margin: 0;
 }
 
 .skill-list h3 {
-
 text-align: center;
 }
 
 .skill-list ul li {
 padding: 0;
-    margin: 0;
+margin: 0;
 }
 
 
@@ -909,37 +804,35 @@ Desktop VERSION - MEDIA QUERIES
 Navigation Back Button Styling
 ///////////////////////////////////////////////*/
 
-    .top-nav {
-     font-weight: 300;
-        font-size: 1.5em;
-        line-height: 0;
-        transition: 0.3s ease;
-
-    }
+.top-nav {
+font-weight: 300;
+font-size: 1.5em;
+line-height: 0;
+transition: 0.3s ease;
+}
     
-    .back-arrow {
+.back-arrow {
 width: 25px;
-    padding-bottom: 3px;
-    }
-    
-    
+padding-bottom: 3px;
+}
+   
 .case-study:hover  {
 background: hsla(0, 0%, 0%, 0.5);
 }
     
-    .case-study {
-     margin: .5em auto;
-     font-size: 1.1em;
-        font-weight: normal;
-        display: none;
-    }
+.case-study {
+margin: .5em auto;
+font-size: 1.1em;
+font-weight: normal;
+display: none;
+}
     
 /*//////////////////////// //////////////////////
 About Section Header and Image
 ///////////////////////////////////////////////*/
     
     
-    #body, .title-resume {
+#body, .title-resume {
 display: -webkit-box;
 display: -moz-box;
 display: -ms-flexbox;
@@ -947,14 +840,12 @@ display: -webkit-flex;
 display: flex;
 }
     
- 
-    
-    .title-resume {
-    justify-content: space-between;
+.title-resume {
+justify-content: space-between;
 -webkit-justify-content: space-between;
-        align-items: baseline;
-        -webkit-align-items: baseline;
-    }
+align-items: baseline;
+-webkit-align-items: baseline;
+}
     
 #image-f {
 width: 50vw;
@@ -1016,8 +907,7 @@ margin: .5em 0;
 width: 1.5em;
 height: 1.5em;
 margin: 0 10px; 
-       transition: .3s ease;
-
+transition: .3s ease;
 }
     
     
@@ -1045,10 +935,7 @@ font-family: 'Whitney SSm A', 'Whitney SSm B';
 width: 25%;   
 height: 50%;  
 }
-    
-
- 
-    
+        
 #tagline-mobile {
 display: none;   
 }
@@ -1062,8 +949,7 @@ line-height: 1;
 font-weight: 400;
 }
     
-    .cover-h h3 {
-      
+.cover-h h3 {
 font-size: 1.35em;
 line-height: 1;
 margin: .85em 0;
@@ -1079,16 +965,15 @@ font-weight: 500;
 Photo Gallery Page
 ///////////////////////////////////////////////*/
     
-#photo-page {
-  
+#photo-page {  
 display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-flow: row wrap;
+-webkit-flex-wrap: wrap;
+flex-wrap: wrap;
 }
 
 .photo-cover {
@@ -1140,22 +1025,20 @@ Case Study Page Stylling
 
 .case-description, .resume-description {
 width: 80%;
-
- font-family: 'Mercury SSm A', 'Mercury SSm B'; 
-    margin: 0 auto;
-    padding: 4em 0;
-    
+font-family: 'Mercury SSm A', 'Mercury SSm B'; 
+margin: 0 auto;
+padding: 4em 0;
 }
     
 .resume-description {
  max-width: 48em;    
 }
- .case-description {
-     
-    max-width: 46em; 
+ 
+.case-description {
+max-width: 46em; 
  }
     
-    .case-description p {
+.case-description p {
 font-size: 1.14em;
 line-height: 1.8;
 }
@@ -1165,40 +1048,35 @@ font-size: 1.1em;
 line-height: 1.7;
 }
     
-    .resume-description h2 {
+.resume-description h2 {
 font-size: 1.75em;
 text-align: center;
 }
     
-    .bold-name {
+.bold-name {
  font-weight: 500;
 /*  font-size: 1.1em;  */
 }
 
-  
-    
-    .first:first-letter { 
-    font-size: 3em; 
-          line-height: 1;
-      
+.first:first-letter { 
+font-size: 3em; 
+line-height: 1;     
 }
 
 .first:first-line {
-  line-height: 1.2;
+line-height: 1.2;
 }
     
-    .small-caps {
-     font-size: 1.2em;   
-    }
+.small-caps {
+font-size: 1.2em;   
+}
     
+.small-caps-t {
+font-size: .86em; 
+font-weight: normal;
+}
     
-    .small-caps-t {
-     font-size: .86em; 
-        font-weight: normal;
-    }
-    
-    
-    /*  Firefox TOP_NAV Margin FIX   */
+/*  Firefox TOP_NAV Margin FIX   */
     
 @-moz-document url-prefix() { 
   .small-caps {
@@ -1208,7 +1086,7 @@ text-align: center;
 }
     
        
-    /*  Firefox TOP_NAV Margin FIX   */
+/*  Firefox TOP_NAV Margin FIX   */
     
 @-moz-document url-prefix() { 
  .small-caps-t {
@@ -1218,70 +1096,53 @@ text-align: center;
 }
  
     
-    .case-website-button, .homepage-website-button {
-    font-size: 1.15em;
-        margin: 4em auto;
-        border-width: 2px;
-        width: 15.5em;
-    }
+.case-website-button, .homepage-website-button {
+font-size: 1.15em;
+margin: 4em auto;
+border-width: 2px;
+width: 15.5em;
+}
     
-    .homepage-website-button {
-      width: 10.5em;   
-        
-    }
+.homepage-website-button {
+width: 10.5em;   
+}
     
-    .annotation, .study-image {
-     max-width: 450px;   
-    }
+.annotation, .study-image {
+max-width: 450px;   
+}
 
-    
-    .annotation-flex {
-    margin: 1em auto 2em auto;
- display: flex;
+.annotation-flex {
+margin: 1em auto 2em auto;
+display: flex;
 display: -webkit-flex;
 flex-direction: row;
 -webkit-flex-direction: row;
-        justify-content: center;
+justify-content: center;
 -webkit-justify-content: center; 
-    }
-    
-   
-    
-    .margin-fix-bottom {
- margin-bottom: -3em; 
-        
 }
     
-        .margin-fix-bottom2 {
- margin-bottom: -2em; 
-        
+.margin-fix-bottom {
+margin-bottom: -3em;        
 }
     
-        .margin-fix-top {
- margin-top: -1.25em; 
-        
+.margin-fix-bottom2 {
+margin-bottom: -2em;         
 }
     
-        
-        .margin-fix-top2 {
- margin-top: -.75em; 
-        
+.margin-fix-top {
+margin-top: -1.25em;        
+}
+
+.margin-fix-top2 {
+margin-top: -.75em;        
 }
   
-    
-    
-    
-    
-.bottom-navigation p
-
-{
-    font-size: 1em;
-   
+.bottom-navigation p {
+font-size: 1em;
 }
     
-
-    .bottom-review {
-        margin: 2em 0;
+.bottom-review {
+margin: 2em 0;
 flex-direction: row;
 -webkit-flex-direction: row;
  justify-content: center;
@@ -1290,44 +1151,42 @@ align-items: flex-start;
 -webkit-align-items: flex-start; 
 }
     
-    .bottom-navigation {
-
-    -webkit-justify-content: space-between; 
-    align-items: space-between;
-
-    }
-
-     
-.center {
- text-align: center;   
+.bottom-navigation {
+-webkit-justify-content: space-between; 
+align-items: space-between;
 }
     
-    .review-pic {
- width: 125px;
-    height: 125px;
-    }
+.center {
+text-align: center;   
+}
     
+.review-pic {
+width: 125px;
+height: 125px;
+}
+   
     
 /* Underline Reveal */
 .hvr-underline-reveal, .hvr-underline-reveal-w {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  overflow: hidden;
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+position: relative;
+overflow: hidden;
 }
+    
 .hvr-underline-reveal:before, .hvr-underline-reveal-w:before  {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0;
+content: "";
+position: absolute;
+z-index: -1;
+left: 0;
+right: 0;
+bottom: 0;
 height: 2px;
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
@@ -1338,18 +1197,19 @@ height: 2px;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+    
 .hvr-underline-reveal:hover:before, .hvr-underline-reveal-w:hover:before {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+-webkit-transform: translateY(0);
+transform: translateY(0);
 }
     
 .hvr-underline-reveal:before {
-     background: #527eab;     
-    }
+background: #527eab;     
+}
     
-    .hvr-underline-reveal-w:before {
-     background: white;     
-    }
+.hvr-underline-reveal-w:before {
+background: white;     
+}
   
     
 /* Underline From Left */
@@ -1409,22 +1269,22 @@ height: 2px;
 }
     
 .icon:hover {
- opacity: .65;   
+opacity: .65;   
 }
     
    
 #clickMe {
- cursor: url(../images/rittenhouse/right-arrow-white.png), auto;   
+cursor: url(../images/rittenhouse/right-arrow-white.png), auto;   
 }
     
 #magnify, .fancybox {
-  cursor: url(../images/rittenhouse/zoom.png), auto;     
+cursor: url(../images/rittenhouse/zoom.png), auto;     
 }
     
-    p.built-with  {
-     margin-bottom: 3em; 
-        font-size: 1em; 
-    }
+p.built-with  {
+margin-bottom: 3em; 
+font-size: 1em; 
+}
     
     
 
@@ -1436,18 +1296,13 @@ Table Styling
 td {
 width: 50%;  
 padding: 2em .5em;
-    
 font-size: .95em;
-    line-height: 1.6;
+line-height: 1.6;
 }
     
-    .top-nav p {
-     padding: .65em; 
-            margin: .45em 0;
-    }
-    
-  
-
-    
+.top-nav p {
+padding: .65em; 
+margin: .45em 0;
+}   
     
 }

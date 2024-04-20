@@ -1,0 +1,506 @@
+/* RESET
+*/
+/* line 4, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 96, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+/* line 110, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+ol,
+ul {
+  list-style: none; }
+
+/* line 115, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 120, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* line 128, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**************************************************
+***************************************************
+Body Content
+***************************************************
+**************************************************/
+/* line 140, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box; }
+
+/* line 145, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+body.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1150px;
+  font-family: 'Tajawal', sans-serif;
+  padding: 3em 0; }
+  /* line 151, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+  body.container h1 {
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 600; }
+  /* line 156, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+  body.container p {
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 1em; }
+    /* line 161, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container p .em {
+      font-weight: 500; }
+    /* line 164, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container p a {
+      border-bottom: 1px solid black;
+      text-decoration-style: none;
+      text-decoration: none;
+      color: black;
+      padding-top: 3px;
+      transition: .2s all; }
+      /* line 171, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container p a:hover {
+        background: black;
+        color: white; }
+  /* line 177, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+  body.container article.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5em 0; }
+    /* line 178, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container article.work a {
+      text-decoration: none;
+      /* no underline */
+      color: inherit; }
+      /* line 182, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work a:visited {
+        text-decoration: none;
+        color: black; }
+    /* line 191, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container article.work .top-img {
+      z-index: 0;
+      position: relative;
+      width: 100%;
+      height: 200px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      /* line 200, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .top-img h2 {
+        font-size: 1.25em;
+        padding: 0 0 0 10px;
+        font-weight: 600; }
+        /* line 204, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .top-img h2 span {
+          background: white;
+          border-top: 3px solid white; }
+      /* line 209, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .top-img p {
+        margin: 0 0 10px 0;
+        font-size: 1em;
+        padding: 0 0 0 10px;
+        font-weight: 300; }
+        /* line 214, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .top-img p span {
+          background: white;
+          border-top: 3px solid white; }
+    /* line 220, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container article.work .bg-img {
+      margin-bottom: 20px;
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-position: right top;
+      background-size: cover; }
+      /* line 227, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img:nth-child(1) {
+        background: url("images/codecov/codecov.png") no-repeat top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      /* line 234, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img:nth-child(2) {
+        background: url("new_screens/gitlab_revised.png") no-repeat top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      /* line 241, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img:nth-child(3) {
+        background: url("new_screens/gitlab1.png") no-repeat top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      /* line 248, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img:nth-child(4) {
+        background: url("new_screens/gitlab2.png") no-repeat top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      /* line 255, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img:nth-child(5) {
+        background: url("new_screens/cl_hero.png") no-repeat top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      /* line 262, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img:nth-child(6) {
+        background: url("images/screens/home_hero2.png") no-repeat top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      /* line 277, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img:nth-child(7) {
+        background: url("new_screens/peru_1@4x.png") no-repeat top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      /* line 284, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: none;
+        background: lightgray;
+        opacity: .1;
+        transition: .4s all; }
+  /* line 298, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+  body.container section.farewell {
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; }
+    /* line 305, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container section.farewell p {
+      font-size: 1em;
+      text-align: center;
+      margin: 1em 0;
+      font-weight: 500; }
+    /* line 311, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container section.farewell .icons-g {
+      display: flex;
+      justify-content: center;
+      align-items: baseline; }
+      /* line 315, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container section.farewell .icons-g a {
+        margin: 0 1em;
+        padding: 0;
+        border: 0;
+        line-height: 0; }
+    /* line 322, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container section.farewell img {
+      width: 90%;
+      max-width: 400px;
+      margin: 0 auto; }
+
+/**************************************************
+***************************************************
+MEDIA QUERY - Above 790 PX  DESKTOP
+***************************************************
+**************************************************/
+@media only screen and (min-width: 800px) {
+  /* line 338, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+  body.container {
+    padding: 5em 0; }
+    /* line 340, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container h1 {
+      font-size: 2.5em;
+      line-height: 1.5;
+      font-weight: 600; }
+    /* line 345, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container p {
+      font-size: 1.25em;
+      line-height: 1.5;
+      font-weight: 300; }
+      /* line 349, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container p .em {
+        font-weight: 500; }
+      /* line 352, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container p a {
+        border-bottom: 1px solid black;
+        text-decoration-style: none;
+        text-decoration: none;
+        color: black;
+        padding-top: 3px;
+        transition: .2s all; }
+        /* line 359, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container p a:hover {
+          background: black;
+          color: white; } }
+
+/**************************************************
+***************************************************
+MEDIA QUERY - Above 790 PX  DESKTOP
+***************************************************
+**************************************************/
+@media only screen and (min-width: 1100px) {
+  /* line 376, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+  body.container {
+    width: 95%;
+    padding: 12.5em 0; }
+    /* line 379, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container h1 {
+      font-size: 3em;
+      width: 100%;
+      max-width: 575px;
+      margin-top: 10px; }
+    /* line 387, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container header {
+      display: flex;
+      padding-bottom: 3em; }
+      /* line 390, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container header p {
+        font-size: 1.25em;
+        line-height: 1.6;
+        margin-bottom: 1em;
+        width: 100%;
+        max-width: 575px;
+        font-weight: 300; }
+        /* line 398, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container header p .em {
+          font-weight: 500; }
+        /* line 401, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container header p a {
+          border-bottom: 1px solid black;
+          text-decoration-style: none;
+          text-decoration: none;
+          color: black;
+          padding-top: 3px;
+          transition: .2s all; }
+          /* line 408, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+          body.container header p a:hover {
+            background: black;
+            color: white; }
+    /* line 415, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+    body.container article.work {
+      padding: 6em 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      /* line 420, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .top-img {
+        height: 427px; }
+        /* line 423, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .top-img:hover {
+          cursor: pointer; }
+          /* line 425, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+          body.container article.work .top-img:hover h2 {
+            font-size: 1.75em;
+            padding: 0 0 0 20px;
+            font-weight: 600;
+            color: white; }
+            /* line 430, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+            body.container article.work .top-img:hover h2 span {
+              background: black;
+              padding: 0 3px;
+              border-top: 7px solid black; }
+          /* line 436, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+          body.container article.work .top-img:hover p {
+            margin: 0 0 15px 0;
+            font-size: 1.25em;
+            padding: 0 0 0 20px;
+            font-weight: 300;
+            color: white; }
+            /* line 442, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+            body.container article.work .top-img:hover p span {
+              padding: 0 3px;
+              background: black;
+              border-top: 5px solid black; }
+        /* line 449, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .top-img h2 {
+          font-size: 1.75em;
+          padding: 0 0 0 20px;
+          font-weight: 600; }
+          /* line 453, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+          body.container article.work .top-img h2 span {
+            background: white;
+            padding: 0 3px;
+            border-top: 7px solid white; }
+        /* line 459, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .top-img p {
+          margin: 0 0 15px 0;
+          font-size: 1.25em;
+          padding: 0 0 0 20px;
+          font-weight: 300; }
+          /* line 464, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+          body.container article.work .top-img p span {
+            padding: 0 3px;
+            border-top: 5px solid white; }
+      /* line 470, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img {
+        margin-bottom: 30px;
+        position: relative;
+        height: 427px;
+        background-position: left top;
+        background-size: center; }
+        /* line 478, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .bg-img:nth-child(1) {
+          width: 100%; }
+        /* line 483, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .bg-img:nth-child(2) {
+          width: 560px;
+          background-size: cover; }
+        /* line 489, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .bg-img:nth-child(3) {
+          width: 560px; }
+        /* line 493, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .bg-img:nth-child(4) {
+          width: 560px;
+          background-position: left; }
+        /* line 499, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .bg-img:nth-child(5) {
+          width: 560px;
+          background-position: left; }
+        /* line 505, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .bg-img:nth-child(6) {
+          width: 560px; }
+        /* line 511, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .bg-img:nth-child(7) {
+          width: 560px;
+          background: url("new_screens/vault_1@4x.png") no-repeat top;
+          background-size: cover;
+          background-position: left; }
+        /* line 517, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .bg-img:nth-child(8) {
+          width: 560px; }
+        /* line 521, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+        body.container article.work .bg-img:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: none;
+          background: none;
+          transition: .4s all; }
+      /* line 534, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+      body.container article.work .bg-img:hover:before {
+        background: black;
+        opacity: .3; }
+  /* line 541, /Volumes/GoogleDrive-109324747468335400461/My Drive/portfolio/new_portfolio/css.scss */
+  section.farewell {
+    padding-top: 3em; } }
+
+/*# sourceMappingURL=css.css.map */

@@ -1,0 +1,1194 @@
+/* RESET
+*/
+/* line 4, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong, *99
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 96, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+/* line 110, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+ol,
+ul {
+  list-style: none; }
+
+/* line 115, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 120, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* line 128, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 133, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+p i {
+  font-style: italic; }
+
+/**************************************************
+***************************************************
+Body Content
+***************************************************
+**************************************************/
+/* line 143, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+html {
+  background: white;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 153, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 158, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+/* line 166, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.headwrap1 h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: .5em 0; }
+
+/* line 174, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.headwrap1 .gitlab-s h6 {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-weight: 1.25em; }
+
+/* line 179, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.headwrap1 .gitlab-s ul {
+  margin-top: 2em;
+  padding-left: 1em; }
+  /* line 182, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .headwrap1 .gitlab-s ul li:first-child {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-weight: 1.25em;
+    margin-left: -1em;
+    list-style: none; }
+  /* line 189, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .headwrap1 .gitlab-s ul li {
+    margin-left: 0;
+    list-style: square;
+    text-indent: inherit;
+    margin: .75em 0; }
+    /* line 194, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .headwrap1 .gitlab-s ul li a {
+      border-bottom: 1px solid black;
+      text-decoration-style: none;
+      text-decoration: none;
+      color: black;
+      padding-top: 3px;
+      transition: .2s all; }
+      /* line 201, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .headwrap1 .gitlab-s ul li a:hover {
+        background: black;
+        color: white; }
+
+/* line 212, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.headwrap2 h3 {
+  font-size: 1em;
+  font-weight: 700;
+  margin: .5em 0; }
+
+/* line 217, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.headwrap2 ul {
+  margin-top: 2em;
+  padding-left: 1em; }
+  /* line 221, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .headwrap2 ul li {
+    margin-left: 0;
+    list-style: square;
+    text-indent: inherit;
+    margin: .75em 0; }
+    /* line 226, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .headwrap2 ul li a {
+      border-bottom: 1px solid black;
+      text-decoration-style: none;
+      text-decoration: none;
+      color: black;
+      padding-top: 3px;
+      transition: .2s all; }
+      /* line 233, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .headwrap2 ul li a:hover {
+        background: black;
+        color: white; }
+
+/* line 242, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.study {
+  padding: 30px 0; }
+  /* line 244, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .study p {
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 300; }
+  /* line 249, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .study .aside {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column; }
+    /* line 253, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .study .aside div.text-box {
+      padding: 0;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    /* line 260, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .study .aside h6 {
+      font-size: .9em;
+      margin: .5em 0 .25em 0; }
+    /* line 264, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .study .aside p {
+      font-size: .9em; }
+  /* line 268, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .study .annotation {
+    font-size: 1em; }
+  /* line 272, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .study h2 {
+    font-size: 1.45em;
+    margin: 2.5em 0 .45em 0; }
+  /* line 276, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .study h3 {
+    font-size: 1.25em;
+    margin: 1.5em 0 .45em 0; }
+  /* line 280, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .study h4 {
+    font-size: 1.1em;
+    margin: 1.5em 0 .45em 0; }
+  /* line 284, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .study img {
+    margin: 1.5em 0 0 0; }
+  /* line 287, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .study .two {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5em 0 .45em 0; }
+    /* line 292, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .study .two img,
+    .study .two .text-box-2 {
+      max-width: 385px; }
+    /* line 296, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .study .two img {
+      margin: .5em 0 0 0; }
+    /* line 299, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .study .two h5 {
+      font-size: 1.2em;
+      margin: .5em 0 .25em 0; }
+    /* line 303, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .study .two .text-box-2 p {
+      font-size: .9em; }
+    /* line 306, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .study .two .iframe {
+      margin-top: .5em; }
+
+/* line 318, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.work-p hr.style14, .about hr.style14 {
+  margin: 20px auto; }
+
+/* line 321, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.work-p nav h1, .about nav h1 {
+  font-size: 1.5em;
+  padding: 60px 0 30px 0; }
+
+/* line 325, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.work-p .firstcharacter, .about .firstcharacter {
+  float: left;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 2.5em;
+  line-height: 1;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 0; }
+
+/* line 336, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.tab-content, .tab-contenta, .tab-contentb, .tab-contentc, .tab-contentd, .tab-contente, .tab-contentf {
+  display: none;
+  padding: 0; }
+  /* line 339, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .tab-content .section, .tab-contenta .section, .tab-contentb .section, .tab-contentc .section, .tab-contentd .section, .tab-contente .section, .tab-contentf .section {
+    padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+
+/* line 348, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.about {
+  padding-top: 30px; }
+  /* line 350, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .about p {
+    margin: 1.25em 0;
+    font-size: 1em;
+    line-height: 1.5; }
+  /* line 355, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .about :first-child {
+    margin: 0; }
+
+/* line 360, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.work-p {
+  padding: 30px 0; }
+
+/* line 364, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.tab-content.current, .tab-contenta.currenta, .tab-contentb.currentb, .tab-contentc.currentc, .tab-contentd.currentd, .tab-contente.currente, .tab-contentf.currentf {
+  display: inherit; }
+
+/* line 370, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.sectiontext {
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 450px; }
+  /* line 375, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .sectiontext h4 {
+    font-size: 1em;
+    margin: 0 0 x 0; }
+  /* line 379, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .sectiontext a, .sectiontext .disabled {
+    margin: 20px 0 0 0;
+    font-size: .85em;
+    transition: color .4s; }
+    /* line 384, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .sectiontext a i, .sectiontext .disabled i {
+      color: #1AAC42; }
+  /* line 388, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .sectiontext p {
+    margin: 5px 0;
+    line-height: 1.5; }
+
+/* line 394, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+img {
+  width: 100%; }
+
+/* line 399, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.value {
+  padding: 1.5em;
+  background: white;
+  margin-top: 1.5em; }
+
+/* line 403, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.headwrap h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  font-weight: 600; }
+
+/* line 409, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.headwrap h3 {
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: 600; }
+
+/* line 415, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.headwrap p {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 1em; }
+  /* line 420, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .headwrap p .em {
+    font-weight: 500; }
+  /* line 423, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .headwrap p a {
+    border-bottom: 1px solid black;
+    text-decoration-style: none;
+    text-decoration: none;
+    color: black;
+    padding-top: 3px;
+    transition: .2s all; }
+    /* line 430, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .headwrap p a:hover {
+      background: black;
+      color: white; }
+
+/*//////////////////////// //////////////////////
+Bookshelp Stylling Page and PEOPLE
+///////////////////////////////////////////////*/
+/* line 447, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+#bookshelf {
+  padding: 1.5em;
+  margin: 2.5em 0;
+  background: white; }
+
+/* line 454, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.bookshelf {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center; }
+
+/* line 466, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.book {
+  width: 65px; }
+
+/* line 470, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.book-row {
+  border-bottom: 3px solid #5F5341;
+  margin: 1em 0;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  align-items: baseline;
+  -webkit-align-items: baseline; }
+
+/* line 488, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.people {
+  padding: 1.5em 0 0 0;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  align-items: baseline;
+  -webkit-align-items: baseline; }
+  /* line 498, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .people div {
+    margin: 1.25em 0;
+    width: 120px;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    /* line 509, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .people div .font {
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1rem; }
+    /* line 514, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .people div img {
+      width: 100px;
+      max-width: 134px;
+      border-top: none;
+      margin: 0 auto; }
+    /* line 521, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .people div p.contact a.icon:hover, .people div p.contact a.icon:hover {
+      border-bottom: none; }
+  /* line 530, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .people div.quote {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 20px; }
+    /* line 539, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .people div.quote img {
+      width: 100%; }
+
+/* line 549, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.story {
+  padding: 1.5em 0 0 0;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: baseline;
+  -webkit-align-items: baseline; }
+  /* line 561, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .story div {
+    margin: .25em;
+    width: 80px; }
+    /* line 565, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .story div i {
+      font-size: .5rem;
+      font-style: normal;
+      color: #66686b; }
+      /* line 570, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .story div i strong {
+        font-weight: 400; }
+
+/**************************************************
+***************************************************
+Fonts
+***************************************************
+**************************************************/
+/* line 590, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Tajawal', sans-serif;
+  color: black;
+  font-weight: 400; }
+
+/* line 604, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+body {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 300;
+  color: black; }
+
+/* line 615, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+a, p a, .bottom, .work-p nav a.back, .sectiontext a {
+  padding-bottom: 1px;
+  transition: all .3s;
+  border-bottom: 1px solid white; }
+  /* line 620, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  a:hover, p a:hover, .bottom:hover, .work-p nav a.back:hover, .sectiontext a:hover {
+    cursor: pointer; }
+
+/* line 628, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+a:link,
+a:visited, i a:link {
+  color: black;
+  padding-top: 3px;
+  padding-bottom: 0;
+  text-decoration: none; }
+
+/* line 638, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+img.fancybox {
+  border-bottom: none; }
+
+/* line 642, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+p a:hover, .bottom:hover, .work-p nav a.back:hover, nav h1 a.h-hover:hover, header a.back:hover {
+  color: white;
+  transition: all .3s;
+  background: black;
+  padding-top: 3px;
+  border-bottom: 1px solid black; }
+
+/* line 652, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.bottom:hover i {
+  border-bottom: 1px solid black; }
+
+/* line 660, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+a.fancybox img:hover {
+  cursor: url(images/work/Untitled-1.png), auto;
+  border-bottom: none; }
+
+/* line 665, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.fancybox img:hover {
+  cursor: url(images/work/Untitled-1.png), auto;
+  border-bottom: none; }
+
+/* line 677, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.center {
+  text-align: center; }
+
+/* line 681, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+i {
+  font-style: normal; }
+  /* line 683, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  i a {
+    border-bottom: 1px solid black; }
+    /* line 685, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    i a:hover {
+      color: white;
+      padding-top: 3px;
+      padding-bottom: 0;
+      text-decoration: none;
+      background: black; }
+
+/* line 696, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+strong {
+  font-weight: 400;
+  font-family: 'Tajawal', sans-serif; }
+
+/* line 705, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+sup {
+  font-size: .5em;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.7em; }
+
+/* line 713, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+#fancybox-title {
+  font-family: 'Tajawal', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  z-index: 1102; }
+
+/* line 721, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+#overview, #overviewa, #overviewm, #action, #actiona, #actionm, #upload, #uploada, #uploadm, #share, #sharea, #sharem, #move, #movea, #movem, #view, #viewa, #viewm {
+  cursor: url(images/work/right.png), auto; }
+
+/* line 725, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.contact a i {
+  color: black; }
+
+/* line 731, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.contact a {
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+  cursor: pointer; }
+
+/* line 737, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+a.icon {
+  border-bottom: none;
+  transition: all .3s; }
+  /* line 741, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  a.icon:hover i {
+    color: white; }
+
+/* line 747, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.contact a.iconi:hover {
+  border-bottom: none; }
+
+/**************************************************
+***************************************************
+Headers
+***************************************************
+**************************************************/
+/* line 763, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+header {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0 0 0; }
+  /* line 766, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  header div {
+    max-width: 250px;
+    margin: 0 auto; }
+
+/* line 774, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.work-p {
+  padding: 30px 0; }
+
+/* line 778, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+hr.style14 {
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0); }
+
+/* line 788, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+hr.style15 {
+  margin: 2.5em auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0); }
+
+/* line 798, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+hr.style16 {
+  margin: 2.5em auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0); }
+
+/* line 809, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+hr.style1 {
+  margin: 5em auto 5em auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  width: 100%; }
+
+/* line 822, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+hr.style11 {
+  margin: 1.5em auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #66686b, #f0f0f0); }
+
+/**************************************************
+***************************************************
+NAV
+***************************************************
+**************************************************/
+/* line 844, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+nav {
+  width: 90%;
+  margin: 0 auto; }
+  /* line 847, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  nav.nav-sub {
+    padding: 0 0 2.5em 0;
+    width: 100%;
+    background: white;
+    margin: 2.5em auto; }
+  /* line 860, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  nav h1 {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Tajawal', sans-serif; }
+  /* line 868, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  nav ul.tabs, nav ul.tabsa, nav ul.tabsb, nav ul.tabsc, nav ul.tabsd, nav ul.tabse, nav ul.tabsf {
+    display: flex;
+    width: 80%;
+    max-width: 250px;
+    justify-content: space-around;
+    margin: 15px auto;
+    align-items: center; }
+  /* line 877, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  nav ul.tabs li, nav ul.tabsa li, nav ul.tabsb li, nav ul.tabsc li, nav ul.tabsd li, nav ul.tabse li, nav ul.tabsf li {
+    font-weight: 300;
+    padding: 10px 0;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: .85em;
+    border-bottom: 1px solid white;
+    transition: all .3s; }
+  /* line 887, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  nav ul.tabs li.current, nav ul.tabsa li.currenta, nav ul.tabsb li.currentb, nav ul.tabsc li.currentc, nav ul.tabsd li.currentd, nav ul.tabse li.currente, nav ul.tabsf li.currentf {
+    color: black;
+    border-bottom: 1px solid black; }
+  /* line 893, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  nav .secondary {
+    background: white;
+    width: 100%; }
+
+/* line 902, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+ul.tabs li:hover, ul.tabsa li:hover, ul.tabsb li:hover, ul.tabse li:hover, ul.tabsf li:hover {
+  color: black;
+  border-bottom: 1px solid black; }
+
+/* line 907, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+.active {
+  border-bottom: 1px solid black; }
+
+/* line 912, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+iframe {
+  width: 100%;
+  height: 450px;
+  margin: 0 auto; }
+
+/**************************************************
+***************************************************
+MEDIA QUERY - Above 790 PX  DESKTOP
+***************************************************
+**************************************************/
+@media only screen and (min-width: 790px) {
+  /* line 929, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .about {
+    padding-top: 30px; }
+    /* line 931, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .about p {
+      margin: 1.25em 0; }
+  /* line 937, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  nav {
+    max-width: 450px;
+    margin: 0 auto; }
+    /* line 940, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    nav h1 {
+      padding: 1.25em 0;
+      text-align: left;
+      font-size: 1.95em; }
+    /* line 945, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    nav ul.tabs, nav ul.tabsa, nav ul.tabsb, nav ul.tabsc, nav ul.tabsd, nav ul.tabse, nav ul.tabsf {
+      max-width: 400px; }
+    /* line 948, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    nav ul.tabs li, nav ul.tabsa li, nav ul.tabsb li, nav ul.tabsc li, nav ul.tabsd li, nav ul.tabse li, nav ul.tabsf li {
+      font-size: 1em; }
+  /* line 953, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  nav.nav-sub {
+    width: 100%;
+    max-width: 1150px; }
+  /* line 959, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  nav.desktop-h {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0; }
+    /* line 964, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    nav.desktop-h h1 {
+      padding: 0;
+      margin: 0; }
+  /* line 974, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  header {
+    width: 100%;
+    max-width: 800px;
+    margin: 0em auto; }
+    /* line 978, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    header div {
+      max-width: 450px; }
+      /* line 980, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      header div img {
+        margin: 1.25em auto; }
+  /* line 985, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .container {
+    width: 90%;
+    max-width: 1400px; }
+  /* line 990, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .tab-content, .tab-contenta, .tab-contentb, .tab-contentc, .tab-contentd, .tab-contente, .tab-contentf {
+    display: none;
+    padding: 0; }
+    /* line 993, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .tab-content .section, .tab-contenta .section, .tab-contentb .section, .tab-contentc .section, .tab-contentd .section, .tab-contente .section, .tab-contentf .section {
+      padding: 1.25em 0;
+      width: 500px;
+      background: none;
+      margin: 0px auto;
+      flex-direction: row; }
+  /* line 1005, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .sectiontext {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto; }
+    /* line 1012, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .sectiontext h4 {
+      font-size: 1.25em;
+      line-height: 1;
+      margin: 0; }
+    /* line 1018, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .sectiontext strong, .sectiontext p {
+      font-size: 1.25em;
+      line-height: 1; }
+    /* line 1023, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .sectiontext p {
+      margin: .5em 0; }
+    /* line 1026, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .sectiontext a {
+      margin: 0;
+      font-size: 1em;
+      font-style: normal; }
+  /* line 1034, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .work-p {
+    padding: 200px 0;
+    max-width: 1400px;
+    margin: 0 auto; }
+  /* line 1040, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .about {
+    padding: 0 0; }
+    /* line 1043, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .about i {
+      font-style: normal;
+      font-size: 1rem; }
+  /* line 1051, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .work-p hr.style14, .about hr.style14 {
+    margin: 1.5em auto; }
+  /* line 1054, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .work-p hr.style15, .about hr.style15 {
+    margin: 0 auto; }
+  /* line 1057, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .work-p nav h1, .about nav h1 {
+    font-size: 1.95em;
+    padding: 4em 0 .75em 0; }
+  /* line 1061, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .work-p .firstcharacter, .about .firstcharacter {
+    float: left;
+    font-family: Georgia;
+    font-size: 3.25em;
+    line-height: .5;
+    margin: 0.275em .1em 0 0; }
+  /* line 1068, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .work-p .study, .about .study {
+    padding: 0;
+    margin-top: 0; }
+    /* line 1071, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .work-p .study p, .about .study p {
+      font-size: 1.25em;
+      line-height: 1.6;
+      font-weight: 300; }
+    /* line 1078, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .work-p .study .small-caps, .about .study .small-caps {
+      font-size: .9em; }
+    /* line 1083, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .work-p .study p.annotation, .about .study p.annotation {
+      font-style: normal;
+      font-size: 1rem; }
+    /* line 1088, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .work-p .study img, .about .study img {
+      margin: 1.25em 0 0 0; }
+    /* line 1092, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .work-p .study h2, .about .study h2 {
+      font-size: 1.55em;
+      margin: 2.5em 0 .45em 0; }
+    /* line 1100, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .work-p .study h4, .about .study h4 {
+      font-size: 1.25em;
+      margin: 2.5em 0 .45em 0; }
+    /* line 1104, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .work-p .study .aside, .about .study .aside {
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 2.5em 0; }
+      /* line 1108, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .aside img, .about .study .aside img {
+        width: 381px;
+        padding: 0;
+        margin: 0; }
+      /* line 1113, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .aside h6, .about .study .aside h6 {
+        font-size: 1em;
+        margin: 1.25em 0 .15em 0; }
+      /* line 1117, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .aside p, .about .study .aside p {
+        font-size: 1.1em;
+        line-height: 1.4; }
+      /* line 1122, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .aside .text-box, .about .study .aside .text-box {
+        padding: 0 0 0 20px; }
+    /* line 1126, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .work-p .study .two, .about .study .two {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 2.5em 0 2.5em 0; }
+      /* line 1130, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .two img, .about .study .two img {
+        margin: .75em 0 0 0; }
+      /* line 1133, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .two h5, .about .study .two h5 {
+        font-size: 1.15em;
+        margin: .5em 0 .25em 0;
+        text-align: center; }
+      /* line 1138, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .two .text-box-2 p, .about .study .two .text-box-2 p {
+        font-size: .9em;
+        line-height: 1.3; }
+      /* line 1142, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .two #gltoo, .about .study .two #gltoo {
+        align-content: space-between;
+        justify-content: space-between; }
+      /* line 1146, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .two .iframe, .about .study .two .iframe {
+        max-width: 620px; }
+    /* line 1150, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .work-p .study .twogl, .about .study .twogl {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 2.5em 0 2.5em 0; }
+      /* line 1156, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .work-p .study .twogl .iframe, .about .study .twogl .iframe {
+        width: 100%;
+        max-width: 610px; }
+  /* line 1163, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .secondary strong {
+    font-size: 1.25em; }
+  /* line 1169, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  #bookshelf {
+    padding: 2.5em 0;
+    margin: 2.5em auto; }
+    /* line 1174, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    #bookshelf h2 {
+      text-align: left;
+      margin-bottom: 2.5em; }
+  /* line 1186, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .book {
+    width: 100%;
+    max-width: 80px; }
+  /* line 1193, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .book-row {
+    border-bottom: 3px solid #66686b;
+    width: 100%; }
+  /* line 1207, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .value {
+    padding: 2.5em 0 5em 0;
+    background: white;
+    margin: 0 auto 2.5em auto;
+    width: 100%;
+    text-align: left; }
+    /* line 1214, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .value p {
+      font-size: 1em;
+      width: 390px;
+      margin: 1.5em 0; }
+    /* line 1227, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .value h2 {
+      margin: 0;
+      padding: 0; }
+  /* line 1234, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .people {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: baseline;
+    -webkit-align-items: baseline; }
+    /* line 1246, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .people div {
+      margin: 3.5em 0;
+      width: 225px;
+      text-align: center;
+      font-size: 1rem;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      /* line 1257, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .people div .font {
+        font-style: normal;
+        font-size: 1rem; }
+      /* line 1262, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .people div img {
+        width: 140px;
+        max-width: 140px;
+        border-top: none;
+        margin: 0 auto; }
+    /* line 1270, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .people div.quote {
+      width: 100%;
+      background: white;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      align-items: center;
+      -webkit-align-items: center;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      padding: 48px 48px 58px 0px; }
+      /* line 1285, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .people div.quote img {
+        width: 140px;
+        max-width: 140px;
+        border-top: none;
+        margin: 0 auto; }
+      /* line 1293, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .people div.quote .blockquote {
+        font-size: 2rem;
+        line-height: 1.5;
+        margin: 0;
+        text-align: center;
+        max-width: 600px; }
+      /* line 1303, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .people div.quote .cite {
+        font-size: 1rem;
+        font-style: normal; }
+      /* line 1313, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .people div.quote span.font {
+        font-weight: 400; }
+      /* line 1319, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .people div.quote section {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 600px; }
+  /* line 1335, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .story {
+    margin: 0;
+    padding: 0; }
+    /* line 1339, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .story div {
+      margin: 0 1em;
+      width: 200px;
+      padding: 0; }
+      /* line 1344, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .story div img {
+        margin: 0;
+        padding: 0; }
+      /* line 1349, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .story div i {
+        font-size: .85rem;
+        font-style: normal;
+        color: #66686b; }
+        /* line 1353, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+        .story div i .strong {
+          font-weight: 400; }
+  /* line 1362, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .together {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    padding: 0; }
+    /* line 1374, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .together .small-c-t {
+      font-size: .85em; }
+  /* line 1380, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .headwrap1,
+  .headwrap2 {
+    display: flex;
+    justify-content: space-between; }
+    /* line 1384, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .headwrap1 h1,
+    .headwrap2 h1 {
+      font-size: 3em;
+      width: 100%;
+      max-width: 450px;
+      margin-top: 10px;
+      line-height: 1.2;
+      font-weight: 600; }
+    /* line 1392, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .headwrap1 h3,
+    .headwrap2 h3 {
+      font-size: 2.5em;
+      margin: 2.5em 0 0 0;
+      width: 100%;
+      max-width: 450px;
+      margin-top: 10px;
+      font-weight: 600; }
+    /* line 1400, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .headwrap1 p,
+    .headwrap2 p {
+      font-weight: 300;
+      margin-bottom: 1em;
+      width: 100%;
+      max-width: 575px; }
+      /* line 1407, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .headwrap1 p .em,
+      .headwrap2 p .em {
+        font-weight: 500; }
+      /* line 1410, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .headwrap1 p a,
+      .headwrap2 p a {
+        border-bottom: 1px solid black;
+        text-decoration-style: none;
+        text-decoration: none;
+        color: black;
+        padding-top: 3px;
+        transition: .2s all; }
+        /* line 1417, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+        .headwrap1 p a:hover,
+        .headwrap2 p a:hover {
+          background: black;
+          color: white; }
+    /* line 1423, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+    .headwrap1 .gitlab-s,
+    .headwrap2 .gitlab-s {
+      width: 100%;
+      max-width: 575px; }
+      /* line 1426, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+      .headwrap1 .gitlab-s ul,
+      .headwrap2 .gitlab-s ul {
+        line-height: 1.5; }
+        /* line 1428, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+        .headwrap1 .gitlab-s ul img,
+        .headwrap2 .gitlab-s ul img {
+          margin-top: -5px; }
+  /* line 1437, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .headwrap1 {
+    margin-top: 1.5em;
+    margin-bottom: 9em; }
+  /* line 1442, /Users/kylemann/Google Drive/portfolio/new_portfolio/main.scss */
+  .headwrap2 {
+    margin-top: 12em;
+    margin-bottom: 9em; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,1261 @@
+/*//////////////////////// //////////////////////
+General Styling
+///////////////////////////////////////////////*/
+
+* {
+box-sizing: border-box;   
+ -webkit-font-smoothing: antialiased;
+color: black;
+}
+
+
+#body, body {
+ margin: 0 auto;   
+background: white;
+    color: black;
+}
+
+
+#body, .case-header h1, .case-header p, .top-nav p, .case-website-button, h2, h3, h4, section.bottom-navigation p, .bold-review {
+font-family: 'Tajawal', sans-serif;
+}
+
+.case-description p, .resume-description p, li, sup, .review-quote, table {
+font-family: 'Tajawal', sans-serif;   
+}
+
+
+.img {
+width: 100%;
+margin: 0;
+}
+
+img {
+ width: 100%;  
+
+}
+
+
+h1 {
+text-align: center;
+}
+
+.link, .linkp {
+text-decoration: none; 
+
+padding-bottom: 2px;
+text-indent: 0;
+}
+
+.linkp {
+ color: white;   
+}
+
+.link {
+ color: black; 
+ border-bottom: 1px solid black;
+    padding: 0;
+}
+
+.link:hover {
+      color: white;
+    border-bottom: 1px solid black;
+    background: black;
+    padding-top: 3px;
+  
+}
+
+.link:hover .small-caps-t {
+  color: white;
+}
+
+
+
+    /*  Firefox    */
+    
+@-moz-document url-prefix() { 
+ .link, .linkp {
+     padding-bottom: 4px;
+  }
+}
+
+.link2 {
+text-decoration: none; 
+color: #58595B;
+}
+
+a {
+ text-decoration: none;
+
+}
+
+
+
+    
+a:focus, a:visited, a:active {
+    outline: none;
+     text-decoration: none;
+       color: none;
+}
+
+  strong, b {
+     font-weight: 500;   
+    }
+
+
+
+
+
+
+/*//////////////////////// //////////////////////
+Navigation Back Button Styling
+///////////////////////////////////////////////*/
+
+.top-nav {
+/*
+display: flex;
+display: -webkit-flex;
+justify-content: center;
+-webkit-justify-content: center;
+align-items: center;
+-webkit-align-items: center;
+*/
+background: hsla(0, 0%, 99%, 0.76);
+width: 6.5em;
+border-bottom-right-radius: 10px;
+position: fixed;
+color: #58595B;
+    text-align: center;
+}
+
+.top-nav p {
+font-size: 1em; 
+
+}
+
+.back-arrow {
+width: 15px;
+margin-right: .2em;
+    vertical-align: middle;
+       padding-bottom: 2px;
+}
+
+
+/*//////////////////////// //////////////////////
+Description and Landing page Pic
+///////////////////////////////////////////////*/
+
+
+#about {
+padding: 2em 0;   
+width: 100%;
+margin: 0 auto;
+}
+
+#about h1 {
+font-size: 2em;   
+line-height: 0;
+margin: 0 auto;
+font-weight: normal;
+}
+
+#image-f {
+width: 90%;
+max-width: 500px;
+height: 200px;
+border-radius: 4px;
+margin: 2em auto 0 auto;
+background: url(../images/kyle.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;  
+}
+
+.icon, .pdficon {
+width: 20px;
+height: 20px;
+border-radius: 100%;
+vertical-align: middle;
+margin:  5px;
+}
+
+.pdficon {
+ padding-bottom: 3px;   
+}
+
+#tagline-mobile {
+text-align: center;
+margin-bottom: 2em;
+font-size:2em;
+line-height: 1.5;
+font-weight: normal;
+/*font-family: 'Whitney SSm A', 'Whitney SSm B';*/
+}
+
+#desktop-t {
+font-weight: 400;  
+}
+  
+#tagline {
+display: none; 
+/*font-family: 'Whitney SSm A', 'Whitney SSm B';*/
+}
+
+#description {
+font-size: 1em;
+line-height: 1.7;
+margin: 0 auto;
+width: 95%;
+max-width: 500px;
+padding: 3em 0;
+font-weight: 300;
+
+}
+
+
+
+/*//////////////////////// //////////////////////
+Work and Case Study layout
+///////////////////////////////////////////////*/
+
+.cover {
+width: 100%;
+height: 300px; 
+margin: 0;
+}
+
+#cover1 {
+background: url(../images/cover1.jpg) no-repeat center center;   
+}
+
+#cover2 {
+background: url(../images/cover2.jpg) no-repeat center center;   
+}
+
+#cover3 {
+background: url(../images/kyle11.jpg) no-repeat center center;   
+}
+
+#cover4 {
+background: url(../images/cover4.jpg) no-repeat center center;      
+}
+
+#cover1, #cover4, #cover3, #cover2 {
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;     
+}
+
+.cover-h {
+height: 100%;
+width: 100%;
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center;
+transition: 0.7s ease; 
+background: none; 
+}
+
+.cover-h:hover {
+background: hsla(0, 0%, 0%, 0.55);
+}
+
+.cover-h h3 {
+
+text-align: center;  
+color: white;
+font-size: 1.5em;
+line-height: 1;
+font-weight: normal;
+margin: 1em 0;
+}
+
+.task {
+line-height: 1;
+align-self: center;
+-webkit-align-self: center; 
+color: white;
+font-weight: 300;
+margin: 1em 0;
+font-size: 1em;
+}
+
+.case-study {
+color: white;
+text-align: center;
+line-height: 0;
+margin: 1.5em auto;
+width: 8.5em;
+font-weight: 300;
+border-radius: 1px;
+padding: 1em 0;
+transition: .3s ease;
+border: 1px solid white;
+font-weight: 1em;
+} 
+
+
+
+
+/*//////////////////////// //////////////////////
+Bookshelp Stylling Page
+///////////////////////////////////////////////*/
+
+    
+
+#bookshelf {
+ display: flex;
+display: -webkit-flex; 
+    flex-direction: column;
+    -webkit-flex-direction: column;
+justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+  padding: 5em 0;  
+}
+
+#bookshelf h2 {
+    font-size: 1.15em;
+ font-weight: 300; 
+    max-width: 200px;
+}
+
+.book {
+ width: 65px;
+    margin: 0 .15em -.15em .15em;
+}
+
+.book-row {
+border-bottom: 10px solid #5F5341;
+margin: 3em 0;
+-webkit-box-shadow: 0 32px 24px -24px black;
+-moz-box-shadow: 0 32px 24px -24px black;
+box-shadow: 0 32px 24px -24px black;   
+}
+
+    
+/*//////////////////////// //////////////////////
+Case Study Page Stylling
+///////////////////////////////////////////////*/
+
+.case-header {
+margin: 0 auto;
+width: 90%;
+max-width: 650px; 
+text-align: left;
+padding: 2em 0 1em 0;
+color:  black;
+
+
+}
+
+.case-header h1 {
+font-size: 2em;
+ font-weight: 600;
+ text-align: left;
+
+}
+
+.case-header p {
+ font-weight: 300; 
+    font-size: .85em;
+}
+
+
+
+
+
+/*//////////////////////// //////////////////////
+Case Study Page Stylling
+///////////////////////////////////////////////*/
+
+.case-description {
+width: 90%;
+max-width: 650px; 
+color:black;
+margin: 0 auto;
+padding: 3em 0;
+}
+
+.case-description p {
+font-size: 1em;
+line-height: 1.5;
+font-weight: 300;
+color:black;
+}
+
+.first:first-letter { 
+font-size: 2em; 
+font-weight: 400;
+}
+
+.first:first-line {
+  line-height: 1;  
+}
+
+.small-caps {
+font-variant: small-caps;
+font-weight: 300;
+}
+
+/*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+  .small-caps {
+  font-variant: none;
+      font-size: 1em;
+         font-weight: 300;
+  }
+}
+
+
+
+.homepage-website-button {
+width: 9em;
+}
+
+.case-website-button:hover, .homepage-website-button:hover {
+background: #167A3D;
+color: white;
+}
+
+.annotation {
+margin: 2em auto;
+width: 80%;
+line-height: 1.7;
+max-width: 400px;
+}
+
+.annotation2 {
+margin: 0 auto; 
+width: 80%;
+line-height: 1.7;
+max-width: 300px;
+}
+
+.case-description h2, .resume-description h2 {
+font-weight: 600;  
+}
+
+.case-description h3, .resume-description h3 {
+font-variant: small-caps;  
+}
+
+
+/*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+.case-description h3, .resume-description h3 {
+   font-variant: normal;
+    font-size: .85em;
+  }
+}
+ 
+.annotation ul li {
+font-weight: 300; 
+}
+
+.study-image {
+margin: 2em auto;
+width: 80%;
+max-width: 350px;
+}
+
+.study-image-large {
+margin: 2em auto;
+width: 100%;
+}
+
+.study-image2 {
+margin: .5em auto;
+width: 80%;
+max-width: 350px;
+}
+
+.study-image3 {
+margin: .5em auto;
+width: 50%;
+max-width: 225px;
+}
+
+.study-image5 {
+margin: .5em auto;
+width: 50%;
+max-width: 300px;
+}
+
+.study-image3 img, .study-image2 img, .study-image-large img, .study-image img, .study-image5 img
+{
+box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);
+-moz-box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);
+-webkit-box-shadow: 0px 0px 5px 1px rgba(119, 119, 119, 0.5);   
+}
+
+.annotation-flex {
+margin: 2em auto;
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center; 
+}
+
+sup {
+ font-weight: 300;   
+}
+
+.text-indent {
+ text-indent: 1em;   
+    
+}
+
+.top {
+ margin-top: 3em;   
+}
+
+.top2 {
+ margin-top: 2em;   
+}
+
+.bottom-navigation, .bottom-review {
+ display: flex;
+display: -webkit-flex;
+align-items: center;
+-webkit-align-items: center;
+}
+
+
+.bottom-review {
+flex-direction: column;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center;
+}
+
+
+
+.bottom-navigation {
+flex-direction: row;
+-webkit-flex-direction: row;
+justify-content: space-between;
+-webkit-justify-content: space-between;  
+}
+
+.bottom-icon {
+width: 15px;
+height: 15px;
+margin: 0 5px;
+vertical-align: middle;
+}
+
+.bottom-icon-white {
+width: 12px;
+height: 12px;
+margin: 0 3px 0 0;
+vertical-align: middle;
+padding-bottom: 4px;
+}
+
+.bottom-navigation p {
+font-size: .5em;
+}
+
+.review-pic {
+width: 100px;
+height: 100px;
+border-radius: 4px;
+margin-top: 1.75em;
+}
+
+.bold-review {
+font-weight: 400;   
+font-variant: small-caps;
+font-style: normal;
+font-size: 1.16em;
+}
+
+    /*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+.bold-review {
+      font-size: .9em;
+         font-variant: none;
+    font-weight: 400;
+  }
+}
+
+p.intro-resume  {
+margin: 0;   
+}
+
+p.intro-resume-des  {
+margin: 0 0 2em 0;   
+}
+  
+.year {
+font-size: .85em;
+font-weight: 500;
+}
+
+.bold-name {
+ font-weight: 500;
+/*  font-size: 1.15em;  */
+}
+
+.review-quote {
+ width: 80%;
+    line-height: 1.7;
+      max-width: 500px;  
+}
+
+.case-description .persona-review, .resume-description {
+width: 90%;  
+font-size: 1em;
+line-height: 1.5;
+max-width: 650px;
+    font-weight: 300;
+margin: 0 auto;
+}
+
+#matthew-review-pic {
+ background: url(../images/studiov-case/matthew-review.jpg) no-repeat center center;     
+}
+
+#suzanne-review-pic {
+ background: url(../images/rittenhouse/suzanne.jpg) no-repeat center center;
+}
+
+#cabrina-review-pic {
+ background: url(../images/experience/cabrina-image.jpg) no-repeat center center;     
+}
+
+#matthew-review-pic, #cabrina-review-pic, #suzanne-review-pic {
+
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;      
+}
+
+.bottom-review blockquote {
+font-style: normal; 
+font-weight: 300;
+}
+
+cite {
+font-style: normal; 
+}
+
+.no-bullets {
+list-style: none;   
+margin-left: 0;
+margin-right: 0px;
+padding-left: 5px;
+padding-right: 0px;
+font-size: .85em;
+}
+
+.list-left {
+margin-left: 2px;
+margin-right: 0px;
+padding-left: 5px;
+padding-right: 0px; 
+}
+
+.margin-fix-bottom {
+margin-bottom: -1em;         
+}
+
+ul li, ol li {
+font-weight: 300;   
+}
+
+
+
+
+/*//////////////////////// //////////////////////
+Table Styling
+///////////////////////////////////////////////*/
+table {
+width: 100%;
+border: 1px solid black;
+margin: .5em 0 0 0;
+}
+
+tr, td {
+border: 1px solid black;  
+}
+
+td {
+width: 50%;  
+padding: .5em .35em;
+font-weight: 300;   
+font-size: .85em;
+}
+
+table h5 {
+text-align: center;
+font-size: 1.5em;
+}
+
+.table-heading {
+text-align: center;
+padding: 1em 0;
+font-size: 1.15em;
+}
+
+
+
+
+/*//////////////////////// //////////////////////
+Resume Stylling Page
+///////////////////////////////////////////////*/
+.skill-list {
+ width: 200px;   
+}
+
+
+
+.skill-list ul {
+list-style: none;
+text-align: center;
+text-indent: 0;
+padding: 0;
+margin: 0;
+}
+
+.skill-list h3 {
+text-align: center;
+}
+
+.skill-list ul li {
+padding: 0;
+margin: 0;
+}
+
+
+.mask { 
+height: 1px; 
+/*margin: 4px 0;*/
+margin: 1.5em auto 2.5em auto;
+width: 60%; 
+border-radius: 1px;
+border-bottom: 1px solid grey;
+}
+
+#work {
+ display: none;   
+}
+
+/*//////////////////////// //////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+Desktop VERSION - MEDIA QUERIES
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+///////////////////////////////////////////////*/
+
+@media only screen and (min-width: 800px) {
+    
+    
+    .case-body {
+        
+        width: 100%;
+        margin: 0 auto;
+        padding: 6em 0;
+    }
+    
+    
+/*//////////////////////// //////////////////////
+Navigation Back Button Styling
+///////////////////////////////////////////////*/
+
+.top-nav {
+font-weight: 300;
+font-size: 1.5em;
+line-height: 0;
+transition: 0.3s ease;
+}
+    
+.back-arrow {
+width: 25px;
+padding-bottom: 3px;
+}
+   
+.case-study:hover  {
+background: hsla(0, 0%, 0%, 0.5);
+}
+    
+.case-study {
+margin: .5em auto;
+font-size: 1.1em;
+font-weight: normal;
+display: none;
+}
+    
+/*//////////////////////// //////////////////////
+About Section Header and Image
+///////////////////////////////////////////////*/
+    
+    
+#body, .title-resume {
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+}
+    
+.title-resume {
+justify-content: space-between;
+-webkit-justify-content: space-between;
+align-items: baseline;
+-webkit-align-items: baseline;
+}
+    
+#image-f {
+width: 50vw;
+max-width: 100%;
+height: 50vh;
+border-radius: 0;
+margin: 0;
+background: url(../images/kyle.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+}
+ 
+#about {
+width: 100%;   
+margin: 0;
+padding: 0;
+position: fixed;
+display: flex;
+display: -webkit-flex;
+flex-direction: row;
+-webkit-flex-direction: row;
+}
+    
+#description {
+width: 50vw;
+height: 50vh;
+max-width: 50vw;     
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center;
+padding: 0;
+align-items: center;
+-webkit-align-items: center;
+font-size: 1em;
+line-height: 1.7;  
+}
+    
+#container {
+width: 95%;
+max-width: 600px;
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center;
+}
+    
+#description  p {
+margin: .5em 0;              
+}
+    
+.icon {
+width: 1.5em;
+height: 1.5em;
+margin: 0 10px; 
+transition: .3s ease;
+}
+    
+    
+    
+/*//////////////////////// //////////////////////
+CASE STUDY/WORK Row Styling
+///////////////////////////////////////////////*/
+    
+    
+#work {
+    
+width: 100%;
+height: 100%;
+position: fixed;
+left: 0;
+top: 50%;
+display: flex; 
+display: -webkit-flex;
+flex-wrap: wrap;
+-webkit-flex-wrap: wrap;
+flex-direction: row;
+font-family: 'Whitney SSm A', 'Whitney SSm B';
+}
+    
+.cover {
+width: 33.3333333%;   
+height: 50%;  
+}
+        
+#tagline-mobile {
+display: none;   
+}
+    
+#tagline {
+display: inherit;
+text-align: center;
+margin: .25em;
+font-size: 1.5rem;
+line-height: 1;
+font-weight: 400;
+}
+    
+.cover h3 {
+font-size: 1.35em;
+line-height: 1;
+margin: .85em 0;
+font-weight: 500;
+}
+    
+.task {
+   margin: .85em 0; 
+}
+
+
+/*//////////////////////// //////////////////////
+Case Study Header Stylling
+///////////////////////////////////////////////*/
+.case-header {
+margin: 0;
+text-align: left;
+    padding: 6em 0 4.5em 0;
+    width: 95%; 
+ max-width: 800px;  
+    margin: 0 auto;
+  color:  black;
+}
+    
+.case-header h1 {
+font-size: 3em; 
+margin: 0;
+line-height: 1.25;
+color:  black;
+font-weight: 600;
+    text-align: left;
+}
+    
+.case-header p {
+font-size: 1.25em; 
+margin:0;
+line-height: .5;
+    color:  black;
+}
+    
+    
+    
+/*//////////////////////// //////////////////////
+Case Study Page Stylling
+///////////////////////////////////////////////*/
+
+.case-description, .resume-description {
+width: 95%;
+margin: 0 auto;
+padding: 0 0 12em 0;
+}
+    
+.resume-description {
+ max-width: 800px;    
+}
+ 
+.case-description {
+max-width: 46em; 
+ }
+    
+.case-description p {
+font-size: 1.25em;
+line-height: 1.6;
+}
+    
+.resume-description p {
+font-size: 1.25em;
+line-height: 1.5;
+    color: black;
+}
+    
+.resume-description h2 {
+font-size: 2.5em;
+font-weight: 600;
+text-align: left;
+color: black;
+    line-height: 1;
+}
+    
+.bold-name {
+ font-weight: 500;
+/*  font-size: 1.1em;  */
+}
+
+.first:first-letter { 
+font-size: 3em; 
+line-height: 1;     
+}
+
+.first:first-line {
+line-height: 1.2;
+}
+    
+.small-caps {
+font-size: 1.2em;   
+}
+    
+.small-caps-t {
+font-size: .95em; 
+font-weight: 300;
+}
+    
+/*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+  .small-caps {
+      font-size: 1.14em;
+         font-weight: 300;
+  }
+}
+    
+       
+/*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+ .small-caps-t {
+      font-size: .86em;
+         font-weight: 300;
+  }
+}
+ 
+    
+.case-website-button, .homepage-website-button {
+font-size: 1.15em;
+margin: 4em auto;
+border-width: 2px;
+width: 15.5em;
+}
+    
+.homepage-website-button {
+width: 10.5em;   
+}
+    
+.annotation, .study-image {
+max-width: 450px;   
+}
+
+.annotation-flex {
+margin: 1em auto 2em auto;
+display: flex;
+display: -webkit-flex;
+flex-direction: row;
+-webkit-flex-direction: row;
+justify-content: center;
+-webkit-justify-content: center; 
+}
+    
+.margin-fix-bottom {
+margin-bottom: -3em;        
+}
+    
+.margin-fix-bottom2 {
+margin-bottom: -2em;         
+}
+    
+.margin-fix-top {
+margin-top: -1.25em;        
+}
+
+.margin-fix-top2 {
+margin-top: -.75em;        
+}
+  
+.bottom-navigation p {
+font-size: 1em;
+}
+    
+.bottom-review {
+margin: 2em 0;
+flex-direction: row;
+-webkit-flex-direction: row;
+ justify-content: center;
+-webkit-justify-content: center;
+align-items: flex-start;
+-webkit-align-items: flex-start; 
+}
+    
+.bottom-navigation {
+-webkit-justify-content: space-between; 
+align-items: space-between;
+}
+    
+.center {
+text-align: center;   
+}
+    
+.review-pic {
+width: 125px;
+height: 125px;
+}
+   
+    
+/* Underline Reveal */
+.hvr-underline-reveal, .hvr-underline-reveal-w {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+position: relative;
+overflow: hidden;
+}
+    
+.hvr-underline-reveal:before, .hvr-underline-reveal-w:before  {
+content: "";
+position: absolute;
+z-index: -1;
+left: 0;
+right: 0;
+bottom: 0;
+height: 2px;
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+    
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal-w:hover:before {
+-webkit-transform: translateY(0);
+transform: translateY(0);
+}
+    
+.hvr-underline-reveal:before {
+background: #167A3D;     
+}
+    
+.hvr-underline-reveal-w:before {
+background: white;     
+}
+  
+    
+/* Underline From Left */
+.hvr-underline-from-left, .hvr-underline-from-right  {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+    
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #262626;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before {
+  right: 0;
+}
+    
+/* Underline From Right */
+
+.hvr-underline-from-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: #262626;
+  height: 1px;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-right:hover:before {
+  left: 0;
+}
+    
+.icon:hover {
+opacity: .65;   
+}
+    
+   
+#clickMe {
+cursor: url(../images/rittenhouse/right-arrow-white.png), auto;   
+}
+    
+#magnify, .fancybox {
+cursor: url(../images/rittenhouse/zoom.png), auto;     
+}
+    
+p.built-with  {
+margin-bottom: 3em; 
+font-size: 1em; 
+}
+    
+    
+
+    
+/*//////////////////////// //////////////////////
+Table Styling
+///////////////////////////////////////////////*/
+
+td {
+width: 50%;  
+padding: 2em .5em;
+font-size: .95em;
+line-height: 1.6;
+}
+    
+.top-nav p {
+padding: .65em; 
+margin: .45em 0;
+}   
+    
+
+

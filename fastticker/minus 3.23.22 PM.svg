@@ -1,0 +1,19 @@
+<svg id="Ticker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.5 48.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7a6d73;
+        opacity: 0.3;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #1ab6ff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>minus</title>
+  <rect class="cls-1" width="31.5" height="48.24"/>
+  <line class="cls-2" x1="22.91" y1="21.76" x2="8.91" y2="21.76"/>
+</svg>

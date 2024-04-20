@@ -1,0 +1,271 @@
+/* line 3, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 7, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+body {
+  padding: 0; }
+
+/* line 11, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#background {
+  width: 100%;
+  max-width: 1500px; }
+
+/* line 17, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+.markets-page {
+  margin-bottom: -71px; }
+
+@keyframes example {
+  0% {
+    background-color: black; }
+  9% {
+    background-color: black; }
+  10% {
+    background: #092b35; }
+  12% {
+    background: #092b35; }
+  14% {
+    background-color: black; }
+  19% {
+    background-color: black; }
+  20% {
+    background: #092b35; }
+  22% {
+    background: #092b35; }
+  24% {
+    background-color: black; }
+  29% {
+    background-color: black; }
+  30% {
+    background: #092b35; }
+  32% {
+    background: #092b35; }
+  34% {
+    background-color: black; }
+  39% {
+    background-color: black; }
+  40% {
+    background: #092b35; }
+  42% {
+    background: #092b35; }
+  44% {
+    background-color: black; }
+  49% {
+    background-color: black; }
+  50% {
+    background: #092b35; }
+  52% {
+    background: #092b35; }
+  54% {
+    background-color: black; }
+  59% {
+    background-color: black; }
+  60% {
+    background: #092b35; }
+  62% {
+    background: #092b35; }
+  64% {
+    background-color: black; }
+  69% {
+    background-color: black; }
+  70% {
+    background: #092b35; }
+  72% {
+    background: #092b35; }
+  74% {
+    background-color: black; }
+  79% {
+    background-color: black; }
+  80% {
+    background: #092b35; }
+  82% {
+    background: #092b35; }
+  84% {
+    background-color: black; }
+  89% {
+    background-color: black; }
+  90% {
+    background: #092b35; }
+  92% {
+    background: #092b35; }
+  94% {
+    background-color: black; }
+  100% {
+    background-color: black; } }
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%); } }
+
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%); } }
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(-100%); } }
+
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(-100%); } }
+
+@keyframes hideshow {
+  0% {
+    opacity: 0; }
+  1% {
+    opacity: 1; }
+  9% {
+    opacity: 1; }
+  10% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+/* line 186, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card1 {
+  transform: translateX(-100%);
+  animation: slide-in 1.2s ease forwards, hideshow 60s ease infinite; }
+
+/* line 191, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card2 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.2s 5.5s ease-in forwards, hideshow 60s 6s ease-in-out infinite; }
+
+/* line 197, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card3 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.2s 11.5s ease-in forwards, hideshow 60s 12s ease-in-out infinite; }
+
+/* line 203, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card4 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.2s 17.5s ease-in forwards, hideshow 60s 18s ease-in-out infinite; }
+
+/* line 209, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card5 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.2s 23.5s ease-in forwards, hideshow 60s 24s ease-in-out infinite; }
+
+/* line 215, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card6 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.2s 29.5s ease-in forwards, hideshow 60s 30s ease-in-out infinite; }
+
+/* line 221, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card7 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.2s 35.5s ease-in forwards, hideshow 60s 36s ease-in-out infinite; }
+
+/* line 227, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card8 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.2s 41.5s ease-in forwards, hideshow 60s 42s ease-in-out infinite; }
+
+/* line 233, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card9 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.2s 47.5s ease-in forwards, hideshow 60s 48s ease-in-out infinite; }
+
+/* line 239, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card10 {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 1.2s 53.5s ease-in forwards, hideshow 60s 54s ease-in-out infinite; }
+
+/* line 245, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#card1,
+#card2,
+#card3 {
+  transition: 1s ease; }
+
+/* line 251, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+.active {
+  display: block; }
+
+/* line 255, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+.remove {
+  display: none; }
+
+/* line 259, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+#click-market:hover {
+  cursor: pointer; }
+
+/* line 263, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+.article {
+  background: black;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 1200px;
+  left: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 600ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 600ms cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+  /* line 276, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+  .article .div-t {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 0 5px; }
+  /* line 282, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+  .article .ticker-a {
+    width: 900px; }
+  /* line 285, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+  .article .text-input {
+    background: white;
+    padding: 1px 5px;
+    width: 100%x;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    justify-content: center;
+    border-radius: 0; }
+    /* line 301, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+    .article .text-input img {
+      width: 15px;
+      margin-right: 5px; }
+      /* line 304, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+      .article .text-input img:hover {
+        cursor: pointer; }
+    /* line 308, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+    .article .text-input input {
+      border: none;
+      color: grey;
+      padding: 2px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px; }
+  /* line 316, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+  .article .plus-toggle,
+  .article .minus-toggle {
+    width: 31px;
+    height: 48px;
+    margin-left: 15px;
+    margin-top: -3px; }
+  /* line 323, /Users/kylemann/Desktop/portfolio/ubs assets/fast ticker/scss/main.scss */
+  .article .article2 {
+    display: flex;
+    align-items: center;
+    margin-top: -3px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Thanks for checking out my site!-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Mann | Innovation by collaborative iteration</title>
+    <!-- STYLING-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="fancybox.css" />
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon2/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon2/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon2/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon2/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon2/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/2apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon2/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon2/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon2/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon2/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon2/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon2/favicon-16x16.png">
+    <link rel="manifest" href="favicon2/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon2/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JS/QUERY-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.js"></script>
+    <script src="interaction.js"></script>
+    <script src="https://use.fontawesome.com/5f15c58e6f.js"></script>
+</head>
+
+<body class="work-p">
+    <!--
+<header>
+<a href="index.html" class="back"><i class="fa fa-angle-left" aria-hidden="true"></i>  back home</a>
+    </header>
+   
+-->
+    <!--
+         <nav class="desktop-h">
+        <h1>
+       <span>Advisor Dashboard Integration</span> 
+        </h1> </nav>
+        
+        
+        https://about.gitlab.com/company/team/
+        
+-->
+    <div class="container study">
+        <div class="headwrap1">
+            <h1>Security dashboard</h1>
+            <div class="gitlab-s">
+                <p>On the <a href="https://about.gitlab.com/stages-devops-lifecycle/secure/" target="_blank">Secure section of GitLab</a>, the feature’s foundation is comprised of <span class="small-caps">5</span> security scanners: static analysis, dependency, dynamic analysis, license, and container scanning. I served on this section's <a href="https://about.gitlab.com/handbook/engineering/ux/stage-group-ux-strategy/secure-and-defend/" target="_blank"><span class="small-caps">UX</span> team</a> and scaled from a team of <span class="small-caps">1</span> to <span class="small-caps">5</span> product designers (<span class="small-caps">70+</span> across the <span class="small-caps">UX</span> department). For wider perspective: the company as a whole during my tenure  grew from <span class="small-caps">300</span> to <span class="small-caps">1300</span> <a href="https://about.gitlab.com/company/team/" target="_blank">team members</a>!
+                    <br>
+                    <br>As the team grew so did the <a href="https://about.gitlab.com/blog/2019/10/11/how-we-uxd-our-secure-ux-team/" target="_blank">processes, team structure, and areas of focus</a>. My role focused on: the Composition Analysis Group on <a href="https://about.gitlab.com/direction/secure/" target="_blank">Secure</a> section, which is: dependency scanning, container scanning, and license compliance. Also Container Network Security on the newly formed <a href="https://about.gitlab.com/direction/protect/" target="_blank">Protect</a> section. While these were my areas of individual focus, there are also shared areas the design team iterates on collaboratively. One such feature is the <a href=" https://docs.gitlab.com/ee/user/application_security/security_dashboard/" target="_blank">Security Dashboard</a>, which displays results from <span class="small-caps">4 of 5</span> of the security scanners. The following are contributions I made along the way, building off previous work, and laying the foundation for subsequent iterations. </p>
+            </div>
+        </div>
+        <div class="headwrap2">
+            <h3>Collborative iterations on a team endeavor</h3>
+            <div class="gitlab-s">
+                <p>My objective: audit the <a href=" https://docs.gitlab.com/ee/user/application_security/security_dashboard/" target="_blank">security dashboard</a> baseline experience and map a path forward with improvements. The primary user we are designing for works in an organization's web security department. Roles such as: security analysts, security engineers, or head of security. Although, our customers that are mid-to-smaller organizations may not have a dedicated security department, therefore in this case the users would be: developers, tech leads, and devops engineers.
+                    <br>
+                    <br>I started by identifying and focusing on the following user task (or job-to-be-done) to improve on: “When reviewing vulnerabilities for multiple projects, I want to see them all in one location, so that I can prioritize my efforts to resolve or triage them while seeing the larger picture”. Based on the heuristics review; here were the key problems I identified: </p>
+                <ul>
+                    <li>The most important data was not immediately visible in a common desktop viewport: table view vulnerabilities are pushed down the page below the summary and large chart. The user needs to scroll up and down to adjust filters then view the table data. </li>
+                    <li>The data visualization is using a line chart to show multiple different vulnerability severity types. However, it's not important to see how the vulnerabilities compare with each other, rather how they have trended over-time individually. </li> <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/2c39ea1b147211d0ad76e4cafe26682b/display_default.png" class="fancybox" title="Line chart hiding most important data below • Not usefule to see comparison visual" alt="Line Chart">
+                    <li>When the user adjusts the severity filters, for example to "high" only, the summary view still displays “0” for the non-selected criticality levels (chart displays only the filtered object). This occupies space and displays non-relevant data.</li> <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/3d19dcebeabb93308053dff4cf91f45c/display_default_wfilter.png" class="fancybox" title="Filter confusion" alt="Line Chart">
+                    <li>It's unclear in the security dashboard what projects in the group have or have not been tested and when. The source of the displayed data is absent.</li> <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/379fe247bc5a6a9b1fdd8a46b9cfa1dd/table_display.png" class="fancybox" title="Data source is absent" alt="Line Chart">
+                    <br>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_JtUdaTyAbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <i>Video walkthrough of problems identified</i> </ul>
+                <br>
+                <br>
+                <p>Then my proposed solutions and shipped iterations:</p>
+                <ul>
+                    <li>Layout changes that prioritize the table vulnerability data: <span class="small-caps">1)</span> header: Section header label ("Vulnerability Management") and filters, <span class="small-caps">2)</span> main: table data at the top making it immediately visible to the user, <span class="small-caps">3)</span> aside: contains the summary severity count and chart showing changes over time, also accounting for upcoming iterations: displaying <a href="https://gitlab.com/gitlab-org/gitlab-ee/issues/11190" target="_blank">affected project</a> and <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/13298" target="_blank">untested projects</a> </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/fbfeb156e19165fd58210086e7c82698/future.png" class="fancybox" title="Layout to prioritize most important data and space for future iterations" alt="Layout change">
+                    <li>If user filters by severity, the chart data summary shows only the selected data points </li> <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/59b4855ef3ebf9cddbcf6efb9458cc7c/2.png" class="fancybox" title="Only display selected data" alt="Display data">
+                    <li>Improve <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/12881" target="_blank">information design by using sparklines</a> : <span class="small-caps">1)</span> show trends over time with individual vulnerability type, <span class="small-caps">2)</span> severity label same as seen in the table (visual consistency), <span class="small-caps">3)</span> percentage of change in selected days 30/60/90, help users understand how they have progressed +/-, <span class="small-caps">4)</span> current # vulnerability count displayed</li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/96a664e9e7aa528d3faab8bb8ee92e9f/1.png" class="fancybox" title="Display trends with sparklines, including % change over time" alt="Sparklines">
+                    <li>Show on dashboard <a href=" https://gitlab.com/gitlab-org/gitlab/-/issues/13298 " target="_blank"> what and when latest test</a> were run for what project. </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/3e9180159b8c9d2271ad8fa4ac127324/2.png" class="fancybox" title="Display source of date: tested projects and pipeline data" alt="Data source"> </ul>
+            </div>
+        </div>
+        <div class="twogl">
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WGOAJtQehZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <i>Reviewing proposed changes with the team</i> </div>
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gxZzQtM_RnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i>Overview: show on group security dashboard when security tests are not configured</i> </div>
+        </div> <img src="images/gitlabimg/3.png" class="fancybox" title="Discoverability of merge request with fixes" alt="Bot Overview"> <i>Group security dashboard</i>
+        <div class="headwrap2">
+            <h3>Passing the baton</h3>
+            <div class="gitlab-s">
+                <p>Since these changes: 5 new designers joined the secure and we’ve been continually ideating and shipping iterations together. Next up, I started looking at <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/209906" target="_blank">improving system communication</a> for the user.
+                    <br>
+                    <br> Iterations coming together exemplify the spirit of collaborative teamwork in action. In a continually changing environment and rapidly growing team, we work together a lot like a relay race: quickly iterating, then passing the baton to the next designer to contribute an iteration, then passing it to the next – continually contributing toward a common endeavor. Whether our contributions innovate or fail, it’s always valuable learning to improve and inform our fellow teammate’s next iteration. It inspires me to be a contributor among a wider team and see iterations come together to deliver customer value.</p>
+            </div>
+        </div>
+        <article class="people" style="margin:5em auto 0 auto;">
+            <div class="quote" style="background:none; justify-content: center;
+    -webkit-justify-content: center; padding:0;">
+                <section>
+                    <p class="contact" style="font-size: 1rem; font-weight: 400;">Thanks for visiting. Questions or thoughts? <a href="mailto:kyle@convexitydesign.com?Subject=Hello%20Kyle" target="_top">drop me a note</a>.
+                        <br>
+                        <br> See <a href="work.html"> home page</a> or view next case study: <a href="continualiteration.html">innovation by iteration
+</a>.
+                        <br>
+                        <br>
+                        <br> <a href="https://gitlab.com/kmann" target="_blank" class="icon"><i class="fa fa-gitlab" aria-hidden="true"></i></a> &#160; &#160; &#160; &#160; <a href="https://github.com/kylemann" target="_blank" class="icon"><i class="fa fa-github" aria-hidden="true"></i></a> &#160; &#160; &#160; &#160; <a href="https://www.linkedin.com/in/convexitydesign/" target="_blank" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </p>
+                </section>
+            </div>
+        </article>
+    </div>
+    <!-- JS LIGHTBOX GALLERY-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <script type="text/javascript">
+        $(function ($) {
+            var addToAll = false;
+            var gallery = true;
+            var titlePosition = 'outside';
+            $(addToAll ? 'img' : 'img.fancybox').each(function () {
+                var $this = $(this);
+                var title = $this.attr('title');
+                var src = $this.attr('data-big') || $this.attr('src');
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                $this.wrap(a);
+            });
+            if (gallery) $('a.fancybox').attr('rel', 'fancyboxgallery');
+            $('a.fancybox').fancybox({
+                titlePosition: titlePosition
+            });
+        });
+        $.noConflict();
+    </script>
+</body>
+
+</html>

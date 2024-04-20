@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Thanks for checking out my site!-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Mann | Auto-remediation</title>
+    <!-- STYLING-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="fancybox.css" />
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+<!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon2/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon2/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon2/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon2/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon2/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/2apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon2/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon2/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon2/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon2/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon2/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon2/favicon-16x16.png">
+    <link rel="manifest" href="favicon2/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon2/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JS/QUERY-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.js"></script>
+    <script src="interaction.js"></script>
+    <script src="https://use.fontawesome.com/5f15c58e6f.js"></script>
+</head>
+
+<body class="work-p">
+    <!--
+<header>
+<a href="index.html" class="back"><i class="fa fa-angle-left" aria-hidden="true"></i>  back home</a>
+    </header>
+   
+-->
+    <!--
+         <nav class="desktop-h">
+        <h1>
+       <span>Advisor Dashboard Integration</span> 
+        </h1> </nav>
+        
+        
+        
+       
+-->
+    <div class="container study">
+        <div class="headwrap1">
+            <h1>Iterations toward automation</h1>
+            <div class="gitlab-s">
+                <p><a href="https://about.gitlab.com/" target="_blank">GitLab</a> is an open-core single application serving development and operations teams in software development. I served as a senior product designer on the <a href="https://about.gitlab.com/handbook/engineering/ux/stage-group-ux-strategy/sec/" target="_blank">Secure and Protect <span class="small-caps">UX</span></a> team, where I focused on designing an experience that enables contributors and teams to commit their most secure work and to defend what they have in production. I lead design on the <a href="https://about.gitlab.com/direction/secure/#auto-remediation" target="_blank">auto-remediation</a> feature, which is a web security feature with the long-term objective: fix security vulnerabilities in production automatically without human involvement. The users are: <span class="small-caps">1)</span> developers, who are <i>responsible</i> for committing secure code; and <span class="small-caps">2)</span> security professionals, who are <i>accountable</i> for an organization's application security.
+                    <br>
+                    <br> Why is this valuable to customers? Thinking big: auto-remediation removes the guesswork of identifying and fixing known vulnerabilities by the system automating the workflow. The key innovation: fixes are applied to production code while the customer sleeps. This customer value gives time back to their teams and ensures a more efficient application security workflow. It’s not just the time saved fixing vulnerabilities, it’s also the time saved investigating the detected vulnerabilities. When it comes to web security, no application will ever be <span class="small-caps">100%</span> secure. That’s why our team’s core focus is: integrating automation into every step of the user’s workflow, facilitating improved decision-making, and helping users understand their risk. </p>
+                <ul>
+                    <li>Overview: related issues, epic, and walkthroughs</li>
+                    <li><a href="https://gitlab.com/gitlab-org/gitlab/-/issues/36500" target="_blank">Suggested solutions automation intro:</a> auto-create merge request with solutions</li>
+                    <li><a href="https://gitlab.com/gitlab-org/gitlab/-/issues/197349" target="_blank">Discovery, security bot member:</a> for merge request with committed solutions</li>
+                    <li><a href="https://gitlab.com/groups/gitlab-org/-/epics/2238" target="_blank">Epic: feature foundation</a> implementation issues, discoveries, and ux research</li>
+                    <li><a href="https://gitlab.com/gitlab-org/ux-research/-/issues/530" target="_blank">User testing</a>: auto-create merge request configuration and workflow</li>
+                    <li><a href="https://gitlab.com/gitlab-org/gitlab/-/issues/196533" target="_blank">Remediation in merge request:</a> user awareness when solutions are available</li>
+                    <li><a href="https://www.youtube.com/embed/pbRhf0LHgq8?start=16" target="_blank">TLDR?</a>: watch a video walkthrough</li>
+                </ul>
+            </div>
+        </div>
+        <div class="headwrap2">
+            <h3>Getting started</h3>
+            <div class="gitlab-s">
+                <p>My role and objective: <span class="small-caps">1)</span> identify customer value, <span class="small-caps">2)</span> ensure consistent user experience across multiple scanners/languages, and <span class="small-caps">3)</span> define and prioritize iterative steps toward automating the user’s workflow.
+                    <br>
+                    <br>Leading a <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/14059#note_245374632" target="_blank">cross-functional discovery</a> with a backend and front-end engineer. My first step: audit the existing <a href="https://gitlab.com/gitlab-org/gitlab/uploads/bd841be6800625ada35d5dc85138b528/0.png" target="_blank">user experience baseline</a>. The findings included: <span class="small-caps">1)</span> burdensome and time consuming manual remediation process on the user, <span class="small-caps">2)</span> suggestions existed but were not being communicated to the user in the security dashboard or <span class="small-caps">3)</span> the merge request when new vulnerabilities were committed.
+                    <br>
+                    <br> Then, I started identifying what was on the horizon: supported languages, scanner vulnerability findings, and related solution/fixes database capabilities. Today, customers can use the feature for dependencies detected in a project and in the future for application containers (such as <a href="https://www.docker.com/" target="_blank">Docker</a>). This foundational technical understanding outlined the dependencies we’d need to consider as we evolved, such as configuration requirements, outlining areas of divergence and opportunities for consistency in the experience. With an understanding of our long-term customer value goals, current <span class="small-caps">UX</span>, and engineering capabilities - I dove into the ideation and focused on the following questions to explore: </p>
+                <ul>
+                    <li>What are the user permissions? </li>
+                    <li>Who will be able to do what?</li>
+                    <li>How is the feature activated?</li>
+                    <li>When are suggested solutions turned to merge requests?</li>
+                    <li>How will a user be notified this occurred?</li>
+                    <li>What user will be responsible for the created merge request?</li>
+                    <li>What criteria, such as vulnerability severity, would trigger the auto MR?</li>
+                </ul>
+                <br>
+                <p>Based on the long term goal to automate fixes: broke down the objective into focused iterations: </p>
+                <ul>
+                    <li>Step 1: automatic creation of merge request (opted-in)</li>
+                    <li>Step 2: suggest solutions available (opted-out)</li>
+                    <li>Step 3: automatic merging of auto-created merge request (opted-in)</li>
+                </ul>
+                <br>
+                <p>Focusing on step one, the <a href="https://about.gitlab.com/handbook/product/#the-minimal-viable-change-mvc" target="_blank">minimal viable change</a> goals: </p>
+                <ul>
+                    <li>Works out of the box: opted-in by default</li>
+                    <li>System communicates to user that merge request solutions exist</li>
+                    <li>UI explicit about vulnerabilities that have suggested solutions (for both opt-in or out) </li>
+                    <li>Capabilities and supporting languages is clarified to the user</li>
+                    <li>User needs to be aware the merge request was a system creation</li>
+                    <li>Findability and log of merge request created</li>
+                </ul>
+            </div>
+        </div>
+        <div class="headwrap2">
+            <h3>Ideation kickoff</h3>
+            <div class="gitlab-s">
+                <p>My ideation moved fast to get early feedback and shared learning. The <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/14059#note_227616774" target="_blank"> first iteration review</a> focused on the settings, configuration, and creation of the auto-created merge request. This surfaced the following findings, learnings, decisions needs, and questions:</p>
+                <ul>
+                    <li>Requiring an assignee or author of the merge request blocks our ability for the feature to work out of the box. Challenge: no existing alternative user or system to leverage; so expediency, selecting an assignee could move the feature to production faster. Questions to follow: are customers comfortable with having a team member be the assignee? Would this deter them from adopting the feature? </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/59f044a730ba50773da8d678e163f247/settingup.png" class="fancybox" title="Feature configuration and setup" alt="Feature setup">
+                    <li><a href=" https://gitlab.com/gitlab-org/gitlab/-/issues/39209" target="_blank">Information architecture:</a> the opt-in/out setting for the feature located in the configuration section vs the settings area. Background hypothesis based on: <span class="small-caps">1)</span> we saw in past studies that users would navigate to the configuration section for secure settings, <span class="small-caps">2)</span> configuring the scanners (dependency and container scanning) were prerequisites for the feature to be active. Questions to follow: do users understand the configuration requirements? Where would users go to learn more about the feature? Do users navigate to the section to address related settings? </li>
+                    <li>Displaying a separate section for the auto-created merge requests. The hypothesized upside of this direction: increased discoverability, made the management easier (focused area), less reliance on notifying users about new merge requests, worked out-of-the-box with no assignee. The downside: additional front-end UI build (longer implementation), would be outside the normal workflow of merge request, better for longer term goal (vs initial iteration - insight for later). </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/c871de4abe51a7c67b3997d0fb96733c/alternative_approach.png" class="fancybox" title="Merge request section" alt="merge requestsection">
+                    <li>The structure of the auto-created merge request was heading in a good direction, per the data from findings-solutions database to be display in the merge description. However, the creator of the merge request was not yet clear, nor was the record of the created merge request. </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/49932e32c1fd99fa66ce716a2c4683e7/autoMR.png" class="fancybox" title="Auto-created merge request structure" alt="merge request"> </ul>
+            </div>
+        </div>
+        <div class="headwrap2">
+            <h3>Learn, evolve, and repeat</h3>
+            <div class="gitlab-s">
+                <p>Following my learnings from the kickoff ideation: <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/14059#note_240956001" target="_blank"> the second turn</a> focused on the user questions, promoting user-awareness of suggested solutions, related workflows of the problem-solution vulnerabilities. The findings, learnings, and questions:</p>
+                <ul>
+                    <li>Dedicated sections filtering by “Auto-fix” may be a good longer-term solution; but could be minimized to leverage a label, which will be included on the merge request.</li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/42733df2726d014ac236e62e7183b538/3.png" class="fancybox" title="Findability: auto-fix merge request" alt="Findability">
+                    <li>Author of the created merge request: instead of forcing the user to select, the author would be the user who opted in. Downsides: may deter users from opting-in, feature does not work out-of-the-box, temporary solution. Upsides: 1) simplified setup since it designated the user, 2) this user would then be the author, 3) record log per the author profile. </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/eeef627a2d7917e307bf04580834067b/1_.png" class="fancybox" title="Opt-in: author is the user that configures feature" alt="Opt-in">
+                    <li>User awareness: display on the security dashboard when auto-created merge requests exist. Proposed solution to display banner, as a first iteration would keep the noise level of notification down. Questions: does the user understand the visual communication for suggested solutions? How do users perceive the banner - do they understand the text - what action, if any, do they take? </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/b7032b4fd2cfb91e2911f00dc74d3349/6.png" class="fancybox" title="Opt-in: author is the user that configures feature" alt="Opt-in"> </ul>
+                <p>Weighing the tradoffs, we commited our decisions and concluded with a <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/14059#note_245374632" target="_blank">discovery outcome report</a> outlining a path forward including <a href="
+https://gitlab.com/gitlab-org/gitlab/-/issues/36500" target="_blank">implementation to production</a>, <a href="https://gitlab.com/gitlab-org/ux-research/-/issues/530" target="_blank">user research</a>, and a <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/36503" target="_blank">follow up discovery</a>. These steps optimized for delivery by: prioritizing the backend work while in tandem prototyping our workflow and getting it in front of customers for actionable feedback. For user testing, we wanted to answer the following:</p>
+                <ul>
+                    <li>What is the customer’s perception about auto-remediation?</li>
+                    <li>What is the customer’s expectation with the feature?</li>
+                    <li>Where does the user go to turn on/off the feature?</li>
+                    <li>Where does the user go to learn more about the features?</li>
+                    <li>Does the user understand the settings section - specifically, the user enabling feature is the author of the merge request?</li>
+                    <li>Where does the user expect to see auto-created merge requests?</li>
+                    <li>Where does the user go to find the auto-created merge request?</li>
+                    <li>Is the notification banner seen on dashboard UI helpful to the user?</li>
+                    <li>How does the user feel about auto-creation of MRs and then auto-merging of those merge requests?</li>
+                </ul>
+            </div>
+        </div> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/9b4e3bc2915b9533feab11e22c743d9a/e.png" class="fancybox" title="Discoverability of merge request with fixes" alt="Bot Overview"> <i>Notifying user of auto-created merge request, ideal for learnability and optimized for shipping. Next steps:    <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/209906" target="_blank">improve communication on UI</a> </i> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/e2a2724ef3a5f6235b92bc79eed8f89f/d.png" class="fancybox" title="Discoverability of merge request with fixes" alt="Bot Overview"> <i>Workflow remains same as other merge request, but with system created labels for search</i> <img src=" https://gitlab.com/gitlab-org/gitlab/uploads/a04ea59d88df8a7da1fad3f81e5260ef/c.png" class="fancybox" title="Discoverability of merge request with fixes" alt="Bot Overview"> <i>Bot profile serves as author and audit log of system actions</i>
+        <div class="twogl">
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SAWHPsIIo4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <i>Ideation II design and update review</i> </div>
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pbRhf0LHgq8?start=16" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i>Ideation III discovery conclusion</i> </div>
+        </div>
+        <div class="headwrap2">
+            <h3>Observe, iterate, and deliver customer value</h3>
+            <div class="gitlab-s">
+                <p>I organized a <a href="https://gitlab.com/gitlab-org/ux-research/-/issues/530" target="_blank">research study</a> and <a href="https://www.figma.com/proto/hEKxrNREtgvuIYzy4Zag6z/config_prototype?node-id=0%3A4485&scaling=min-zoom" target="_blank">prototyped</a> the workflow. Collaborating with our user research team: I prioritized a test script, recruited customers, and setup interviews. I found the following positive key insights: <span class="small-caps">1)</span> users understood the communication about fixes, <span class="small-caps">2)</span> learnability was validated when landing on the merge request list (per labeling), <span class="small-caps">3)</span> the setup process was clear, in terms of configuration requirements, and <span class="small-caps">4)</span> we observed <span class="small-caps">4</span> of <span class="small-caps">5</span> navigated to Security & Compliance section when tasked with finding the option to enable the auto-fix feature.
+                    <br>
+                    <br> The insight that required action to improve: customers prefer that auto-created merge requests not be under a certain project user. Example: <span class="small-caps">4</span> of <span class="small-caps">5</span> participants said they'd rather and expected the author was the system or "bot". <span class="small-caps">2</span> participants said they might add a different project participant prior to enabling this feature. We already knew the major downside was that the feature was not out-of-the-box (and would require rework). But also, if users added another user to a project this would create the additional problem of an added seat - that is since the feature is for <a href="https://about.gitlab.com/pricing/" target="_blank">ultimate tier</a> members, it would add additional cost to the account. We conducted a <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/197349" target="_blank">design and engineering discovery</a> to look out how the following: </p>
+                <ul>
+                    <li>How could we create, leverage, or add ghost or bot or system user?</li>
+                    <li>How would it be created?</li>
+                    <li>How would this work for saas vs on-premise?</li>
+                    <li>Understand differences between project, group, and instance users?</li>
+                    <li>How, what, when, and where is the related activity show?</li>
+                    <li>Identify permissions: how do customers control the entity?</li>
+                    <li>How to ensure extra member doesn't add a seat?</li>
+                    <li>How do users find and discovery of the bot?</li>
+                    <li>What are other user cases to leverage bot?</li>
+                    <li>What are security concerns to mitigate?</li>
+                </ul>
+                <br>
+                <p>Partnering with engineering on a <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/197349#discovery-review-and-findings" target="_blank">solution validation discovery</a>, the results were: introduce a GitLab-Security-Bot user in the initial implementation. This solution was ideal given it <span class="small-caps">1)</span> made the feature out-of-the-box ready, <span class="small-caps">2)</span> low-cost, <span class="small-caps">3)</span> works for on-premise and SaaS customers, <span class="small-caps">4)</span> displayed and kept records of system actions, was <span class="small-caps">5)</span> approved by the security team.</p>
+            </div>
+        </div> <img src="new_screens/security_bot_profile.png" class="fancybox" title="Discoverability of merge request with fixes" alt="Bot Overview"> <i>Introducing the GitLab-Security-Bot overview </i>
+        <div class="twogl">
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9kiZeWKuCOk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <i>Based on customer feedback: discovery kickoff for GitLab-Security-Bot</i> </div>
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uDWxlQZz5V4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i>Merge request experience: improving suggested solutions</i> </div>
+        </div> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/dd2ce72ff9e477525feccc4ddcb53b66/iteration3.png" class="fancybox" title="Discoverability of merge request with fixes" alt="Bot Overview"> <i>Next steps: improving the merge request experience, system suggesting and providing solutions for newly committed vulnerabilities </i>
+        <div class="headwrap2">
+            <h3>Continuous iterations</h3>
+            <div class="gitlab-s">
+                <p>As with all iterative software: the story is never done, we keep iterating! Today, the team is releasing the above workflows to automatically create merge requests. Next areas of focus related to this feature are: </p>
+                <ul>
+                    <li>User awareness of solutions when committed in the merge request (<a href="https://gitlab.com/gitlab-org/gitlab/-/issues/196533" target="_blank">issue</a> and related <a href="https://gitlab.com/groups/gitlab-org/-/epics/3373" target="_blank">epic: team effort to iterate on merge request</a>): this is important as it can start promoting fixes before they are even merged into the master branch. This is intended to empower the users responsible for security: developers. The first small iterations will show when solutions are available; then to help automate this workflow by committing or creating merge requests with the fixes. </li>
+                    <li> <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/36503" target="_blank">Design and engineering discovery</a> around auto-merging the automatically created merge request. This discovery will look at how auto-merging could be achieved, related configuration, incorporate feedback from existing UX, and adapt the workflow for divergent supporting technologies. Example: for container scanning multiple fixes are ideal in one merge request (several commits), while single fixes are ideal for dependency scanning. The UX question is how and when is the workflow auto-merging these fixes and how is it communicated to the customer. </li>
+                    <li>Customer feedback! How are they using (or not using) the feature now that it’s in the wild. What do they like about it? What do they not like? What are our observations of how it’s being used? <a href="https://gitlab.com/groups/gitlab-org/-/epics/2238" target="_blank">Feature implementation, discovery, and research epic</a> </li>
+                </ul>
+                <br>
+                <p>The source of truth lives in production. It started with an idea, then trial-and-error discovery, then prototype, then testing, then engineering, and now with users. I’m inspired by evolving the feature with the team and the continuous iterations toward automation. </p>
+            </div>
+        </div>
+        <article class="people" style="margin:5em auto 0 auto;">
+            <div class="quote" style="background:none; justify-content: center;
+    -webkit-justify-content: center; padding:0;">
+                <section>
+                    <p class="contact" style="font-size: 1rem; font-weight: 400;">Thanks for visiting. Questions or thoughts? <a href="mailto:kyle@convexitydesign.com?Subject=Hello%20Kyle" target="_top">drop me a note</a>.
+                        <br>
+                        <br> See <a href="work.html"> home page</a> or view next <a href="collaborativeiteration.html">case study: security dashboard</a>.
+                        <br>
+                        <br>
+                        <br> <a href="https://gitlab.com/kmann" target="_blank" class="icon"><i class="fa fa-gitlab" aria-hidden="true"></i></a> &#160; &#160; &#160; &#160; <a href="https://github.com/kylemann" target="_blank" class="icon"><i class="fa fa-github" aria-hidden="true"></i></a> &#160; &#160; &#160; &#160;<a href="https://www.linkedin.com/in/convexitydesign/" target="_blank" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </p>
+                </section>
+            </div>
+        </article>
+    </div>
+    <!-- JS LIGHTBOX GALLERY-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <script type="text/javascript">
+        $(function ($) {
+            var addToAll = false;
+            var gallery = true;
+            var titlePosition = 'outside';
+            $(addToAll ? 'img' : 'img.fancybox').each(function () {
+                var $this = $(this);
+                var title = $this.attr('title');
+                var src = $this.attr('data-big') || $this.attr('src');
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                $this.wrap(a);
+            });
+            if (gallery) $('a.fancybox').attr('rel', 'fancyboxgallery');
+            $('a.fancybox').fancybox({
+                titlePosition: titlePosition
+            });
+        });
+        $.noConflict();
+    </script>
+</body>
+
+</html>

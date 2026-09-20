@@ -1,0 +1,405 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+$light-blue: #47A0F8;
+$dark-blue: #637282;
+$dark: #404040;
+$d-grey: #7C7C7C;
+$l-grey: #E8E8E8;
+$light: #F7F9FA;
+nav {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid $l-grey;
+    padding: 15px 0 30px 0;
+    background: hsla(0, 100%, 100%, .9);
+    .nav-div {
+        width: 1195px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        .nav-sections {
+            display: flex;
+            align-items: baseline;
+            li {
+                padding-right: 20px;
+                color: $d-grey;
+                font-weight: 300;
+                font-size: 1em;
+            }
+            :last-child {
+                padding-right: 0;
+            }
+            :hover {
+                color: $dark;
+                cursor: pointer;
+            }
+            .logo {
+                width: 120px;
+            }
+        }
+    }
+}
+
+header {
+    max-width: 1195px;
+    margin: 0 auto;
+    padding: 160px 0 80px 0;
+    display: flex;
+    align-items: center;
+    h1 {
+        font-size: 4em;
+        font-weight: 300;
+        padding-right: 40px;
+        color: $dark;
+        i {
+            color: $light-blue;
+        }
+        :hover {
+            cursor: pointer;
+        }
+    }
+    p {
+        margin-right: 40px;
+        font-weight: 300;
+        color: $light-blue;
+    }
+    .top-title {
+        font-size: .5em;
+        font-weight: 400;
+        color: $dark;
+        margin-bottom: .75em;
+    }
+}
+
+a {
+    color: $light-blue;
+}
+
+a:hover {
+    opacity: .8;
+}
+
+.sub-nav {
+    width: 1195px;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    li {
+        padding-right: 20px;
+        color: $d-grey;
+        font-weight: 300;
+        font-size: 1em;
+    }
+    :hover {
+        color: $dark;
+        cursor: pointer;
+    }
+}
+
+article.container {
+    max-width: 1195px;
+    margin: 0 auto;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $l-grey;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    max-width: 1195px;
+    justify-content: space-between;
+    .left-panel {
+        width: 385px;
+        max-width: 385px;
+        .panel-options {
+            display: flex;
+            justify-content: space-between;
+            color: $light-blue;
+            font-weight: 300;
+            font-size: .85em;
+            margin-bottom: 10px;
+            p {
+                cursor: pointer;
+            }
+        }
+        ul.cards {
+            height: 500px;
+            overflow: auto;
+            border-bottom: 1px solid $l-grey;
+            border-top: 1px solid $l-grey;
+            li:hover {
+                background: #EAF1F4;
+                cursor: pointer;
+                border-right: 3px solid rgba(71, 160, 248, 1);
+            }
+            li {
+                transition: all .25s;
+                padding: 20px;
+                margin-top: 10px;
+                background: $light;
+                h4 {
+                    color: $dark-blue
+                }
+                p {
+                    color: $d-grey;
+                    font-size: .85em;
+                    line-height: 1.5;
+                    font-weight: 300;
+                    margin: .5em 0;
+                }
+                .sub {
+                    font-size: .65em;
+                    font-weight: 400;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .right-panel {
+        height: 1000px;
+        width: 770px;
+        max-width: 770px;
+    }
+}
+
+.r-p {
+    display: flex;
+    justify-content: space-between;
+    .r-p1 {
+        width: 615px;
+        h2 {
+            font-size: 2em;
+            font-weight: 300;
+            color: $dark;
+        }
+        p {
+            font-size: 1.25em;
+            line-height: 1.4;
+            font-weight: 300;
+            margin-top: .25em;
+            color: $d-grey;
+        }
+        .panel-options {
+            display: flex;
+            justify-content: space-between;
+            color: $d-grey;
+            font-weight: 300;
+            font-size: .85em;
+            margin-bottom: 10px;
+            .d-hover:hover {
+                color: $dark;
+            }
+            p {
+                cursor: pointer;
+                font-size: .85em;
+            }
+        }
+    }
+    .r-p2 {
+        ul {
+            width: 115px;
+            .first-child {
+                font-size: .5em;
+                font-weight: 400;
+                color: $dark;
+                margin-bottom: .75em;
+            }
+            li {
+                margin-bottom: 10px;
+                font-weight: 300;
+                color: $d-grey;
+            }
+        }
+    }
+}
+
+.addition {
+    width: 770px;
+    max-width: 770px;
+    .panel-options {
+        display: flex;
+        justify-content: space-between;
+        color: $light-blue;
+        font-weight: 300;
+        font-size: .85em;
+        margin-bottom: 20px;
+        p {
+            cursor: pointer;
+        }
+    }
+    ul.cards {
+        li {
+            transition: all .25s;
+            padding: 20px 140px 20px 0;
+            margin-top: 10px;
+            h4 {
+                color: $dark-blue
+            }
+            p {
+                color: $d-grey;
+                font-size: 1em;
+                line-height: 1.4;
+                font-weight: 300;
+                margin: .5em 0;
+            }
+            .sub {
+                font-size: .65em;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,411 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+*,
+{
+  margin: 0;
+  padding: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 'Source Sans Pro', sans-serif;
+  background: white;
+  color: black;
+  overflow-x: hidden;
+  padding-bottom:100px;
+} 
+
+
+
+
+nav {
+    margin: 0 auto;
+    padding: 10px 0;
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+ max-width: 800px;
+    
+
+    img {
+        width: 120px;
+        margin-left: -10px;
+    }
+    
+    p {
+        font-size: 1em;
+        font-weight: 700;
+        color: #0b97dd;
+    }
+    
+}
+
+
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: white;
+  padding: 100px 0;
+  
+    max-width: 800px;
+    
+    margin: 0 auto;
+}
+
+.container {
+ width: 800px;
+  margin: 0 auto;
+  text-align: left;
+    
+    p {
+        font-size: 1.35em;
+        line-height: 1.7;
+         color: #333333;
+    }
+}
+
+
+
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+.timeline ul {
+  background: white;
+  padding:  0;
+}
+
+
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 5px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background: #0b97dd;
+      font-size: 1.15em;
+        line-height: 1.5;
+    
+    h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+        span {
+            font-weight: 700;
+        }
+    }
+    
+}
+
+
+
+#hide {
+    background: white;
+      padding-top: 0px;
+}
+
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 30px;
+  background: #0b97dd;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(7) div {
+
+  background: #73AA1E;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #0b97dd transparent transparent;
+}
+
+.timeline ul li:nth-child(7) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent  #73AA1E transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #0b97dd;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #0b97dd;
+}
+
+.timeline ul li:nth-child(7).in-view::after {
+  background: #73AA1E;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+//.timeline ul li div {
+//  transform: translate3d(200px, 0, 0);
+//}
+
+/*
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+*/
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+a {
+  border-bottom: 2px solid white;
+    color: white;
+    font-weight: 400;
+     text-decoration: none;
+    
+}
+
+
+
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (min-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+  
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+     width: 700px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #0b97dd transparent transparent;
+  }
+}
+
+
+h1 {
+    
+    font-size: 4.5em;
+    line-height: 1;
+    font-weight: 700;
+    color: #333333;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    
+    font-size: 3em;
+    line-height: 1;
+    font-weight: 700;
+    color: #333333;
+} 
+    
+    .container {
+ width: 90%;
+    }
+}
+
+
+
+article {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 15px;
+    
+    .head {
+        font-weight: 600;
+        font-size: .75em;
+    }
+    
+    p {
+        display: flex;
+        margin: .5em 0;
+        font-weight: 300;
+        i {
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.chat {
+    font-size: 1.25em;
+    line-height: 1.5;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #0b97dd transparent transparent;
+  }
+}
+
+
+
+
+

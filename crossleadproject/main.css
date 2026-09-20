@@ -1,0 +1,478 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/kylemann/Desktop/crossleadproject/main.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 98, /Users/kylemann/Desktop/crossleadproject/main.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+/* line 112, /Users/kylemann/Desktop/crossleadproject/main.scss */
+body {
+  line-height: 1; }
+
+/* line 116, /Users/kylemann/Desktop/crossleadproject/main.scss */
+ol,
+ul {
+  list-style: none; }
+
+/* line 121, /Users/kylemann/Desktop/crossleadproject/main.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 126, /Users/kylemann/Desktop/crossleadproject/main.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* line 134, /Users/kylemann/Desktop/crossleadproject/main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 139, /Users/kylemann/Desktop/crossleadproject/main.scss */
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; }
+
+/* line 144, /Users/kylemann/Desktop/crossleadproject/main.scss */
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100%; }
+
+/* line 156, /Users/kylemann/Desktop/crossleadproject/main.scss */
+nav {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 15px 0 30px 0;
+  background: rgba(255, 255, 255, 0.9); }
+  /* line 162, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  nav .nav-div {
+    max-width: 1195px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
+    /* line 168, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    nav .nav-div .nav-sections {
+      display: flex;
+      align-items: baseline; }
+      /* line 171, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      nav .nav-div .nav-sections li {
+        padding-right: 20px;
+        color: #7C7C7C;
+        font-weight: 300;
+        font-size: 1em; }
+      /* line 178, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      nav .nav-div .nav-sections :last-child {
+        padding-right: 0; }
+      /* line 181, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      nav .nav-div .nav-sections :hover {
+        color: #47A0F8;
+        cursor: pointer; }
+      /* line 185, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      nav .nav-div .nav-sections .logo {
+        width: 120px; }
+
+/* line 192, /Users/kylemann/Desktop/crossleadproject/main.scss */
+header {
+  width: 1195px;
+  max-width: 1195px;
+  margin: 0 auto;
+  padding: 140px 0 40px 0;
+  display: flex;
+  align-items: flex-start; }
+  /* line 199, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  header h1 {
+    font-size: 3em;
+    font-weight: 300;
+    padding-right: 60px;
+    color: #404040; }
+    /* line 205, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    header h1 i {
+      color: #47A0F8; }
+    /* line 208, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    header h1 :hover {
+      cursor: pointer; }
+  /* line 212, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  header p {
+    margin-right: 40px;
+    font-weight: 300;
+    color: #47A0F8; }
+  /* line 217, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  header .top-title {
+    font-size: .5em;
+    font-weight: 400;
+    color: #404040;
+    margin-bottom: .75em; }
+  /* line 225, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  header ul {
+    margin-right: 60px; }
+    /* line 227, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    header ul .first-child {
+      font-size: .5em;
+      font-weight: 400;
+      color: #404040;
+      margin-bottom: .75em; }
+    /* line 233, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    header ul li {
+      margin-bottom: 10px;
+      font-weight: 300;
+      color: #7C7C7C; }
+
+/* line 241, /Users/kylemann/Desktop/crossleadproject/main.scss */
+a {
+  color: #47A0F8; }
+
+/* line 245, /Users/kylemann/Desktop/crossleadproject/main.scss */
+a:hover {
+  opacity: .8; }
+
+/* line 249, /Users/kylemann/Desktop/crossleadproject/main.scss */
+.sub-nav {
+  width: 1195px;
+  max-width: 1195px;
+  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline; }
+  /* line 256, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .sub-nav li {
+    margin-right: 20px;
+    padding-bottom: 20px;
+    transition: all .3s;
+    color: #7C7C7C;
+    font-weight: 300;
+    font-size: 1em; }
+  /* line 264, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .sub-nav :hover {
+    color: #47A0F8;
+    cursor: pointer;
+    border-bottom: 3px solid #47A0F8; }
+
+/* line 274, /Users/kylemann/Desktop/crossleadproject/main.scss */
+article.container {
+  width: 1195px;
+  max-width: 1195px;
+  margin: 0 auto; }
+
+/* line 281, /Users/kylemann/Desktop/crossleadproject/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #E8E8E8;
+  margin: -20px 0 40px 0;
+  padding: 0; }
+
+/* line 290, /Users/kylemann/Desktop/crossleadproject/main.scss */
+.main {
+  display: flex;
+  max-width: 1195px;
+  justify-content: space-between; }
+  /* line 294, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .main .left-panel {
+    width: 385px;
+    max-width: 385px; }
+    /* line 297, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .main .left-panel .panel-options {
+      display: flex;
+      justify-content: space-between;
+      color: #47A0F8;
+      font-weight: 300;
+      font-size: .85em;
+      margin-bottom: 10px; }
+      /* line 304, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      .main .left-panel .panel-options p {
+        cursor: pointer; }
+    /* line 308, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .main .left-panel ul.cards {
+      height: 500px;
+      overflow: auto;
+      border-bottom: 1px solid #E8E8E8;
+      border-top: 1px solid #E8E8E8; }
+      /* line 313, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      .main .left-panel ul.cards li:hover {
+        background: #EAF1F4;
+        cursor: pointer;
+        border-right: 3px solid #47a0f8; }
+      /* line 318, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      .main .left-panel ul.cards li {
+        transition: all .25s;
+        padding: 20px;
+        margin-top: 10px;
+        background: #F7F9FA; }
+        /* line 323, /Users/kylemann/Desktop/crossleadproject/main.scss */
+        .main .left-panel ul.cards li h4 {
+          color: #637282; }
+        /* line 326, /Users/kylemann/Desktop/crossleadproject/main.scss */
+        .main .left-panel ul.cards li p {
+          color: #7C7C7C;
+          font-size: .85em;
+          line-height: 1.5;
+          font-weight: 300;
+          margin: .5em 0; }
+        /* line 333, /Users/kylemann/Desktop/crossleadproject/main.scss */
+        .main .left-panel ul.cards li .sub {
+          font-size: .65em;
+          font-weight: 400;
+          margin: 0; }
+  /* line 341, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .main .right-panel {
+    height: 1000px;
+    width: 770px;
+    max-width: 770px; }
+
+/* line 350, /Users/kylemann/Desktop/crossleadproject/main.scss */
+.r-p {
+  display: flex;
+  justify-content: space-between; }
+  /* line 353, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .r-p .r-p1 {
+    width: 595px; }
+    /* line 355, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .r-p .r-p1 h2 {
+      font-size: 1.75em;
+      font-weight: 300;
+      color: #404040; }
+    /* line 360, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .r-p .r-p1 p {
+      font-size: 1.25em;
+      line-height: 1.4;
+      font-weight: 300;
+      margin-top: .25em;
+      color: #7C7C7C; }
+    /* line 367, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .r-p .r-p1 .panel-options {
+      display: flex;
+      justify-content: space-between;
+      color: #7C7C7C;
+      font-weight: 300;
+      font-size: .85em;
+      margin-bottom: 10px; }
+      /* line 374, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      .r-p .r-p1 .panel-options .d-hover:hover {
+        color: #404040; }
+      /* line 377, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      .r-p .r-p1 .panel-options p {
+        cursor: pointer;
+        font-size: .85em; }
+  /* line 384, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .r-p .r-p2 ul {
+    width: 135px;
+    display: flex; }
+    /* line 387, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .r-p .r-p2 ul :first-child {
+      margin-right: 2px; }
+    /* line 390, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .r-p .r-p2 ul .first-child {
+      font-size: .5em;
+      font-weight: 400;
+      color: #404040;
+      margin-bottom: .75em; }
+    /* line 396, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .r-p .r-p2 ul li {
+      margin-bottom: 10px;
+      font-weight: 300;
+      color: #7C7C7C; }
+  /* line 405, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .r-p .r-p3 {
+    width: 300px; }
+    /* line 407, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .r-p .r-p3 h2 {
+      font-size: 2em;
+      font-weight: 300;
+      color: #404040; }
+    /* line 412, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .r-p .r-p3 p {
+      font-size: 1.25em;
+      line-height: 1.4;
+      font-weight: 300;
+      margin-top: .25em;
+      color: #7C7C7C; }
+    /* line 419, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .r-p .r-p3 .panel-options {
+      display: flex;
+      justify-content: space-between;
+      color: #7C7C7C;
+      font-weight: 300;
+      font-size: .85em;
+      margin-bottom: 10px; }
+      /* line 426, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      .r-p .r-p3 .panel-options .d-hover:hover {
+        color: #404040; }
+      /* line 429, /Users/kylemann/Desktop/crossleadproject/main.scss */
+      .r-p .r-p3 .panel-options p {
+        cursor: pointer;
+        font-size: .85em; }
+  /* line 435, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .r-p .r-p4 {
+    width: 430px;
+    max-width: 430px; }
+
+/* line 445, /Users/kylemann/Desktop/crossleadproject/main.scss */
+.addition {
+  width: 770px;
+  max-width: 770px; }
+  /* line 448, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .addition .panel-options {
+    display: flex;
+    justify-content: space-between;
+    color: #47A0F8;
+    font-weight: 300;
+    font-size: .85em;
+    margin-bottom: 20px; }
+    /* line 455, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .addition .panel-options p {
+      cursor: pointer; }
+  /* line 460, /Users/kylemann/Desktop/crossleadproject/main.scss */
+  .addition ul.cards li {
+    transition: all .25s;
+    padding: 20px 140px 20px 0;
+    margin-top: 10px; }
+    /* line 464, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .addition ul.cards li h4 {
+      color: #637282; }
+    /* line 467, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .addition ul.cards li p {
+      color: #7C7C7C;
+      font-size: 1em;
+      line-height: 1.4;
+      font-weight: 300;
+      margin: .5em 0; }
+    /* line 474, /Users/kylemann/Desktop/crossleadproject/main.scss */
+    .addition ul.cards li .sub {
+      font-size: .65em;
+      font-weight: 400;
+      margin: 0; }
+
+/* line 484, /Users/kylemann/Desktop/crossleadproject/main.scss */
+h5 {
+  font-size: 1.25em;
+  font-weight: 300; }
+
+/* line 490, /Users/kylemann/Desktop/crossleadproject/main.scss */
+td, th {
+  border-bottom: 1px solid #E8E8E8;
+  text-align: left;
+  padding: 10px 0; }
+
+/* line 499, /Users/kylemann/Desktop/crossleadproject/main.scss */
+th {
+  font-size: .5em;
+  font-weight: 400;
+  color: #404040;
+  margin-bottom: .75em;
+  text-align: center; }
+
+/* line 507, /Users/kylemann/Desktop/crossleadproject/main.scss */
+td {
+  font-size: .75em;
+  font-weight: 300;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

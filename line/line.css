@@ -191,9 +191,6 @@ body .lv ul { list-style: none; }
 .lv .cover-sub { font-size: 1.3em; line-height: 1.5; color: #333; font-weight: 300; margin: 0; max-width: 620px; }
 .lv .cover-role { font-size: 1em; line-height: 1.5; color: #666; font-weight: 500; margin: .75em 0 0; letter-spacing: .01em; }
 .lv-cover .showcase { position: relative; width: 100%; overflow: hidden; margin-top: 2rem; }
-.lv-cover .showcase::before, .lv-cover .showcase::after { content: ''; position: absolute; top: 0; bottom: 0; width: 24px; z-index: 2; pointer-events: none; }
-.lv-cover .showcase::before { left: 0; background: linear-gradient(to right, rgba(250, 250, 250, .95), rgba(250, 250, 250, 0)); }
-.lv-cover .showcase::after { right: 0; background: linear-gradient(to left, rgba(250, 250, 250, .95), rgba(250, 250, 250, 0)); }
 .lv-cover .rail { display: flex; gap: 14px; width: max-content; animation: property-scroll 55s linear infinite; }
 .lv-cover .rail:hover { animation-play-state: paused; }
 @keyframes property-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }

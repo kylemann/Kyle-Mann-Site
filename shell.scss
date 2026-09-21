@@ -118,7 +118,7 @@ nav.breadcrumb {
 }
 
 /* ---------- Tab panes (divs, not sections: km/main set section { display:block }) ---------- */
-.tab-pane[hidden] { display: none; }
+.tab-pane[hidden], body.shell-body .tab-pane[hidden] { display: none; }
 
 /* ---------- Latest: the Line case study ---------- */
 /* Every element rule is suffixed :not(.lv *) so the ported deck figures keep their own type. */
@@ -149,6 +149,8 @@ body.shell-body .latest {
   .flow { font-weight: 500; }
   .flow .arrow, .cta .arrow { color: #888; margin: 0 .15em; font-weight: 300; }
   figure { margin: 2em 0 2.5em; padding: 0; }
+  .outro { margin-top: 4em; text-align: center; }
+  .outro p#{$x} { font-size: 1.1em; line-height: 1.6; margin: 0 0 .5em; }
   figure.video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
   @media (min-width: $md) {
     h2#{$x} { font-size: 1.75em; }

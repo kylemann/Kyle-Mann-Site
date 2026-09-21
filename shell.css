@@ -241,7 +241,7 @@ nav.breadcrumb [aria-current] {
 }
 
 /* ---------- Tab panes (divs, not sections: km/main set section { display:block }) ---------- */
-.tab-pane[hidden] {
+.tab-pane[hidden], body.shell-body .tab-pane[hidden] {
   display: none;
 }
 
@@ -348,6 +348,15 @@ body.shell-body .latest .flow .arrow, body.shell-body .latest .cta .arrow {
 body.shell-body .latest figure {
   margin: 2em 0 2.5em;
   padding: 0;
+}
+body.shell-body .latest .outro {
+  margin-top: 4em;
+  text-align: center;
+}
+body.shell-body .latest .outro p:not(.lv *) {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 0 0 0.5em;
 }
 body.shell-body .latest figure.video iframe {
   display: block;

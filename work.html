@@ -543,7 +543,7 @@
             <hr class="outro-rule">
             <img class="outro-image" src="images/flatirons.png" alt="" width="722" height="253">
             <p>Thanks for visiting. Questions or thoughts? <a href="mailto:kyle@withline.io?Subject=Hello%20Kyle">Drop me a note</a>.</p>
-            <p>View case study: <a href="codecov.html">Leading product design at Codecov</a> or <a href="#past">browse past work</a>.</p>
+            <p>See past work: <a href="codecov.html">Leading product design at Codecov</a> or <a href="#resume">view my resume</a>.</p>
         </div>
 
     </div>
@@ -650,15 +650,12 @@
         <h2 class="section">Education</h2>
         <p><strong>Certificate,</strong> User Experience and Customer-Centered Design at <a href="http://www.fullerton.edu/" target="_blank" rel="noopener">California State University</a></p>
         <p><strong>Bachelor of Science,</strong> Human Services at <a href="http://www.springfieldcollege.edu/" target="_blank" rel="noopener">Springfield College</a></p>
-        <h2 class="section">Skills</h2>
-        <p><strong>Web &amp; Software:</strong> HTML, SCSS/SASS, Git, Adobe Suite, Sketch, Figma</p>
-        <p><strong>User Experience:</strong> site maps, personas, wireframes, rapid prototyping, user testing, user research</p>
 
         <div class="outro">
             <hr class="outro-rule">
             <img class="outro-image" src="images/flatirons.png" alt="" width="722" height="253">
             <p>Thanks for visiting. Questions or thoughts? <a href="mailto:kyle@withline.io?Subject=Hello%20Kyle">Drop me a note</a>.</p>
-            <p>Read the latest: <a href="#latest">Opening the group bookings market</a> or <a href="#past">browse past work</a>.</p>
+            <p>Read the latest: <a href="#latest">Opening the group bookings market</a> or <a href="#past">see past work</a>.</p>
         </div>
     </div>
 
@@ -688,9 +685,14 @@
                 if (on) { tabs[j].setAttribute('aria-current', 'true'); } else { tabs[j].removeAttribute('aria-current'); }
             }
         }
-        function sync() { show(location.hash.replace(/^#/, '')); }
-        window.addEventListener('hashchange', sync);
-        sync();
+        function sync(fromClick) {
+            show(location.hash.replace(/^#/, ''));
+            // A tab link used from further down the page shows the new tab from its top.
+            var nav = document.querySelector('nav.work-nav');
+            if (fromClick && nav && nav.getBoundingClientRect().top < 0) window.scrollTo(0, 0);
+        }
+        window.addEventListener('hashchange', function () { sync(true); });
+        sync(false);
     })();
     </script>
     <script src="line/rfp-fill.js"></script>

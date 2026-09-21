@@ -159,6 +159,16 @@ body.shell-body .latest {
 
 /* ---------- Past: single-column cards (ported from css.scss .bg-img/.top-img) ---------- */
 body.shell-body .past { padding: .5em 0 0; }
+/* Desktop: first card full width, the rest two per row at a fixed 4:3-ish box (the source
+   screenshots are 2236x1708); the vault composition is wide, so it shows its left half. */
+@media (min-width: $md) {
+  body.shell-body .past { display: flex; flex-wrap: wrap; gap: 32px; }
+  body.shell-body .past .card { margin: 0; }
+  body.shell-body .past .card--hero { flex: 0 0 100%; }
+  body.shell-body .past .card:not(.card--hero) { flex: 0 0 calc(50% - 16px); aspect-ratio: 2236 / 1708; }
+  body.shell-body .past .card:not(.card--hero) img { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
+  body.shell-body .past .card--left img { object-position: left center; }
+}
 body.shell-body .past .card {
   display: block;
   position: relative;
@@ -180,12 +190,19 @@ body.shell-body .past .card {
   &:hover h2, &:hover p { color: white; }
   &:hover h2 span, &:hover p span { background: black; border-top-color: black; }
   @media (min-width: $md) {
-    margin-bottom: 32px;
-    .card-caption { padding-bottom: 16px; }
-    h2 { font-size: 1.5em; padding-left: 16px; }
-    h2 span { border-top-width: 6px; }
-    p { font-size: 1.1em; padding-left: 16px; }
+    .card-caption { padding-bottom: 14px; }
+    h2 { font-size: 1.3em; padding-left: 14px; }
+    h2 span { border-top-width: 5px; }
+    p { font-size: 1em; padding-left: 14px; }
     p span { border-top-width: 4px; }
+  }
+  &.card--hero {
+    @media (min-width: $md) {
+      .card-caption { padding-bottom: 16px; }
+      h2 { font-size: 1.5em; padding-left: 16px; }
+      h2 span { border-top-width: 6px; }
+      p { font-size: 1.1em; padding-left: 16px; }
+    }
   }
 }
 
@@ -198,6 +215,9 @@ body.shell-body .past .card {
   .headwrap1, .headwrap2 { display: block; }
   .headwrap1 { margin: 0 0 2.5em; }
   .headwrap2 { margin: 3.5em 0 2.5em; }
+  .headwrap2.writing { margin: 1.5em 0 3em; }
+  .headwrap2.writing p { margin: 0 0 1em; }
+  .headwrap2.writing p a { font-weight: 500; }
   .headwrap1 h1, .headwrap2 h1, .headwrap1 h3, .headwrap2 h3,
   .headwrap1 p, .headwrap2 p, .headwrap1 .gitlab-s, .headwrap2 .gitlab-s { width: 100%; max-width: none; }
   iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; margin: 0; }

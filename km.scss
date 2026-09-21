@@ -146,7 +146,7 @@ body.container {
     width: 90%;
     margin: 0 auto;
 //    max-width: 1150px;
-    max-width: 575px;
+    max-width: 650px;
     font-family: 'Tajawal', sans-serif;
     padding: 0;
     
@@ -167,7 +167,6 @@ body.container {
         display: block;
         width: 160px;
         height: auto;
-        border-radius: 8px;
         margin-bottom: 1.5em;
     }
     p {
@@ -329,13 +328,26 @@ MEDIA QUERY - Above 790 PX  DESKTOP
 @media only screen and (min-width: 800px) {
     body.container {
         padding: 5em 0;
+        width: 95%;
+        max-width: 800px;
+        header {
+            display: flex;
+            align-items: center;
+            gap: 2.5em;
+        }
         h1 {
             font-size: 2.5em;
             line-height: 1.5;
             font-weight: 600;
         }
         .portrait {
-            width: 200px;
+            flex: 0 0 auto;
+            width: 240px;
+            margin: 0;
+        }
+        .intro {
+            flex: 1 1 auto;
+            min-width: 0;
         }
         p {
             font-size: 1.25em;
@@ -373,7 +385,7 @@ MEDIA QUERY - Above 790 PX  DESKTOP
 //        max-width: 100%;
 //max-width: 575px;
 //        padding: 12.5em 0;
-        max-width: 720px;
+        max-width: 800px;
    
 
 
@@ -389,11 +401,7 @@ MEDIA QUERY - Above 790 PX  DESKTOP
 
         }
 
-        header {
-          
-//            background: red;
-     
-            width: 95%;
+\g<1>100%;
             max-width: 900px;
             margin: 0 auto;
 //            display: flex;

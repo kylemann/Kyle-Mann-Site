@@ -141,7 +141,7 @@ Body Content
 body.container {
   width: 90%;
   margin: 0 auto;
-  max-width: 575px;
+  max-width: 650px;
   font-family: 'Tajawal', sans-serif;
   padding: 0; }
   /* line 153, /Users/kylemann/Google Drive/portfolio/new_portfolio/km.scss */
@@ -160,7 +160,6 @@ body.container {
     display: block;
     width: 160px;
     height: auto;
-    border-radius: 8px;
     margin-bottom: 1.5em; }
   /* line 166, /Users/kylemann/Google Drive/portfolio/new_portfolio/km.scss */
   body.container p {
@@ -318,14 +317,25 @@ MEDIA QUERY - Above 790 PX  DESKTOP
 @media only screen and (min-width: 800px) {
   /* line 323, /Users/kylemann/Google Drive/portfolio/new_portfolio/km.scss */
   body.container {
-    padding: 5em 0; }
+    padding: 5em 0;
+    width: 95%;
+    max-width: 800px; }
+    body.container header {
+      display: flex;
+      align-items: center;
+      gap: 2.5em; }
     /* line 325, /Users/kylemann/Google Drive/portfolio/new_portfolio/km.scss */
     body.container h1 {
       font-size: 2.5em;
       line-height: 1.5;
       font-weight: 600; }
     body.container .portrait {
-      width: 200px; }
+      flex: 0 0 auto;
+      width: 240px;
+      margin: 0; }
+    body.container .intro {
+      flex: 1 1 auto;
+      min-width: 0; }
     /* line 330, /Users/kylemann/Google Drive/portfolio/new_portfolio/km.scss */
     body.container p {
       font-size: 1.25em;
@@ -356,7 +366,7 @@ MEDIA QUERY - Above 790 PX  DESKTOP
   /* line 361, /Users/kylemann/Google Drive/portfolio/new_portfolio/km.scss */
   body.container {
     width: 100%;
-    max-width: 720px;
+    max-width: 800px;
     padding: 0; }
     /* line 373, /Users/kylemann/Google Drive/portfolio/new_portfolio/km.scss */
     body.container .center {
@@ -366,7 +376,7 @@ MEDIA QUERY - Above 790 PX  DESKTOP
       justify-content: center; }
     /* line 382, /Users/kylemann/Google Drive/portfolio/new_portfolio/km.scss */
     body.container header {
-      width: 95%;
+      width: 100%;
       max-width: 900px;
       margin: 0 auto; }
       /* line 391, /Users/kylemann/Google Drive/portfolio/new_portfolio/km.scss */

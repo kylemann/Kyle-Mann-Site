@@ -247,21 +247,10 @@
         </figure>
 
         <h3>The problem</h3>
-        <p>Group bookings have two sides: the guest trying to find the right place and the property trying to decide whether the business fits.</p>
-        <p>The guest is usually trying to answer three things:</p>
-        <ul>
-            <li>Pricing</li>
-            <li>Availability</li>
-            <li>Vibes</li>
-        </ul>
-        <p>The property is working through its own version of the same questions:</p>
-        <ul>
-            <li>Is it available?</li>
-            <li>What should we charge?</li>
-            <li>Is this a good piece of business?</li>
-        </ul>
-        <p>The answers live across websites, calendars, rate sheets, sales systems, contracts, PDFs, inboxes, spreadsheets, and people.</p>
-        <p>The guest wants to buy. The property wants to sell. A lot of manual work sits between them.</p>
+        <p>At Line, we focused on the work between a group inquiry and booked business.</p>
+        <p>Group bookings are simple in theory. A guest wants to understand pricing, availability, and vibes. The property needs to understand the same basic things to decide what it can sell, what to charge, and whether the business fits.</p>
+        <p>In practice, those answers are scattered across websites, calendars, rate sheets, sales systems, contracts, PDFs, inboxes, spreadsheets, and people. Every inquiry becomes a coordination problem.</p>
+        <p>Supply isn't legible to demand, so the market stays closed.</p>
 
         <figure class="lv lv-problem" aria-label="The problem: demand and supply">
             <div class="panel">
@@ -276,8 +265,8 @@
                             <li>Vibes</li>
                         </ul>
                     </div>
-                    <div class="rfp">
-                        <div class="rfp-form-demo" aria-label="A typical request-for-proposal form">
+                    <div class="rfp" data-rfp-form>
+                        <div class="rfp-form-demo" aria-label="A typical request-for-proposal form, filled in and sent">
                             <div class="rfp-form-header">
                                 <span class="rfp-form-brand">Request for Proposal</span>
                                 <span class="rfp-form-locale">EN | USD</span>
@@ -285,30 +274,34 @@
                             <div class="rfp-form-body">
                                 <div class="rfp-form-section">
                                     <div class="rfp-form-label">Event Requirements</div>
-                                    <div class="rfp-checkbox is-checked"><span class="rfp-checkbox-box"></span><span class="rfp-checkbox-label">Meeting rooms</span></div>
-                                    <div class="rfp-checkbox is-checked"><span class="rfp-checkbox-box"></span><span class="rfp-checkbox-label">Guest rooms</span></div>
+                                    <div class="rfp-checkbox" data-step="check-meeting"><span class="rfp-checkbox-box"></span><span class="rfp-checkbox-label">Meeting rooms</span></div>
+                                    <div class="rfp-checkbox" data-step="check-rooms"><span class="rfp-checkbox-box"></span><span class="rfp-checkbox-label">Guest rooms</span></div>
                                 </div>
                                 <div class="rfp-form-section">
                                     <div class="rfp-form-label">Event Dates</div>
                                     <div class="rfp-form-row">
-                                        <div class="rfp-input rfp-input--small">Oct 14, 2026</div>
+                                        <div class="rfp-input rfp-input--small" data-step="start"></div>
                                         <span class="rfp-form-sep">&ndash;</span>
-                                        <div class="rfp-input rfp-input--small">Oct 16, 2026</div>
+                                        <div class="rfp-input rfp-input--small" data-step="end"></div>
                                     </div>
                                 </div>
                                 <div class="rfp-form-section">
                                     <div class="rfp-form-label">Event Name</div>
-                                    <div class="rfp-input">Leadership Offsite</div>
+                                    <div class="rfp-input" data-step="name"></div>
                                 </div>
                                 <div class="rfp-form-section">
                                     <div class="rfp-form-label">Event Type</div>
-                                    <div class="rfp-select"><span class="rfp-select-value">Corporate meeting</span><span class="rfp-select-arrow">&#9662;</span></div>
+                                    <div class="rfp-select" data-step="type"><span class="rfp-select-value">Select...</span><span class="rfp-select-arrow">&#9662;</span></div>
                                 </div>
                                 <div class="rfp-form-section">
                                     <div class="rfp-form-label">Attendees</div>
-                                    <div class="rfp-input">85</div>
+                                    <div class="rfp-input" data-step="attendees"></div>
                                 </div>
-                                <div class="rfp-form-send">Send Request</div>
+                                <button type="button" class="rfp-form-send" data-step="send">Send Request</button>
+                            </div>
+                            <div class="rfp-thanks">
+                                <div class="rfp-thanks-title">Thank you!</div>
+                                <div class="rfp-thanks-sub">Maybe we'll get back to you!</div>
                             </div>
                         </div>
                     </div>
@@ -373,10 +366,6 @@
                     </div>
                 </div>
             </div>
-        </figure>
-        <figure class="lv lv-maze" aria-label="The maze of booking a group">
-            <img src="line/img/maze.png" alt="The maze of booking a group: maps, hotel websites, chat results, venue listings, and booking tools connected by lines" width="1600" height="654">
-            <p class="lv-caption">The maze of booking a group, from <a href="https://withline.io/blog/a-problem-worth-solving.html" target="_blank" rel="noopener">A problem worth solving</a></p>
         </figure>
 
         <h3>The market and thesis</h3>
@@ -713,6 +702,7 @@
         sync();
     })();
     </script>
+    <script src="line/rfp-fill.js"></script>
     <script src="https://use.fontawesome.com/5f15c58e6f.js"></script>
 </body>
 

@@ -186,14 +186,14 @@ body .lv ul { list-style: none; }
 
 /* ---------- Cover (from the deck's cover slide: logo mark, headline, subhead, property marquee) ---------- */
 .lv-cover { margin: 0 0 3em; }
-.lv-cover .panel { background: #111 url(img/cover-bg.jpg) center / cover no-repeat; border: 0; padding: 36px 20px 20px; position: relative; text-align: left; overflow: hidden; }
+.lv-cover .panel { background: #111 url(img/cover-bg.jpg) center / cover no-repeat; border: 0; padding: 20px; position: relative; text-align: left; overflow: hidden; }
 .lv-cover .panel::before { content: ''; position: absolute; inset: 0; background: rgba(0, 0, 0, .62); z-index: 0; }
 .lv-cover .panel > * { position: relative; z-index: 1; }
 .lv .lv-flag--logo { padding: 7px 10px; line-height: 0; }
 .lv .lv-flag--logo img { height: 18px; width: auto; display: block; }
 .lv-cover .cover-caption { margin-top: 20px; line-height: 1.5; }
 .lv .cover-title { font-size: 1.5em; font-weight: 600; line-height: 1.45; letter-spacing: 0; color: black; margin: 0; }
-.lv .cover-sub { font-size: 1.1em; line-height: 1.5; color: black; font-weight: 300; margin: 0; }
+.lv .cover-sub { font-size: 1.1em; line-height: 1.5; color: black; font-weight: 500; margin: 0; }
 .lv .cover-role { font-size: .95em; line-height: 1.5; color: #333; font-weight: 500; margin: 0; }
 .lv .cover-title span, .lv .cover-sub span, .lv .cover-role span { background: #fff; border-top: 4px solid #fff; padding: 0 6px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .lv .cover-sub span, .lv .cover-role span { border-top-width: 3px; }
@@ -213,7 +213,7 @@ body .lv ul { list-style: none; }
 @media (max-width: 799px) {
   .lv .cover-title { font-size: 1.25em; }
   .lv .cover-sub { font-size: 1em; }
-  .lv-cover .panel { padding: 32px 16px 16px; }
+  .lv-cover .panel { padding: 16px; }
   .lv-cover .cover-caption { margin-top: 16px; }
   .lv-cover .pcard { width: 160px; }
 }

@@ -210,8 +210,9 @@ body.shell-body .past .card {
   .headwrap1 { margin: 0 0 2.5em; }
   .headwrap2 { margin: 3em 0 1.5em; }
   .headwrap2.writing { margin: 1.5em 0 3em; }
-  .headwrap2.writing p { margin: 0 0 1em; }
-  .headwrap2.writing p a { font-weight: 500; }
+  .headwrap2.writing p, .headwrap2.writing li { margin: 0 0 1em; }
+  .headwrap2.writing ul { list-style: disc; padding: 0 0 0 1.25em; margin: 0; }
+  .headwrap2.writing a { font-weight: 500; }
   .headwrap1 h1, .headwrap2 h1, .headwrap1 h2, .headwrap2 h2, .headwrap1 h3, .headwrap2 h3,
   .headwrap1 p, .headwrap2 p, .headwrap1 .gitlab-s, .headwrap2 .gitlab-s { width: 100%; max-width: none; }
 

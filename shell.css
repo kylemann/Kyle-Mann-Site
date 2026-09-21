@@ -515,10 +515,15 @@ body.shell-body .past .card.card--left .card-media img {
 .shell-page .container.study .headwrap2.writing {
   margin: 1.5em 0 3em;
 }
-.shell-page .container.study .headwrap2.writing p {
+.shell-page .container.study .headwrap2.writing p, .shell-page .container.study .headwrap2.writing li {
   margin: 0 0 1em;
 }
-.shell-page .container.study .headwrap2.writing p a {
+.shell-page .container.study .headwrap2.writing ul {
+  list-style: disc;
+  padding: 0 0 0 1.25em;
+  margin: 0;
+}
+.shell-page .container.study .headwrap2.writing a {
   font-weight: 500;
 }
 .shell-page .container.study .headwrap1 h1, .shell-page .container.study .headwrap2 h1, .shell-page .container.study .headwrap1 h2, .shell-page .container.study .headwrap2 h2, .shell-page .container.study .headwrap1 h3, .shell-page .container.study .headwrap2 h3,

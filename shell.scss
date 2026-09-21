@@ -142,6 +142,9 @@ body.shell-body .latest {
   blockquote#{$x} { margin: 0 0 1.5em; padding: .1em 0 .1em 1em; border-left: 2px solid $rule; color: #333; }
   blockquote#{$x} p { margin: 0 0 .2em; }
   .cta { margin: .25em 0 1em; }
+  p.callout#{$x} { margin: .5em 0 1.5em; padding: .15em 0 .15em 1em; border-left: 2px solid $rule; }
+  .callout a { font-weight: 500; }
+  p.meta#{$x} strong { font-weight: 500; color: #333; }
   .cta a { font-weight: 500; }
   .flow { font-weight: 500; }
   .flow .arrow, .cta .arrow { color: #888; margin: 0 .15em; font-weight: 300; }

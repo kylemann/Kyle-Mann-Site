@@ -353,6 +353,19 @@ body.shell-body .latest .outro {
   margin-top: 4em;
   text-align: center;
 }
+body.shell-body .latest .outro hr.outro-rule {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #d0d0d0;
+  margin: 0 0 3em;
+}
+body.shell-body .latest .outro img.outro-image {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto 1.5em;
+}
 body.shell-body .latest .outro p:not(.lv *) {
   font-size: 1.1em;
   line-height: 1.6;

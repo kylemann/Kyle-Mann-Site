@@ -564,8 +564,9 @@ body.shell-body .past .card.card--left .card-media img {
   text-decoration: none;
   border: 0;
   background: none;
-  font-weight: 400;
-  margin-right: 0.1em;
+  font-weight: 300;
+  letter-spacing: 0;
+  margin-right: 0.15em;
   transition: color 0.2s;
 }
 .shell-page .container.study .headwrap1 h2 a.back:hover {

@@ -200,7 +200,7 @@ body.shell-body .past .card {
   .headwrap1, .headwrap2 { display: block; }
   .headwrap1 { margin: 0 0 2.5em; }
   /* Back arrow in front of the title: the case pages are a level below the Past tab. */
-  .headwrap1 h2 a.back { color: #999; text-decoration: none; border: 0; background: none; font-weight: 400; margin-right: .1em; transition: color .2s; }
+  .headwrap1 h2 a.back { color: #999; text-decoration: none; border: 0; background: none; font-weight: 300; letter-spacing: 0; margin-right: .15em; transition: color .2s; }
   .headwrap1 h2 a.back:hover { color: black; background: none; border: 0; }
   .headwrap2 { margin: 3em 0 1.5em; }
   .headwrap2.writing { margin: 1.5em 0 3em; }

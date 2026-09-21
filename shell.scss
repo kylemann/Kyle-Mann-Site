@@ -135,7 +135,7 @@ body.shell-body .latest {
   ul#{$x} { list-style: disc; padding: 0 0 0 1.25em; margin: 0 0 1.25em; }
   ul.plain { list-style: none; padding: 0; }
   li#{$x} { margin: 0 0 .3em; }
-  a#{$x} {
+  a#{$x}:not(.lv) {
     color: black; text-decoration: none; border-bottom: 1px solid black; padding-top: 3px; transition: .2s all;
     &:hover { background: black; color: white; }
   }

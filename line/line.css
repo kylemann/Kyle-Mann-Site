@@ -240,27 +240,19 @@ body .lv-proof blockquote p { margin: 0 0 10px; }
 /* ---------- Market visual (single image, full width) ---------- */
 .lv-market img { width: 100%; height: auto; }
 
-/* ---------- First customer: featured property card (port of withline.io .property-card--featured) ---------- */
-.lv-story { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: #fff; border: 1px solid rgba(0, 0, 0, .08); text-decoration: none; color: var(--text); overflow: hidden; }
-.lv-story .story-main { display: flex; flex-direction: column; min-width: 0; }
-.lv-story .story-image { display: block; position: relative; width: 100%; height: 240px; overflow: hidden; background: #f5f5f5; }
-.lv-story .story-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; }
-.lv-story .story-content { display: flex; flex-direction: column; gap: 6px; padding: 18px 20px 20px; }
+/* ---------- First customer: compact row card (whole card is the link) ---------- */
+.lv-story { display: flex; align-items: center; gap: 22px; padding: 18px; background: #fff; border: 1px solid rgba(0, 0, 0, .08); text-decoration: none; color: var(--text); }
+.lv-story .story-portrait { flex: 0 0 auto; width: 132px; height: 132px; object-fit: cover; object-position: center 30%; display: block; }
+.lv-story .story-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.lv-story .story-label { font-size: .72em; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: #888; margin-bottom: 2px; }
 .lv-story .story-name { font-size: 1.1em; font-weight: 600; line-height: 1.3; color: #121212; }
 .lv-story .story-who { font-size: .85em; font-weight: 300; line-height: 1.4; color: #888; }
 .lv-story .story-result { font-size: .95em; font-weight: 300; line-height: 1.4; color: var(--text); }
 .lv-story .story-result strong { font-weight: 600; color: #121212; }
-.lv-story .story-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
-.lv-story .story-tag { font-size: .7em; font-weight: 400; line-height: 1.5; padding: 1px 6px; border: 1px solid rgba(0, 0, 0, .15); color: #121212; }
 .lv-story .story-cta { font-size: .85em; font-weight: 500; line-height: 1.4; color: #121212; margin-top: 8px; }
 .lv-story .story-cta .arrow { color: #888; }
 .lv-story:hover .story-cta { text-decoration: underline; }
-.lv-story .story-side { display: grid; grid-template-rows: 240px 1fr; gap: 2px; min-width: 0; }
-.lv-story .story-side-photo { display: block; position: relative; overflow: hidden; background: #f5f5f5; }
-.lv-story .story-side-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 @media (max-width: 799px) {
-  .lv-story { grid-template-columns: 1fr; }
-  .lv-story .story-image { height: 200px; }
-  .lv-story .story-side { grid-template-rows: none; grid-template-columns: 1fr 1fr; }
-  .lv-story .story-side-photo { aspect-ratio: 3 / 2; }
+  .lv-story { align-items: flex-start; gap: 16px; padding: 14px; }
+  .lv-story .story-portrait { width: 96px; height: 96px; }
 }

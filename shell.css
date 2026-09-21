@@ -550,6 +550,7 @@ body.shell-body .past .card.card--left .card-media img {
   margin: 0;
   padding: 0;
   /* Type scale, matching the Latest tab: page h1 48px > title 28px > section 24px > body 20px > caption 16px */
+  /* Image grids: figures with an optional h5 title above and a figcaption below; fancybox wraps each img in an a. */
 }
 .shell-page .container.study .headwrap1, .shell-page .container.study .headwrap2 {
   display: block;
@@ -703,6 +704,69 @@ body.shell-body .past .card.card--left .card-media img {
 .shell-page .container.study .tab-content .section {
   width: 100%;
   flex-direction: column;
+}
+.shell-page .container.study .grid {
+  display: grid;
+  gap: 20px 16px;
+  align-items: start;
+  margin: 0 0 2.5em;
+}
+.shell-page .container.study .grid.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.shell-page .container.study .grid.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.shell-page .container.study .grid.cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.shell-page .container.study .grid figure {
+  margin: 0;
+  min-width: 0;
+}
+.shell-page .container.study .grid a {
+  display: block;
+  border: 0;
+}
+.shell-page .container.study .grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.shell-page .container.study .grid h5 {
+  font-size: 1em;
+  line-height: 1.3;
+  font-weight: 500;
+  margin: 0 0 0.5em;
+}
+.shell-page .container.study .grid h6 {
+  font-size: 0.8em;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #666;
+  margin: 0.9em 0 0.15em;
+}
+.shell-page .container.study .grid figcaption, .shell-page .container.study .grid p {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #666;
+  margin: 0.5em 0 0;
+}
+.shell-page .container.study .grid p {
+  color: #222;
+  margin: 0;
+}
+.shell-page .container.study .grid.storyboard img {
+  background: #fafafa;
+}
+@media (max-width: 799px) {
+  .shell-page .container.study .grid.cols-3, .shell-page .container.study .grid.cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* ---------- Resume tab ---------- */

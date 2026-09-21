@@ -20,7 +20,7 @@
 body .lv p, body .lv ul, body .lv h4, body .lv h5, body .lv blockquote, body .lv figure, body .lv li { margin: 0; padding: 0; font-size: inherit; line-height: inherit; font-weight: inherit; color: inherit; }
 body .lv ul { list-style: none; }
 .lv a { color: inherit; }
-.lv .lv-title { font-size: 1.35em; font-weight: 700; letter-spacing: -.01em; margin: 0 0 .25em; color: #121212; }
+.lv .lv-title { font-size: 1.15em; font-weight: 700; letter-spacing: 0; margin: 0 0 .25em; color: #121212; }
 .lv .lv-lede { font-size: 1em; color: var(--text); margin: 0 0 1.25em; }
 .lv .lv-caption { margin: 8px 0 0; font-size: .9em; font-weight: 500; color: var(--text); }
 .lv .lv-flag {

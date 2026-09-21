@@ -126,7 +126,7 @@ $x: ':not(.lv *)';
 body.shell-body .latest {
   h2#{$x} { font-size: 1.5em; line-height: 1.3; font-weight: 600; margin: 0 0 .25em; }
   .lede { font-size: 1.15em; line-height: 1.4; font-weight: 500; margin: 0 0 .25em; }
-  .meta { font-size: .9em; line-height: 1.5; font-weight: 300; color: #666; margin: 0 0 1.75em; }
+  p.meta#{$x} { font-size: .95em; line-height: 1.5; font-weight: 300; color: #666; margin: 0 0 1.75em; }
   h3#{$x} { font-size: 1.3em; line-height: 1.3; font-weight: 600; letter-spacing: -.01em; margin: 3em 0 .75em; }
   p#{$x}, li#{$x} { font-size: 1em; line-height: 1.55; font-weight: 300; }
   p#{$x} { margin: 0 0 1em; }
@@ -150,7 +150,7 @@ body.shell-body .latest {
   @media (min-width: $md) {
     h2#{$x} { font-size: 1.75em; }
     .lede { font-size: 1.35em; }
-    .meta { font-size: 1em; }
+    p.meta#{$x} { font-size: 1.05em; }
     h3#{$x} { font-size: 1.5em; }
     p#{$x}, li#{$x} { font-size: 1.25em; }
   }
@@ -208,12 +208,22 @@ body.shell-body .past .card {
   padding: 0;
   .headwrap1, .headwrap2 { display: block; }
   .headwrap1 { margin: 0 0 2.5em; }
-  .headwrap2 { margin: 3.5em 0 2.5em; }
+  .headwrap2 { margin: 3em 0 1.5em; }
   .headwrap2.writing { margin: 1.5em 0 3em; }
   .headwrap2.writing p { margin: 0 0 1em; }
   .headwrap2.writing p a { font-weight: 500; }
-  .headwrap1 h1, .headwrap2 h1, .headwrap1 h3, .headwrap2 h3,
+  .headwrap1 h1, .headwrap2 h1, .headwrap1 h2, .headwrap2 h2, .headwrap1 h3, .headwrap2 h3,
   .headwrap1 p, .headwrap2 p, .headwrap1 .gitlab-s, .headwrap2 .gitlab-s { width: 100%; max-width: none; }
+
+  /* Type scale, matching the Latest tab: page h1 48px > title 28px > section 24px > body 20px > caption 16px */
+  .headwrap1 h1, .headwrap1 h2, h1, h2 { font-size: 1.75em; line-height: 1.3; font-weight: 600; letter-spacing: -.01em; margin: 0 0 .5em; padding: 0; }
+  .headwrap2 h3, h3 { font-size: 1.5em; line-height: 1.3; font-weight: 600; letter-spacing: -.01em; margin: 0 0 .5em; padding: 0; }
+  h4, h5, nav.nav-sub strong { font-weight: 500; }
+  p, li { font-size: 1.25em; line-height: 1.55; font-weight: 300; }
+  li { margin: 0 0 .4em; }
+  .text-box p, .text-box-2 p { font-size: 1.25em; line-height: 1.55; }
+  > i, p.annotation { display: block; font-size: 1em; line-height: 1.5; font-weight: 300; font-style: normal; color: #666; margin: .6em 0 2.25em; }
+  .people .contact, .contact { font-size: 1.1em; font-weight: 300; }
   iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; margin: 0; }
   .twogl { display: flex; flex-direction: column; gap: 1.5em; margin: 2.5em 0; }
   .twogl .iframe { width: 100%; max-width: none; margin: 0; }

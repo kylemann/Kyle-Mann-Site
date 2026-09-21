@@ -8,26 +8,25 @@
   --line: #ebebeb;
   --text: #333;
   --dim: #666;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 17px;
   line-height: 1.4;
   color: var(--text);
   margin: 2em 0 2.5em;
   padding: 0;
-  font-feature-settings: 'cv11', 'ss01', 'cv02';
 }
 .lv *, .lv *::before, .lv *::after { box-sizing: border-box; }
 .lv img { display: block; max-width: 100%; height: auto; margin: 0; border: 0; }
 body .lv p, body .lv ul, body .lv h4, body .lv h5, body .lv blockquote, body .lv figure, body .lv li { margin: 0; padding: 0; font-size: inherit; line-height: inherit; font-weight: inherit; color: inherit; }
 body .lv ul { list-style: none; }
 .lv a { color: inherit; }
-.lv .lv-title { font-size: 1.35em; font-weight: 800; letter-spacing: -.01em; margin: 0 0 .25em; color: #121212; }
+.lv .lv-title { font-size: 1.35em; font-weight: 700; letter-spacing: -.01em; margin: 0 0 .25em; color: #121212; }
 .lv .lv-lede { font-size: 1em; color: var(--text); margin: 0 0 1.25em; }
-.lv .lv-caption { margin: 8px 0 0; font-size: .8em; font-weight: 500; color: var(--text); }
+.lv .lv-caption { margin: 8px 0 0; font-size: .9em; font-weight: 500; color: var(--text); }
 .lv .lv-flag {
   display: inline-block; position: absolute; top: -12px; left: 24px; z-index: 2;
-  background: #fff; border: 2px solid var(--soft); padding: 6px 10px;
-  font-size: .72em; letter-spacing: .12em; text-transform: uppercase; font-weight: 600;
+  background: #fff; border: 2px solid var(--soft); padding: 5px 10px;
+  font-size: .78em; letter-spacing: .12em; text-transform: uppercase; font-weight: 500;
   color: var(--text); white-space: nowrap; line-height: 1.2;
 }
 .lv .video { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
@@ -45,7 +44,7 @@ body .lv ul { list-style: none; }
 .lv-product .bubble {
   max-width: 82%; border: 1px solid rgba(18, 18, 18, .12); background: #fff; color: #222;
   padding: 7px 9px; border-radius: 12px; box-shadow: 0 1px 6px rgba(18, 18, 18, .04);
-  font-size: .68rem; line-height: 1.32;
+  font-size: 12.5px; line-height: 1.35;
 }
 .lv-product .msg--guest .bubble { background: #f3f4f6; }
 
@@ -53,10 +52,10 @@ body .lv ul { list-style: none; }
 .lv-team .founders { display: flex; gap: 1.25em; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5em; }
 .lv-team .founder { flex: 1 1 0; min-width: 0; text-align: center; }
 .lv-team .founder img { width: 150px; height: 150px; object-fit: cover; border: 8px solid var(--soft); background: #000; margin: 0 auto .75em; }
-.lv-team .founder h4 { font-size: 1em; font-weight: 700; margin: 0 0 .35em; }
+.lv-team .founder h4 { font-size: 1.1em; font-weight: 700; margin: 0 0 .35em; }
 .lv-team .founder h4 a { color: inherit; text-decoration: underline; }
-.lv-team .founder-bio { font-size: .8em; line-height: 1.4; color: var(--dim); }
-.lv-team .founder-bio li:first-child { font-weight: 600; color: var(--text); margin-bottom: .25em; }
+.lv-team .founder-bio { font-size: .9em; line-height: 1.4; color: var(--dim); }
+.lv-team .founder-bio li:first-child { font-weight: 500; color: var(--text); margin-bottom: .25em; }
 
 /* ---------- Problem: Demand + Supply ---------- */
 .lv-problem .panel { margin-bottom: 2.5em; }
@@ -68,7 +67,7 @@ body .lv ul { list-style: none; }
   display: flex; flex-direction: column; justify-content: center;
 }
 .lv-problem .box .lv-flag { left: 50%; transform: translateX(-50%); border-color: var(--line); }
-.lv-problem .points { font-size: .7em; line-height: 1.7; text-align: center; color: var(--dim); }
+.lv-problem .points { font-size: .85em; line-height: 1.6; text-align: center; color: var(--dim); }
 .lv-problem .points li { margin: .35em 0; }
 .lv-problem .trio > *:not(:last-child)::after {
   content: ""; position: absolute; top: 50%; right: -24px; width: 24px; height: 2px;
@@ -77,30 +76,30 @@ body .lv ul { list-style: none; }
 .lv-problem .rfp { flex: 0 0 300px; position: relative; display: flex; }
 
 /* fake RFP form (static, filled state) */
-.rfp-form-demo { width: 100%; background: #fff; border: 1px solid #e0e0e0; display: flex; flex-direction: column; font-size: .65rem; color: #333; }
+.rfp-form-demo { width: 100%; background: #fff; border: 1px solid #e0e0e0; display: flex; flex-direction: column; font-size: 12px; color: #333; }
 .rfp-form-header {
   background: linear-gradient(180deg, #2a5cff 0%, #1d4dd8 100%); color: #fff; padding: 9px 14px;
-  font-size: .66rem; font-weight: 600; letter-spacing: .04em; display: flex; justify-content: space-between; align-items: center;
+  font-size: 12.5px; font-weight: 500; letter-spacing: .04em; display: flex; justify-content: space-between; align-items: center;
 }
 .rfp-form-brand { letter-spacing: .05em; }
-.rfp-form-locale { font-size: .55rem; font-weight: 500; letter-spacing: .08em; opacity: .85; }
+.rfp-form-locale { font-size: 10.5px; font-weight: 500; letter-spacing: .08em; opacity: .85; }
 .rfp-form-body { flex: 1 1 auto; padding: 14px; display: flex; flex-direction: column; gap: 9px; }
 .rfp-form-section { display: flex; flex-direction: column; gap: 4px; }
-.rfp-form-label { font-size: .58rem; color: #555; font-weight: 500; }
+.rfp-form-label { font-size: 11px; color: #555; font-weight: 500; }
 .rfp-form-row { display: flex; align-items: center; gap: 6px; }
-.rfp-form-sep { color: #888; font-size: .6rem; }
-.rfp-checkbox { display: flex; align-items: center; gap: 7px; padding: 5px 8px; border: 1px solid #d8d8d8; font-size: .58rem; background: #fff; margin-top: 2px; }
+.rfp-form-sep { color: #888; font-size: 11px; }
+.rfp-checkbox { display: flex; align-items: center; gap: 7px; padding: 5px 8px; border: 1px solid #d8d8d8; font-size: 11px; background: #fff; margin-top: 2px; }
 .rfp-checkbox-box { width: 11px; height: 11px; border: 1.5px solid #c0c0c0; display: inline-block; position: relative; flex-shrink: 0; }
 .rfp-checkbox.is-checked .rfp-checkbox-box { background: #2a5cff; border-color: #2a5cff; }
 .rfp-checkbox.is-checked .rfp-checkbox-box::after {
   content: ""; position: absolute; top: 1px; left: 3px; width: 3px; height: 6px;
   border: solid #fff; border-width: 0 1.5px 1.5px 0; transform: rotate(45deg);
 }
-.rfp-input { border: 1px solid #d0d0d0; padding: 5px 8px; font-size: .58rem; min-height: 12px; background: #fff; line-height: 1.3; word-break: break-word; }
+.rfp-input { border: 1px solid #d0d0d0; padding: 5px 8px; font-size: 11px; min-height: 12px; background: #fff; line-height: 1.3; word-break: break-word; }
 .rfp-input--small { flex: 1 1 0; }
-.rfp-select { border: 1px solid #d0d0d0; padding: 5px 8px; font-size: .58rem; display: flex; align-items: center; justify-content: space-between; min-height: 14px; background: #fff; color: #333; }
-.rfp-select-arrow { color: #888; font-size: .55rem; }
-.rfp-form-send { margin-top: 4px; padding: 8px 12px; background: #2a5cff; color: #fff; border: 0; font-size: .6rem; font-weight: 600; letter-spacing: .04em; cursor: default; font-family: inherit; }
+.rfp-select { border: 1px solid #d0d0d0; padding: 5px 8px; font-size: 11px; display: flex; align-items: center; justify-content: space-between; min-height: 14px; background: #fff; color: #333; }
+.rfp-select-arrow { color: #888; font-size: 10.5px; }
+.rfp-form-send { margin-top: 4px; padding: 8px 12px; background: #2a5cff; color: #fff; border: 0; font-size: 11.5px; font-weight: 500; letter-spacing: .04em; cursor: default; font-family: inherit; }
 
 /* Tetris field: the deck's 320×480 grid scaled to 240×360 (60px tiles) */
 .lv-problem .tetris { position: relative; flex: 0 0 240px; width: 240px; height: 360px; background: var(--soft); border: 2px solid var(--line); overflow: hidden; align-self: center; }
@@ -156,7 +155,7 @@ body .lv ul { list-style: none; }
 .lv-vision .node .node-flag {
   position: absolute; top: -12px; left: 50%; transform: translateX(-50%); z-index: 2;
   background: #fff; border: 2px solid var(--line); padding: 6px 10px; font-size: .72em;
-  letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--text); white-space: nowrap; line-height: 1.2;
+  letter-spacing: .12em; text-transform: uppercase; font-weight: 500; color: var(--text); white-space: nowrap; line-height: 1.2;
 }
 .lv-vision .node p { font-size: .82em; color: var(--dim); line-height: 1.5; margin: 0; font-style: italic; }
 .lv-vision .node img { height: 36px; width: auto; object-fit: contain; }
@@ -184,31 +183,33 @@ body .lv ul { list-style: none; }
 }
 
 /* ---------- Cover (from the deck's cover slide: logo mark, headline, subhead, property marquee) ---------- */
-.lv-cover { text-align: center; margin: 0 0 3em; }
-.lv-cover .eyebrow { display: inline-block; padding: .45rem .85rem; background: #fafafa; border: 1px solid rgba(18, 18, 18, .12); margin: 0 0 1.25rem; line-height: 0; }
-.lv-cover .eyebrow img { height: 20px; width: auto; display: block; }
-.lv .cover-title { font-size: 2.6rem; font-weight: 900; line-height: 1.1; letter-spacing: -.025em; color: #121212; margin: 0 auto .75rem; }
-.lv .cover-sub { font-size: 1.2rem; line-height: 1.55; color: #1f1f1f; font-weight: 400; margin: 0 auto; max-width: 620px; }
-.lv .cover-role { font-size: .9rem; line-height: 1.5; color: #666; font-weight: 500; margin: .9rem auto 0; letter-spacing: .01em; }
-.lv-cover .showcase { position: relative; width: 100%; overflow: hidden; margin-top: 2.25rem; }
+.lv-cover { margin: 0 0 3em; }
+.lv-cover .panel { background: var(--soft); border: 2px solid var(--soft); padding: 52px 28px 28px; position: relative; text-align: center; }
+.lv .lv-flag--logo { padding: 7px 10px; line-height: 0; }
+.lv .lv-flag--logo img { height: 18px; width: auto; display: block; }
+.lv .cover-title { font-size: 2.75em; font-weight: 700; line-height: 1.1; letter-spacing: -.01em; color: #121212; margin: 0 auto .5rem; }
+.lv .cover-sub { font-size: 1.3em; line-height: 1.5; color: #1f1f1f; font-weight: 400; margin: 0 auto; max-width: 620px; }
+.lv .cover-role { font-size: 1em; line-height: 1.5; color: #666; font-weight: 500; margin: .8rem auto 0; letter-spacing: .01em; }
+.lv-cover .showcase { position: relative; width: 100%; overflow: hidden; margin-top: 2rem; }
 .lv-cover .showcase::before, .lv-cover .showcase::after { content: ''; position: absolute; top: 0; bottom: 0; width: 24px; z-index: 2; pointer-events: none; }
-.lv-cover .showcase::before { left: 0; background: linear-gradient(to right, rgba(255, 255, 255, .95), rgba(255, 255, 255, 0)); }
-.lv-cover .showcase::after { right: 0; background: linear-gradient(to left, rgba(255, 255, 255, .95), rgba(255, 255, 255, 0)); }
+.lv-cover .showcase::before { left: 0; background: linear-gradient(to right, rgba(250, 250, 250, .95), rgba(250, 250, 250, 0)); }
+.lv-cover .showcase::after { right: 0; background: linear-gradient(to left, rgba(250, 250, 250, .95), rgba(250, 250, 250, 0)); }
 .lv-cover .rail { display: flex; gap: 14px; width: max-content; animation: property-scroll 55s linear infinite; }
 .lv-cover .rail:hover { animation-play-state: paused; }
 @keyframes property-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .lv-cover .pcard { flex-shrink: 0; width: 200px; background: #fff; border: 1px solid rgba(0, 0, 0, .08); overflow: hidden; text-align: left; }
 .lv-cover .pcard-image { position: relative; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: #f5f5f5; }
 .lv-cover .pcard-image img { width: 100%; height: 100%; object-fit: cover; }
-.lv-cover .pcard-badge { position: absolute; top: 6px; right: 6px; background: rgba(255, 255, 255, .92); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); color: #121212; font-size: 9px; font-weight: 600; letter-spacing: .02em; padding: 2px 6px; line-height: 1.4; }
+.lv-cover .pcard-badge { position: absolute; top: 6px; right: 6px; background: rgba(255, 255, 255, .92); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); color: #121212; font-size: 10.5px; font-weight: 500; letter-spacing: .02em; padding: 2px 6px; line-height: 1.4; }
 .lv-cover .pcard-content { padding: 10px; display: flex; flex-direction: column; gap: 4px; }
-.lv-cover .pcard-name { font-size: 12.5px; font-weight: 600; color: #121212; line-height: 1.3; }
-.lv-cover .pcard-location, .lv-cover .pcard-descriptor { font-size: 11px; color: #888; line-height: 1.4; }
+.lv-cover .pcard-name { font-size: 14.5px; font-weight: 500; color: #121212; line-height: 1.3; }
+.lv-cover .pcard-location, .lv-cover .pcard-descriptor { font-size: 12.5px; color: #888; line-height: 1.4; }
 .lv-cover .pcard-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
-.lv-cover .pcard-tag { font-size: 9px; padding: 1px 5px; border: 1px solid rgba(0, 0, 0, .15); color: #121212; line-height: 1.5; }
+.lv-cover .pcard-tag { font-size: 10.5px; padding: 1px 5px; border: 1px solid rgba(0, 0, 0, .15); color: #121212; line-height: 1.5; }
 @media (prefers-reduced-motion: reduce) { .lv-cover .rail { animation: none; } }
 @media (max-width: 799px) {
-  .lv .cover-title { font-size: 2rem; }
-  .lv .cover-sub { font-size: 1.05rem; }
+  .lv .cover-title { font-size: 2.1em; }
+  .lv .cover-sub { font-size: 1.1em; }
+  .lv-cover .panel { padding: 44px 14px 16px; }
   .lv-cover .pcard { width: 170px; }
 }

@@ -163,6 +163,13 @@ body.container {
         line-height: 1.5;
         font-weight: 600;
     }
+    .portrait {
+        display: block;
+        width: 160px;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1.5em;
+    }
     p {
         font-size: 1em;
         line-height: 1.5;
@@ -326,6 +333,9 @@ MEDIA QUERY - Above 790 PX  DESKTOP
             font-size: 2.5em;
             line-height: 1.5;
             font-weight: 600;
+        }
+        .portrait {
+            width: 200px;
         }
         p {
             font-size: 1.25em;

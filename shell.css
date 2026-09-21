@@ -612,18 +612,28 @@ body.shell-body .past .card.card--left .card-media img {
   margin: 3em 0 1.5em;
 }
 .shell-page .container.study .headwrap2.writing {
-  margin: 1.5em 0 3em;
-}
-.shell-page .container.study .headwrap2.writing p, .shell-page .container.study .headwrap2.writing li {
-  margin: 0 0 1em;
+  margin: 1em 0 3em;
 }
 .shell-page .container.study .headwrap2.writing ul {
   list-style: disc;
-  padding: 0 0 0 1.25em;
+  padding: 0 0 0 1.1em;
   margin: 0;
+}
+.shell-page .container.study .headwrap2.writing li {
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin: 0 0 0.6em;
 }
 .shell-page .container.study .headwrap2.writing a {
   font-weight: 500;
+}
+.shell-page .container.study .headwrap2.writing .desc {
+  display: block;
+  font-size: 0.88em;
+  line-height: 1.45;
+  font-weight: 300;
+  color: #666;
+  margin-top: 0.1em;
 }
 .shell-page .container.study .headwrap1 h1, .shell-page .container.study .headwrap2 h1, .shell-page .container.study .headwrap1 h2, .shell-page .container.study .headwrap2 h2, .shell-page .container.study .headwrap1 h3, .shell-page .container.study .headwrap2 h3,
 .shell-page .container.study .headwrap1 p, .shell-page .container.study .headwrap2 p, .shell-page .container.study .headwrap1 .gitlab-s, .shell-page .container.study .headwrap2 .gitlab-s {

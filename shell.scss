@@ -213,10 +213,11 @@ body.shell-body .past .card {
   .headwrap1 h2 a.back { color: #999; text-decoration: none; border: 0; background: none; font-weight: 300; letter-spacing: 0; margin-right: .2em; transition: color .2s; }
   .headwrap1 h2 a.back:hover { color: black; background: none; border: 0; }
   .headwrap2 { margin: 3em 0 1.5em; }
-  .headwrap2.writing { margin: 1.5em 0 3em; }
-  .headwrap2.writing p, .headwrap2.writing li { margin: 0 0 1em; }
-  .headwrap2.writing ul { list-style: disc; padding: 0 0 0 1.25em; margin: 0; }
+  .headwrap2.writing { margin: 1em 0 3em; }
+  .headwrap2.writing ul { list-style: disc; padding: 0 0 0 1.1em; margin: 0; }
+  .headwrap2.writing li { font-size: 1.1em; line-height: 1.4; margin: 0 0 .6em; }
   .headwrap2.writing a { font-weight: 500; }
+  .headwrap2.writing .desc { display: block; font-size: .88em; line-height: 1.45; font-weight: 300; color: #666; margin-top: .1em; }
   .headwrap1 h1, .headwrap2 h1, .headwrap1 h2, .headwrap2 h2, .headwrap1 h3, .headwrap2 h3,
   .headwrap1 p, .headwrap2 p, .headwrap1 .gitlab-s, .headwrap2 .gitlab-s { width: 100%; max-width: none; }
 

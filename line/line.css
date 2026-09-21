@@ -186,17 +186,20 @@ body .lv ul { list-style: none; }
 
 /* ---------- Cover (from the deck's cover slide: logo mark, headline, subhead, property marquee) ---------- */
 .lv-cover { margin: 0 0 3em; }
-.lv-cover .panel { background: var(--soft); border: 2px solid var(--soft); padding: 52px 28px 28px; position: relative; text-align: left; }
+.lv-cover .panel { background: #111; border: 0; padding: 20px; position: relative; text-align: left; }
 .lv .lv-flag--logo { padding: 7px 10px; line-height: 0; }
 .lv .lv-flag--logo img { height: 18px; width: auto; display: block; }
-.lv .cover-title { font-size: 2.1em; font-weight: 700; line-height: 1.2; letter-spacing: -.01em; color: #121212; margin: 0 0 .4em; max-width: 640px; }
-.lv .cover-sub { font-size: 1.3em; line-height: 1.5; color: #333; font-weight: 300; margin: 0; max-width: 620px; }
-.lv .cover-role { font-size: 1em; line-height: 1.5; color: #666; font-weight: 500; margin: .75em 0 0; letter-spacing: .01em; }
-.lv-cover .showcase { position: relative; width: 100%; overflow: hidden; margin-top: 2rem; }
+.lv-cover .cover-caption { margin-top: 20px; line-height: 1.5; }
+.lv .cover-title { font-size: 1.5em; font-weight: 600; line-height: 1.45; letter-spacing: 0; color: black; margin: 0; }
+.lv .cover-sub { font-size: 1.1em; line-height: 1.5; color: black; font-weight: 300; margin: 0; }
+.lv .cover-role { font-size: .95em; line-height: 1.5; color: #333; font-weight: 500; margin: 0; }
+.lv .cover-title span, .lv .cover-sub span, .lv .cover-role span { background: #fff; border-top: 4px solid #fff; padding: 0 6px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.lv .cover-sub span, .lv .cover-role span { border-top-width: 3px; }
+.lv-cover .showcase { position: relative; width: 100%; overflow: hidden; margin: 0; }
 .lv-cover .rail { display: flex; gap: 14px; width: max-content; animation: property-scroll 55s linear infinite; }
 .lv-cover .rail:hover { animation-play-state: paused; }
 @keyframes property-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-.lv-cover .pcard { flex-shrink: 0; width: 200px; background: #fff; border: 1px solid rgba(0, 0, 0, .08); overflow: hidden; text-align: left; display: flex; flex-direction: column; }
+.lv-cover .pcard { flex-shrink: 0; width: 200px; background: #fff; border: 0; overflow: hidden; text-align: left; display: flex; flex-direction: column; }
 .lv-cover .pcard-image { position: relative; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: #f5f5f5; }
 .lv-cover .pcard-image img { width: 100%; height: 100%; object-fit: cover; }
 .lv-cover .pcard-badge { position: absolute; top: 6px; right: 6px; background: rgba(255, 255, 255, .92); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); color: #121212; font-size: 10.5px; font-weight: 500; letter-spacing: .02em; padding: 2px 6px; line-height: 1.4; }
@@ -207,8 +210,9 @@ body .lv ul { list-style: none; }
 .lv-cover .pcard-tag { font-size: 10.5px; padding: 1px 5px; border: 1px solid rgba(0, 0, 0, .15); color: #121212; line-height: 1.5; white-space: nowrap; }
 @media (prefers-reduced-motion: reduce) { .lv-cover .rail { animation: none; } }
 @media (max-width: 799px) {
-  .lv .cover-title { font-size: 1.7em; }
-  .lv .cover-sub { font-size: 1.1em; }
-  .lv-cover .panel { padding: 44px 14px 16px; }
+  .lv .cover-title { font-size: 1.25em; }
+  .lv .cover-sub { font-size: 1em; }
+  .lv-cover .panel { padding: 16px; }
+  .lv-cover .cover-caption { margin-top: 16px; }
   .lv-cover .pcard { width: 170px; }
 }

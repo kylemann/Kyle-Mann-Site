@@ -95,28 +95,6 @@ nav.work-nav {
   @media (min-width: $md) { a { font-size: 1.25em; } }
 }
 
-/* ---------- Breadcrumb ---------- */
-nav.breadcrumb {
-  display: block;
-  width: 100%;
-  max-width: none;
-  margin: 0 0 2.5em;
-  padding: 0;
-  font-family: $font;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.5;
-  color: black;
-  a {
-    color: black; text-decoration: none; background: none;
-    border: 0; border-bottom: 1px solid black; padding: 3px 0 0; transition: .2s all;
-    &:hover { background: black; color: white; }
-  }
-  .sep { margin: 0 .5em; color: #888; }
-  [aria-current] { font-weight: 500; }
-  @media (min-width: $md) { font-size: 1.1em; }
-}
-
 /* ---------- Tab panes (divs, not sections: km/main set section { display:block }) ---------- */
 .tab-pane[hidden], body.shell-body .tab-pane[hidden] { display: none; }
 

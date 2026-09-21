@@ -266,12 +266,6 @@ body.shell-body .latest .meta {
   color: #666;
   margin: 0 0 1.75em;
 }
-body.shell-body .latest .article-logo {
-  display: block;
-  height: 22px;
-  width: auto;
-  margin: 0 0 0.9em;
-}
 body.shell-body .latest h3:not(.lv *) {
   font-size: 1.3em;
   line-height: 1.3;

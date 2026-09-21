@@ -193,7 +193,10 @@ body .lv ul { list-style: none; }
 .lv .lv-flag--logo img { height: 18px; width: auto; display: block; }
 .lv-cover .cover-caption { margin-top: 20px; line-height: 1.5; }
 .lv .cover-title { font-size: 1.5em; font-weight: 600; line-height: 1.45; letter-spacing: 0; color: black; margin: 0; }
-.lv .cover-sub { font-size: 1.1em; line-height: 1.5; color: black; font-weight: 500; margin: 0; }
+.lv .cover-logo { margin: 0; line-height: 0; }
+.lv .cover-logo span { display: inline-block; background: #fff; border-top: 4px solid #fff; padding: 7px 8px 5px; }
+.lv .cover-logo img { display: block; height: 20px; width: auto; }
+.lv .cover-sub { font-size: 1.1em; line-height: 1.5; color: black; font-weight: 300; margin: 0; }
 .lv .cover-role { font-size: .95em; line-height: 1.5; color: #333; font-weight: 500; margin: 0; }
 .lv .cover-title span, .lv .cover-sub span, .lv .cover-role span { background: #fff; border-top: 4px solid #fff; padding: 0 6px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .lv .cover-sub span, .lv .cover-role span { border-top-width: 3px; }

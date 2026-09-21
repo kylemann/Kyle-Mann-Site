@@ -182,3 +182,33 @@ body .lv ul { list-style: none; }
   .lv-vision .node-flag { white-space: normal; max-width: 90%; text-align: center; }
   .lv-vision .conn { width: 2px; height: 24px; }
 }
+
+/* ---------- Cover (from the deck's cover slide: logo mark, headline, subhead, property marquee) ---------- */
+.lv-cover { text-align: center; margin: 0 0 3em; }
+.lv-cover .eyebrow { display: inline-block; padding: .45rem .85rem; background: #fafafa; border: 1px solid rgba(18, 18, 18, .12); margin: 0 0 1.25rem; line-height: 0; }
+.lv-cover .eyebrow img { height: 20px; width: auto; display: block; }
+.lv .cover-title { font-size: 2.6rem; font-weight: 900; line-height: 1.1; letter-spacing: -.025em; color: #121212; margin: 0 auto .75rem; }
+.lv .cover-sub { font-size: 1.2rem; line-height: 1.55; color: #1f1f1f; font-weight: 400; margin: 0 auto; max-width: 620px; }
+.lv .cover-role { font-size: .9rem; line-height: 1.5; color: #666; font-weight: 500; margin: .9rem auto 0; letter-spacing: .01em; }
+.lv-cover .showcase { position: relative; width: 100%; overflow: hidden; margin-top: 2.25rem; }
+.lv-cover .showcase::before, .lv-cover .showcase::after { content: ''; position: absolute; top: 0; bottom: 0; width: 24px; z-index: 2; pointer-events: none; }
+.lv-cover .showcase::before { left: 0; background: linear-gradient(to right, rgba(255, 255, 255, .95), rgba(255, 255, 255, 0)); }
+.lv-cover .showcase::after { right: 0; background: linear-gradient(to left, rgba(255, 255, 255, .95), rgba(255, 255, 255, 0)); }
+.lv-cover .rail { display: flex; gap: 14px; width: max-content; animation: property-scroll 55s linear infinite; }
+.lv-cover .rail:hover { animation-play-state: paused; }
+@keyframes property-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.lv-cover .pcard { flex-shrink: 0; width: 200px; background: #fff; border: 1px solid rgba(0, 0, 0, .08); overflow: hidden; text-align: left; }
+.lv-cover .pcard-image { position: relative; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: #f5f5f5; }
+.lv-cover .pcard-image img { width: 100%; height: 100%; object-fit: cover; }
+.lv-cover .pcard-badge { position: absolute; top: 6px; right: 6px; background: rgba(255, 255, 255, .92); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); color: #121212; font-size: 9px; font-weight: 600; letter-spacing: .02em; padding: 2px 6px; line-height: 1.4; }
+.lv-cover .pcard-content { padding: 10px; display: flex; flex-direction: column; gap: 4px; }
+.lv-cover .pcard-name { font-size: 12.5px; font-weight: 600; color: #121212; line-height: 1.3; }
+.lv-cover .pcard-location, .lv-cover .pcard-descriptor { font-size: 11px; color: #888; line-height: 1.4; }
+.lv-cover .pcard-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
+.lv-cover .pcard-tag { font-size: 9px; padding: 1px 5px; border: 1px solid rgba(0, 0, 0, .15); color: #121212; line-height: 1.5; }
+@media (prefers-reduced-motion: reduce) { .lv-cover .rail { animation: none; } }
+@media (max-width: 799px) {
+  .lv .cover-title { font-size: 2rem; }
+  .lv .cover-sub { font-size: 1.05rem; }
+  .lv-cover .pcard { width: 170px; }
+}

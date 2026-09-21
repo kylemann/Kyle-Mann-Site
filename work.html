@@ -58,45 +58,199 @@
     <!-- ===================== LATEST ===================== -->
     <div id="pane-latest" class="tab-pane latest" data-pane="latest">
 
-        <h2>Line</h2>
-        <p class="lede">Making group hospitality bookable</p>
-        <p class="meta">Co-founder &amp; CEO · Product strategy · Product design</p>
-
-        <!-- Wedge: Product (from the Line deck, #wedge-product) -->
-        <figure class="lv lv-product" aria-label="Line product overview">
-            <div class="row">
-                <div class="col">
-                    <div class="card"><img src="line/img/op-configuration.jpg" alt="Line configuration: structured supply, pricing logic, and rules"></div>
-                    <p class="lv-caption">i) Structured supply, pricing logic, rules</p>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="chat" aria-label="On-demand conversation with a guest">
-                            <div class="msg msg--property"><div class="bubble">Thanks for contacting Hotel Ada Events. Happy to help. Is this an internal leadership offsite or a client-facing program?</div></div>
-                            <div class="msg msg--guest"><div class="bubble">Internal offsite. Around 85 attendees in October, likely two-day programming.</div></div>
-                            <div class="msg msg--property"><div class="bubble">Great. Should we plan one main plenary room plus two breakouts, with built-in AV and catering service?</div></div>
-                            <div class="msg msg--guest"><div class="bubble">Yes, and we want a casual reception immediately after sessions on day one.</div></div>
-                            <div class="msg msg--property"><div class="bubble">Excellent, these room combinations are typically the strongest fit.</div></div>
-                        </div>
+        <!-- Cover (mirrors the deck's cover slide) -->
+        <div class="lv lv-cover">
+            <div class="eyebrow"><img src="line/img/line-mark.svg" alt="Line"></div>
+            <h2 class="cover-title">Opening the group bookings market</h2>
+            <p class="cover-sub">Helping hotels and venues turn inquiries into booked business.</p>
+            <p class="cover-role">Co-founder and CEO</p>
+            <div class="showcase" aria-label="Properties using Line">
+                <div class="rail">
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-bower.jpg" alt="The Bower Coronado" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">The Bower Coronado</div>
+                        <div class="pcard-location">Coronado, CA</div>
+                        <div class="pcard-descriptor">Coastal retreats and intimate celebrations</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Luxury Hotel</span><span class="pcard-tag">Refined, calm, coastal</span></div>
                     </div>
-                    <p class="lv-caption">ii) Consumer instant response</p>
                 </div>
-                <div class="col">
-                    <div class="card"><img src="line/img/op-deals.jpg" alt="Line deals: full deal flow as the system of work"></div>
-                    <p class="lv-caption">iii) Full deal flow as the system of work</p>
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-chateau.jpg" alt="Chateau Event Center" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Chateau Event Center</div>
+                        <div class="pcard-location">Bozeman, MT</div>
+                        <div class="pcard-descriptor">Mountain weddings and milestone events</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Event Venue</span><span class="pcard-tag">Warm, scenic, elevated</span></div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-lavilla.jpg" alt="La Villa" decoding="async"><span class="pcard-badge">v1</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">La Villa</div>
+                        <div class="pcard-location">Munich, DE</div>
+                        <div class="pcard-descriptor">Historic lakeside weddings and gatherings</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Event Venue</span><span class="pcard-tag">Historic, Bavarian</span></div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-meze.jpg" alt="Mezé Greek Fusion" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Mezé Greek Fusion</div>
+                        <div class="pcard-location">San Diego, CA</div>
+                        <div class="pcard-descriptor">Seated events and full buyouts</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Venue</span><span class="pcard-tag">Vibrant, welcoming</span></div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-havana.jpg" alt="Havana 1920" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Havana 1920</div>
+                        <div class="pcard-location">San Diego, CA</div>
+                        <div class="pcard-descriptor">Tropical-inspired private events</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Venue</span><span class="pcard-tag">Warm, tropical</span></div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-theline.jpg" alt="The LINE LA" decoding="async"><span class="pcard-badge">v1</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">The LINE LA</div>
+                        <div class="pcard-location">Los Angeles, CA</div>
+                        <div class="pcard-descriptor">Meetings, events, and rooftop gatherings</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Hotel</span><span class="pcard-tag">Creative, urban, playful</span></div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-donvalley.jpg" alt="Toronto Don Valley Hotel" decoding="async"><span class="pcard-badge">v1</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Toronto Don Valley Hotel</div>
+                        <div class="pcard-location">Toronto, ON</div>
+                        <div class="pcard-descriptor">Conferences, meetings, and group stays</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Conference Hotel</span><span class="pcard-tag">Tranquil, parkside, spacious</span></div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-elchingon.jpg" alt="El Chingon" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">El Chingon</div>
+                        <div class="pcard-location">San Diego, CA</div>
+                        <div class="pcard-descriptor">High-energy events for up to 200</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Venue</span><span class="pcard-tag">Bold, energetic</span></div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-prohibition.jpg" alt="Prohibition" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Prohibition</div>
+                        <div class="pcard-location">San Diego, CA</div>
+                        <div class="pcard-descriptor">Speakeasy buyouts and cocktail receptions</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Speakeasy</span><span class="pcard-tag">Classic, cocktail-driven</span></div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard-image"><img src="line/img/prop-ironlight.jpg" alt="Ironlight" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Ironlight</div>
+                        <div class="pcard-location">Portland, OR</div>
+                        <div class="pcard-descriptor">Elevated weddings and curated gatherings</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Event Venue</span><span class="pcard-tag">Elegant, professional</span></div>
+                    </div>
+                </div>
+                <!-- duplicate set for the seamless loop -->
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-bower.jpg" alt="The Bower Coronado" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">The Bower Coronado</div>
+                        <div class="pcard-location">Coronado, CA</div>
+                        <div class="pcard-descriptor">Coastal retreats and intimate celebrations</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Luxury Hotel</span><span class="pcard-tag">Refined, calm, coastal</span></div>
+                    </div>
+                </div>
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-chateau.jpg" alt="Chateau Event Center" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Chateau Event Center</div>
+                        <div class="pcard-location">Bozeman, MT</div>
+                        <div class="pcard-descriptor">Mountain weddings and milestone events</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Event Venue</span><span class="pcard-tag">Warm, scenic, elevated</span></div>
+                    </div>
+                </div>
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-lavilla.jpg" alt="La Villa" decoding="async"><span class="pcard-badge">v1</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">La Villa</div>
+                        <div class="pcard-location">Munich, DE</div>
+                        <div class="pcard-descriptor">Historic lakeside weddings and gatherings</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Event Venue</span><span class="pcard-tag">Historic, Bavarian</span></div>
+                    </div>
+                </div>
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-meze.jpg" alt="Mezé Greek Fusion" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Mezé Greek Fusion</div>
+                        <div class="pcard-location">San Diego, CA</div>
+                        <div class="pcard-descriptor">Seated events and full buyouts</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Venue</span><span class="pcard-tag">Vibrant, welcoming</span></div>
+                    </div>
+                </div>
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-havana.jpg" alt="Havana 1920" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Havana 1920</div>
+                        <div class="pcard-location">San Diego, CA</div>
+                        <div class="pcard-descriptor">Tropical-inspired private events</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Venue</span><span class="pcard-tag">Warm, tropical</span></div>
+                    </div>
+                </div>
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-theline.jpg" alt="The LINE LA" decoding="async"><span class="pcard-badge">v1</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">The LINE LA</div>
+                        <div class="pcard-location">Los Angeles, CA</div>
+                        <div class="pcard-descriptor">Meetings, events, and rooftop gatherings</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Hotel</span><span class="pcard-tag">Creative, urban, playful</span></div>
+                    </div>
+                </div>
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-donvalley.jpg" alt="Toronto Don Valley Hotel" decoding="async"><span class="pcard-badge">v1</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Toronto Don Valley Hotel</div>
+                        <div class="pcard-location">Toronto, ON</div>
+                        <div class="pcard-descriptor">Conferences, meetings, and group stays</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Conference Hotel</span><span class="pcard-tag">Tranquil, parkside, spacious</span></div>
+                    </div>
+                </div>
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-elchingon.jpg" alt="El Chingon" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">El Chingon</div>
+                        <div class="pcard-location">San Diego, CA</div>
+                        <div class="pcard-descriptor">High-energy events for up to 200</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Venue</span><span class="pcard-tag">Bold, energetic</span></div>
+                    </div>
+                </div>
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-prohibition.jpg" alt="Prohibition" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Prohibition</div>
+                        <div class="pcard-location">San Diego, CA</div>
+                        <div class="pcard-descriptor">Speakeasy buyouts and cocktail receptions</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Speakeasy</span><span class="pcard-tag">Classic, cocktail-driven</span></div>
+                    </div>
+                </div>
+                <div class="pcard" aria-hidden="true">
+                    <div class="pcard-image"><img src="line/img/prop-ironlight.jpg" alt="Ironlight" decoding="async"><span class="pcard-badge">Live</span></div>
+                    <div class="pcard-content">
+                        <div class="pcard-name">Ironlight</div>
+                        <div class="pcard-location">Portland, OR</div>
+                        <div class="pcard-descriptor">Elevated weddings and curated gatherings</div>
+                        <div class="pcard-tags"><span class="pcard-tag">Event Venue</span><span class="pcard-tag">Elegant, professional</span></div>
+                    </div>
+                </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card"><img src="line/img/op-schedule.jpg" alt="Line schedule: agent visibility across deal flow and capacity"></div>
-                    <p class="lv-caption">iv) Agent visibility across deal flow and capacity</p>
-                </div>
-                <div class="col">
-                    <div class="card"><img src="line/img/op-insights.jpg" alt="Line insights: learning system that improves what drives bookings"></div>
-                    <p class="lv-caption">v) Learning system improves what drives bookings</p>
-                </div>
-            </div>
-        </figure>
+        </div>
+
 
         <p>My co-founders and I quit our jobs to build Line. And truthfully, there has to be something wrong with people who do this.</p>
         <p>We traded healthy salaries and stability for a journey that includes failure, rejection, and isolation in order to bring something new to market.</p>
@@ -371,6 +525,43 @@
         <p>If yes, Line could become the system.</p>
         <p>The same structured supply that powered the initial conversation became the foundation for the rest of the workflow.</p>
         <p>Line expanded into RFP intake, qualification, availability, room blocks, pricing, proposals, messaging, contracts, e-signatures, reporting, and a learning loop across each interaction.</p>
+
+        <!-- Wedge: Product (from the Line deck, #wedge-product) -->
+        <figure class="lv lv-product" aria-label="Line product overview">
+            <div class="row">
+                <div class="col">
+                    <div class="card"><img src="line/img/op-configuration.jpg" alt="Line configuration: structured supply, pricing logic, and rules"></div>
+                    <p class="lv-caption">i) Structured supply, pricing logic, rules</p>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="chat" aria-label="On-demand conversation with a guest">
+                            <div class="msg msg--property"><div class="bubble">Thanks for contacting Hotel Ada Events. Happy to help. Is this an internal leadership offsite or a client-facing program?</div></div>
+                            <div class="msg msg--guest"><div class="bubble">Internal offsite. Around 85 attendees in October, likely two-day programming.</div></div>
+                            <div class="msg msg--property"><div class="bubble">Great. Should we plan one main plenary room plus two breakouts, with built-in AV and catering service?</div></div>
+                            <div class="msg msg--guest"><div class="bubble">Yes, and we want a casual reception immediately after sessions on day one.</div></div>
+                            <div class="msg msg--property"><div class="bubble">Excellent, these room combinations are typically the strongest fit.</div></div>
+                        </div>
+                    </div>
+                    <p class="lv-caption">ii) Consumer instant response</p>
+                </div>
+                <div class="col">
+                    <div class="card"><img src="line/img/op-deals.jpg" alt="Line deals: full deal flow as the system of work"></div>
+                    <p class="lv-caption">iii) Full deal flow as the system of work</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card"><img src="line/img/op-schedule.jpg" alt="Line schedule: agent visibility across deal flow and capacity"></div>
+                    <p class="lv-caption">iv) Agent visibility across deal flow and capacity</p>
+                </div>
+                <div class="col">
+                    <div class="card"><img src="line/img/op-insights.jpg" alt="Line insights: learning system that improves what drives bookings"></div>
+                    <p class="lv-caption">v) Learning system improves what drives bookings</p>
+                </div>
+            </div>
+        </figure>
+
         <p>The workflow moved from:</p>
         <p class="flow"><strong>forms <span class="arrow">→</span> waiting <span class="arrow">→</span> manual qualification <span class="arrow">→</span> PDFs <span class="arrow">→</span> follow-up <span class="arrow">→</span> contract</strong></p>
         <p>toward:</p>
@@ -456,43 +647,50 @@
 
     <!-- ===================== PAST ===================== -->
     <div id="pane-past" class="tab-pane past" data-pane="past" hidden>
-        <a class="card" href="codecov.html" style="background-image:url('images/codecov/codecov.png')">
+        <a class="card" href="codecov.html">
+            <img src="images/cards/codecov.jpg" alt="" width="1600" height="594" loading="lazy">
             <div class="card-caption">
                 <h2><span>Leading product design at Codecov</span></h2>
                 <p><span>Helping developers ship healthier code with less risk</span></p>
             </div>
         </a>
-        <a class="card" href="autoremediation.html" style="background-image:url('new_screens/gitlab_revised.png')">
+        <a class="card" href="autoremediation.html">
+            <img src="images/cards/autoremediation.jpg" alt="" width="1600" height="1222" loading="lazy">
             <div class="card-caption">
                 <h2><span>Iterations toward automation</span></h2>
                 <p><span>Empowering teams to commit their most secure work</span></p>
             </div>
         </a>
-        <a class="card" href="collaborativeiteration.html" style="background-image:url('new_screens/gitlab1.png')">
+        <a class="card" href="collaborativeiteration.html">
+            <img src="images/cards/collaborativeiteration.jpg" alt="" width="1600" height="1222" loading="lazy">
             <div class="card-caption">
                 <h2><span>Security dashboard</span></h2>
                 <p><span>Collaborative iterations on a team endeavor</span></p>
             </div>
         </a>
-        <a class="card" href="continualiteration.html" style="background-image:url('new_screens/gitlab2.png')">
+        <a class="card" href="continualiteration.html">
+            <img src="images/cards/continualiteration.jpg" alt="" width="1600" height="1222" loading="lazy">
             <div class="card-caption">
                 <h2><span>Innovation by iteration</span></h2>
                 <p><span>Risk taking, experimentation, and uncertainty</span></p>
             </div>
         </a>
-        <a class="card" href="crosslead.html" style="background-image:url('new_screens/cl_hero.png')">
+        <a class="card" href="crosslead.html">
+            <img src="images/cards/crosslead.jpg" alt="" width="1120" height="854" loading="lazy">
             <div class="card-caption">
                 <h2><span>CrossLead</span></h2>
                 <p><span>Product design with the 'Team of Teams'</span></p>
             </div>
         </a>
-        <a class="card" href="advisor.html" style="background-image:url('images/screens/home_hero2.png')">
+        <a class="card" href="advisor.html">
+            <img src="images/cards/advisor.jpg" alt="" width="1600" height="1222" loading="lazy">
             <div class="card-caption">
                 <h2><span>Advisor dashboard integration</span></h2>
                 <p><span>A market data dashboard that keeps you informed</span></p>
             </div>
         </a>
-        <a class="card" href="vault.html" style="background-image:url('new_screens/vault_1@4x.png')">
+        <a class="card" href="vault.html">
+            <img src="images/cards/vault.jpg" alt="" width="1600" height="594" loading="lazy">
             <div class="card-caption">
                 <h2><span>The digital vault</span></h2>
                 <p><span>Cloud storage that streamlines document sharing</span></p>

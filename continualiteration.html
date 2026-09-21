@@ -78,6 +78,8 @@
                 </ul>
             </div>
         </div>
+        
+
         <div class="headwrap2">
             <h3>Iterations in action</h3>
             <div class="gitlab-s">
@@ -85,41 +87,75 @@
                 <ul>
                     <li><b>Problem to solve:</b> The list of a components shown may not up-to-date: as it might not reflect the HEAD of the default branch. Users should be aware that they may be looking at an old, possibly outdated version of their project’s components. Also, it’s not explicit when and where the data is coming from.
                         <br> <b>Solution:</b> include ? icon, which links to documentation for the user to learn more. The subtext frames the page, informing the user of the data displayed source, links to the pipeline page, and when it was last updated.
-                        <br> <b>Validate:</b> the messaging pattern aims to proactively inform the user about the UI content and how/when the data is displayed. To validate my hypothesis I <a href=" https://gitlab.com/gitlab-org/ux-research/-/issues/360">tested with users</a>, which was done in tandem with <a href="https://gitlab.com/gitlab-org/ux-research/-/issues/359">another test about configuration</a>. We found that users understood the data source and found the time stamp helpful. This shared learning informed our decisions to leverage this solution for other areas: license compliance and dashboard. </li> <img src="images/showcase/1all.png" class="fancybox" title="Displaying source of data" alt="Data source">
-                    <br>
-                    <br>
+                        <br> <b>Validate:</b> the messaging pattern aims to proactively inform the user about the UI content and how/when the data is displayed. To validate my hypothesis I <a href=" https://gitlab.com/gitlab-org/ux-research/-/issues/360">tested with users</a>, which was done in tandem with <a href="https://gitlab.com/gitlab-org/ux-research/-/issues/359">another test about configuration</a>. We found that users understood the data source and found the time stamp helpful. This shared learning informed our decisions to leverage this solution for other areas: license compliance and dashboard. </li>
                     <li><b>Problem to solve:</b> <span class="small-caps">1)</span> at first glance, difficult to see any vulnerabilities; as they are secondary: hidden in time behind a tab, <span class="small-caps">2)</span> status is confusing (and possibly not accurate?), <span class="small-caps">3)</span> redundant `Safe`; takes a lot of space and is unclear communication.
                         <br> <b>Job-to-be-done, user task:</b> "when my dependencies have reported vulnerabilities, I want to learn more about the vulnerability cause and implications, so I can make an informed decision on taking action on how to proceed".
-                        <br> <b>Solution:</b> <span class="small-caps">i)</span> removed vulnerability tab which was hiding the vulnerabilities in time, <span class="small-caps">ii)</span> Defaulted to severity sort order therefore showing vulnerabilities in space (not hidden behind tabs or pagination); making vulns prominent, <span class="small-caps">iii)</span> remove “safe”: only calling attention to at risk dependencies, <span class="small-caps">iv)</span> applied label to at-risk components (aligning with out-of-policy licenses), <span class="small-caps">v)</span> merged component name and version: tightens up space.</li> <img src="images/showcase/2.png" class="fancybox" title="Improvements to the dependency list: surfacing most imporant data" alt="Dependency list improvemetns">
-                    <img src="https://gitlab.com/gitlab-org/gitlab/uploads/02dbc1a3b197344487bfa8a07dcffcd5/overview.png" class="fancybox" title="Improving display of related vulnerabilities" alt="Vuln Display">
-                    
-                    
-                    
-                    <br>
-                    <br>
+                        <br> <b>Solution:</b> <span class="small-caps">i)</span> removed vulnerability tab which was hiding the vulnerabilities in time, <span class="small-caps">ii)</span> Defaulted to severity sort order therefore showing vulnerabilities in space (not hidden behind tabs or pagination); making vulns prominent, <span class="small-caps">iii)</span> remove “safe”: only calling attention to at risk dependencies, <span class="small-caps">iv)</span> applied label to at-risk components (aligning with out-of-policy licenses), <span class="small-caps">v)</span> merged component name and version: tightens up space.</li>
                     <li><b>Problem to solve:</b> when dependency scanning reports a vulnerability affecting a transient dependency, users don't know how this vulnerable and transient dependency relates to the dependencies they have declared in the project dependency file.
-                        <br> <b>Solution:</b> show the path between a vulnerable, transient dependency (listed in the generated lock file) and the top-level dependencies (from dependency file).</li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/b20f9c3373bf357f13b027dbadf9ee1a/all.png" class="fancybox" title="Dependency path shown" alt="Dependency pth">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lB8DJOSpvNE?start=22" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i>Dependency path: problem-solution walkthrough</i>
-                    <br>
-                    <br>
+                        <br> <b>Solution:</b> show the path between a vulnerable, transient dependency (listed in the generated lock file) and the top-level dependencies (from dependency file).</li>
                     <li><b>Problem to solve:</b> the dependency list and license compliance are separate sections; displaying results from two different scanners. Creating a segmented experience; whereas they are closely related. The dependency list shows licenses and the license list shows dependencies; understanding how they related together is hard to achieve on separate UI sections. The user is forced to navigate from one list to the other (example: looking into related dependency for out-of-compliance license).
-                        <br><b>Solution:</b> an information architecture revision: a component section as an umbrella for 1) dependencies, 2) related licenses, 3) policies. </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/0502b908b3a0904fcbb4d35b4c71fce3/all.png" class="fancybox" title="Unified component section" alt="Component section">
-                    <br>
-                    <br>
+                        <br><b>Solution:</b> an information architecture revision: a component section as an umbrella for 1) dependencies, 2) related licenses, 3) policies. </li>
                     <li><b>Problem to solve:</b> it is challenging to get direct and continual feedback from users in specific areas as we gradually roll out iterations. Further context: many of our customers are on premise, therefore the little product analytics that does exist would not be available. Consider when new updates are implemented: users will land on the page and likely have valuable thoughts, challenges, and/or suggestions to share.
                         <br><b>Hypothesis:</b> we have a unique ability here at GitLab, where we can direct the user to either create issues and/or contribute to an issue soliciting feedback. Display prompt for feedback on the dependency list and/or license compliance page. Stating "You may notice some gradual changes to the user interface. To help us improve the experience, please share your feedback on the recent updates."
                         <br><b>Thinking:</b> this is a low-cost experiment to drive feedback from users. Downside: no responses. Upside: an inexpensive, direct line to active users, encourage contributions, add potential research participants, and instant feedback to potential iterate on (partnering directly with the user). <a href="https://www.figma.com/proto/jEbHNk37eKDuELnoDZChN6/feedback_from-_user?node-id=1%3A417&scaling=min-zoom
-                       ">View prototype</a> </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/374f42dca60f69edc3b01640dbd60c53/1b.png" class="fancybox" title="Soliciting feedback from user in UI - low cost experiment to establish a feedback loop" alt="Feedback UI">
-                    <br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QH0M9im_52M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <i>Experiment overview to solicit user feedback</i> </ul>
+                       ">View prototype</a> </li> </ul>
             </div>
         </div>
-        <div class="twogl">
-            <div class="iframe">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VXzKUqlQ7qs?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <i>Presentation: boring iterations and why they are so important</i> </div>
-            <div class="iframe">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ftqo4S_DSkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i>Dependency list current experience, improvements, and future steps</i> </div>
-        </div> <img src="images/showcase/4all.png" class="fancybox" title="Clarifying out-of-policy license in the merge request" alt="Compliance in merge reqest"> <i>Small iteration in the merge request: improvement uses text to explicitly state that a policy violation is detected</i> <img src="images/showcase/5all.png" class="fancybox" title="Clarifying out-of-policy license in the merge request" alt="Compliance in merge reqest"> <i>Remove confusing icons and use explicit text</i>
+        <div class="grid cols-3">
+            <figure>
+                <img src="images/showcase/1all.png" class="fancybox" title="Displaying source of data" alt="Data source">
+                <figcaption>Displaying source of data</figcaption>
+            </figure>
+            <figure>
+                <img src="images/showcase/2.png" class="fancybox" title="Improvements to the dependency list: surfacing most imporant data" alt="Dependency list improvemetns">
+                <figcaption>Improvements to the dependency list: surfacing most imporant data</figcaption>
+            </figure>
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab/uploads/02dbc1a3b197344487bfa8a07dcffcd5/overview.png" class="fancybox" title="Improving display of related vulnerabilities" alt="Vuln Display">
+                <figcaption>Improving display of related vulnerabilities</figcaption>
+            </figure>
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab/uploads/b20f9c3373bf357f13b027dbadf9ee1a/all.png" class="fancybox" title="Dependency path shown" alt="Dependency pth">
+                <figcaption>Dependency path shown</figcaption>
+            </figure>
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab/uploads/0502b908b3a0904fcbb4d35b4c71fce3/all.png" class="fancybox" title="Unified component section" alt="Component section">
+                <figcaption>Unified component section</figcaption>
+            </figure>
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab/uploads/374f42dca60f69edc3b01640dbd60c53/1b.png" class="fancybox" title="Soliciting feedback from user in UI - low cost experiment to establish a feedback loop" alt="Feedback UI">
+                <figcaption>Soliciting feedback from user in UI - low cost experiment to establish a feedback loop</figcaption>
+            </figure>
+        </div>
+        <div class="grid cols-2">
+            <figure>
+                <img src="images/showcase/4all.png" class="fancybox" title="Clarifying out-of-policy license in the merge request" alt="Compliance in merge reqest">
+                <figcaption>Small iteration in the merge request: improvement uses text to explicitly state that a policy violation is detected</figcaption>
+            </figure>
+            <figure>
+                <img src="images/showcase/5all.png" class="fancybox" title="Clarifying out-of-policy license in the merge request" alt="Compliance in merge reqest">
+                <figcaption>Remove confusing icons and use explicit text</figcaption>
+            </figure>
+        </div>
+        <div class="grid cols-2 videos">
+            <figure>
+                <iframe src="https://www.youtube.com/embed/lB8DJOSpvNE?start=22" title="Dependency path: problem-solution walkthrough" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Dependency path: problem-solution walkthrough</figcaption>
+            </figure>
+            <figure>
+                <iframe src="https://www.youtube.com/embed/QH0M9im_52M" title="Experiment overview to solicit user feedback" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Experiment overview to solicit user feedback</figcaption>
+            </figure>
+            <figure>
+                <iframe src="https://www.youtube.com/embed/VXzKUqlQ7qs?start=2" title="Presentation: boring iterations and why they are so important" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Presentation: boring iterations and why they are so important</figcaption>
+            </figure>
+            <figure>
+                <iframe src="https://www.youtube.com/embed/ftqo4S_DSkc" title="Dependency list current experience, improvements, and future steps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Dependency list current experience, improvements, and future steps</figcaption>
+            </figure>
+        </div>
+
         <div class="outro">
             <hr class="outro-rule">
             <img class="outro-image" src="images/flatirons.png" alt="" width="722" height="253">

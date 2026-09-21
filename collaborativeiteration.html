@@ -65,6 +65,8 @@
                     <br>As the team grew so did the <a href="https://about.gitlab.com/blog/2019/10/11/how-we-uxd-our-secure-ux-team/" target="_blank">processes, team structure, and areas of focus</a>. My role focused on: the Composition Analysis Group on <a href="https://about.gitlab.com/direction/secure/" target="_blank">Secure</a> section, which is: dependency scanning, container scanning, and license compliance. Also Container Network Security on the newly formed <a href="https://about.gitlab.com/direction/protect/" target="_blank">Protect</a> section. While these were my areas of individual focus, there are also shared areas the design team iterates on collaboratively. One such feature is the <a href=" https://docs.gitlab.com/ee/user/application_security/security_dashboard/" target="_blank">Security Dashboard</a>, which displays results from <span class="small-caps">4 of 5</span> of the security scanners. The following are contributions I made along the way, building off previous work, and laying the foundation for subsequent iterations. </p>
             </div>
         </div>
+        
+
         <div class="headwrap2">
             <h3>Collborative iterations on a team endeavor</h3>
             <div class="gitlab-s">
@@ -73,36 +75,74 @@
                     <br>I started by identifying and focusing on the following user task (or job-to-be-done) to improve on: “When reviewing vulnerabilities for multiple projects, I want to see them all in one location, so that I can prioritize my efforts to resolve or triage them while seeing the larger picture”. Based on the heuristics review; here were the key problems I identified: </p>
                 <ul>
                     <li>The most important data was not immediately visible in a common desktop viewport: table view vulnerabilities are pushed down the page below the summary and large chart. The user needs to scroll up and down to adjust filters then view the table data. </li>
-                    <li>The data visualization is using a line chart to show multiple different vulnerability severity types. However, it's not important to see how the vulnerabilities compare with each other, rather how they have trended over-time individually. </li> <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/2c39ea1b147211d0ad76e4cafe26682b/display_default.png" class="fancybox" title="Line chart hiding most important data below • Not usefule to see comparison visual" alt="Line Chart">
-                    <li>When the user adjusts the severity filters, for example to "high" only, the summary view still displays “0” for the non-selected criticality levels (chart displays only the filtered object). This occupies space and displays non-relevant data.</li> <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/3d19dcebeabb93308053dff4cf91f45c/display_default_wfilter.png" class="fancybox" title="Filter confusion" alt="Line Chart">
-                    <li>It's unclear in the security dashboard what projects in the group have or have not been tested and when. The source of the displayed data is absent.</li> <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/379fe247bc5a6a9b1fdd8a46b9cfa1dd/table_display.png" class="fancybox" title="Data source is absent" alt="Line Chart">
-                    <br>
-                    <br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_JtUdaTyAbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <i>Video walkthrough of problems identified</i> </ul>
-                <br>
-                <br>
-                <p>Then my proposed solutions and shipped iterations:</p>
+                    <li>The data visualization is using a line chart to show multiple different vulnerability severity types. However, it's not important to see how the vulnerabilities compare with each other, rather how they have trended over-time individually. </li>
+                    <li>When the user adjusts the severity filters, for example to "high" only, the summary view still displays “0” for the non-selected criticality levels (chart displays only the filtered object). This occupies space and displays non-relevant data.</li>
+                    <li>It's unclear in the security dashboard what projects in the group have or have not been tested and when. The source of the displayed data is absent.</li> </ul>
+                
+        <div class="grid cols-3">
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/2c39ea1b147211d0ad76e4cafe26682b/display_default.png" class="fancybox" title="Line chart hiding most important data below • Not usefule to see comparison visual" alt="Line Chart">
+                <figcaption>Line chart hiding most important data below • Not usefule to see comparison visual</figcaption>
+            </figure>
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/3d19dcebeabb93308053dff4cf91f45c/display_default_wfilter.png" class="fancybox" title="Filter confusion" alt="Line Chart">
+                <figcaption>Filter confusion</figcaption>
+            </figure>
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/379fe247bc5a6a9b1fdd8a46b9cfa1dd/table_display.png" class="fancybox" title="Data source is absent" alt="Line Chart">
+                <figcaption>Data source is absent</figcaption>
+            </figure>
+        </div>
+<p>Then my proposed solutions and shipped iterations:</p>
                 <ul>
-                    <li>Layout changes that prioritize the table vulnerability data: <span class="small-caps">1)</span> header: Section header label ("Vulnerability Management") and filters, <span class="small-caps">2)</span> main: table data at the top making it immediately visible to the user, <span class="small-caps">3)</span> aside: contains the summary severity count and chart showing changes over time, also accounting for upcoming iterations: displaying <a href="https://gitlab.com/gitlab-org/gitlab-ee/issues/11190" target="_blank">affected project</a> and <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/13298" target="_blank">untested projects</a> </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/fbfeb156e19165fd58210086e7c82698/future.png" class="fancybox" title="Layout to prioritize most important data and space for future iterations" alt="Layout change">
-                    <li>If user filters by severity, the chart data summary shows only the selected data points </li> <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/59b4855ef3ebf9cddbcf6efb9458cc7c/2.png" class="fancybox" title="Only display selected data" alt="Display data">
-                    <li>Improve <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/12881" target="_blank">information design by using sparklines</a> : <span class="small-caps">1)</span> show trends over time with individual vulnerability type, <span class="small-caps">2)</span> severity label same as seen in the table (visual consistency), <span class="small-caps">3)</span> percentage of change in selected days 30/60/90, help users understand how they have progressed +/-, <span class="small-caps">4)</span> current # vulnerability count displayed</li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/96a664e9e7aa528d3faab8bb8ee92e9f/1.png" class="fancybox" title="Display trends with sparklines, including % change over time" alt="Sparklines">
-                    <li>Show on dashboard <a href=" https://gitlab.com/gitlab-org/gitlab/-/issues/13298 " target="_blank"> what and when latest test</a> were run for what project. </li> <img src="https://gitlab.com/gitlab-org/gitlab/uploads/3e9180159b8c9d2271ad8fa4ac127324/2.png" class="fancybox" title="Display source of date: tested projects and pipeline data" alt="Data source"> </ul>
+                    <li>Layout changes that prioritize the table vulnerability data: <span class="small-caps">1)</span> header: Section header label ("Vulnerability Management") and filters, <span class="small-caps">2)</span> main: table data at the top making it immediately visible to the user, <span class="small-caps">3)</span> aside: contains the summary severity count and chart showing changes over time, also accounting for upcoming iterations: displaying <a href="https://gitlab.com/gitlab-org/gitlab-ee/issues/11190" target="_blank">affected project</a> and <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/13298" target="_blank">untested projects</a> </li>
+                    <li>If user filters by severity, the chart data summary shows only the selected data points </li>
+                    <li>Improve <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/12881" target="_blank">information design by using sparklines</a> : <span class="small-caps">1)</span> show trends over time with individual vulnerability type, <span class="small-caps">2)</span> severity label same as seen in the table (visual consistency), <span class="small-caps">3)</span> percentage of change in selected days 30/60/90, help users understand how they have progressed +/-, <span class="small-caps">4)</span> current # vulnerability count displayed</li>
+                    <li>Show on dashboard <a href=" https://gitlab.com/gitlab-org/gitlab/-/issues/13298 " target="_blank"> what and when latest test</a> were run for what project. </li> </ul>
             </div>
         </div>
-        <div class="twogl">
-            <div class="iframe">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WGOAJtQehZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <i>Reviewing proposed changes with the team</i> </div>
-            <div class="iframe">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/gxZzQtM_RnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i>Overview: show on group security dashboard when security tests are not configured</i> </div>
-        </div> <img src="images/gitlabimg/3.png" class="fancybox" title="Discoverability of merge request with fixes" alt="Bot Overview"> <i>Group security dashboard</i>
+        <div class="grid cols-2">
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab/uploads/fbfeb156e19165fd58210086e7c82698/future.png" class="fancybox" title="Layout to prioritize most important data and space for future iterations" alt="Layout change">
+                <figcaption>Layout to prioritize most important data and space for future iterations</figcaption>
+            </figure>
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab-design/uploads/59b4855ef3ebf9cddbcf6efb9458cc7c/2.png" class="fancybox" title="Only display selected data" alt="Display data">
+                <figcaption>Only display selected data</figcaption>
+            </figure>
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab/uploads/96a664e9e7aa528d3faab8bb8ee92e9f/1.png" class="fancybox" title="Display trends with sparklines, including % change over time" alt="Sparklines">
+                <figcaption>Display trends with sparklines, including % change over time</figcaption>
+            </figure>
+            <figure>
+                <img src="https://gitlab.com/gitlab-org/gitlab/uploads/3e9180159b8c9d2271ad8fa4ac127324/2.png" class="fancybox" title="Display source of date: tested projects and pipeline data" alt="Data source">
+                <figcaption>Display source of date: tested projects and pipeline data</figcaption>
+            </figure>
+        </div>
+        <div class="grid cols-3 videos">
+            <figure>
+                <iframe src="https://www.youtube.com/embed/_JtUdaTyAbk" title="Video walkthrough of problems identified" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Video walkthrough of problems identified</figcaption>
+            </figure>
+            <figure>
+                <iframe src="https://www.youtube.com/embed/WGOAJtQehZg" title="Reviewing proposed changes with the team" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Reviewing proposed changes with the team</figcaption>
+            </figure>
+            <figure>
+                <iframe src="https://www.youtube.com/embed/gxZzQtM_RnY" title="Overview: show on group security dashboard when security tests are not configured" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Overview: show on group security dashboard when security tests are not configured</figcaption>
+            </figure>
+        </div>
+        <img src="images/gitlabimg/3.png" class="fancybox" title="Discoverability of merge request with fixes" alt="Bot Overview">
+        <i>Group security dashboard</i>
+
         <div class="headwrap2">
             <h3>Passing the baton</h3>
             <div class="gitlab-s">
-                <p>Since these changes: 5 new designers joined the secure and we’ve been continually ideating and shipping iterations together. Next up, I started looking at <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/209906" target="_blank">improving system communication</a> for the user.
-                    <br>
-                    <br> Iterations coming together exemplify the spirit of collaborative teamwork in action. In a continually changing environment and rapidly growing team, we work together a lot like a relay race: quickly iterating, then passing the baton to the next designer to contribute an iteration, then passing it to the next – continually contributing toward a common endeavor. Whether our contributions innovate or fail, it’s always valuable learning to improve and inform our fellow teammate’s next iteration. It inspires me to be a contributor among a wider team and see iterations come together to deliver customer value.</p>
+                <p>Iterations coming together exemplify the spirit of collaborative teamwork in action. In a continually changing environment and rapidly growing team, we work together a lot like a relay race: quickly iterating, then passing the baton to the next designer to contribute an iteration, then passing it to the next – continually contributing toward a common endeavor. Whether our contributions innovate or fail, it’s always valuable learning to improve and inform our fellow teammate’s next iteration. It inspires me to be a contributor among a wider team and see iterations come together to deliver customer value.</p>
             </div>
         </div>
+
         <div class="outro">
             <hr class="outro-rule">
             <img class="outro-image" src="images/flatirons.png" alt="" width="722" height="253">

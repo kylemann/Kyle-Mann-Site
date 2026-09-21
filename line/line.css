@@ -233,16 +233,8 @@ body .lv ul { list-style: none; }
   .lv-cover .pcard { width: 160px; }
 }
 
-/* ---------- Why: the market bottleneck (from the deck's Why slide) ---------- */
-.lv-why .panel { background: var(--soft); border: 2px solid var(--soft); padding: 20px; }
-.lv-why .lrow { display: flex; gap: 20px; align-items: stretch; }
-.lv-why .lbox { flex: 1 1 0; min-width: 0; background: #fff; border: 2px solid var(--line); padding: 26px 14px 14px; position: relative; }
-.lv-why .lbox .lv-flag, .lv-why .surface > .lv-flag { left: 50%; transform: translateX(-50%); border-color: var(--line); }
-.lv-why .surface { flex: 1.9 1 0; min-width: 0; background: #fff; border: 2px solid var(--line); padding: 26px 14px 14px; position: relative; display: flex; gap: 16px; align-items: center; }
-.lv-why .note { flex: 0 0 150px; font-size: .82em; line-height: 1.5; color: var(--dim); font-style: italic; margin: 0; }
-.lv-why .logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 14px; align-items: center; justify-items: center; margin-top: 6px; }
-.lv-why .logos img { height: 22px; width: auto; max-width: 100%; object-fit: contain; }
-.lv-why .lbox--supply { flex: 1 1 0; }
+/* ---------- Market visual (single image, full width) ---------- */
+.lv-market img { width: 100%; height: auto; }
 
 /* ---------- First customer feature ---------- */
 .lv-story { display: flex; align-items: center; gap: 18px; background: var(--soft); border: 2px solid var(--soft); padding: 16px 18px; text-decoration: none; color: var(--text); }
@@ -255,9 +247,6 @@ body .lv ul { list-style: none; }
 .lv-story:hover .story-result { text-decoration: underline; }
 
 @media (max-width: 799px) {
-  .lv-why .lrow, .lv-why .surface { flex-direction: column; gap: 28px; }
-  .lv-why .note { flex: 0 0 auto; text-align: center; }
-  .lv-why .logos { grid-template-columns: repeat(3, 1fr); }
   .lv-story { align-items: flex-start; }
   .lv-story img { width: 72px; height: 72px; flex-basis: 72px; }
 }

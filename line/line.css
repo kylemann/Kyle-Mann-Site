@@ -186,7 +186,7 @@ body .lv ul { list-style: none; }
 
 /* ---------- Cover (from the deck's cover slide: logo mark, headline, subhead, property marquee) ---------- */
 .lv-cover { margin: 0 0 3em; }
-.lv-cover .panel { background: #111; border: 0; padding: 20px; position: relative; text-align: left; }
+.lv-cover .panel { background: #111; border: 0; padding: 36px 20px 20px; position: relative; text-align: left; }
 .lv .lv-flag--logo { padding: 7px 10px; line-height: 0; }
 .lv .lv-flag--logo img { height: 18px; width: auto; display: block; }
 .lv-cover .cover-caption { margin-top: 20px; line-height: 1.5; }
@@ -212,7 +212,7 @@ body .lv ul { list-style: none; }
 @media (max-width: 799px) {
   .lv .cover-title { font-size: 1.25em; }
   .lv .cover-sub { font-size: 1em; }
-  .lv-cover .panel { padding: 16px; }
+  .lv-cover .panel { padding: 32px 16px 16px; }
   .lv-cover .cover-caption { margin-top: 16px; }
   .lv-cover .pcard { width: 170px; }
 }

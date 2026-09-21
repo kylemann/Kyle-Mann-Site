@@ -549,6 +549,7 @@ body.shell-body .past .card.card--left .card-media img {
   max-width: none;
   margin: 0;
   padding: 0;
+  /* Back arrow in front of the title: the case pages are a level below the Past tab. */
   /* Type scale, matching the Latest tab: page h1 48px > title 28px > section 24px > body 20px > caption 16px */
   /* Image grids: figures with an optional h5 title above and a figcaption below; fancybox wraps each img in an a. */
 }
@@ -557,6 +558,20 @@ body.shell-body .past .card.card--left .card-media img {
 }
 .shell-page .container.study .headwrap1 {
   margin: 0 0 2.5em;
+}
+.shell-page .container.study .headwrap1 h2 a.back {
+  color: #999;
+  text-decoration: none;
+  border: 0;
+  background: none;
+  font-weight: 400;
+  margin-right: 0.1em;
+  transition: color 0.2s;
+}
+.shell-page .container.study .headwrap1 h2 a.back:hover {
+  color: black;
+  background: none;
+  border: 0;
 }
 .shell-page .container.study .headwrap2 {
   margin: 3em 0 1.5em;

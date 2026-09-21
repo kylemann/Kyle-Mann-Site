@@ -177,6 +177,7 @@ nav.work-nav {
   padding: 0.75em 0 0;
   border-bottom: 1px solid #d0d0d0;
   font-family: "Tajawal", sans-serif;
+  /* Contact icons, far right, only while the nav is stuck (the header above already shows them otherwise). */
 }
 nav.work-nav a {
   display: inline-block;
@@ -199,9 +200,43 @@ nav.work-nav a.is-current {
   font-weight: 500;
   border-bottom-color: black;
 }
+nav.work-nav .nav-icons {
+  display: none;
+  margin-left: auto;
+  align-items: center;
+  gap: 1.5em;
+  padding: 0 0 0.5em;
+}
+nav.work-nav .nav-icons a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  font-size: 1em;
+  color: black;
+  background: none;
+}
+nav.work-nav .nav-icons a i {
+  color: black;
+  font-style: normal;
+}
+nav.work-nav .nav-icons a:hover {
+  border: 0;
+  color: #666;
+}
+nav.work-nav .nav-icons a:hover i {
+  color: #666;
+}
+nav.work-nav.is-stuck .nav-icons {
+  display: flex;
+}
 @media (min-width: 800px) {
   nav.work-nav a {
     font-size: 1.25em;
+  }
+  nav.work-nav .nav-icons a {
+    font-size: 1em;
   }
 }
 

@@ -96,7 +96,14 @@ nav.work-nav {
     &:hover { border-bottom-color: black; }
     &.is-current { font-weight: 500; border-bottom-color: black; }
   }
-  @media (min-width: $md) { a { font-size: 1.25em; } }
+  /* Contact icons, far right, only while the nav is stuck (the header above already shows them otherwise). */
+  .nav-icons { display: none; margin-left: auto; align-items: center; gap: 1.5em; padding: 0 0 .5em; }
+  .nav-icons a { display: inline-block; margin: 0; padding: 0; border: 0; line-height: 1; font-size: 1em; color: black; background: none; }
+  .nav-icons a i { color: black; font-style: normal; }
+  .nav-icons a:hover { border: 0; color: #666; }
+  .nav-icons a:hover i { color: #666; }
+  &.is-stuck .nav-icons { display: flex; }
+  @media (min-width: $md) { a { font-size: 1.25em; } .nav-icons a { font-size: 1em; } }
 }
 
 /* ---------- Tab panes (divs, not sections: km/main set section { display:block }) ---------- */

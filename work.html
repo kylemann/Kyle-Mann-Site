@@ -501,23 +501,6 @@
             </div>
         </figure>
 
-        <p>The deployments showed us where the workflow went next.</p>
-
-        <figure class="video" aria-label="Line demo, from v0 to v1">
-            <iframe data-src="https://www.youtube.com/embed/9BvkRFzev00" title="Line demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </figure>
-
-        <p>Once an opportunity was qualified, the operator moved back into email, calendars, availability systems, proposals, documents, contracts, and manual follow-up.</p>
-        <p>The same needs kept surfacing:</p>
-        <ul>
-            <li>availability inside Line</li>
-            <li>proposal generation</li>
-            <li>messaging</li>
-            <li>contracts</li>
-            <li>deal-flow visibility</li>
-        </ul>
-        <p>Starting the deal was working. The next job was helping close it.</p>
-
         <h3>How we worked</h3>
         <p>I prototyped Line directly in the repo using the same design system and components as the production application. That gave me a fast way to explore a workflow in context, share it with the team, and break it into smaller iterations.</p>
         <p>For each pass we asked:</p>
@@ -531,9 +514,23 @@
         <p class="flow"><strong>Prototype <span class="arrow">→</span> align <span class="arrow">→</span> break down <span class="arrow">→</span> build <span class="arrow">→</span> deploy <span class="arrow">→</span> learn <span class="arrow">→</span> repeat</strong></p>
         <p>The design system lived with the product, so patterns we developed could be reused as the application grew.</p>
 
-        <h3>v1: Own the workflow that closes bookings</h3>
-        <p>v1 extended Line from the initial inquiry through the deal.</p>
-        <p>The structured information that powered v0 became the foundation for the full booking workflow.</p>
+        <h3>v1: Close the booking</h3>
+        <p>v0 handled the inquiry and qualification. The next gap was everything required to actually close the business.</p>
+        <p>After qualification, operators still moved across availability systems, email, proposals, documents, and contracts.</p>
+        <p>v1 brought that workflow into Line:</p>
+        <ul>
+            <li>availability</li>
+            <li>pricing</li>
+            <li>proposals</li>
+            <li>messaging</li>
+            <li>contracts and e-signatures</li>
+        </ul>
+        <p>The goal was simple:</p>
+        <p><strong>Take a qualified inquiry to signed contract without leaving Line.</strong></p>
+
+        <figure class="video" aria-label="Line demo, from v0 to v1">
+            <iframe data-src="https://www.youtube.com/embed/9BvkRFzev00" title="Line demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </figure>
 
         <figure class="lv lv-product" aria-label="Line product overview">
             <div class="row">
@@ -570,35 +567,8 @@
             </div>
         </figure>
 
-        <p>The product expanded into:</p>
-        <ul>
-            <li>RFP intake and qualification</li>
-            <li>availability and room blocks</li>
-            <li>pricing and program building</li>
-            <li>proposals</li>
-            <li>in-app messaging</li>
-            <li>contracts and e-signatures</li>
-            <li>reporting</li>
-            <li>learning across the workflow</li>
-        </ul>
         <p>The workflow became:</p>
-        <p class="flow"><strong>Intent <span class="arrow">→</span> fit <span class="arrow">→</span> pricing <span class="arrow">→</span> availability <span class="arrow">→</span> proposal <span class="arrow">→</span> contract</strong></p>
-        <p>Our design principle was <em>weniger, aber besser</em>: less, but better.</p>
-        <p>We looked at the work an operator had to perform and kept asking what Line could take off their plate:</p>
-        <ul>
-            <li>qualify the inquiry</li>
-            <li>check availability</li>
-            <li>build the program</li>
-            <li>create the room block</li>
-            <li>build the proposal</li>
-            <li>draft the contract</li>
-            <li>run the report</li>
-        </ul>
-        <p>The goal was simple:</p>
-        <p><strong>Can a coordinator take an inquiry to signed contract without leaving Line?</strong></p>
-        <p>The product progression became:</p>
-        <p class="flow"><strong>Structured supply <span class="arrow">→</span> instant response <span class="arrow">→</span> deal flow <span class="arrow">→</span> commercial logic <span class="arrow">→</span> programmable supply</strong></p>
-
+        <p class="flow"><strong>Inquiry <span class="arrow">→</span> qualification <span class="arrow">→</span> availability <span class="arrow">→</span> proposal <span class="arrow">→</span> contract</strong></p>
 
         <div class="outro">
             <p>Thanks for visiting. Questions or thoughts? <a href="mailto:kyle@withline.io?Subject=Hello%20Kyle">Drop me a note</a>.</p>

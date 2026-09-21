@@ -68,12 +68,16 @@ header.shell {
 
 /* ---------- Latest | Past nav (the "nav bar HR") ---------- */
 nav.work-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #fff;
   display: flex;
   gap: 2em;
   width: 100%;
   max-width: none;
   margin: 2.5em 0 2em;
-  padding: 0;
+  padding: .75em 0 0;
   border-bottom: 1px solid $rule;
   font-family: $font;
   a {

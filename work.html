@@ -550,49 +550,49 @@
 
     <!-- ===================== PAST ===================== -->
     <div id="pane-past" class="tab-pane past" data-pane="past" hidden>
-        <a class="card card--hero" href="codecov.html">
+        <a class="card card--hero" href="codecov.html#nav">
             <img data-src="images/cards/codecov.jpg" alt="" width="1600" height="594">
             <div class="card-caption">
                 <h2><span>Leading product design at Codecov</span></h2>
                 <p><span>Helping developers ship healthier code with less risk</span></p>
             </div>
         </a>
-        <a class="card card--grid" href="autoremediation.html">
+        <a class="card card--grid" href="autoremediation.html#nav">
             <div class="card-media"><img data-src="images/cards/autoremediation.jpg" alt="" width="1600" height="1222"></div>
             <div class="card-caption">
                 <h2><span>Iterations toward automation</span></h2>
                 <p><span>Empowering teams to commit their most secure work</span></p>
             </div>
         </a>
-        <a class="card card--grid" href="collaborativeiteration.html">
+        <a class="card card--grid" href="collaborativeiteration.html#nav">
             <div class="card-media"><img data-src="images/cards/collaborativeiteration.jpg" alt="" width="1600" height="1222"></div>
             <div class="card-caption">
                 <h2><span>Security dashboard</span></h2>
                 <p><span>Collaborative iterations on a team endeavor</span></p>
             </div>
         </a>
-        <a class="card card--grid" href="continualiteration.html">
+        <a class="card card--grid" href="continualiteration.html#nav">
             <div class="card-media"><img data-src="images/cards/continualiteration.jpg" alt="" width="1600" height="1222"></div>
             <div class="card-caption">
                 <h2><span>Innovation by iteration</span></h2>
                 <p><span>Risk taking, experimentation, and uncertainty</span></p>
             </div>
         </a>
-        <a class="card card--grid" href="crosslead.html">
+        <a class="card card--grid" href="crosslead.html#nav">
             <div class="card-media"><img data-src="images/cards/crosslead.jpg" alt="" width="1120" height="854"></div>
             <div class="card-caption">
                 <h2><span>CrossLead</span></h2>
                 <p><span>Product design with the 'Team of Teams'</span></p>
             </div>
         </a>
-        <a class="card card--grid" href="advisor.html">
+        <a class="card card--grid" href="advisor.html#nav">
             <div class="card-media"><img data-src="images/cards/advisor.jpg" alt="" width="1600" height="1222"></div>
             <div class="card-caption">
                 <h2><span>Advisor dashboard integration</span></h2>
                 <p><span>A market data dashboard that keeps you informed</span></p>
             </div>
         </a>
-        <a class="card card--grid card--left" href="vault.html">
+        <a class="card card--grid card--left" href="vault.html#nav">
             <div class="card-media"><img data-src="images/cards/vault.jpg" alt="" width="1600" height="594"></div>
             <div class="card-caption">
                 <h2><span>The digital vault</span></h2>
@@ -687,9 +687,13 @@
         }
         function sync(fromClick) {
             show(location.hash.replace(/^#/, ''));
-            // A tab link used from further down the page shows the new tab from its top.
-            var nav = document.querySelector('nav.work-nav');
-            if (fromClick && nav && nav.getBoundingClientRect().top < 0) window.scrollTo(0, 0);
+            // A tab link used from further down the page shows the new tab from its top,
+            // with the (sticky) nav sitting at the top of the viewport.
+            var nav = document.querySelector('nav.work-nav'), main = document.querySelector('main');
+            if (fromClick && nav && main && nav.getBoundingClientRect().top <= 0) {
+                var gap = parseFloat(getComputedStyle(nav).marginBottom) || 0;
+                window.scrollTo(0, Math.max(0, main.getBoundingClientRect().top + window.pageYOffset - nav.offsetHeight - gap));
+            }
         }
         window.addEventListener('hashchange', function () { sync(true); });
         sync(false);

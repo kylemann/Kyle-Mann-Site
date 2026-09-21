@@ -140,18 +140,20 @@ body .lv ul { list-style: none; }
 
 /* ---------- Wedge: Case Studies ---------- */
 .lv-proof .cs-trio { display: flex; flex-direction: row; align-items: stretch; gap: 16px; margin-top: 1.25em; }
-.lv-proof .card { flex: 1 1 0; min-width: 0; background: var(--soft); border: 2px solid var(--soft); padding: 30px 16px 16px; position: relative; display: flex; flex-direction: column; }
-.lv-proof blockquote { flex: 1 1 auto; border-left: 3px solid var(--text); padding: 2px 0 2px 10px; margin: 0 0 14px; font-style: italic; font-size: .9em; line-height: 1.45; }
-.lv-proof blockquote p { margin: 0 0 8px; }
-.lv-proof blockquote footer { font-style: normal; font-size: .85em; color: var(--dim); }
-.lv-proof blockquote footer a { color: var(--text); text-decoration: underline; }
-.lv-proof .gallery { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(2, 1fr); gap: 6px; height: 150px; }
+.lv-proof .card { flex: 1 1 0; min-width: 0; background: var(--soft); border: 2px solid var(--soft); padding: 34px 16px 18px; position: relative; display: flex; flex-direction: column; }
+body .lv-proof blockquote { flex: 0 0 auto; border-left: 3px solid var(--text); padding: 2px 0 2px 12px; margin: 0 0 22px; font-style: italic; font-size: .9em; line-height: 1.45; }
+body .lv-proof blockquote p { margin: 0 0 10px; }
+.lv-proof blockquote footer { font-style: normal; font-size: .82em; line-height: 1.4; color: var(--dim); }
+.lv-proof blockquote footer .who { display: block; }
+.lv-proof blockquote footer a { display: inline-block; color: var(--text); text-decoration: underline; }
+.lv-proof .gallery { margin-top: auto; display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(2, 1fr); gap: 8px; height: 150px; }
 .lv-proof .gallery .item { border: 2px solid var(--line); overflow: hidden; background: #fff; }
 .lv-proof .gallery .item:first-child { grid-row: 1 / span 2; }
 .lv-proof .gallery img { width: 100%; height: 100%; object-fit: cover; }
-.lv-proof .stat { margin-top: 12px; border-top: 1px solid #e5e5e5; padding-top: 10px; font-size: .9em; line-height: 1.35; color: var(--text); }
-.lv-proof .stat strong { font-weight: 700; }
-.lv-proof .stat sup { font-size: .65em; color: var(--dim); margin-left: 4px; white-space: nowrap; }
+.lv-proof .stat { margin-top: 18px; border-top: 1px solid #e5e5e5; padding-top: 12px; line-height: 1.3; color: var(--text); }
+.lv-proof .stat strong { display: block; font-size: 1.2em; font-weight: 700; color: #121212; white-space: nowrap; }
+.lv-proof .stat span { display: block; margin-top: 3px; font-size: .78em; font-weight: 300; color: var(--dim); white-space: nowrap; }
+.lv-proof .stat sup { font-size: .9em; vertical-align: baseline; color: #999; margin-left: 4px; }
 
 /* ---------- Vision ---------- */
 .lv-vision .panel { background: var(--soft); padding: 48px 40px 40px; border: 2px solid var(--soft); position: relative; margin-top: 24px; }
@@ -185,7 +187,8 @@ body .lv ul { list-style: none; }
   .lv-problem .rfp { flex: 0 0 auto; width: 100%; max-width: 340px; margin: 0 auto; }
   .lv-problem .tetris { margin: 0 auto; }
   .lv-proof .cs-trio { flex-direction: column; gap: 24px; }
-  .lv-proof .card { padding: 28px 18px 20px; }
+  .lv-proof .card { padding: 30px 18px 20px; }
+  .lv-proof .stat span { white-space: normal; }
   .lv-proof blockquote { font-size: 1em; }
   .lv-proof .gallery { height: 200px; }
   .lv-vision .panel { padding: 36px 20px 24px; }

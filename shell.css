@@ -1,0 +1,520 @@
+/* ---------- Column ---------- */
+.shell-page {
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 3em 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+@media (min-width: 800px) {
+  .shell-page {
+    width: 95%;
+    max-width: 800px;
+    padding: 5em 0;
+  }
+}
+@media (min-width: 1100px) {
+  .shell-page {
+    width: 100%;
+  }
+}
+
+body.work-p {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+body.container.shell-body {
+  padding: 3em 0;
+}
+@media (min-width: 800px) {
+  body.container.shell-body {
+    padding: 5em 0;
+  }
+}
+
+/* ---------- Header (scoped copy of the homepage header rules in km.css) ---------- */
+header.shell {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+  color: black;
+}
+header.shell div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+header.shell .portrait {
+  display: block;
+  width: 160px;
+  height: auto;
+  max-width: 100%;
+  margin: 0 0 1.5em;
+  border: 0;
+}
+header.shell h1 {
+  font-family: "Tajawal", sans-serif;
+  font-size: 2em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  max-width: none;
+}
+header.shell p {
+  font-family: "Tajawal", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: black;
+  margin: 0 0 1em;
+  padding: 0;
+  width: auto;
+  max-width: none;
+}
+header.shell p a {
+  color: black;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid black;
+  padding: 3px 0 0;
+  transition: 0.2s all;
+}
+header.shell p a:hover {
+  background: black;
+  color: white;
+}
+header.shell section.farewell {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+header.shell section.farewell p {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  margin: 1em 0;
+}
+header.shell .icons-g {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+header.shell .icons-g a {
+  margin: 0 2em 0 0;
+  padding: 0;
+  border: 0;
+  line-height: 0;
+  color: black;
+  background: none;
+}
+header.shell .icons-g a i {
+  color: black;
+  font-style: normal;
+}
+header.shell .icons-g a:hover {
+  background: black;
+}
+header.shell .icons-g a:hover i {
+  color: white;
+}
+@media (min-width: 800px) {
+  header.shell {
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+  }
+  header.shell h1 {
+    font-size: 2.5em;
+  }
+  header.shell p {
+    font-size: 1.25em;
+  }
+  header.shell .portrait {
+    flex: 0 0 auto;
+    width: 240px;
+    margin: 0;
+  }
+  header.shell .intro {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+@media (min-width: 1100px) {
+  header.shell h1 {
+    font-size: 3em;
+    margin-top: 10px;
+  }
+  header.shell p {
+    margin-bottom: 0.75em;
+  }
+}
+
+/* ---------- Latest | Past nav (the "nav bar HR") ---------- */
+nav.work-nav {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  max-width: none;
+  margin: 2.5em 0 2em;
+  padding: 0;
+  border-bottom: 1px solid #d0d0d0;
+  font-family: "Tajawal", sans-serif;
+}
+nav.work-nav a {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  color: black;
+  text-decoration: none;
+  background: none;
+  padding: 0 0 0.5em;
+  margin: 0 0 -1px;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+nav.work-nav a:hover {
+  border-bottom-color: black;
+}
+nav.work-nav a.is-current {
+  font-weight: 500;
+  border-bottom-color: black;
+}
+@media (min-width: 800px) {
+  nav.work-nav a {
+    font-size: 1.25em;
+  }
+}
+
+/* ---------- Breadcrumb ---------- */
+nav.breadcrumb {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 2.5em;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  color: black;
+}
+nav.breadcrumb a {
+  color: black;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid black;
+  padding: 3px 0 0;
+  transition: 0.2s all;
+}
+nav.breadcrumb a:hover {
+  background: black;
+  color: white;
+}
+nav.breadcrumb .sep {
+  margin: 0 0.5em;
+  color: #888;
+}
+nav.breadcrumb [aria-current] {
+  font-weight: 500;
+}
+@media (min-width: 800px) {
+  nav.breadcrumb {
+    font-size: 1.1em;
+  }
+}
+
+/* ---------- Tab panes (divs, not sections: km/main set section { display:block }) ---------- */
+.tab-pane[hidden] {
+  display: none;
+}
+
+/* ---------- Latest: the Line case study ---------- */
+/* Every element rule is suffixed :not(.lv *) so the ported deck figures keep their own type. */
+body.shell-body .latest h2:not(.lv *) {
+  font-size: 1.5em;
+  line-height: 1.3;
+  font-weight: 600;
+  margin: 0 0 0.25em;
+}
+body.shell-body .latest .lede {
+  font-size: 1.15em;
+  line-height: 1.4;
+  font-weight: 500;
+  margin: 0 0 0.25em;
+}
+body.shell-body .latest .meta {
+  font-size: 0.9em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #666;
+  margin: 0 0 1.75em;
+}
+body.shell-body .latest h3:not(.lv *) {
+  font-size: 1.3em;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 2.5em 0 0.6em;
+}
+body.shell-body .latest p:not(.lv *), body.shell-body .latest li:not(.lv *) {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 300;
+}
+body.shell-body .latest p:not(.lv *) {
+  margin: 0 0 1em;
+}
+body.shell-body .latest strong:not(.lv *) {
+  font-weight: 500;
+}
+body.shell-body .latest em:not(.lv *) {
+  font-style: italic;
+}
+body.shell-body .latest ul:not(.lv *) {
+  list-style: disc;
+  padding: 0 0 0 1.25em;
+  margin: 0 0 1.25em;
+}
+body.shell-body .latest ul.plain {
+  list-style: none;
+  padding: 0;
+}
+body.shell-body .latest li:not(.lv *) {
+  margin: 0 0 0.35em;
+}
+body.shell-body .latest a:not(.lv *) {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-top: 3px;
+  transition: 0.2s all;
+}
+body.shell-body .latest a:not(.lv *):hover {
+  background: black;
+  color: white;
+}
+body.shell-body .latest blockquote:not(.lv *) {
+  margin: 0 0 1.5em;
+  padding: 0 0 0 1em;
+  border-left: 2px solid #d0d0d0;
+}
+body.shell-body .latest blockquote:not(.lv *) p {
+  margin: 0 0 0.2em;
+}
+body.shell-body .latest .cta {
+  margin: 0.25em 0 1em;
+}
+body.shell-body .latest .cta a {
+  font-weight: 500;
+}
+body.shell-body .latest .flow {
+  font-weight: 500;
+}
+body.shell-body .latest figure {
+  margin: 2em 0 2.5em;
+  padding: 0;
+}
+body.shell-body .latest figure.video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  border: 0;
+}
+@media (min-width: 800px) {
+  body.shell-body .latest h2:not(.lv *) {
+    font-size: 1.75em;
+  }
+  body.shell-body .latest .lede {
+    font-size: 1.35em;
+  }
+  body.shell-body .latest .meta {
+    font-size: 1em;
+  }
+  body.shell-body .latest h3:not(.lv *) {
+    font-size: 1.5em;
+  }
+  body.shell-body .latest p:not(.lv *), body.shell-body .latest li:not(.lv *) {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 1100px) {
+  body.shell-body .latest p:not(.lv *) {
+    margin-bottom: 0.75em;
+  }
+}
+
+/* ---------- Past: single-column cards (ported from css.scss .bg-img/.top-img) ---------- */
+body.shell-body .past {
+  padding: 0.5em 0 0;
+}
+
+body.shell-body .past .card {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin: 0 0 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  color: black;
+  text-decoration: none;
+  border: 0;
+}
+body.shell-body .past .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: lightgray;
+  opacity: 0.1;
+  transition: 0.4s all;
+}
+body.shell-body .past .card:hover::before {
+  background: black;
+  opacity: 0.3;
+}
+body.shell-body .past .card .card-caption {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+body.shell-body .past .card h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 0 0 10px;
+  color: black;
+}
+body.shell-body .past .card p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 0 10px;
+  padding: 0 0 0 10px;
+  color: black;
+}
+body.shell-body .past .card h2 span, body.shell-body .past .card p span {
+  background: white;
+  border-top: 3px solid white;
+  padding: 0 3px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+body.shell-body .past .card:hover h2, body.shell-body .past .card:hover p {
+  color: white;
+}
+body.shell-body .past .card:hover h2 span, body.shell-body .past .card:hover p span {
+  background: black;
+  border-top-color: black;
+}
+@media (min-width: 800px) {
+  body.shell-body .past .card {
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  body.shell-body .past .card h2 {
+    font-size: 1.75em;
+    padding-left: 20px;
+  }
+  body.shell-body .past .card h2 span {
+    border-top-width: 7px;
+  }
+  body.shell-body .past .card p {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+  body.shell-body .past .card p span {
+    border-top-width: 5px;
+  }
+}
+
+/* ---------- Case-study pages: force main.css's desktop layout back to one column ---------- */
+.shell-page .container.study {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.shell-page .container.study .headwrap1, .shell-page .container.study .headwrap2 {
+  display: block;
+}
+.shell-page .container.study .headwrap1 {
+  margin: 0 0 2.5em;
+}
+.shell-page .container.study .headwrap2 {
+  margin: 3.5em 0 2.5em;
+}
+.shell-page .container.study .headwrap1 h1, .shell-page .container.study .headwrap2 h1, .shell-page .container.study .headwrap1 h3, .shell-page .container.study .headwrap2 h3,
+.shell-page .container.study .headwrap1 p, .shell-page .container.study .headwrap2 p, .shell-page .container.study .headwrap1 .gitlab-s, .shell-page .container.study .headwrap2 .gitlab-s {
+  width: 100%;
+  max-width: none;
+}
+.shell-page .container.study iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin: 0;
+}
+.shell-page .container.study .twogl {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin: 2.5em 0;
+}
+.shell-page .container.study .twogl .iframe {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+.shell-page .container.study .two {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2.5em 0;
+}
+.shell-page .container.study .two img, .shell-page .container.study .two .text-box-2, .shell-page .container.study .two .iframe {
+  max-width: none;
+}
+.shell-page .container.study .aside {
+  flex-direction: column;
+  align-items: stretch;
+  margin: 2.5em 0;
+}
+.shell-page .container.study .aside img {
+  width: 100%;
+  margin: 0 0 1em;
+}
+.shell-page .container.study .aside .text-box {
+  padding: 0;
+}
+.shell-page .container.study nav.nav-sub {
+  width: 100%;
+  max-width: none;
+}
+.shell-page .container.study .tab-content .section {
+  width: 100%;
+  flex-direction: column;
+}

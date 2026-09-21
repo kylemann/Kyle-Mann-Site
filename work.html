@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <!--Thanks for checking out my site!-->
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi, I'm Kyle, a designer.</title>
+    <title>Kyle Mann • Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css.css">
-   <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="km.css">
+    <link rel="stylesheet" href="shell.css">
+    <link rel="stylesheet" href="line/line.css">
+
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon2/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon2/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon2/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="favicon2/apple-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="114x114" href="favicon2/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/2apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon2/apple-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="144x144" href="favicon2/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="favicon2/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon2/apple-icon-180x180.png">
@@ -26,75 +30,497 @@
     <link rel="manifest" href="favicon2/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon2/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff"> </head>
+    <meta name="theme-color" content="#ffffff">
+</head>
 
-<body class="container">
-    <header>
-        <h1>Hello, I'm Kyle.</h1>
-        <div>
-           <p><span class="em">A human-oriented designer</span> driven to create products that are useful, accessible, no-nonsense, iterative, and experimental.</p>
-           
-        <p>Currently, product design at <a href="https://sentry.io/welcome/">Sentry.io</a> for <a href="https://about.codecov.io/">Codecov.io</a> and tinkering <a href="https://withline.io/">withline.io</a>. Formerly, at <a href="https://about.gitlab.com/">GitLab</a>, startups, <a href="https://ihsmarkit.com/index.html">Markit–S&P</a>, and freelancing. My experience includes front-end, interaction, user interface, graphic design, research, and product.
-           </p>
+<body class="container shell-body">
 
-          <p> I'm always learning and finding inspiration in <a href="about.html">people I admire</a>, great books, anthropological thinking, flânerie, and tinkering. <a href="https://gitlab.com/kmann/introspection/-/blob/master/README.md" style="font-size: .85em">See README</a></p>
-    
-
-        
+    <header class="shell">
+        <img src="images/kyle.jpg" alt="Kyle Mann" class="portrait">
+        <div class="intro">
+            <h1>Hello, I'm Kyle.</h1>
+            <div>
+                <p>Founder of <a href="https://withline.io/">Line</a> and formerly leading product design at <a href="https://sentry.io/welcome/">Sentry.io</a>, <a href="https://about.gitlab.com/">GitLab</a>, startups, <a href="https://ihsmarkit.com/index.html">Markit–S&P</a>, and freelancing. I'm always learning and finding inspiration in <a href="about.html">people I admire</a>, great books, anthropological thinking, flânerie, and tinkering.</p>
+            </div>
+            <section class="farewell">
+                <p class="icons-g"><a href="https://www.linkedin.com/in/convexitydesign/" target="_blank" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a> <a href="https://github.com/kylemann" target="_blank" class="icon"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="mailto:kyle@withline.io"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+            </section>
         </div>
     </header>
-    <article class="work">
-        <a class="bg-img" href="codecov.html">
-            <div class="top-img">
+
+    <nav class="work-nav" aria-label="Work sections">
+        <a href="#latest" data-pane="latest" class="is-current" aria-current="true">Latest</a>
+        <a href="#past" data-pane="past">Past</a>
+    </nav>
+
+    <main>
+
+    <!-- ===================== LATEST ===================== -->
+    <div id="pane-latest" class="tab-pane latest" data-pane="latest">
+
+        <h2>Line</h2>
+        <p class="lede">Making group hospitality bookable</p>
+        <p class="meta">Co-founder &amp; CEO · Product strategy · Product design</p>
+
+        <!-- Wedge: Product (from the Line deck, #wedge-product) -->
+        <figure class="lv lv-product" aria-label="Line product overview">
+            <div class="row">
+                <div class="col">
+                    <div class="card"><img src="line/img/op-configuration.jpg" alt="Line configuration: structured supply, pricing logic, and rules"></div>
+                    <p class="lv-caption">i) Structured supply, pricing logic, rules</p>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="chat" aria-label="On-demand conversation with a guest">
+                            <div class="msg msg--property"><div class="bubble">Thanks for contacting Hotel Ada Events. Happy to help. Is this an internal leadership offsite or a client-facing program?</div></div>
+                            <div class="msg msg--guest"><div class="bubble">Internal offsite. Around 85 attendees in October, likely two-day programming.</div></div>
+                            <div class="msg msg--property"><div class="bubble">Great. Should we plan one main plenary room plus two breakouts, with built-in AV and catering service?</div></div>
+                            <div class="msg msg--guest"><div class="bubble">Yes, and we want a casual reception immediately after sessions on day one.</div></div>
+                            <div class="msg msg--property"><div class="bubble">Excellent, these room combinations are typically the strongest fit.</div></div>
+                        </div>
+                    </div>
+                    <p class="lv-caption">ii) Consumer instant response</p>
+                </div>
+                <div class="col">
+                    <div class="card"><img src="line/img/op-deals.jpg" alt="Line deals: full deal flow as the system of work"></div>
+                    <p class="lv-caption">iii) Full deal flow as the system of work</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card"><img src="line/img/op-schedule.jpg" alt="Line schedule: agent visibility across deal flow and capacity"></div>
+                    <p class="lv-caption">iv) Agent visibility across deal flow and capacity</p>
+                </div>
+                <div class="col">
+                    <div class="card"><img src="line/img/op-insights.jpg" alt="Line insights: learning system that improves what drives bookings"></div>
+                    <p class="lv-caption">v) Learning system improves what drives bookings</p>
+                </div>
+            </div>
+        </figure>
+
+        <p>My co-founders and I quit our jobs to build Line. And truthfully, there has to be something wrong with people who do this.</p>
+        <p>We traded healthy salaries and stability for a journey that includes failure, rejection, and isolation in order to bring something new to market.</p>
+        <p>So, naturally, the question is why do it?</p>
+        <p>Simply: because it felt like a problem worth solving.</p>
+        <p>I spent the first part of my career in hospitality before moving into product and design. Years later, I came back to an industry where booking group business still looked remarkably familiar.</p>
+        <p>A guest planning a company retreat, wedding, meeting, or event is basically trying to figure out three things: <strong>pricing, availability, and vibes.</strong></p>
+        <p>Instead, they get forms and waiting.</p>
+        <p>The property isn't having a much better time. On the other side, someone is qualifying inquiries, checking availability, figuring out pricing, coordinating internally, building proposals, following up, and eventually putting together a contract.</p>
+        <p>We know it's broken. They know it's broken. Everyone knows everyone knows it's broken.</p>
+        <p>And yet the charade carries on.</p>
+        <p>That was the problem we wanted to work on.</p>
+
+        <!-- Team (from the Founders slide) + team video -->
+        <figure class="lv lv-team" aria-label="The Line founders">
+            <div class="founders">
+                <div class="founder">
+                    <img src="line/img/founder-eli.jpg" alt="Eli Hooten">
+                    <h4><a href="https://www.linkedin.com/in/hootener/" target="_blank" rel="noopener noreferrer">Eli Hooten</a></h4>
+                    <ul class="founder-bio">
+                        <li>Co-Founder &amp; CTO</li>
+                        <li>Past: founder of GameWisp (acq. by Lightstream 2019) &amp; Codecov (acq. by Sentry 2022)</li>
+                    </ul>
+                </div>
+                <div class="founder">
+                    <img src="line/img/founder-katia.jpg" alt="Katia Al-Amir">
+                    <h4><a href="https://www.linkedin.com/in/katia-al-amir/" target="_blank" rel="noopener noreferrer">Katia Al-Amir</a></h4>
+                    <ul class="founder-bio">
+                        <li>Co-Founder &amp; COO</li>
+                        <li>Past: engineering leader at Sentry &amp; CircleCI</li>
+                    </ul>
+                </div>
+                <div class="founder">
+                    <img src="line/img/founder-kyle.jpg" alt="Kyle Mann">
+                    <h4><a href="https://www.linkedin.com/in/convexitydesign/" target="_blank" rel="noopener noreferrer">Kyle Mann</a></h4>
+                    <ul class="founder-bio">
+                        <li>Co-Founder &amp; CEO</li>
+                        <li>Past: product/design leader at Sentry &amp; GitLab</li>
+                    </ul>
+                </div>
+            </div>
+            <iframe class="video" src="https://www.youtube.com/embed/vCrgpLzfzN4" title="Line team introduction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </figure>
+
+        <h3>The problem</h3>
+
+        <!-- Problem (from the Demand and Supply slides) -->
+        <figure class="lv lv-problem" aria-label="The problem: demand and supply">
+            <div class="panel">
+                <h4 class="lv-title">Demand</h4>
+                <p class="lv-lede">Guests want pricing, availability, and vibes. They get forms and waiting.</p>
+                <div class="trio">
+                    <div class="box">
+                        <div class="lv-flag">What Guests Want</div>
+                        <ul class="points">
+                            <li>Pricing</li>
+                            <li>Availability</li>
+                            <li>Vibes</li>
+                        </ul>
+                    </div>
+                    <div class="rfp">
+                        <div class="rfp-form-demo" aria-label="A typical request-for-proposal form">
+                            <div class="rfp-form-header">
+                                <span class="rfp-form-brand">Request for Proposal</span>
+                                <span class="rfp-form-locale">EN | USD</span>
+                            </div>
+                            <div class="rfp-form-body">
+                                <div class="rfp-form-section">
+                                    <div class="rfp-form-label">Event Requirements</div>
+                                    <div class="rfp-checkbox is-checked"><span class="rfp-checkbox-box"></span><span class="rfp-checkbox-label">Meeting rooms</span></div>
+                                    <div class="rfp-checkbox is-checked"><span class="rfp-checkbox-box"></span><span class="rfp-checkbox-label">Guest rooms</span></div>
+                                </div>
+                                <div class="rfp-form-section">
+                                    <div class="rfp-form-label">Event Dates</div>
+                                    <div class="rfp-form-row">
+                                        <div class="rfp-input rfp-input--small">Oct 14, 2026</div>
+                                        <span class="rfp-form-sep">&ndash;</span>
+                                        <div class="rfp-input rfp-input--small">Oct 16, 2026</div>
+                                    </div>
+                                </div>
+                                <div class="rfp-form-section">
+                                    <div class="rfp-form-label">Event Name</div>
+                                    <div class="rfp-input">Leadership Offsite</div>
+                                </div>
+                                <div class="rfp-form-section">
+                                    <div class="rfp-form-label">Event Type</div>
+                                    <div class="rfp-select"><span class="rfp-select-value">Corporate meeting</span><span class="rfp-select-arrow">&#9662;</span></div>
+                                </div>
+                                <div class="rfp-form-section">
+                                    <div class="rfp-form-label">Attendees</div>
+                                    <div class="rfp-input">85</div>
+                                </div>
+                                <div class="rfp-form-send">Send Request</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="lv-flag">The Guest Experience</div>
+                        <ul class="points">
+                            <li>No pricing on demand</li>
+                            <li>No availability to check</li>
+                            <li>No way to compare</li>
+                            <li>Forms and waiting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <h4 class="lv-title">Supply</h4>
+                <p class="lv-lede">Operators are buried in coordination and data entry.</p>
+                <div class="trio">
+                    <div class="box">
+                        <div class="lv-flag">Coordination</div>
+                        <ul class="points">
+                            <li>Inquiry / RFP arrives incomplete</li>
+                            <li>Back-and-forth to qualify</li>
+                            <li>Business review</li>
+                            <li>Deals fall through</li>
+                        </ul>
+                    </div>
+                    <div class="tetris" aria-label="Coordination gaps">
+                        <div class="tetris-piece piece-o" style="--lx: 0px; --ly: 240px; animation-delay: 0s;">
+                            <div class="tetris-tile tile-1" style="background-image: url('line/img/azul-6.jpg');"></div>
+                            <div class="tetris-tile tile-2" style="background-image: url('line/img/azul-4.jpg');"></div>
+                            <div class="tetris-tile tile-3" style="background-image: url('line/img/azul-7.jpg');"></div>
+                            <div class="tetris-tile tile-4" style="background-image: url('line/img/azul-2.jpg');"></div>
+                        </div>
+                        <div class="tetris-piece piece-iv" style="--lx: 180px; --ly: 120px; animation-delay: 0.8s;">
+                            <div class="tetris-tile tile-1" style="background-image: url('line/img/azul-1.jpg');"></div>
+                            <div class="tetris-tile tile-2" style="background-image: url('line/img/azul-3.jpg');"></div>
+                            <div class="tetris-tile tile-3" style="background-image: url('line/img/azul-5.jpg');"></div>
+                            <div class="tetris-tile tile-4" style="background-image: url('line/img/azul-1.jpg');"></div>
+                        </div>
+                        <div class="tetris-piece piece-o" style="--lx: 60px; --ly: 0px; animation-delay: 1.6s;">
+                            <div class="tetris-tile tile-1" style="background-image: url('line/img/azul-2.jpg');"></div>
+                            <div class="tetris-tile tile-2" style="background-image: url('line/img/azul-5.jpg');"></div>
+                            <div class="tetris-tile tile-3" style="background-image: url('line/img/azul-7.jpg');"></div>
+                            <div class="tetris-tile tile-4" style="background-image: url('line/img/azul-1.jpg');"></div>
+                        </div>
+                        <div class="tetris-piece piece-single" style="--lx: 0px; --ly: 60px; animation-delay: 2.4s;">
+                            <div class="tetris-tile tile-1" style="background-image: url('line/img/azul-1.jpg');"></div>
+                        </div>
+                        <div class="tetris-piece piece-single" style="--lx: 120px; --ly: 240px; animation-delay: 3.2s;">
+                            <div class="tetris-tile tile-1" style="background-image: url('line/img/azul-3.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="lv-flag">Status Quo</div>
+                        <ul class="points">
+                            <li>Hours lost to manual entry</li>
+                            <li>Pricing guesswork</li>
+                            <li>Missed follow-ups</li>
+                            <li>No time to sell</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </figure>
+
+        <p>What looked like a bad form experience was really a deeper market problem.</p>
+        <p>Demand could generate an inquiry, but supply was still a black box of pricing, availability, rules, exceptions, and contracts. That commercial knowledge lived across documents, inboxes, legacy systems, spreadsheets, and human judgment rather than in a form software could reliably understand and act on.</p>
+        <p>That keeps the market closed. Demand can ask, but it can't easily know what is actually available, what it costs, whether it fits, or what it takes to book.</p>
+
+        <h3>The case for Line</h3>
+        <p>Our thesis was that once supply becomes structured, executable, and programmable, the market can work very differently.</p>
+        <p class="cta"><a href="https://withline.io/caseforline.html" target="_blank" rel="noopener">Supply creates the market.</a></p>
+        <p class="cta"><a href="https://withline.io/pricing-strategy.html" target="_blank" rel="noopener">Pricing follows workflow ownership.</a></p>
+        <p class="cta"><a href="https://withline.io/distribution.html" target="_blank" rel="noopener">Distribution follows structured supply.</a></p>
+        <p>The vision was large.</p>
+        <p>We needed a much smaller place to start.</p>
+
+        <h3>How we worked</h3>
+        <p>We built Line directly in the product.</p>
+        <p>Rather than designing everything separately and handing it off, I prototyped new workflows in the repo using the same design system and components as the production application.</p>
+        <p>That let me explore the actual interaction with real constraints and get much closer to the final experience than I could with a static prototype.</p>
+        <p>Once a direction felt right, I would work with the team to break it into iterations. We decided what needed to be real now, what we could defer, built it, deployed it with operators, watched what happened, and used that to shape the next pass.</p>
+        <p class="flow"><strong>Prototype in product <span class="arrow">→</span> align <span class="arrow">→</span> break into iterations <span class="arrow">→</span> build <span class="arrow">→</span> deploy <span class="arrow">→</span> learn <span class="arrow">→</span> repeat.</strong></p>
+        <p>The design system lived alongside the product, so patterns we proved once became reusable building blocks for whatever came next.</p>
+        <p>That mattered even more with AI. A mockup could tell us whether an interface made sense. It couldn't tell us whether an agent would understand a real inquiry, whether an operator would trust the result, or where a real workflow would break.</p>
+        <p>We needed the product in production to learn.</p>
+
+        <h3>v0: Prove value in production</h3>
+        <p>We started at the first click.</p>
+        <p>The traditional group sales experience begins with a static inquiry form. We replaced it with a conversation.</p>
+        <p>Line learned a property's spaces, pricing, policies, visuals, and constraints, then used that knowledge to answer questions, understand what the guest wanted, qualify the inquiry, and connect them with the operator.</p>
+        <p>The point of v0 wasn't to automate group sales end to end.</p>
+        <p>It was to test the foundational assumptions as quickly as possible.</p>
+        <ul class="plain">
+            <li>Could we structure property knowledge well enough for software to act on it?</li>
+            <li>Would guests engage with it?</li>
+            <li>Could it understand pricing, availability, and fit?</li>
+            <li>Would operators trust it with real inquiries?</li>
+        </ul>
+        <p>We shipped v0 in the fall and ended the year with our first deployment live.</p>
+        <p>One of the first real inquiries went from guest message to qualification and a scheduled site visit in roughly five seconds, without operator involvement or an RFP.</p>
+        <p>That deployment became our first paying customer.</p>
+        <p class="cta"><a href="https://withline.io/blog/guest-service-on-demand.html" target="_blank" rel="noopener">Read the first customer story <span class="arrow" aria-hidden="true">→</span></a></p>
+        <p>As we deployed more properties, the behavior repeated.</p>
+        <p>By the end of v0, Line had <strong>5 deployment partners, 4 paying customers, and 700+ real deals</strong>, with roughly <strong>45% handled after hours</strong>.</p>
+        <p>The system captured inquiries, turned them into structured booking details, qualified opportunities autonomously, and scheduled site visits without requiring someone to sit at a desk waiting for the lead.</p>
+        <p>v0 proved the wedge.</p>
+
+        <!-- Customer proof (from the Wedge: Case Studies slide) -->
+        <figure class="lv lv-proof" aria-label="Customer case studies">
+            <div class="cs-trio">
+                <div class="card">
+                    <div class="lv-flag">Early Pilot</div>
+                    <blockquote>
+                        <p>“It’s a relief guests are taken care of right away. Leads qualified and site visits booked at inquiry.”</p>
+                        <footer>– Jenna, General Manager, <a href="https://www.ironlightlo.com/" target="_blank" rel="noopener noreferrer">Ironlight</a></footer>
+                    </blockquote>
+                    <div class="gallery" aria-label="Ironlight gallery">
+                        <div class="item"><img src="line/img/ironlight_1.jpg" alt="Jenna, General Manager at Ironlight" loading="lazy"></div>
+                        <div class="item"><img src="line/img/ironlight_2.jpg" alt="Ironlight exterior" loading="lazy"></div>
+                        <div class="item"><img src="line/img/ironlight_3.jpg" alt="Ironlight event space set for dinner" loading="lazy"></div>
+                    </div>
+                    <div class="stat"><strong>45%+</strong> of inquiries handled after hours</div>
+                </div>
+                <div class="card">
+                    <div class="lv-flag">Design Partner</div>
+                    <blockquote>
+                        <p>“Line is a game changer for group sales, saving our team time while elevating the guest experience.”</p>
+                        <footer>– Nick, Director of Sales, <a href="https://www.bowercoronado.com/gather/" target="_blank" rel="noopener noreferrer">The Bower Coronado</a></footer>
+                    </blockquote>
+                    <div class="gallery" aria-label="The Bower Coronado gallery">
+                        <div class="item"><img src="line/img/bower_1.jpg" alt="The Bower Coronado" loading="lazy"></div>
+                        <div class="item"><img src="line/img/bower_2.jpg" alt="The Bower Coronado" loading="lazy"></div>
+                        <div class="item"><img src="line/img/bower_3.jpg" alt="The Bower Coronado" loading="lazy"></div>
+                    </div>
+                    <div class="stat"><strong>End-to-end</strong> inquiry to contract <sup>v1 release</sup></div>
+                </div>
+                <div class="card">
+                    <div class="lv-flag">First Customer</div>
+                    <blockquote>
+                        <p>“I got time back with my family. I never thought I could use AI directly to book real business myself.”</p>
+                        <footer>– Whitney, Owner, <a href="https://www.thechateaueventcenter.com/" target="_blank" rel="noopener noreferrer">Chateau Event Center</a></footer>
+                    </blockquote>
+                    <div class="gallery" aria-label="Chateau Event Center gallery">
+                        <div class="item"><img src="line/img/chateau_1.jpg" alt="Chateau Event Center" loading="lazy"></div>
+                        <div class="item"><img src="line/img/chateau_2.jpg" alt="Chateau Event Center" loading="lazy"></div>
+                        <div class="item"><img src="line/img/chateau_3.jpg" alt="Chateau Event Center" loading="lazy"></div>
+                    </div>
+                    <div class="stat"><strong>Seconds</strong> to first response, not days</div>
+                </div>
+            </div>
+        </figure>
+
+        <p>It also showed us exactly where the product broke next.</p>
+
+        <h3>What we learned</h3>
+        <p>I spent a lot of time inside group sales offices watching the workflow happen in real time.</p>
+        <p>The pattern became obvious.</p>
+        <p><strong>Starting the deal was easy. Closing it was the problem.</strong></p>
+        <p>Once Line qualified the inquiry, the deal often left the system.</p>
+        <p>The operator went back to email, spreadsheets, calendars, proposal tools, PDFs, legacy systems, and manual follow-up.</p>
+        <p>We heard versions of the same requests again and again.</p>
+        <blockquote>
+            <p>“I need the availability in here.”</p>
+            <p>“I need to send the proposal from here.”</p>
+            <p>“I don't want to go back to email.”</p>
+            <p>“Can it generate the contract?”</p>
+            <p>“What is actually closing?”</p>
+        </blockquote>
+        <p>Those weren't feature requests around the edges.</p>
+        <p>They defined the next product.</p>
+
+        <h3>v1: Own the workflow that closes bookings</h3>
+        <p>The product question changed.</p>
+        <p>Instead of asking whether Line could handle the first interaction, we asked:</p>
+        <p><strong>Can a coordinator take a group inquiry to signed contract without leaving Line?</strong></p>
+        <p>If not, Line was another tool.</p>
+        <p>If yes, Line could become the system.</p>
+        <p>The same structured supply that powered the initial conversation became the foundation for the rest of the workflow.</p>
+        <p>Line expanded into RFP intake, qualification, availability, room blocks, pricing, proposals, messaging, contracts, e-signatures, reporting, and a learning loop across each interaction.</p>
+        <p>The workflow moved from:</p>
+        <p class="flow"><strong>forms <span class="arrow">→</span> waiting <span class="arrow">→</span> manual qualification <span class="arrow">→</span> PDFs <span class="arrow">→</span> follow-up <span class="arrow">→</span> contract</strong></p>
+        <p>toward:</p>
+        <p class="flow"><strong>intent <span class="arrow">→</span> fit <span class="arrow">→</span> pricing <span class="arrow">→</span> availability <span class="arrow">→</span> proposal <span class="arrow">→</span> booking</strong></p>
+        <p>The important change wasn't adding more features.</p>
+        <p>It was <strong>workflow ownership</strong>.</p>
+        <p>Every step Line owned meant less context switching, less data entry, and less manual coordination. The operator could increasingly move from doing the work to directing and approving it.</p>
+        <p>Our design principle became <em>weniger, aber besser</em>: less, but better.</p>
+        <p>The goal wasn't to give operators another set of features.</p>
+        <p>It was to remove the things they had to do.</p>
+        <ul class="plain">
+            <li>Qualify the lead.</li>
+            <li>Check availability.</li>
+            <li>Build the program.</li>
+            <li>Create the room block.</li>
+            <li>Build the proposal.</li>
+            <li>Draft the contract.</li>
+            <li>Run the report.</li>
+        </ul>
+        <p><strong>Our feature was removing their features.</strong></p>
+
+        <!-- v0 → v1 product walkthrough -->
+        <figure class="video" aria-label="Line product walkthrough, v0 to v1">
+            <iframe src="https://www.youtube.com/embed/mkBOzZRRod8" title="Line product demo v0 and v1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </figure>
+
+        <p>The product arc had become clear:</p>
+        <p class="flow"><strong>Structured supply <span class="arrow">→</span> instant response <span class="arrow">→</span> deal flow <span class="arrow">→</span> commercial logic <span class="arrow">→</span> programmable supply.</strong></p>
+        <p>Configure the supply once, then make it available on demand.</p>
+
+        <h3>Where it was going</h3>
+
+        <!-- Vision (from the Vision slide) -->
+        <figure class="lv lv-vision" aria-label="Vision: Line between demand and supply">
+            <div class="panel">
+                <div class="lv-flag">Legible Supply</div>
+                <img src="line/img/vision.svg" alt="Legible supply: sales, collaboration, transaction, and distribution built on structured supply">
+            </div>
+            <div class="panel panel--row">
+                <div class="row3">
+                    <div class="node">
+                        <div class="node-flag">Demand</div>
+                        <p>Neutral across all demand channels</p>
+                    </div>
+                    <div class="conn"></div>
+                    <div class="node node--line">
+                        <div class="node-flag">Market Clears with Line</div>
+                        <img src="line/img/line-logo.jpg" alt="Line">
+                    </div>
+                    <div class="conn"></div>
+                    <div class="node">
+                        <div class="node-flag">Supply</div>
+                        <p>The standard for structured supply</p>
+                    </div>
+                </div>
+            </div>
+        </figure>
+
+        <p>We started on the supply side because supply had to become legible first.</p>
+        <p>Once pricing, availability, rules, constraints, and contracts become structured and executable, that supply can answer demand wherever demand happens to originate.</p>
+        <p>The end state wasn't a better RFP.</p>
+        <p>It was a market where a guest could express intent and get fit, pricing, availability, and a path to booking on demand.</p>
+
+        <h3>Where we landed</h3>
+        <p>We made real product progress.</p>
+        <p>Line went from an idea about replacing a form to software handling hundreds of real group inquiries, paying customers, international deployments, hospitality integrations, and a much clearer understanding of how this market could work.</p>
+        <p>But product progress and business economics are different things.</p>
+        <p>Hospitality is a trust-driven market. Sales cycles are long. Integrations take time. Early deployments require hands-on work. Customer acquisition was expensive in the short term, and as a bootstrapped company, the path was going to take longer than we could responsibly support with families to support.</p>
+        <p>The constraint eventually shifted from:</p>
+        <p><strong>Can we build this?</strong></p>
+        <p>to:</p>
+        <p><strong>Can we distribute it economically and fast enough?</strong></p>
+        <p>I also came away believing that the market eventually curves toward the demand side.</p>
+        <p>Supply has to become structured first. But once it is programmable, the larger opportunity is connecting that supply to demand wherever the customer already happens to be.</p>
+        <p>Which brings me to the least original lesson from the whole experience, but probably the most important:</p>
+        <p><strong>Distribution is everything.</strong></p>
+        <p>Line changed how I think about building products.</p>
+        <p>The vision can be enormous.</p>
+        <p>The first product probably shouldn't be.</p>
+        <p>Find the smallest place where you can create real value. Put it into the actual workflow. Measure what happens. Watch where it breaks. Then let the evidence determine what the product earns the right to own next.</p>
+
+    </div>
+
+    <!-- ===================== PAST ===================== -->
+    <div id="pane-past" class="tab-pane past" data-pane="past" hidden>
+        <a class="card" href="codecov.html" style="background-image:url('images/codecov/codecov.png')">
+            <div class="card-caption">
                 <h2><span>Leading product design at Codecov</span></h2>
                 <p><span>Helping developers ship healthier code with less risk</span></p>
             </div>
         </a>
-        <a class="bg-img" href="autoremediation.html">
-            <div class="top-img">
+        <a class="card" href="autoremediation.html" style="background-image:url('new_screens/gitlab_revised.png')">
+            <div class="card-caption">
                 <h2><span>Iterations toward automation</span></h2>
                 <p><span>Empowering teams to commit their most secure work</span></p>
             </div>
         </a>
-        <a class="bg-img" href="collaborativeiteration.html">
-            <h2></h2>
-            <div class="top-img">
+        <a class="card" href="collaborativeiteration.html" style="background-image:url('new_screens/gitlab1.png')">
+            <div class="card-caption">
                 <h2><span>Security dashboard</span></h2>
                 <p><span>Collaborative iterations on a team endeavor</span></p>
             </div>
         </a>
-        <a class="bg-img" href="continualiteration.html">
-            <div class="top-img">
+        <a class="card" href="continualiteration.html" style="background-image:url('new_screens/gitlab2.png')">
+            <div class="card-caption">
                 <h2><span>Innovation by iteration</span></h2>
                 <p><span>Risk taking, experimentation, and uncertainty</span></p>
             </div>
         </a>
-        <a class="bg-img" href="crosslead.html">
-            <h2></h2>
-            <div class="top-img">
+        <a class="card" href="crosslead.html" style="background-image:url('new_screens/cl_hero.png')">
+            <div class="card-caption">
                 <h2><span>CrossLead</span></h2>
                 <p><span>Product design with the 'Team of Teams'</span></p>
             </div>
         </a>
-        <a class="bg-img" href="advisor.html">
-            <div class="top-img">
+        <a class="card" href="advisor.html" style="background-image:url('images/screens/home_hero2.png')">
+            <div class="card-caption">
                 <h2><span>Advisor dashboard integration</span></h2>
                 <p><span>A market data dashboard that keeps you informed</span></p>
             </div>
         </a>
-        <a class="bg-img" href="vault.html">
-            <div class="top-img">
+        <a class="card" href="vault.html" style="background-image:url('new_screens/vault_1@4x.png')">
+            <div class="card-caption">
                 <h2><span>The digital vault</span></h2>
                 <p><span>Cloud storage that streamlines document sharing</span></p>
             </div>
         </a>
-</article>
-    <section class="farewell"> <img src="images/flatirons.png" alt="">
-        <p><span>Thanks for visiting. Have a <label id="lblGreetings"></label>!</span></p>
-        <p class="icons-g"> <a href="https://gitlab.com/kmann" target="_blank" class="icon"><i class="fa fa-gitlab" aria-hidden="true"></i></a> <a href="https://github.com/kylemann" target="_blank" class="icon"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/in/convexitydesign/" target="_blank" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </p>
-    </section>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.js"></script>
-    <script src="run.js">
+    </div>
+
+    </main>
+
+    <script>
+    (function () {
+        var tabs  = document.querySelectorAll('nav.work-nav a[data-pane]');
+        var panes = document.querySelectorAll('.tab-pane[data-pane]');
+        function show(name) {
+            if (name !== 'past') name = 'latest';
+            for (var i = 0; i < panes.length; i++) {
+                panes[i].hidden = panes[i].getAttribute('data-pane') !== name;
+            }
+            for (var j = 0; j < tabs.length; j++) {
+                var on = tabs[j].getAttribute('data-pane') === name;
+                tabs[j].classList.toggle('is-current', on);
+                if (on) { tabs[j].setAttribute('aria-current', 'true'); } else { tabs[j].removeAttribute('aria-current'); }
+            }
+        }
+        function sync() { show(location.hash.replace(/^#/, '')); }
+        window.addEventListener('hashchange', sync);
+        sync();
+    })();
     </script>
     <script src="https://use.fontawesome.com/5f15c58e6f.js"></script>
 </body>

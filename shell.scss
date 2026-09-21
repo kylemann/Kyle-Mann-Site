@@ -1,0 +1,213 @@
+// shell.scss — shared page shell for work.html and the case-study pages.
+// Compile: sass --no-source-map shell.scss shell.css
+// No reset here on purpose: the case-study pages rely on browser defaults
+// because main.css's reset rule is void (invalid selector at main.css:38).
+
+$md: 800px;
+$lg: 1100px;
+$rule: #d0d0d0;
+$font: 'Tajawal', sans-serif;
+
+/* ---------- Column ---------- */
+.shell-page {
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 3em 0;
+  box-sizing: border-box;
+  font-family: $font;
+  @media (min-width: $md) { width: 95%; max-width: 800px; padding: 5em 0; }
+  @media (min-width: $lg) { width: 100%; }
+}
+body.work-p { margin: 0; padding: 0; max-width: none; }
+body.container.shell-body {
+  padding: 3em 0;
+  @media (min-width: $md) { padding: 5em 0; }
+}
+
+/* ---------- Header (scoped copy of the homepage header rules in km.css) ---------- */
+header.shell {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+  color: black;
+  div { max-width: none; margin: 0; padding: 0; }
+  .portrait { display: block; width: 160px; height: auto; max-width: 100%; margin: 0 0 1.5em; border: 0; }
+  h1 { font-family: $font; font-size: 2em; line-height: 1.5; font-weight: 600; color: black; margin: 0; padding: 0; width: auto; max-width: none; }
+  p { font-family: $font; font-size: 1em; line-height: 1.5; font-weight: 300; color: black; margin: 0 0 1em; padding: 0; width: auto; max-width: none; }
+  p a {
+    color: black; text-decoration: none; background: none;
+    border: 0; border-bottom: 1px solid black; padding: 3px 0 0; transition: .2s all;
+    &:hover { background: black; color: white; }
+  }
+  section.farewell { display: flex; flex-direction: column; width: 100%; max-width: none; margin: 0; padding: 0; }
+  section.farewell p { font-size: 1em; font-weight: 500; text-align: left; margin: 1em 0; }
+  .icons-g { display: flex; justify-content: flex-start; align-items: baseline; }
+  .icons-g a { margin: 0 2em 0 0; padding: 0; border: 0; line-height: 0; color: black; background: none; }
+  .icons-g a i { color: black; font-style: normal; }
+  .icons-g a:hover { background: black; }
+  .icons-g a:hover i { color: white; }
+  @media (min-width: $md) {
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+    h1 { font-size: 2.5em; }
+    p { font-size: 1.25em; }
+    .portrait { flex: 0 0 auto; width: 240px; margin: 0; }
+    .intro { flex: 1 1 auto; min-width: 0; }
+  }
+  @media (min-width: $lg) {
+    h1 { font-size: 3em; margin-top: 10px; }
+    p { margin-bottom: .75em; }
+  }
+}
+
+/* ---------- Latest | Past nav (the "nav bar HR") ---------- */
+nav.work-nav {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  max-width: none;
+  margin: 2.5em 0 2em;
+  padding: 0;
+  border-bottom: 1px solid $rule;
+  font-family: $font;
+  a {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+    color: black;
+    text-decoration: none;
+    background: none;
+    padding: 0 0 .5em;
+    margin: 0 0 -1px;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s;
+    &:hover { border-bottom-color: black; }
+    &.is-current { font-weight: 500; border-bottom-color: black; }
+  }
+  @media (min-width: $md) { a { font-size: 1.25em; } }
+}
+
+/* ---------- Breadcrumb ---------- */
+nav.breadcrumb {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 2.5em;
+  padding: 0;
+  font-family: $font;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  color: black;
+  a {
+    color: black; text-decoration: none; background: none;
+    border: 0; border-bottom: 1px solid black; padding: 3px 0 0; transition: .2s all;
+    &:hover { background: black; color: white; }
+  }
+  .sep { margin: 0 .5em; color: #888; }
+  [aria-current] { font-weight: 500; }
+  @media (min-width: $md) { font-size: 1.1em; }
+}
+
+/* ---------- Tab panes (divs, not sections: km/main set section { display:block }) ---------- */
+.tab-pane[hidden] { display: none; }
+
+/* ---------- Latest: the Line case study ---------- */
+/* Every element rule is suffixed :not(.lv *) so the ported deck figures keep their own type. */
+$x: ':not(.lv *)';
+body.shell-body .latest {
+  h2#{$x} { font-size: 1.5em; line-height: 1.3; font-weight: 600; margin: 0 0 .25em; }
+  .lede { font-size: 1.15em; line-height: 1.4; font-weight: 500; margin: 0 0 .25em; }
+  .meta { font-size: .9em; line-height: 1.5; font-weight: 300; color: #666; margin: 0 0 1.75em; }
+  h3#{$x} { font-size: 1.3em; line-height: 1.4; font-weight: 600; margin: 2.5em 0 .6em; }
+  p#{$x}, li#{$x} { font-size: 1em; line-height: 1.5; font-weight: 300; }
+  p#{$x} { margin: 0 0 1em; }
+  strong#{$x} { font-weight: 500; }
+  em#{$x} { font-style: italic; }
+  ul#{$x} { list-style: disc; padding: 0 0 0 1.25em; margin: 0 0 1.25em; }
+  ul.plain { list-style: none; padding: 0; }
+  li#{$x} { margin: 0 0 .35em; }
+  a#{$x} {
+    color: black; text-decoration: none; border-bottom: 1px solid black; padding-top: 3px; transition: .2s all;
+    &:hover { background: black; color: white; }
+  }
+  blockquote#{$x} { margin: 0 0 1.5em; padding: 0 0 0 1em; border-left: 2px solid $rule; }
+  blockquote#{$x} p { margin: 0 0 .2em; }
+  .cta { margin: .25em 0 1em; }
+  .cta a { font-weight: 500; }
+  .flow { font-weight: 500; }
+  figure { margin: 2em 0 2.5em; padding: 0; }
+  figure.video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
+  @media (min-width: $md) {
+    h2#{$x} { font-size: 1.75em; }
+    .lede { font-size: 1.35em; }
+    .meta { font-size: 1em; }
+    h3#{$x} { font-size: 1.5em; }
+    p#{$x}, li#{$x} { font-size: 1.25em; }
+  }
+  @media (min-width: $lg) { p#{$x} { margin-bottom: .75em; } }
+}
+
+/* ---------- Past: single-column cards (ported from css.scss .bg-img/.top-img) ---------- */
+body.shell-body .past { padding: .5em 0 0; }
+body.shell-body .past .card {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin: 0 0 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  color: black;
+  text-decoration: none;
+  border: 0;
+  &::before { content: ''; position: absolute; inset: 0; background: lightgray; opacity: .1; transition: .4s all; }
+  &:hover::before { background: black; opacity: .3; }
+  .card-caption { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+  h2 { font-size: 1.25em; font-weight: 600; line-height: 1.5; margin: 0; padding: 0 0 0 10px; color: black; }
+  p  { font-size: 1em; font-weight: 300; line-height: 1.5; margin: 0 0 10px; padding: 0 0 0 10px; color: black; }
+  h2 span, p span { background: white; border-top: 3px solid white; padding: 0 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  &:hover h2, &:hover p { color: white; }
+  &:hover h2 span, &:hover p span { background: black; border-top-color: black; }
+  @media (min-width: $md) {
+    height: 400px;
+    margin-bottom: 30px;
+    h2 { font-size: 1.75em; padding-left: 20px; }
+    h2 span { border-top-width: 7px; }
+    p { font-size: 1.25em; margin-bottom: 15px; padding-left: 20px; }
+    p span { border-top-width: 5px; }
+  }
+}
+
+/* ---------- Case-study pages: force main.css's desktop layout back to one column ---------- */
+.shell-page .container.study {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  .headwrap1, .headwrap2 { display: block; }
+  .headwrap1 { margin: 0 0 2.5em; }
+  .headwrap2 { margin: 3.5em 0 2.5em; }
+  .headwrap1 h1, .headwrap2 h1, .headwrap1 h3, .headwrap2 h3,
+  .headwrap1 p, .headwrap2 p, .headwrap1 .gitlab-s, .headwrap2 .gitlab-s { width: 100%; max-width: none; }
+  iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; margin: 0; }
+  .twogl { display: flex; flex-direction: column; gap: 1.5em; margin: 2.5em 0; }
+  .twogl .iframe { width: 100%; max-width: none; margin: 0; }
+  .two { flex-direction: column; justify-content: flex-start; margin: 2.5em 0; }
+  .two img, .two .text-box-2, .two .iframe { max-width: none; }
+  .aside { flex-direction: column; align-items: stretch; margin: 2.5em 0; }
+  .aside img { width: 100%; margin: 0 0 1em; }
+  .aside .text-box { padding: 0; }
+  nav.nav-sub { width: 100%; max-width: none; }
+  .tab-content .section { width: 100%; flex-direction: column; }
+}

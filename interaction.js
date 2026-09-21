@@ -116,7 +116,7 @@ $(document).ready(function(){
 
 //Smooth Scrolling
 $(window).load(function(){
-$('a').click(function(){
+$('a[href^="#"]').click(function(){
 $('html, body').animate({
 scrollTop: $( $(this).attr('href') ).offset().top
 }, 1000);

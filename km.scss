@@ -401,7 +401,11 @@ MEDIA QUERY - Above 790 PX  DESKTOP
 
         }
 
-\g<1>100%;
+        header {
+          
+//            background: red;
+     
+            width: 100%;
             max-width: 900px;
             margin: 0 auto;
 //            display: flex;

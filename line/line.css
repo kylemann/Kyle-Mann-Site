@@ -1,0 +1,184 @@
+/* line/line.css — figures ported from the Line pitch deck
+   (withline.io/presentations/line.html) for the Latest case study on work.html.
+   Everything is scoped under .lv so it can't leak into the page. */
+
+.lv {
+  --soft: #fafafa;
+  --muted: #f0f0f0;
+  --line: #ebebeb;
+  --text: #333;
+  --dim: #666;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text);
+  margin: 2em 0 2.5em;
+  padding: 0;
+  font-feature-settings: 'cv11', 'ss01', 'cv02';
+}
+.lv *, .lv *::before, .lv *::after { box-sizing: border-box; }
+.lv img { display: block; max-width: 100%; height: auto; margin: 0; border: 0; }
+body .lv p, body .lv ul, body .lv h4, body .lv h5, body .lv blockquote, body .lv figure, body .lv li { margin: 0; padding: 0; font-size: inherit; line-height: inherit; font-weight: inherit; color: inherit; }
+body .lv ul { list-style: none; }
+.lv a { color: inherit; }
+.lv .lv-title { font-size: 1.35em; font-weight: 800; letter-spacing: -.01em; margin: 0 0 .25em; color: #121212; }
+.lv .lv-lede { font-size: 1em; color: var(--text); margin: 0 0 1.25em; }
+.lv .lv-caption { margin: 8px 0 0; font-size: .8em; font-weight: 500; color: var(--text); }
+.lv .lv-flag {
+  display: inline-block; position: absolute; top: -12px; left: 24px; z-index: 2;
+  background: #fff; border: 2px solid var(--soft); padding: 6px 10px;
+  font-size: .72em; letter-spacing: .12em; text-transform: uppercase; font-weight: 600;
+  color: var(--text); white-space: nowrap; line-height: 1.2;
+}
+.lv .video { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
+
+/* ---------- Wedge: Product ---------- */
+.lv-product .row { display: flex; gap: 16px; margin-top: 16px; }
+.lv-product .row:first-of-type { margin-top: 0; }
+.lv-product .col { flex: 1 1 0; min-width: 0; }
+.lv-product .card { height: 240px; border: 2px solid var(--line); overflow: hidden; background: #fff; }
+.lv-product .card img { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
+.lv-product .chat { height: 100%; padding: 8px; display: flex; flex-direction: column; gap: 8px; }
+.lv-product .msg { display: flex; }
+.lv-product .msg--guest { justify-content: flex-start; }
+.lv-product .msg--property { justify-content: flex-end; }
+.lv-product .bubble {
+  max-width: 82%; border: 1px solid rgba(18, 18, 18, .12); background: #fff; color: #222;
+  padding: 7px 9px; border-radius: 12px; box-shadow: 0 1px 6px rgba(18, 18, 18, .04);
+  font-size: .68rem; line-height: 1.32;
+}
+.lv-product .msg--guest .bubble { background: #f3f4f6; }
+
+/* ---------- Team ---------- */
+.lv-team .founders { display: flex; gap: 1.25em; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5em; }
+.lv-team .founder { flex: 1 1 0; min-width: 0; text-align: center; }
+.lv-team .founder img { width: 150px; height: 150px; object-fit: cover; border: 8px solid var(--soft); background: #000; margin: 0 auto .75em; }
+.lv-team .founder h4 { font-size: 1em; font-weight: 700; margin: 0 0 .35em; }
+.lv-team .founder h4 a { color: inherit; text-decoration: underline; }
+.lv-team .founder-bio { font-size: .8em; line-height: 1.4; color: var(--dim); }
+.lv-team .founder-bio li:first-child { font-weight: 600; color: var(--text); margin-bottom: .25em; }
+
+/* ---------- Problem: Demand + Supply ---------- */
+.lv-problem .panel { margin-bottom: 2.5em; }
+.lv-problem .panel:last-child { margin-bottom: 0; }
+.lv-problem .trio { display: flex; gap: 24px; align-items: center; position: relative; margin-top: 1.75em; }
+.lv-problem .box {
+  flex: 1 1 0; min-width: 0; background: #fff; border: 2px solid var(--line);
+  padding: 28px 18px 24px; position: relative; min-height: 140px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.lv-problem .box .lv-flag { left: 50%; transform: translateX(-50%); border-color: var(--line); }
+.lv-problem .points { font-size: .7em; line-height: 1.7; text-align: center; color: var(--dim); }
+.lv-problem .points li { margin: .35em 0; }
+.lv-problem .trio > *:not(:last-child)::after {
+  content: ""; position: absolute; top: 50%; right: -24px; width: 24px; height: 2px;
+  background: var(--line); transform: translateY(-50%); z-index: 1;
+}
+.lv-problem .rfp { flex: 0 0 300px; position: relative; display: flex; }
+
+/* fake RFP form (static, filled state) */
+.rfp-form-demo { width: 100%; background: #fff; border: 1px solid #e0e0e0; display: flex; flex-direction: column; font-size: .65rem; color: #333; }
+.rfp-form-header {
+  background: linear-gradient(180deg, #2a5cff 0%, #1d4dd8 100%); color: #fff; padding: 9px 14px;
+  font-size: .66rem; font-weight: 600; letter-spacing: .04em; display: flex; justify-content: space-between; align-items: center;
+}
+.rfp-form-brand { letter-spacing: .05em; }
+.rfp-form-locale { font-size: .55rem; font-weight: 500; letter-spacing: .08em; opacity: .85; }
+.rfp-form-body { flex: 1 1 auto; padding: 14px; display: flex; flex-direction: column; gap: 9px; }
+.rfp-form-section { display: flex; flex-direction: column; gap: 4px; }
+.rfp-form-label { font-size: .58rem; color: #555; font-weight: 500; }
+.rfp-form-row { display: flex; align-items: center; gap: 6px; }
+.rfp-form-sep { color: #888; font-size: .6rem; }
+.rfp-checkbox { display: flex; align-items: center; gap: 7px; padding: 5px 8px; border: 1px solid #d8d8d8; font-size: .58rem; background: #fff; margin-top: 2px; }
+.rfp-checkbox-box { width: 11px; height: 11px; border: 1.5px solid #c0c0c0; display: inline-block; position: relative; flex-shrink: 0; }
+.rfp-checkbox.is-checked .rfp-checkbox-box { background: #2a5cff; border-color: #2a5cff; }
+.rfp-checkbox.is-checked .rfp-checkbox-box::after {
+  content: ""; position: absolute; top: 1px; left: 3px; width: 3px; height: 6px;
+  border: solid #fff; border-width: 0 1.5px 1.5px 0; transform: rotate(45deg);
+}
+.rfp-input { border: 1px solid #d0d0d0; padding: 5px 8px; font-size: .58rem; min-height: 12px; background: #fff; line-height: 1.3; word-break: break-word; }
+.rfp-input--small { flex: 1 1 0; }
+.rfp-select { border: 1px solid #d0d0d0; padding: 5px 8px; font-size: .58rem; display: flex; align-items: center; justify-content: space-between; min-height: 14px; background: #fff; color: #333; }
+.rfp-select-arrow { color: #888; font-size: .55rem; }
+.rfp-form-send { margin-top: 4px; padding: 8px 12px; background: #2a5cff; color: #fff; border: 0; font-size: .6rem; font-weight: 600; letter-spacing: .04em; cursor: default; font-family: inherit; }
+
+/* Tetris field: the deck's 320×480 grid scaled to 240×360 (60px tiles) */
+.lv-problem .tetris { position: relative; flex: 0 0 240px; width: 240px; height: 360px; background: var(--soft); border: 2px solid var(--line); overflow: hidden; align-self: center; }
+.tetris-piece { position: absolute; left: 0; top: 0; animation: piece-fall 11s linear infinite; opacity: 0; }
+.tetris-tile { position: absolute; width: 60px; height: 60px; background-size: cover; background-position: center; border: 1px solid rgba(255, 255, 255, .45); }
+.piece-o > .tile-1 { left: 0; top: 0; }
+.piece-o > .tile-2 { left: 60px; top: 0; }
+.piece-o > .tile-3 { left: 0; top: 60px; }
+.piece-o > .tile-4 { left: 60px; top: 60px; }
+.piece-iv > .tile-1 { left: 0; top: 0; }
+.piece-iv > .tile-2 { left: 0; top: 60px; }
+.piece-iv > .tile-3 { left: 0; top: 120px; }
+.piece-iv > .tile-4 { left: 0; top: 180px; }
+.piece-single > .tile-1 { left: 0; top: 0; }
+@keyframes piece-fall {
+  0%   { transform: translate(var(--lx), -160px); opacity: 0; }
+  3%   { transform: translate(var(--lx), -160px); opacity: 1; }
+  10%  { transform: translate(var(--lx), var(--ly)); opacity: 1; }
+  88%  { transform: translate(var(--lx), var(--ly)); opacity: 1; }
+  94%  { transform: translate(var(--lx), var(--ly)); opacity: 0; }
+  100% { transform: translate(var(--lx), var(--ly)); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tetris-piece { animation: none; opacity: 1; transform: translate(var(--lx), var(--ly)); }
+}
+
+/* ---------- Wedge: Case Studies ---------- */
+.lv-proof .cs-trio { display: flex; flex-direction: column; gap: 24px; margin-top: 1.25em; }
+.lv-proof .card { background: var(--soft); border: 2px solid var(--soft); padding: 32px 28px 28px; position: relative; display: flex; flex-direction: column; }
+.lv-proof blockquote { border-left: 4px solid var(--text); padding: 2px 0 2px 14px; margin: 0 0 18px; font-style: italic; font-size: 1em; line-height: 1.45; }
+.lv-proof blockquote p { margin: 0 0 8px; }
+.lv-proof blockquote footer { font-style: normal; font-size: .8em; color: var(--dim); }
+.lv-proof blockquote footer a { color: var(--text); text-decoration: underline; }
+.lv-proof .gallery { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(2, 1fr); gap: 8px; height: 260px; }
+.lv-proof .gallery .item { border: 2px solid var(--line); overflow: hidden; background: #fff; }
+.lv-proof .gallery .item:first-child { grid-row: 1 / span 2; }
+.lv-proof .gallery img { width: 100%; height: 100%; object-fit: cover; }
+.lv-proof .stat { margin-top: 16px; border-top: 1px solid #e5e5e5; padding-top: 14px; font-size: .9em; color: var(--text); }
+.lv-proof .stat strong { font-weight: 700; }
+.lv-proof .stat sup { font-size: .65em; color: var(--dim); margin-left: 4px; }
+
+/* ---------- Vision ---------- */
+.lv-vision .panel { background: var(--soft); padding: 48px 40px 40px; border: 2px solid var(--soft); position: relative; margin-top: 24px; }
+.lv-vision .panel:first-of-type { margin-top: 0; }
+.lv-vision .panel--row { padding: 40px; }
+.lv-vision .row3 { display: flex; gap: 0; align-items: center; margin-top: 6px; }
+.lv-vision .node {
+  flex: 1 1 0; min-width: 0; background: #fff; border: 2px solid var(--line); padding: 28px 16px;
+  position: relative; min-height: 120px; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 10px; text-align: center;
+}
+.lv-vision .node--line { flex: 1.3 1 0; }
+.lv-vision .node .node-flag {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%); z-index: 2;
+  background: #fff; border: 2px solid var(--line); padding: 6px 10px; font-size: .72em;
+  letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--text); white-space: nowrap; line-height: 1.2;
+}
+.lv-vision .node p { font-size: .82em; color: var(--dim); line-height: 1.5; margin: 0; font-style: italic; }
+.lv-vision .node img { height: 36px; width: auto; object-fit: contain; }
+.lv-vision .conn { width: 24px; height: 2px; background: var(--line); flex-shrink: 0; }
+
+/* ---------- Phone ---------- */
+@media (max-width: 799px) {
+  .lv { font-size: 15px; }
+  .lv-product .row { flex-direction: column; }
+  .lv-product .card { height: 200px; }
+  .lv-team .founder img { width: 100px; height: 100px; border-width: 6px; }
+  .lv-team .founder-bio li:not(:first-child) { display: none; }
+  .lv-problem .trio { flex-direction: column; align-items: stretch; gap: 28px; }
+  .lv-problem .trio > *:not(:last-child)::after { display: none; }
+  .lv-problem .rfp { flex: 0 0 auto; width: 100%; max-width: 340px; margin: 0 auto; }
+  .lv-problem .tetris { margin: 0 auto; }
+  .lv-proof .card { padding: 28px 18px 20px; }
+  .lv-proof .gallery { height: 200px; }
+  .lv-vision .panel { padding: 36px 20px 24px; }
+  .lv-vision .panel--row { padding: 28px 16px; }
+  .lv-vision .row3 { flex-direction: column; }
+  .lv-vision .node { width: 100%; }
+  .lv-vision .node-flag { white-space: normal; max-width: 90%; text-align: center; }
+  .lv-vision .conn { width: 2px; height: 24px; }
+}

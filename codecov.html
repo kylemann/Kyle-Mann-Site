@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="fancybox.css" />
     <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="shell.css">
     <!-- Favicon -->
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -36,7 +37,27 @@
 </head>
 
 <body class="work-p">
-    <div class="container study">
+<div class="shell-page">
+    <header class="shell">
+        <img src="images/kyle.jpg" alt="Kyle Mann" class="portrait">
+        <div class="intro">
+            <h1>Hello, I'm Kyle.</h1>
+            <div>
+                <p>Founder of <a href="https://withline.io/">Line</a> and formerly leading product design at <a href="https://sentry.io/welcome/">Sentry.io</a>, <a href="https://about.gitlab.com/">GitLab</a>, startups, <a href="https://ihsmarkit.com/index.html">Markit–S&P</a>, and freelancing. I'm always learning and finding inspiration in <a href="about.html">people I admire</a>, great books, anthropological thinking, flânerie, and tinkering.</p>
+            </div>
+            <section class="farewell">
+                <p class="icons-g"><a href="https://www.linkedin.com/in/convexitydesign/" target="_blank" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a> <a href="https://github.com/kylemann" target="_blank" class="icon"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="mailto:kyle@withline.io"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+            </section>
+        </div>
+    </header>
+    <nav class="work-nav" aria-label="Work sections">
+        <a href="work.html#latest">Latest</a>
+        <a href="work.html#past" class="is-current" aria-current="page">Past</a>
+    </nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="work.html">Work</a><span class="sep">/</span><a href="work.html#past">Past</a><span class="sep">/</span><span aria-current="page">Leading product design at Codecov</span>
+    </nav>
+<div class="container study">
         <div class="headwrap1">
             <h1>Leading product design at Sentry for Codecov</h1>
             <div class="gitlab-s">
@@ -135,7 +156,7 @@
                 <section>
                     <p class="contact" style="font-size: 1rem; font-weight: 400;">Thanks for visiting. Questions or thoughts? <a href="mailto:kyle@convexitydesign.com?Subject=Hello%20Kyle" target="_top">Drop me a note</a>.
                         <br>
-                        <br>View case study: <a href="autoremediation.html">iterations toward automation</a> or back to <a href="work.html"> home page</a>.
+                        <br>View case study: <a href="autoremediation.html">iterations toward automation</a> or <a href="work.html#past">back to work</a>.
                         <br>
                         <br>
                         <br> <a href="https://gitlab.com/kmann" target="_blank" class="icon"><i class="fa fa-gitlab" aria-hidden="true"></i></a> &#160; &#160; &#160; &#160; <a href="https://github.com/kylemann" target="_blank" class="icon"><i class="fa fa-github" aria-hidden="true"></i></a> &#160; &#160; &#160; &#160; <a href="https://www.linkedin.com/in/kylemanndesign/" target="_blank" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </p>
@@ -143,7 +164,8 @@
             </div>
         </article>
     </div>
-    <!-- JS LIGHTBOX GALLERY-->
+</div><!-- /.shell-page -->
+<!-- JS LIGHTBOX GALLERY-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>

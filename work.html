@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="km.css">
     <link rel="stylesheet" href="shell.css">
     <link rel="stylesheet" href="line/line.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon2/apple-icon-57x57.png">
@@ -519,33 +520,33 @@
         <figure class="lv lv-product" aria-label="Line product overview">
             <div class="row">
                 <div class="col">
-                    <div class="card"><img src="line/img/op-configuration.jpg" alt="Line configuration: structured supply, pricing logic, and rules"></div>
+                    <div class="card"><img src="line/img/op-configuration.jpg" class="fancybox" title="Configuration: structured supply, pricing logic, rules" alt="Line configuration: structured supply, pricing logic, and rules"></div>
                     <p class="lv-caption">i) Structured supply, pricing logic, rules</p>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="chat" aria-label="On-demand conversation with a guest">
-                            <div class="msg msg--property"><div class="bubble">Thanks for contacting Hotel Ada Events. Happy to help. Is this an internal leadership offsite or a client-facing program?</div></div>
-                            <div class="msg msg--guest"><div class="bubble">Internal offsite. Around 85 attendees in October, likely two-day programming.</div></div>
-                            <div class="msg msg--property"><div class="bubble">Great. Should we plan one main plenary room plus two breakouts, with built-in AV and catering service?</div></div>
-                            <div class="msg msg--guest"><div class="bubble">Yes, and we want a casual reception immediately after sessions on day one.</div></div>
-                            <div class="msg msg--property"><div class="bubble">Excellent, these room combinations are typically the strongest fit.</div></div>
+                        <div class="chat" data-chat-scroll aria-label="On-demand conversation with a guest">
+                            <div class="msg msg--property is-visible"><div class="bubble">Thanks for contacting Hotel Ada Events. Happy to help. Is this an internal leadership offsite or a client-facing program?</div></div>
+                            <div class="msg msg--guest is-visible"><div class="bubble">Internal offsite. Around 85 attendees in October, likely two-day programming.</div></div>
+                            <div class="msg msg--property is-visible"><div class="bubble">Great. Should we plan one main plenary room plus two breakouts, with built-in AV and catering service?</div></div>
+                            <div class="msg msg--guest is-visible"><div class="bubble">Yes, and we want a casual reception immediately after sessions on day one.</div></div>
+                            <div class="msg msg--property is-visible"><div class="bubble">Excellent, these room combinations are typically the strongest fit.</div></div>
                         </div>
                     </div>
                     <p class="lv-caption">ii) Consumer instant response</p>
                 </div>
                 <div class="col">
-                    <div class="card"><img src="line/img/op-deals.jpg" alt="Line deals: full deal flow as the system of work"></div>
+                    <div class="card"><img src="line/img/op-deals.jpg" class="fancybox" title="Deals: full deal flow as the system of work" alt="Line deals: full deal flow as the system of work"></div>
                     <p class="lv-caption">iii) Full deal flow as the system of work</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card"><img src="line/img/op-schedule.jpg" alt="Line schedule: agent visibility across deal flow and capacity"></div>
+                    <div class="card"><img src="line/img/op-schedule.jpg" class="fancybox" title="Schedule: agent visibility across deal flow and capacity" alt="Line schedule: agent visibility across deal flow and capacity"></div>
                     <p class="lv-caption">iv) Agent visibility across deal flow and capacity</p>
                 </div>
                 <div class="col">
-                    <div class="card"><img src="line/img/op-insights.jpg" alt="Line insights: learning system that improves what drives bookings"></div>
+                    <div class="card"><img src="line/img/op-insights.jpg" class="fancybox" title="Insights: learning system that improves what drives bookings" alt="Line insights: learning system that improves what drives bookings"></div>
                     <p class="lv-caption">v) Learning system improves what drives bookings</p>
                 </div>
             </div>
@@ -713,6 +714,22 @@
     })();
     </script>
     <script src="line/rfp-fill.js"></script>
+    <script src="line/chat-demo.js"></script>
+    <!-- Lightbox for the product screens, same stack as the case pages -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <script type="text/javascript">
+        $(function ($) {
+            $('img.fancybox').each(function () {
+                var $this = $(this);
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', $this.attr('data-big') || $this.attr('src')).attr('title', $this.attr('title'));
+                $this.wrap(a);
+            });
+            $('a.fancybox').attr('rel', 'fancyboxgallery').fancybox({ titlePosition: 'outside' });
+        });
+        $.noConflict();
+    </script>
     <script src="shell.js"></script>
     <script src="https://use.fontawesome.com/5f15c58e6f.js"></script>
 </body>

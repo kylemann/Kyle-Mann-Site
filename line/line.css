@@ -37,8 +37,15 @@ body .lv ul { list-style: none; }
 .lv-product .col { flex: 1 1 0; min-width: 0; }
 .lv-product .card { height: 240px; border: 2px solid var(--line); overflow: hidden; background: #fff; }
 .lv-product .card img { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
-.lv-product .chat { height: 100%; padding: 8px; display: flex; flex-direction: column; gap: 8px; }
-.lv-product .msg { display: flex; }
+.lv-product .card a.fancybox { display: block; height: 100%; border: 0; background: none; }
+.lv-product .card a.fancybox img:hover { cursor: url(../images/work/Untitled-1.png), zoom-in; }
+.lv-product .chat { height: 100%; padding: 8px; display: flex; flex-direction: column; gap: 8px; overflow: hidden; scroll-behavior: smooth; pointer-events: none; }
+.lv-product .msg { display: flex; opacity: 0; transform: translateY(12px); transition: opacity .35s ease, transform .35s ease; }
+.lv-product .msg.is-visible { opacity: 1; transform: translateY(0); }
+.lv-product .msg.is-exit { opacity: 0; transform: translateY(-10px); }
+.lv-product .bubble--gallery { width: min(100%, 190px); }
+.lv-product .thumbs { display: flex; flex-wrap: wrap; gap: 6px; }
+.lv-product .thumbs img { width: 48px; height: 34px; object-fit: cover; object-position: center; border-radius: 6px; border: 1px solid rgba(18, 18, 18, .12); background: #ededed; display: block; }
 .lv-product .msg--guest { justify-content: flex-start; }
 .lv-product .msg--property { justify-content: flex-end; }
 .lv-product .bubble {

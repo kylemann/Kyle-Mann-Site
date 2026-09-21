@@ -241,18 +241,19 @@ body .lv-proof blockquote p { margin: 0 0 10px; }
 .lv-market img { width: 100%; height: auto; }
 
 /* ---------- v0 visuals: photo + phone conversation, then the operator's inbox and the scheduled visit ---------- */
-.lv-v0 .v0-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
 .lv-v0 .v0-item { min-width: 0; }
 .lv-v0 .v0-wide { margin-top: 28px; }
 .lv-v0 .v0-item img { display: block; width: 100%; height: auto; border: 1px solid rgba(0, 0, 0, .08); }
-.lv-v0 .v0-photo img { aspect-ratio: 1 / 1; object-fit: cover; }
-.lv-v0 .v0-phone .frame { width: 240px; margin: 0 auto; border: 1px solid rgba(0, 0, 0, .12); border-radius: 22px; overflow: hidden; background: #fff; }
+.lv-v0 .v0-phone { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 28px; align-items: center; }
+.lv-v0 .v0-phone .frame { width: 240px; border: 1px solid rgba(0, 0, 0, .12); border-radius: 22px; overflow: hidden; background: #fff; }
+.lv-v0 .v0-phone .v0-label { margin-top: 0; }
 .lv-v0 .v0-phone video { display: block; width: 100%; height: auto; }
 .lv-v0 .v0-label { display: block; margin: 14px 0 3px; font-size: .72em; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: #888; }
 .lv-v0 .v0-label .arrow { color: #bbb; letter-spacing: 0; }
 .lv-v0 p.v0-cap { margin: 0; font-size: .9em; line-height: 1.45; font-weight: 300; color: #666; }
 @media (max-width: 799px) {
-  .lv-v0 .v0-row { grid-template-columns: 1fr; }
-  .lv-v0 .v0-phone .frame { width: 220px; }
+  .lv-v0 .v0-phone { grid-template-columns: 1fr; gap: 0; }
+  .lv-v0 .v0-phone .frame { width: 220px; margin: 0 auto; }
+  .lv-v0 .v0-phone .v0-label { margin-top: 14px; }
   .lv-v0 .v0-wide { margin-top: 20px; }
 }

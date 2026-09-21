@@ -127,7 +127,7 @@ $x: ':not(.lv *)';
 @mixin outro {
   .outro { margin-top: 4em; text-align: center; }
   .outro hr.outro-rule { border: 0; height: 0; border-top: 1px solid $rule; margin: 0 0 3em; }
-  .outro img.outro-image { display: block; width: 100%; max-width: 400px; height: auto; margin: 0 auto 1.5em; }
+  .outro img.outro-image { display: block; width: 100%; max-width: 280px; height: auto; margin: 0 auto 1.5em; }
   .outro p#{$x} { font-size: 1.1em; line-height: 1.6; font-weight: 300; margin: 0 0 .5em; }
   .outro a { color: black; text-decoration: none; border-bottom: 1px solid black; padding: 3px 0 0; background: none; transition: .2s all; }
   .outro a:hover { background: black; color: white; }
@@ -171,7 +171,7 @@ body.shell-body .latest, body.shell-body .resume {
 }
 
 /* ---------- Past: single-column cards (ported from css.scss .bg-img/.top-img) ---------- */
-body.shell-body .past { padding: .5em 0 0; }
+body.shell-body .past { padding: .5em 0 0; @include outro; .outro { flex: 0 0 100%; width: 100%; } }
 /* Desktop: first card full width, the rest two per row at a fixed 4:3-ish box (the source
    screenshots are 2236x1708); the vault composition is wide, so it shows its left half. */
 @media (min-width: $md) {

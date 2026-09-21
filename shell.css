@@ -363,7 +363,7 @@ body.shell-body .latest .outro hr.outro-rule, body.shell-body .resume .outro hr.
 body.shell-body .latest .outro img.outro-image, body.shell-body .resume .outro img.outro-image {
   display: block;
   width: 100%;
-  max-width: 400px;
+  max-width: 280px;
   height: auto;
   margin: 0 auto 1.5em;
 }
@@ -418,6 +418,45 @@ body.shell-body .latest figure.video iframe, body.shell-body .resume figure.vide
 /* ---------- Past: single-column cards (ported from css.scss .bg-img/.top-img) ---------- */
 body.shell-body .past {
   padding: 0.5em 0 0;
+}
+body.shell-body .past .outro {
+  margin-top: 4em;
+  text-align: center;
+}
+body.shell-body .past .outro hr.outro-rule {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #d0d0d0;
+  margin: 0 0 3em;
+}
+body.shell-body .past .outro img.outro-image {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto 1.5em;
+}
+body.shell-body .past .outro p:not(.lv *) {
+  font-size: 1.1em;
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0 0 0.5em;
+}
+body.shell-body .past .outro a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding: 3px 0 0;
+  background: none;
+  transition: 0.2s all;
+}
+body.shell-body .past .outro a:hover {
+  background: black;
+  color: white;
+}
+body.shell-body .past .outro {
+  flex: 0 0 100%;
+  width: 100%;
 }
 
 /* Desktop: first card full width, the rest two per row at a fixed 4:3-ish box (the source
@@ -636,7 +675,7 @@ body.shell-body .past .card.card--left .card-media img {
 .shell-page .container.study .outro img.outro-image {
   display: block;
   width: 100%;
-  max-width: 400px;
+  max-width: 280px;
   height: auto;
   margin: 0 auto 1.5em;
 }

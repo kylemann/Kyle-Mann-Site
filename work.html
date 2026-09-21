@@ -50,6 +50,7 @@
     <nav class="work-nav" aria-label="Work sections">
         <a href="#latest" data-pane="latest" class="is-current" aria-current="true">Latest</a>
         <a href="#past" data-pane="past">Past</a>
+        <a href="#resume" data-pane="resume">Resume</a>
     </nav>
 
     <main>
@@ -600,6 +601,53 @@
         </a>
     </div>
 
+    <!-- ===================== RESUME ===================== -->
+    <div id="pane-resume" class="tab-pane resume" data-pane="resume" hidden>
+        <h2>Experience</h2>
+        <div class="job">
+            <p class="job-title"><strong>Co-Founder &amp; CEO</strong> at <a href="https://withline.io/" target="_blank" rel="noopener">Line</a> &middot; Remote</p>
+            <p class="job-dates">05/2025 &ndash; Present</p>
+        </div>
+        <p class="job-desc">We help hotels and venues turn group inquiries into booked business, from first inquiry through qualification, proposals, contracts, and follow-up. Our mission is to make group bookings delightful to plan, simple to manage, and bookable anytime, anywhere.</p>
+        <div class="job">
+            <p class="job-title"><strong>Product Design Manager</strong> at <a href="https://sentry.io/welcome/" target="_blank" rel="noopener">Sentry.io</a> &middot; Remote</p>
+            <p class="job-dates">10/2022 &ndash; 09/2025</p>
+        </div>
+        <p class="job-desc">Sentry acquired Codecov. Led product design on the Codecov product while serving on the broader Sentry team.
+            <span class="job-note">Senior product designer 10/2022, promoted to design lead 01/2024, promoted to product design manager 09/2024</span></p>
+        <div class="job">
+            <p class="job-title"><strong>Lead Product Designer</strong> at <a href="https://about.codecov.io/" target="_blank" rel="noopener">Codecov</a> &middot; Remote</p>
+            <p class="job-dates">01/2021 &ndash; 12/2022</p>
+        </div>
+        <p class="job-desc">Founding product designer focused on: interaction, design system, prototyping, research, and product growth. Focused on an experience that helps developers commit test driven code faster with less risk. Foundation based on informed decision-making, rapid iteration, and trial-and-error.</p>
+        <div class="job">
+            <p class="job-title"><strong>Senior Product Designer</strong> at <a href="https://about.gitlab.com/" target="_blank" rel="noopener">GitLab</a> &middot; Remote</p>
+            <p class="job-dates">02/2019 &ndash; 01/2021</p>
+        </div>
+        <p class="job-desc">Collaborate closely with engineers, product managers, and the wider GitLab community to iterate quickly to create a productive, minimal, and human experience. Focused on the Secure and Protect stage group of the GitLab application.</p>
+        <div class="job">
+            <p class="job-title"><strong>Design Lead</strong> at <a href="https://www.crosslead.com/" target="_blank" rel="noopener">CrossLead</a> &middot; Remote</p>
+            <p class="job-dates">08/2017 &ndash; 02/2019</p>
+        </div>
+        <p class="job-desc">Leading design strategy and process through team building and shared trust. Collaborating with product analyst to define requirements, business needs, and user goals. Translating product vision and features into wireframes, storyboards, user flows, prototypes, and mockups. Ensuring implementation alignment with engineers; defining system specifications and functionality.</p>
+        <div class="job">
+            <p class="job-title"><strong>Designer, UX/Information</strong> at <a href="https://ihsmarkit.com/index.html" target="_blank" rel="noopener">IHS Markit</a> in Boulder, CO</p>
+            <p class="job-dates">09/2015 &ndash; 07/2017</p>
+        </div>
+        <p class="job-desc">Design data and user interface displays for mobile, web, software, and desktop applications. Workflow includes: sketching, diagramming, storyboarding, wireframing, prototyping, and visual design. Collaborate with fellow team members to understand problems and ideate solutions. Partner with clients and exceed expectations through human-centered design methodology.</p>
+        <div class="job">
+            <p class="job-title"><strong>Designer, Freelance</strong> at <a href="https://convexitydesign.com/" target="_blank" rel="noopener">Independent Contractor</a></p>
+            <p class="job-dates">05/2010 &ndash; 06/2015</p>
+        </div>
+        <p class="job-desc">Specialization in web design and front-end development. Work with clients on content strategy, design direction, and branding styles. Build and deploy responsive websites using HTML, CSS, Javascript, and a text editor.</p>
+        <h2 class="section">Education</h2>
+        <p><strong>Certificate,</strong> User Experience and Customer-Centered Design at <a href="http://www.fullerton.edu/" target="_blank" rel="noopener">California State University</a></p>
+        <p><strong>Bachelor of Science,</strong> Human Services at <a href="http://www.springfieldcollege.edu/" target="_blank" rel="noopener">Springfield College</a></p>
+        <h2 class="section">Skills</h2>
+        <p><strong>Web &amp; Software:</strong> HTML, SCSS/SASS, Git, Adobe Suite, Sketch, Figma</p>
+        <p><strong>User Experience:</strong> site maps, personas, wireframes, rapid prototyping, user testing, user research</p>
+    </div>
+
     </main>
 
     <script>
@@ -614,7 +662,7 @@
             }
         }
         function show(name) {
-            if (name !== 'past') name = 'latest';
+            if (name !== 'past' && name !== 'resume') name = 'latest';
             for (var i = 0; i < panes.length; i++) {
                 var on = panes[i].getAttribute('data-pane') === name;
                 panes[i].hidden = !on;

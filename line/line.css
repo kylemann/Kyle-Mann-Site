@@ -249,7 +249,6 @@ body .lv-proof blockquote p { margin: 0 0 10px; }
 .lv-v0 .v0-phone .v0-label { margin-top: 0; }
 .lv-v0 .v0-phone video { display: block; width: 100%; height: auto; }
 .lv-v0 .v0-label { display: block; margin: 14px 0 3px; font-size: .72em; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: #888; }
-.lv-v0 .v0-label .arrow { color: #bbb; letter-spacing: 0; }
 .lv-v0 p.v0-cap { margin: 0; font-size: .9em; line-height: 1.45; font-weight: 300; color: #666; }
 @media (max-width: 799px) {
   .lv-v0 .v0-phone { grid-template-columns: 1fr; gap: 0; }

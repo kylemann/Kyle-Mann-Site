@@ -145,7 +145,6 @@ body.shell-body .latest, body.shell-body .resume {
   p.meta#{$x} strong { font-weight: 500; color: #333; }
   .cta a { font-weight: 500; }
   .flow { font-weight: 500; }
-  .flow .arrow, .cta .arrow { color: #888; margin: 0 .15em; font-weight: 300; }
   figure { margin: 2em 0 2.5em; padding: 0; }
   @include outro;
   figure.video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
@@ -210,7 +209,7 @@ body.shell-body .past .card {
   padding: 0;
   .headwrap1, .headwrap2 { display: block; }
   .headwrap1 { margin: 0 0 2.5em; }
-  /* Back arrow in front of the title: the case pages are a level below the Past tab. */
+  /* Path prefix ("past/") in front of the title: the case pages are a level below the Past tab. */
   .headwrap1 h2 a.back { color: #999; text-decoration: none; border: 0; background: none; font-weight: 300; letter-spacing: 0; margin-right: .2em; transition: color .2s; }
   .headwrap1 h2 a.back:hover { color: black; background: none; border: 0; }
   .headwrap2 { margin: 3em 0 1.5em; }

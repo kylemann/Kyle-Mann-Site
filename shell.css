@@ -341,11 +341,6 @@ body.shell-body .latest .cta a, body.shell-body .resume .cta a {
 body.shell-body .latest .flow, body.shell-body .resume .flow {
   font-weight: 500;
 }
-body.shell-body .latest .flow .arrow, body.shell-body .latest .cta .arrow, body.shell-body .resume .flow .arrow, body.shell-body .resume .cta .arrow {
-  color: #888;
-  margin: 0 0.15em;
-  font-weight: 300;
-}
 body.shell-body .latest figure, body.shell-body .resume figure {
   margin: 2em 0 2.5em;
   padding: 0;
@@ -588,7 +583,7 @@ body.shell-body .past .card.card--left .card-media img {
   max-width: none;
   margin: 0;
   padding: 0;
-  /* Back arrow in front of the title: the case pages are a level below the Past tab. */
+  /* Path prefix ("past/") in front of the title: the case pages are a level below the Past tab. */
   /* Type scale, matching the Latest tab: page h1 48px > title 28px > section 24px > body 20px > caption 16px */
   /* Image grids: figures with an optional h5 title above and a figcaption below; fancybox wraps each img in an a. */
 }

@@ -248,7 +248,9 @@ body .lv-proof blockquote p { margin: 0 0 10px; }
 /* ---------- Discovery: two walkthrough videos side by side ---------- */
 .lv-discovery { margin: 0 0 3em; }
 .lv-discovery .videos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.lv-discovery .videos .col { min-width: 0; }
 .lv-discovery .videos .video { border: 1px solid rgba(0, 0, 0, .08); }
+.lv-discovery .videos .lv-caption { font-weight: 300; color: var(--dim); }
 @media (max-width: 799px) { .lv-discovery .videos { grid-template-columns: 1fr; } }
 
 /* ---------- Market visual (single image, full width) ---------- */

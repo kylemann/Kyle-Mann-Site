@@ -861,9 +861,6 @@ body.shell-body .resume p.job-dates {
   white-space: nowrap;
   color: #333;
 }
-body.shell-body .resume p.lede {
-  margin: 0 0 2em;
-}
 body.shell-body .resume p.job-desc {
   margin: 0 0 1.75em;
 }
